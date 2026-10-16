@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: "zbe-sabadell", group: 'zbe', order: 56, tool: 'zbe', ciudad: "sabadell",
+  id: "zbe-sabadell", group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 56, tool: 'zbe', ciudad: "sabadell",
   related: ["zbe-terrassa", "zbe-sant-cugat", "zbe-barcelona", "sin-etiqueta"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: "zbe-sabadell",

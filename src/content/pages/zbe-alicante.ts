@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: "zbe-alicante", group: 'zbe', order: 42, tool: 'zbe', ciudad: "alicante",
+  id: "zbe-alicante", group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 42, tool: 'zbe', ciudad: "alicante",
   related: ["zbe-elche", "zbe-valencia", "zbe-castellon", "multa-zbe"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: "zbe-alicante",

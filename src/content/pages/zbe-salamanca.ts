@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: "zbe-salamanca", group: 'zbe', order: 57, tool: 'zbe', ciudad: "salamanca",
+  id: "zbe-salamanca", group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 57, tool: 'zbe', ciudad: "salamanca",
   related: ["zbe-valladolid", "zbe-burgos", "zbe-leon", "etiqueta-c"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: "zbe-salamanca",

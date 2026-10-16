@@ -9,6 +9,8 @@ import MiniSim from './calc/MiniSim';
 import Clamp from './Clamp.astro';
 import ToolSwitch from './ToolSwitch.astro';
 import CityFacts from './CityFacts.astro';
+import CiudadesAgrupadas from './CiudadesAgrupadas.astro';
+import { hrefDe } from '../lib/href';
 import MuniFacts from './MuniFacts.astro';
 import { municipio } from '../lib/engine/ivtm';
 import { pageDeMunicipio } from '../lib/pages';
@@ -33,7 +35,7 @@ const faqs = x.faqs(h);
 const jsonLd = [webPageSchema({ name: x.h1, description: x.description, path, lang }), breadcrumbSchema([{ name: ui.breadcrumbHome, path: route('home', lang) }, { name: x.nav, path }])];
 if (page.tool) jsonLd.push(webApplicationSchema({ name: x.h1, description: x.description, path, lang })); else jsonLd.push(articleSchema({ title: x.h1, description: x.description, path, lang }));
 if (faqs.length) jsonLd.push(faqSchema(faqs, lang));
-const related = page.related.filter((id) => ROUTES.some((r) => r.id === id)).map((id) => ({ href: route(id, lang), name: label(id, lang), description: pageById(id)?.[lang].card ?? '' }));
+const related = page.related.filter((id) => hrefDe(id, lang)).map((id) => ({ href: hrefDe(id, lang)!, name: label(id, lang), description: pageById(id)?.[lang].card ?? '' }));
 const sources = page.sources.map((k) => ({ name: P.sources[k].label[lang], url: P.sources[k].url }));
 const methodHref = route('method', lang);
 const cible = page.miniHref ?? 'home';
@@ -63,6 +65,7 @@ const preset = { ...(page.toolPreset ?? {}), ...(page.ciudad ? { ciudad: page.ci
     </div>
     <AdSlot slot="contenido" />
     {page.ciudad && page.tool === 'zbe' && <CityFacts slug={page.ciudad} lang={lang} />}
+    <CiudadesAgrupadas hub={page.id} lang={lang} />
     {page.municipio && <MuniFacts slug={page.municipio} lang={lang} />}
     {page.ciudad && page.tool === 'zbe' && !page.municipio && municipio(page.ciudad) && !pageDeMunicipio(page.ciudad) && <MuniFacts slug={page.ciudad} lang={lang} />}
   </article>

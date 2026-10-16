@@ -2,7 +2,7 @@ import { definePage } from '../../lib/page-types';
 import { ciudad } from '../../lib/engine/zbe';
 const c = ciudad('palma');
 export default definePage({
-  id: 'zbe-palma', group: 'zbe', order: 18, tool: 'zbe', ciudad: 'palma',
+  id: 'zbe-palma', group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 18, tool: 'zbe', ciudad: 'palma',
   related: ['coche-extranjero-zbe', 'etiqueta-b', 'etiqueta-c', 'zonas-bajas-emisiones'], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: 'zbe-palma', nav: 'ZBE Palma', card: 'B prohibida desde 2027, C desde 2030',

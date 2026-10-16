@@ -2,7 +2,7 @@ import { definePage } from '../../lib/page-types';
 import { ciudad } from '../../lib/engine/zbe';
 const c = ciudad('san-sebastian');
 export default definePage({
-  id: 'zbe-san-sebastian', group: 'zbe', order: 21, tool: 'zbe', ciudad: 'san-sebastian',
+  id: 'zbe-san-sebastian', group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 21, tool: 'zbe', ciudad: 'san-sebastian',
   related: ['impuesto-circulacion-san-sebastian', 'zbe-bilbao', 'coche-extranjero-zbe', 'etiqueta-b'], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: 'zbe-donostia-san-sebastian', nav: 'ZBE Donostia', card: 'Centro, 1,2 km²; la B fuera desde 2028',

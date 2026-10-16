@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: "zbe-leon", group: 'zbe', order: 53, tool: 'zbe', ciudad: "leon",
+  id: "zbe-leon", group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 53, tool: 'zbe', ciudad: "leon",
   related: ["zbe-burgos", "zbe-oviedo", "zbe-valladolid", "etiqueta-c"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: "zbe-leon",

@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: "zbe-girona", group: 'zbe', order: 50, tool: 'zbe', ciudad: "girona",
+  id: "zbe-girona", group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 50, tool: 'zbe', ciudad: "girona",
   related: ["zbe-barcelona", "zbe-lleida", "zbe-tarragona", "sin-etiqueta"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: "zbe-girona",

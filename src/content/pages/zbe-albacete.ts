@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: "zbe-albacete", group: 'zbe', order: 41, tool: 'zbe', ciudad: "albacete",
+  id: "zbe-albacete", group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 41, tool: 'zbe', ciudad: "albacete",
   related: ["zbe-madrid", "sin-etiqueta", "multa-zbe", "coche-extranjero-zbe"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: "zbe-albacete",

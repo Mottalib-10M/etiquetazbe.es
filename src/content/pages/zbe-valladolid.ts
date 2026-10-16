@@ -2,7 +2,7 @@ import { definePage } from '../../lib/page-types';
 import { ciudad } from '../../lib/engine/zbe';
 const c = ciudad('valladolid');
 export default definePage({
-  id: 'zbe-valladolid', group: 'zbe', order: 17, tool: 'zbe', ciudad: 'valladolid',
+  id: 'zbe-valladolid', group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 17, tool: 'zbe', ciudad: 'valladolid',
   related: ['impuesto-circulacion-valladolid', 'etiqueta-eco', 'etiqueta-c', 'zonas-bajas-emisiones'], sources: ['ley7_2021', 'lsv', 'rd1052_2022'],
   es: {
     slug: 'zbe-valladolid', nav: 'ZBE Valladolid', card: 'B prohibida desde el 31/12/2027, C desde 2030',

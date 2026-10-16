@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: "zbe-hospitalet", group: 'zbe', order: 51, tool: 'zbe', ciudad: "hospitalet",
+  id: "zbe-hospitalet", group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 51, tool: 'zbe', ciudad: "hospitalet",
   related: ["zbe-barcelona", "zbe-sant-cugat", "zbe-sabadell", "etiqueta-b"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: "zbe-hospitalet",

@@ -2,7 +2,7 @@ import { definePage } from '../../lib/page-types';
 import { ciudad } from '../../lib/engine/zbe';
 const c = ciudad('pamplona');
 export default definePage({
-  id: 'zbe-pamplona', group: 'zbe', order: 22, tool: 'zbe', ciudad: 'pamplona',
+  id: 'zbe-pamplona', group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 22, tool: 'zbe', ciudad: 'pamplona',
   related: ['zbe-vitoria-gasteiz', 'pegatina-dgt', 'sin-etiqueta', 'zbe-san-sebastian'], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: 'zbe-pamplona', nav: 'ZBE Pamplona', card: 'Casco Antiguo con pegatina obligatoria',

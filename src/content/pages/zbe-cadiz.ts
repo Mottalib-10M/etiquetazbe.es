@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: "zbe-cadiz", group: 'zbe', order: 45, tool: 'zbe', ciudad: "cadiz",
+  id: "zbe-cadiz", group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 45, tool: 'zbe', ciudad: "cadiz",
   related: ["zbe-jerez", "zbe-sevilla", "zbe-malaga", "multa-zbe"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: "zbe-cadiz",

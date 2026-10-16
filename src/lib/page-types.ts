@@ -65,6 +65,9 @@ export interface PageDef {
   ciudad?: string;
   /** Municipio IVTM décrit (src/data/ivtm-2026.json). */
   municipio?: string;
+  /** Page sans URL propre (RECETTE §3, 100 pages au plus) : son texte et sa fiche sont rendus, en accordéon, dans
+   *  la page récapitulative dont c'est l'identifiant, à l'ancre `#<id>`. */
+  agrupadaEn?: string;
   related: string[];
   sources: SourceKey[];
   es: PageText;

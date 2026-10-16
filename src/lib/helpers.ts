@@ -1,5 +1,6 @@
 /** Outils d'écriture (`Helpers`) passés au corps de chaque page. */
-import { route, ROUTES, type Locale } from '../i18n/routes';
+import { type Locale } from '../i18n/routes';
+import { hrefDe } from './href';
 import { P } from './engine/params';
 import type { SourceKey } from './engine/params';
 import type { Helpers } from './page-types';
@@ -13,7 +14,7 @@ export const eurAuto = (n: number, lang: Locale) => formatMoney(n, Math.abs(n - 
 export function helpers(lang: Locale): Helpers {
   return {
     lang, P,
-    a: (id, text) => (ROUTES.some((r) => r.id === id) ? `<a href="${route(id, lang)}">${text}</a>` : text),
+    a: (id, text) => { const u = hrefDe(id, lang); return u ? `<a href="${u}">${text}</a>` : text; },
     eur: (n, d) => (d === undefined ? eurAuto(n, lang) : formatMoney(n, d, lang)),
     num: (n, d = 0) => formatNumber(n, d, lang),
     pct: (x, d = 0) => formatPercent(x, d, lang),

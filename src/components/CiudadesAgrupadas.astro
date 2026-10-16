@@ -1,0 +1,45 @@
+---
+/**
+ * Villes ZBE sans page propre (RECETTE §3, 100 pages au plus) : chacune garde, dans la page récapitulative, son
+ * bloc citable, son texte, sa FAQ et sa fiche générée depuis src/data/zbe/<ville>.json, repliés en accordéon à
+ * l'ancre `#zbe-<ville>`. Le texte reste entier dans le HTML ; une ancre ouvre l'accordéon visé.
+ */
+import CityFacts from './CityFacts.astro';
+import MuniFacts from './MuniFacts.astro';
+import { municipio } from '../lib/engine/ivtm';
+import { agrupadasEn, pageDeMunicipio } from '../lib/pages';
+import { helpers } from '../lib/helpers';
+import type { Locale } from '../i18n/routes';
+interface Props { hub: string; lang: Locale }
+const { hub, lang } = Astro.props;
+const es = lang === 'es';
+const h = helpers(lang);
+const items = agrupadasEn(hub);
+---
+{items.length > 0 && (
+  <section class="mt-10 border-t border-navy-200 pt-6" aria-labelledby="otras-ciudades">
+    <h2 id="otras-ciudades" class="text-2xl font-bold text-navy-900">{es ? `Las otras ${items.length} ciudades, una a una` : `The other ${items.length} cities, one by one`}</h2>
+    <p class="mt-2 text-navy-700">{es ? 'Cada ficha recoge la ordenanza, las excepciones, la multa, el calendario y las fuentes oficiales de la ciudad. Elige la ciudad en el simulador de arriba para ver la regla que se aplica a tu coche.' : 'Each entry sets out the city’s byelaw, exceptions, fine, timetable and official sources. Pick the city in the tool above to see the rule that applies to your car.'}</p>
+    <div class="mt-4 space-y-3">
+      {items.map((p) => { const x = p[lang]; const faqs = x.faqs(h); return (
+        <details id={p.id} class="ciudad-acc scroll-mt-24 rounded-lg border border-navy-200 bg-white">
+          <summary class="cursor-pointer px-4 py-3"><span class="font-semibold text-navy-900">{x.h1}</span><span class="block text-sm text-navy-600">{x.card}</span></summary>
+          <div class="border-t border-navy-100 px-4 pb-5 pt-3">
+            <p class="text-navy-800">{x.intro}</p>
+            <p class="mt-3 text-navy-800">{x.resume(h)}</p>
+            <div class="prose prose-slate mt-4 max-w-none"><Fragment set:html={x.body(h).replace(/<!--mini:[A-Za-z0-9_]+-->/g, '').replace(/<h2>/g, '<h3>').replace(/<\/h2>/g, '</h3>')} /></div>
+            {faqs.length > 0 && (
+              <div class="mt-4">
+                <h3 class="text-lg font-semibold text-navy-900">{es ? 'Preguntas frecuentes' : 'Frequently asked questions'}</h3>
+                {faqs.map((f) => <><p class="mt-3 font-semibold text-navy-900">{f.q}</p><p class="mt-1 text-navy-800">{f.a}</p></>)}
+              </div>
+            )}
+            {p.ciudad && <CityFacts slug={p.ciudad} lang={lang} />}
+            {p.ciudad && municipio(p.ciudad) && !pageDeMunicipio(p.ciudad) && <MuniFacts slug={p.ciudad} lang={lang} />}
+          </div>
+        </details>
+      ); })}
+    </div>
+    <script is:inline>(function(){function o(){var id=decodeURIComponent(location.hash.slice(1));if(!id)return;var d=document.getElementById(id);if(d&&d.tagName==='DETAILS'){d.open=true;d.scrollIntoView();}}window.addEventListener('hashchange',o);o();})();</script>
+  </section>
+)}

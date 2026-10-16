@@ -2,7 +2,7 @@ import { definePage } from '../../lib/page-types';
 import { ciudad } from '../../lib/engine/zbe';
 const c = ciudad('vitoria-gasteiz');
 export default definePage({
-  id: 'zbe-vitoria-gasteiz', group: 'zbe', order: 23, tool: 'zbe', ciudad: 'vitoria-gasteiz',
+  id: 'zbe-vitoria-gasteiz', group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 23, tool: 'zbe', ciudad: 'vitoria-gasteiz',
   related: ['impuesto-circulacion-vitoria-gasteiz', 'zbe-bilbao', 'etiqueta-b', 'zbe-pamplona'], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: 'zbe-vitoria-gasteiz', nav: 'ZBE Vitoria-Gasteiz', card: 'Centro; residentes hasta 2027, B en 2030',

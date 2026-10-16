@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: "zbe-elche", group: 'zbe', order: 49, tool: 'zbe', ciudad: "elche",
+  id: "zbe-elche", group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 49, tool: 'zbe', ciudad: "elche",
   related: ["zbe-alicante", "zbe-castellon", "zbe-valencia", "etiqueta-dgt"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: "zbe-elche",

@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: "zbe-terrassa", group: 'zbe', order: 61, tool: 'zbe', ciudad: "terrassa",
+  id: "zbe-terrassa", group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 61, tool: 'zbe', ciudad: "terrassa",
   related: ["zbe-sabadell", "zbe-sant-cugat", "zbe-barcelona", "sin-etiqueta"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: "zbe-terrassa",

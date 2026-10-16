@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: "zbe-cordoba", group: 'zbe', order: 48, tool: 'zbe', ciudad: "cordoba",
+  id: "zbe-cordoba", group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 48, tool: 'zbe', ciudad: "cordoba",
   related: ["impuesto-circulacion-cordoba", "zbe-sevilla", "zbe-granada", "etiqueta-eco"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: "zbe-cordoba",
