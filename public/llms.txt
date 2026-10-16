@@ -1,0 +1,20 @@
+# ZBE y Etiqueta (ZBE & DGT Label)
+
+> Simulador gratuito para España: etiqueta ambiental de la DGT de un vehículo (0, ECO, C, B o sin etiqueta) según motor, fecha de matriculación y norma Euro; acceso a las zonas de bajas emisiones (ZBE) de 15 ciudades según su ordenanza, con horario, multa y fechas futuras; impuesto de circulación (IVTM) 2026 de 13 municipios. Editor: Radif Partners. Cada regla cita la ordenanza o el BOE y su fecha de comprobación (15/10/2026).
+
+## Páginas principales (es)
+- /es/ : simulador ZBE + etiqueta + IVTM
+- /es/zonas-bajas-emisiones/ : las 15 ZBE y sus etiquetas restringidas
+- /es/que-etiqueta-tiene-mi-coche/ : criterios de la DGT
+- /es/impuesto-de-circulacion/ : calculador del IVTM 2026
+- /es/caballos-fiscales/ : fórmula del anexo V del Reglamento General de Vehículos
+- /es/metodologia/ : método, pruebas, límites y fuentes
+
+## English
+- /en/ : ZBE, DGT label and road-tax calculator
+- /en/low-emission-zones-spain/ : the 15 zones and restricted labels
+- /en/method/ : method and sources
+
+## Datos
+- Criterios DGT: https://www.dgt.es/nuestros-servicios/tu-vehiculo/tus-vehiculos/distintivo-ambiental/
+- Ley 7/2021 art. 14.3, RD 1052/2022, Ley de Tráfico art. 76.z3 y 80, TRLHL art. 95 y 96 (BOE)

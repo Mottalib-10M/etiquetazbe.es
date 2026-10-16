@@ -1,0 +1,24 @@
+---
+/** Page intégrable (iframe) : simulateur sans navigation. noindex, hors sitemap. ?lang=en bascule la langue. */
+import '../../styles/global.css';
+import ZbeTool from '../../components/calc/ZbeTool';
+import { SITE_URL } from '../../data/site-config';
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¿Puedo entrar en la ZBE? Etiqueta DGT e impuesto de circulación 2026</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href={`${SITE_URL}/es/`} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-white p-2 text-navy-900">
+    <div id="es-view"><ZbeTool client:load lang="es" /></div>
+    <div id="en-view" hidden><ZbeTool client:load lang="en" /></div>
+    <p class="mt-2 text-center text-xs text-navy-600"><a id="credit" href={`${SITE_URL}/es/`} target="_blank" rel="noopener" class="underline">¿Puedo entrar en la ZBE? · ZBE y Etiqueta</a></p>
+    <script is:inline>
+      if (new URLSearchParams(location.search).get('lang') === 'en') { document.getElementById('es-view').hidden = true; document.getElementById('en-view').hidden = false; document.documentElement.lang = 'en'; var c = document.getElementById('credit'); c.textContent = 'Can I drive into the ZBE? · ZBE & DGT Label'; c.href = c.href.replace('/es/', '/en/'); }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+{
+ "slug": "getafe",
+ "nombre": "Getafe",
+ "provincia": "Madrid",
+ "ccaa": "Comunidad de Madrid",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "centro-sanisidro",
+   "nombre": "Zona de Bajas Emisiones de Getafe (Centro y San Isidro)",
+   "ambito": "barrios de Centro y San Isidro, señalizados con doble línea roja en la calzada y las letras «ZBE»",
+   "horario": "24h",
+   "horario_nota": "la ordenanza no fija franja horaria",
+   "desde": "2025-01-27",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "prohibido",
+     "nota": "salvo autorización",
+     "nota_en": "unless authorised"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_domiciliados",
+     "acceso": "solo_aparcamiento",
+     "nota": "solo para ir a un aparcamiento público adherido a la ZBE",
+     "nota_en": "only to reach a public car park that is part of the ZBE scheme"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "domiciliados",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ],
+   "ambito_en": "the Centro and San Isidro neighbourhoods, marked with a double red line on the road and the letters «ZBE»"
+  }
+ ],
+ "criterio_usuario": "vehículo domiciliado en Getafe en el Registro de Vehículos de la DGT y de alta en el padrón del IVTM de Getafe",
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave del artículo 76.z3 de la Ley de Tráfico",
+  "nota_en": "serious offence under section 76(z3) of the Traffic Act"
+ },
+ "excepciones": [
+  "residentes de la ZBE: sin restricción",
+  "motos y ciclomotores con distintivo",
+  "pequeños comercios y sus proveedores, pacientes de centros sanitarios y veterinarios, personas con discapacidad o dependencia, autorizaciones para familiares",
+  "matrículas extranjeras o diplomáticas"
+ ],
+ "control": "cámaras de lectura de matrículas en los accesos, gestionadas por la Policía Local",
+ "pendiente": "la fase 3 prevista para el 1/1/2026 está suspendida hasta que se apruebe la modificación de la ordenanza (BOCM n.º 310, 30/12/2025)",
+ "ordenanza": {
+  "nombre": "Ordenanza reguladora de la zona de bajas emisiones de Getafe (BOCM n.º 20, de 24 de enero de 2025)",
+  "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2025/01/24/BOCM-20250124-60.PDF"
+ },
+ "fuentes": [
+  {
+   "url": "https://zbe.getafe.es/calendario/",
+   "label": "Ayuntamiento de Getafe · Calendario de la ZBE",
+   "cita": "Permitido el acceso de vehículos etiqueta B si se dirigen a parking público adherido a la ZBE"
+  },
+  {
+   "url": "https://getafe.es/getafe-mantendra-la-fase-actual-de-la-zona-de-bajas-emisiones/",
+   "label": "Ayuntamiento de Getafe · Getafe mantendrá la fase actual de la ZBE"
+  },
+  {
+   "url": "https://bocm.es/boletin/CM_Orden_BOCM/2025/12/30/BOCM-20251230-67.PDF",
+   "label": "BOCM n.º 310 (30/12/2025) · Getafe suspende el inicio de la fase 3"
+  }
+ ],
+ "verificado": "2026-10-15",
+ "excepciones_en": [
+  "residents of the zone: no restriction",
+  "motorbikes and mopeds with a label",
+  "small shops and their suppliers, patients of health centres and vets, disabled or dependent people, permits for relatives",
+  "foreign or diplomatic plates"
+ ],
+ "control_en": "number-plate cameras at the entries, run by the local police",
+ "pendiente_en": "phase 3, planned for 1/1/2026, is on hold until the byelaw amendment is approved (BOCM no. 310, 30/12/2025)"
+}

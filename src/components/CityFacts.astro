@@ -1,0 +1,71 @@
+---
+/**
+ * Fiche d'une ZBE générée depuis src/data/zbe/<ville>.json : zones, matrice étiquette × profil au jour du
+ * build, calendrier des durcissements, exceptions, amende, contrôle et sources datées. `data-chrome` : bloc
+ * identique par construction d'une ville à l'autre, hors comparaison d'unicité (RECETTE §6.4).
+ */
+import { ciudad, veredictoZona, calendario, franja, type Perfil } from '../lib/engine/zbe';
+import { ETIQUETA_NOMBRE, accesoTitulo, franjaTexto, usuarioTexto } from '../lib/textos';
+import { formatMoney, displayDate } from '../lib/format';
+import type { Locale } from '../i18n/routes';
+import type { Etiqueta } from '../lib/engine/etiqueta';
+interface Props { slug: string; lang: Locale }
+const { slug, lang } = Astro.props;
+const es = lang === 'es';
+const c = ciudad(slug);
+const hoy = new Date().toISOString().slice(0, 10);
+const dt = (iso: string) => displayDate(iso, es ? 'es-ES' : 'en-GB');
+const eur = (n: number) => formatMoney(n, 0, lang);
+const perfiles: Array<[string, Perfil]> = [
+  [es ? 'Vehículo de fuera' : 'Out-of-town vehicle', { domicilio: 'fuera', residenteZona: false }],
+  [es ? `Domiciliado en ${c.nombre}` : `Registered in ${c.nombre}`, { domicilio: 'ciudad', residenteZona: false }],
+  [es ? 'Residente en la zona' : 'Resident of the zone', { domicilio: 'ciudad', residenteZona: true }],
+];
+const ets: Etiqueta[] = ['0', 'ECO', 'C', 'B', 'A'];
+const cal = calendario(c, hoy);
+const exc = es ? c.excepciones : c.excepciones_en;
+---
+<section class="mt-10 border-t border-navy-200 pt-6" data-chrome aria-labelledby={`reglas-${slug}`}>
+  <h2 id={`reglas-${slug}`} class="text-2xl font-bold text-navy-900">{es ? `Quién entra hoy en la ZBE de ${c.nombre}` : `Who can drive into the ${c.nombre} ZBE today`}</h2>
+  {c.zonas.map((z) => (
+    <div class="mt-6">
+      <h3 class="text-lg font-semibold text-navy-900">{z.nombre}</h3>
+      <p class="mt-1 text-sm text-navy-700">{es ? z.ambito : z.ambito_en}. {es ? 'Control' : 'Enforced'}: {franjaTexto(franja(z.horario), lang)}. {es ? 'En vigor desde el' : 'In force since'} {dt(z.desde)}.</p>
+      <div class="not-prose my-4 overflow-x-auto">
+        <table class="journal w-full text-sm">
+          <caption class="mb-2 text-left text-sm text-navy-600">{es ? `Situación a ${dt(hoy)} según la ordenanza` : `Position on ${dt(hoy)} under the byelaw`}</caption>
+          <thead><tr><th scope="col" class="px-3 py-2 text-left">{es ? 'Etiqueta' : 'Label'}</th>{perfiles.map(([t]) => <th scope="col" class="px-3 py-2 text-left">{t}</th>)}</tr></thead>
+          <tbody>
+            {ets.map((e) => (
+              <tr class="border-b border-navy-100">
+                <th scope="row" class="px-3 py-2 text-left font-medium"><span class={`et et-${e} mr-2 h-6 w-6 text-[0.6rem] align-middle`} aria-hidden="true">{e === 'A' ? '—' : e}</span>{ETIQUETA_NOMBRE[lang][e]}</th>
+                {perfiles.map(([, p]) => { const v = veredictoZona(z, e, p, hoy); return (
+                  <td class="px-3 py-2"><span class={`inline-block rounded border px-1.5 py-0.5 text-xs font-medium acc-${v.acceso}`}>{accesoTitulo(v.acceso, lang)}</span>{v.proximo && <span class="block text-xs text-navy-600">{es ? `desde el ${dt(v.proximo.fecha)}: ${accesoTitulo(v.proximo.acceso, 'es').toLowerCase()}` : `from ${dt(v.proximo.fecha)}: ${accesoTitulo(v.proximo.acceso, 'en').toLowerCase()}`}</span>}</td>); })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  ))}
+  {cal.length > 0 && (<>
+    <h3 class="mt-6 text-lg font-semibold text-navy-900">{es ? 'Próximas fechas de la ordenanza' : 'Upcoming dates in the byelaw'}</h3>
+    <ul class="mt-2 list-disc pl-5 text-navy-800">
+      {cal.map((x) => <li><time datetime={x.fecha}>{dt(x.fecha)}</time>: {ETIQUETA_NOMBRE[lang][x.regla.etiqueta]}, {usuarioTexto(x.regla.usuario, c.nombre, lang)}, {accesoTitulo(x.regla.acceso, lang).toLowerCase()} ({x.zona}).</li>)}
+    </ul>
+  </>)}
+  <h3 class="mt-6 text-lg font-semibold text-navy-900">{es ? 'Multa, control y excepciones' : 'Fine, enforcement and exceptions'}</h3>
+  <ul class="mt-2 list-disc pl-5 text-navy-800">
+    <li>{es ? 'Multa' : 'Fine'}: {eur(c.multa.importe)}, {eur(c.multa.pronto_pago)} {es ? 'con pronto pago en 20 días naturales' : 'if paid within 20 calendar days'}{c.multa.nota ? ` (${es ? c.multa.nota : c.multa.nota_en})` : ''}.</li>
+    {c.control && <li>{es ? 'Control' : 'Enforcement'}: {es ? c.control : c.control_en}.</li>}
+    {c.pegatina_obligatoria !== undefined && <li>{es ? 'Pegatina' : 'Sticker'}: {c.pegatina_obligatoria ? (es ? 'hay que llevarla visible en el parabrisas' : 'must be displayed on the windscreen') : (es ? 'no es obligatoria, las cámaras leen la matrícula' : 'not required, cameras read the number plate')}.</li>}
+    {exc.map((x) => <li>{x}.</li>)}
+    {c.pendiente && <li><strong>{es ? 'En revisión' : 'Under review'}</strong>: {es ? c.pendiente : c.pendiente_en}.</li>}
+  </ul>
+  <h3 class="mt-6 text-lg font-semibold text-navy-900">{es ? 'Fuentes oficiales de esta ciudad' : 'Official sources for this city'}</h3>
+  <ul class="mt-2 list-disc pl-5 text-sm text-navy-700">
+    {c.ordenanza && <li><a href={c.ordenanza.url} target="_blank" rel="nofollow noopener noreferrer" class="underline">{c.ordenanza.nombre}</a></li>}
+    {c.fuentes.filter((s) => s.url !== c.ordenanza?.url).map((s) => <li><a href={s.url} target="_blank" rel="nofollow noopener noreferrer" class="underline">{s.label}</a></li>)}
+    <li>{es ? 'Comprobado el' : 'Checked on'} <time datetime={c.verificado}>{dt(c.verificado)}</time>{c.nota_verificacion ? (es ? `; ${c.nota_verificacion}` : '; this council site blocks automated reading, the official pages were read through their indexed copies') : ''}.</li>
+  </ul>
+</section>

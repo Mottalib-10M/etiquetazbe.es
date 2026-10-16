@@ -1,0 +1,22 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { CONTACT_EMAIL, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { contactPageSchema } from '../../lib/seo';
+const lang = 'es';
+const description = 'Escríbenos si una ordenanza de ZBE ha cambiado, si una multa o un recibo del IVTM no cuadra con el simulador, si falta tu ciudad o si quieres insertar la herramienta.';
+---
+<PageLayout title={`Contacto de ${SITE_NAMES[lang]}: avisar de un cambio de ordenanza`} description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: 'Contacto', description, path: route('contact', lang), lang })]} breadcrumbs={[{ label: 'Contacto' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contacto</h1>
+    <p>Correo: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Respondemos normalmente en una semana.</p>
+    <h2>Una ordenanza ha cambiado o falta una excepción</h2>
+    <p>Envíanos el enlace del boletín oficial o de la página municipal. Releemos la fuente, corregimos los datos y la fecha de comprobación, y añadimos el caso a las pruebas.</p>
+    <h2>Una multa o un recibo no coinciden</h2>
+    <p>Manda el enlace de «Compartir enlace» del simulador y la línea de la denuncia o del recibo, sin nombre ni matrícula. A menudo la diferencia está en el domicilio del vehículo, en una autorización o en una bonificación rogada.</p>
+    <h2>Insertar el simulador</h2>
+    <p>Autoescuelas, asociaciones de vecinos, talleres y medios locales pueden insertarlo gratis: <a href={route('widget', lang)}>insertar el simulador</a>.</p>
+    <h2>Lo que no hacemos</h2>
+    <p>No tramitamos autorizaciones de acceso, recursos ni pegatinas, y no damos asesoramiento jurídico individual.</p>
+  </div>
+</PageLayout>

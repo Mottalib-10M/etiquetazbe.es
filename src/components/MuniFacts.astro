@@ -1,0 +1,32 @@
+---
+/** Cuadro IVTM 2026 d'une commune généré depuis src/data/ivtm-2026.json, avec bonifications et source datée. */
+import { municipio, TRAMOS_ESTADO } from '../lib/engine/ivtm';
+import { formatMoney, formatNumber, displayDate } from '../lib/format';
+import type { Locale } from '../i18n/routes';
+interface Props { slug: string; lang: Locale }
+const { slug, lang } = Astro.props;
+const es = lang === 'es';
+const m = municipio(slug)!;
+const eur = (n: number) => formatMoney(n, Math.abs(n - Math.round(n)) > 0.004 ? 2 : 0, lang);
+const n2 = (x: number) => formatNumber(x, Number.isInteger(x) ? 0 : 2, lang);
+const dt = (iso: string) => displayDate(iso, es ? 'es-ES' : 'en-GB');
+const banda = (d: number, h: number | null) => h === null ? (es ? `${n2(d)} o más` : `${n2(d)} or more`) : d === 0 ? (es ? `menos de ${n2(h + 0.01)}` : `under ${n2(h + 0.01)}`) : (es ? `de ${n2(d)} a ${n2(h)}` : `${n2(d)} to ${n2(h)}`);
+const comun = m.regimen !== 'foral';
+const motos: Record<string, [string, string]> = { ciclomotor: ['Ciclomotores', 'Mopeds'], hasta125: ['Motos hasta 125 cc', 'Motorbikes up to 125 cc'], '125a250': ['Más de 125 hasta 250 cc', '125 to 250 cc'], '250a500': ['Más de 250 hasta 500 cc', '250 to 500 cc'], '500a1000': ['Más de 500 hasta 1.000 cc', '500 to 1,000 cc'], mas1000: ['Más de 1.000 cc', 'Over 1,000 cc'] };
+---
+<section class="mt-10 border-t border-navy-200 pt-6" data-chrome aria-labelledby={`ivtm-${slug}`}>
+  <h2 id={`ivtm-${slug}`} class="text-2xl font-bold text-navy-900">{es ? `Cuadro de turismos 2026 de ${m.nombre}` : `${m.nombre} 2026 car rates`}</h2>
+  <div class="not-prose my-4 overflow-x-auto">
+    <table class="journal w-full text-sm">
+      <caption class="mb-2 text-left text-sm text-navy-600">{es ? 'Cuota anual en euros por caballos fiscales' : 'Annual amount in euros by fiscal horsepower'}</caption>
+      <thead><tr><th scope="col" class="px-3 py-2 text-left">{es ? 'Caballos fiscales' : 'Fiscal hp'}</th><th scope="col" class="px-3 py-2 text-right">{m.nombre}</th>{comun && <th scope="col" class="px-3 py-2 text-right">{es ? 'Mínimo art. 95' : 'Section 95 minimum'}</th>}{comun && <th scope="col" class="px-3 py-2 text-right">{es ? 'Coeficiente' : 'Multiplier'}</th>}</tr></thead>
+      <tbody>{m.turismos.map((t, i) => (<tr class="border-b border-navy-100"><th scope="row" class="px-3 py-2 text-left font-normal">{banda(t.desde, t.hasta)}</th><td class="px-3 py-2 text-right font-semibold tabular-nums">{eur(t.cuota)}</td>{comun && <td class="px-3 py-2 text-right tabular-nums">{eur(TRAMOS_ESTADO[i].cuota)}</td>}{comun && <td class="px-3 py-2 text-right tabular-nums">{formatNumber(t.cuota / TRAMOS_ESTADO[i].cuota, 3, lang)}</td>}</tr>))}</tbody>
+    </table>
+  </div>
+  {m.motos && (<div class="not-prose my-4 overflow-x-auto"><table class="journal w-full text-sm"><caption class="mb-2 text-left text-sm text-navy-600">{es ? 'Motos y ciclomotores' : 'Motorbikes and mopeds'}</caption><tbody>{m.motos.map((x) => <tr class="border-b border-navy-100"><th scope="row" class="px-3 py-2 text-left font-normal">{motos[x.clave][es ? 0 : 1]}</th><td class="px-3 py-2 text-right tabular-nums">{eur(x.cuota)}</td></tr>)}</tbody></table></div>)}
+  <h3 class="mt-4 text-lg font-semibold text-navy-900">{es ? 'Bonificaciones de la ordenanza' : 'Relief in the byelaw'}</h3>
+  {m.bonificaciones.length ? <ul class="mt-2 list-disc pl-5 text-navy-800">{m.bonificaciones.map((b) => <li>{es ? b.nota : b.nota_en}{b.solicitud ? (es ? ' (hay que solicitarla)' : ' (on application)') : ''}.</li>)}</ul>
+    : <p class="mt-2 text-navy-800">{es ? 'No hemos podido leer las bonificaciones en una fuente oficial: el simulador no las aplica.' : 'We could not read the relief in an official source: the calculator does not apply it.'}</p>}
+  {m.nota && <p class="mt-3 text-navy-800">{es ? m.nota.es : m.nota.en}</p>}
+  <p class="mt-3 text-sm text-navy-700">{es ? 'Fuente' : 'Source'}: <a class="underline" href={m.ordenanza.url} target="_blank" rel="nofollow noopener noreferrer">{m.ordenanza.nombre}</a>. {es ? 'Comprobado el' : 'Checked on'} <time datetime={m.verificado}>{dt(m.verificado)}</time>.</p>
+</section>

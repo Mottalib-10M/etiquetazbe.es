@@ -1,0 +1,102 @@
+{
+  "_lisezmoi": "Paramètres nationaux du site (RECETTE §4) : critères DGT des distintivos, barème de l'article 95 TRLHL, formule des caballos fiscales, amende de la Ley de Tráfico. Chaque valeur relue sur la source officielle citée le jour de retrieved_at. Les règles de chaque ville vivent dans src/data/zbe/<ville>.json, les ordonnances fiscales IVTM dans src/data/ivtm-2026.json. Vérification automatique des citations : node scripts/verifier-sources.mjs.",
+  "year": 2026,
+  "retrieved_at": "2026-10-15",
+  "valid_from": "2026-01-01",
+  "valid_to": "2026-12-31",
+  "distintivos": {
+    "_fuente": "dgt_distintivo, dgt_cero, dgt_eco, dgt_c, dgt_b",
+    "turismo": {
+      "cero": "BEV, REEV, PHEV con autonomía eléctrica de al menos 40 km, pila de combustible (FCEV) o combustión de hidrógeno",
+      "eco": "PHEV con autonomía inferior a 40 km, HEV, GNC, GNL o GLP, que además cumplan los criterios de la etiqueta C",
+      "c_gasolina_euro": [4, 5, 6],
+      "c_diesel_euro": [6],
+      "b_gasolina_euro": [3],
+      "b_diesel_euro": [4, 5],
+      "c_gasolina_desde": "2006-01",
+      "c_diesel_desde": "2015-09",
+      "b_gasolina_desde": "2001-01",
+      "b_diesel_desde": "2006-01"
+    },
+    "pesado": {
+      "_nota": "vehículos de más de 8 plazas, excluido el conductor, y transporte de mercancías: el criterio no depende del combustible",
+      "c_euro": [6],
+      "b_euro": [4, 5],
+      "c_desde": "2014-01",
+      "b_desde": "2006-01"
+    },
+    "moto": {
+      "_nota": "categoría L: la DGT fija la norma Euro (B: Euro 2; C: Euro 3 o 4) pero no publica fechas de matriculación; las fechas orientativas son las del Ayuntamiento de Donostia para vehículos extranjeros",
+      "c_euro": [3, 4, 5],
+      "b_euro": [2],
+      "c_desde": "2007-01",
+      "b_desde": "2004-07",
+      "eco": "PHEV con autonomía inferior a 40 km o HEV"
+    },
+    "precio_pegatina": 5,
+    "transicion": {
+      "_nota": "meses en los que la fecha no basta: un coche puede estar homologado con la norma siguiente antes de que sea obligatoria para todas las matriculaciones",
+      "gasolina_b": ["2000-01", "2000-12"],
+      "gasolina_c": ["2005-01", "2005-12"],
+      "diesel_b": ["2005-01", "2005-12"],
+      "diesel_c": ["2014-09", "2015-08"]
+    }
+  },
+  "cvf": {
+    "_fuente": "rgv_anexo5",
+    "t_cuatro_tiempos": 0.08,
+    "t_dos_tiempos": 0.11,
+    "exponente": 0.6,
+    "divisor_electrico_kw": 5.152
+  },
+  "ivtm_art95": {
+    "_fuente": "trlhl",
+    "coeficiente_maximo": 2,
+    "turismos": [
+      { "desde": 0, "hasta": 7.99, "cuota": 12.62 },
+      { "desde": 8, "hasta": 11.99, "cuota": 34.08 },
+      { "desde": 12, "hasta": 15.99, "cuota": 71.94 },
+      { "desde": 16, "hasta": 19.99, "cuota": 89.61 },
+      { "desde": 20, "hasta": null, "cuota": 112.00 }
+    ],
+    "motos": [
+      { "clave": "ciclomotor", "cuota": 4.42 },
+      { "clave": "hasta125", "cuota": 4.42 },
+      { "clave": "125a250", "cuota": 7.57 },
+      { "clave": "250a500", "cuota": 15.15 },
+      { "clave": "500a1000", "cuota": 30.29 },
+      { "clave": "mas1000", "cuota": 60.58 }
+    ],
+    "bonificacion_max_carburante": 0.75,
+    "bonificacion_max_motor": 0.75,
+    "bonificacion_max_historicos": 1,
+    "antiguedad_historicos_anos": 25,
+    "exencion_discapacidad_grado": 33
+  },
+  "multa": {
+    "_fuente": "lsv",
+    "zbe_grave": 200,
+    "reduccion_pronto_pago": 0.5,
+    "plazo_pronto_pago_dias": 20,
+    "incremento_max_graduacion": 0.3
+  },
+  "ley": {
+    "umbral_habitantes": 50000,
+    "umbral_habitantes_contaminacion": 20000,
+    "plazo": 2023
+  },
+  "sources": {
+    "dgt_distintivo": { "url": "https://www.dgt.es/nuestros-servicios/tu-vehiculo/tus-vehiculos/distintivo-ambiental/", "label": { "es": "DGT · Distintivo ambiental (actualizado el 28/10/2025)", "en": "DGT · Environmental label (updated 28/10/2025)" }, "cita": "diésel a partir de septiembre de 2015" },
+    "dgt_cero": { "url": "https://www.dgt.es/nuestros-servicios/tu-vehiculo/tus-vehiculos/distintivo-ambiental/etiqueta-cero/", "label": { "es": "DGT · Etiqueta ambiental 0 Emisiones", "en": "DGT · Zero Emissions label" }, "cita": "con una autonomía mínima de 40 kilómetros" },
+    "dgt_eco": { "url": "https://www.dgt.es/nuestros-servicios/tu-vehiculo/tus-vehiculos/distintivo-ambiental/etiqueta-eco/", "label": { "es": "DGT · Etiqueta ambiental ECO", "en": "DGT · ECO label" }, "cita": "Vehículos híbridos no enchufables (HEV)" },
+    "dgt_c": { "url": "https://www.dgt.es/nuestros-servicios/tu-vehiculo/tus-vehiculos/distintivo-ambiental/etiqueta-c/", "label": { "es": "DGT · Etiqueta ambiental C (verde)", "en": "DGT · C label (green)" }, "cita": "Diésel EURO 6/VI" },
+    "dgt_b": { "url": "https://www.dgt.es/nuestros-servicios/tu-vehiculo/tus-vehiculos/distintivo-ambiental/etiqueta-b/", "label": { "es": "DGT · Etiqueta ambiental B (amarilla)", "en": "DGT · B label (yellow)" }, "cita": "Gasolina EURO 3/III" },
+    "dgt_consulta": { "url": "https://sede.dgt.gob.es/es/vehiculos/informacion-de-vehiculos/distintivo-ambiental/", "label": { "es": "Sede electrónica de la DGT · Consulta del distintivo ambiental por matrícula", "en": "DGT online office · Look up a vehicle's label by number plate" }, "cita": "la emisión de la etiqueta con el distintivo correspondiente tiene un coste de 5€" },
+    "trlhl": { "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214", "label": { "es": "BOE · Texto refundido de la Ley Reguladora de las Haciendas Locales (RDL 2/2004), artículos 92 a 99", "en": "BOE · Local Finance Act (Royal Legislative Decree 2/2004), sections 92 to 99" }, "cita": "De 8 hasta 11,99 caballos fiscales" },
+    "rgv_anexo5": { "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-1826", "label": { "es": "BOE · Reglamento General de Vehículos (RD 2822/1998), anexo V: cálculo de la potencia fiscal", "en": "BOE · General Vehicle Regulation (Royal Decree 2822/1998), annex V: fiscal horsepower" }, "cita": "CVF = Pe / 5,152" },
+    "ley7_2021": { "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-8447", "label": { "es": "BOE · Ley 7/2021, de cambio climático y transición energética, artículo 14.3", "en": "BOE · Law 7/2021 on climate change and energy transition, section 14.3" }, "cita": "El establecimiento de zonas de bajas emisiones antes de 2023" },
+    "rd1052_2022": { "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22689", "label": { "es": "BOE · Real Decreto 1052/2022, por el que se regulan las zonas de bajas emisiones", "en": "BOE · Royal Decree 1052/2022 regulating low-emission zones" }, "cita": "zonas de bajas emisiones" },
+    "lsv": { "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11722", "label": { "es": "BOE · Ley sobre Tráfico (RDL 6/2015): artículo 76.z3, artículo 80 y artículo 94", "en": "BOE · Traffic Act (Royal Legislative Decree 6/2015): sections 76(z3), 80 and 94" }, "cita": "las graves, con multa de 200 euros" },
+    "ley9_2025": { "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-24545", "label": { "es": "BOE · Ley 9/2025, de 3 de diciembre, de Movilidad Sostenible", "en": "BOE · Law 9/2025 of 3 December on Sustainable Mobility" }, "cita": "zonas de bajas emisiones" }
+  }
+}

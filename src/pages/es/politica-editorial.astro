@@ -1,0 +1,19 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { REVIEW_CYCLE_MONTHS, CONTACT_EMAIL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'es';
+---
+<PageLayout title="Política editorial de ZBE y Etiqueta: fuentes, revisión y errores" description="Cómo elegimos las fuentes de cada zona de bajas emisiones y de cada ordenanza fiscal, cada cuánto se revisan, cómo se corrige un error y qué no publicamos nunca." lang={lang} noindex={true} breadcrumbs={[{ label: 'Política editorial' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Política editorial</h1>
+    <h2>Solo fuentes oficiales</h2>
+    <p>Cada regla procede de la ordenanza publicada en un boletín oficial, de la página del ayuntamiento o de la DGT, o del BOE. Un artículo de prensa nos sirve para saber que algo ha cambiado, nunca como fuente: antes de publicar, la regla se lee en el texto oficial y se guarda con su dirección y su fecha.</p>
+    <h2>Revisión</h2>
+    <p>Un script descarga cada semana todas las fuentes y señala las que han cambiado; además, todo el contenido se revisa a fondo al menos cada {REVIEW_CYCLE_MONTHS} meses y cada enero, cuando entran en vigor las ordenanzas fiscales. Las fechas futuras de cada ordenanza están en los datos, así que la respuesta cambia sola el día que toca.</p>
+    <h2>Errores</h2>
+    <p>Si detectas uno, escribe a <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Lo corregimos, actualizamos la fecha de comprobación y añadimos el caso a las pruebas automáticas. Los métodos están en <a href={route('method', lang)}>Cómo calculamos</a>.</p>
+    <h2>Independencia</h2>
+    <p>Nadie paga por aparecer ni por el orden de las ciudades. No vendemos pegatinas ni servicios de recurso.</p>
+  </div>
+</PageLayout>

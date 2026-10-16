@@ -1,0 +1,977 @@
+{
+ "_lisezmoi": "Ordenanzas fiscales IVTM 2026 por municipio. Cada cuota se ha leído en la ordenanza oficial (url) el día de 'verificado'. 'bonificaciones_pendientes' = las bonificaciones no se han podido leer en una fuente oficial: el simulador no las aplica y lo dice.",
+ "municipios": [
+  {
+   "slug": "madrid",
+   "nombre": "Madrid",
+   "provincia": "Madrid",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 20
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 59
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 129
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 179
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 224
+    }
+   ],
+   "motos": [
+    {
+     "clave": "ciclomotor",
+     "cuota": 7
+    },
+    {
+     "clave": "hasta125",
+     "cuota": 7
+    },
+    {
+     "clave": "125a250",
+     "cuota": 12
+    },
+    {
+     "clave": "250a500",
+     "cuota": 27
+    },
+    {
+     "clave": "500a1000",
+     "cuota": 60
+    },
+    {
+     "clave": "mas1000",
+     "cuota": 121
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "0"
+     ],
+     "pct": 0.75,
+     "nota": "75 % indefinido con distintivo CERO (matriculados desde el 1/1/2026), aplicada de oficio en la autoliquidación de alta",
+     "nota_en": "75% with no end date for vehicles with the CERO label (registered from 1/1/2026), applied automatically when the car is registered"
+    },
+    {
+     "para": [
+      "ECO"
+     ],
+     "pct": 0.75,
+     "anos": 6,
+     "nota": "75 % durante 6 años con distintivo ECO (matriculados desde el 1/1/2026), de oficio",
+     "nota_en": "75% for 6 years with the ECO label (registered from 1/1/2026), applied automatically"
+    }
+   ],
+   "nota": {
+    "es": "Los vehículos matriculados antes de 2026 conservan los beneficios fiscales que tenían hasta su extinción.",
+    "en": "Vehicles registered before 2026 keep the tax relief they already had until it expires."
+   },
+   "ordenanza": {
+    "nombre": "Ordenanza fiscal reguladora del Impuesto sobre Vehículos de Tracción Mecánica de Madrid, 2026 (Agencia Tributaria Madrid)",
+    "url": "https://agenciatributaria.madrid.es/portales/contribuyente/es/Impuestos-tasas-y-precios-publicos/Impuesto-sobre-Vehiculos-de-Traccion-Mecanica-IVTM-Calculo-de-la-tarifa/?vgnextfmt=default&vgnextoid=cc561a0367ac8210VgnVCM1000000b205a0aRCRD&vgnextchannel=99d1e5bcc9c78710VgnVCM1000008a4a900aRCRD"
+   },
+   "fuentes": [
+    {
+     "url": "https://agenciatributaria.madrid.es/portales/contribuyente/es/Impuestos-tasas-y-precios-publicos/Impuesto-sobre-Vehiculos-de-Traccion-Mecanica-IVTM-Calculo-de-la-tarifa/?vgnextfmt=default&vgnextoid=cc561a0367ac8210VgnVCM1000000b205a0aRCRD&vgnextchannel=99d1e5bcc9c78710VgnVCM1000008a4a900aRCRD",
+     "label": "Agencia Tributaria Madrid · IVTM, cálculo de la tarifa 2026"
+    },
+    {
+     "url": "https://agenciatributaria.madrid.es/portales/contribuyente/es/Tramites/Impuesto-sobre-Vehiculos-de-Traccion-Mecanica-IVTM-Bonificacion-medioambiental-para-vehiculos-matriculados/?vgnextfmt=pd&vgnextoid=835c9374bcaed010VgnVCM1000000b205a0aRCRD&vgnextchannel=97d608f9be116810VgnVCM1000001d4a900aRCRD",
+     "label": "Agencia Tributaria Madrid · IVTM, bonificación medioambiental"
+    }
+   ],
+   "verificado": "2026-10-15"
+  },
+  {
+   "slug": "barcelona",
+   "nombre": "Barcelona",
+   "provincia": "Barcelona",
+   "regimen": "comun",
+   "coeficiente": 2,
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 25.24
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 68.16
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 143.88
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 179.22
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 224
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "0"
+     ],
+     "pct": 0.75,
+     "anos": 5,
+     "nota": "75 % los cinco primeros años desde la matriculación, turismos «Zero emissions» de la DGT",
+     "nota_en": "75% for the first five years after registration, cars with the DGT zero-emission label"
+    },
+    {
+     "para": [
+      "ECO"
+     ],
+     "pct": 0.5,
+     "anos": 5,
+     "nota": "50 % los cinco primeros años, turismos ECO de gasolina con hasta 120 g/km de CO2",
+     "nota_en": "50% for the first five years, petrol ECO cars emitting up to 120 g/km of CO2"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 1,
+     "edad_min": 30,
+     "nota": "100 % para vehículos históricos según el RD 892/2024",
+     "nota_en": "100% for historic vehicles under Royal Decree 892/2024"
+    }
+   ],
+   "nota": {
+    "es": "Ordenanza aprobada el 20/12/2024, aplicable desde el 1/1/2025 y vigente mientras no se modifique.",
+    "en": "Byelaw approved on 20/12/2024, in force since 1/1/2025 and until amended."
+   },
+   "ordenanza": {
+    "nombre": "Ordenança fiscal 1.2 reguladora de l'impost sobre vehicles de tracció mecànica (BOPB 23/12/2024)",
+    "url": "https://ajuntament.barcelona.cat/hisenda/sites/default/files/normativa/2021-01/1.2-ordenanca-fiscal-reguladora-de-limpost-sobre-vehicles-de-traccio-mecanica.pdf"
+   },
+   "fuentes": [
+    {
+     "url": "https://ajuntament.barcelona.cat/hisenda/sites/default/files/normativa/2021-01/1.2-ordenanca-fiscal-reguladora-de-limpost-sobre-vehicles-de-traccio-mecanica.pdf",
+     "label": "Ajuntament de Barcelona · Ordenança fiscal 1.2 de l'IVTM",
+     "cita": "De 8 a 11,99 cavalls fiscals 34,08 2 68,16"
+    }
+   ],
+   "verificado": "2026-10-15"
+  },
+  {
+   "slug": "valencia",
+   "nombre": "València",
+   "provincia": "Valencia",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 21.2
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 58.87
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 128.05
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 167.27
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 219.01
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "electrico",
+      "hibrido"
+     ],
+     "pct": 0.75,
+     "solicitud": true,
+     "nota": "75 % para turismos eléctricos e híbridos, rogada (solicitud antes del 31 de diciembre del año anterior, o en un mes desde el alta)",
+     "nota_en": "75% for electric and hybrid cars, on application (by 31 December of the previous year, or within a month of registration)"
+    },
+    {
+     "para": [
+      "gas"
+     ],
+     "pct": 0.75,
+     "solicitud": true,
+     "nota": "75 % para turismos de GLP o gas natural comprimido, rogada",
+     "nota_en": "75% for LPG or CNG cars, on application"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 1,
+     "edad_min": 30,
+     "solicitud": true,
+     "nota": "100 % con matrícula histórica y más de 30 años, un vehículo por titular",
+     "nota_en": "100% with historic plates and more than 30 years, one vehicle per owner"
+    }
+   ],
+   "ordenanza": {
+    "nombre": "Ordenanza fiscal reguladora del impuesto sobre vehículos de tracción mecánica de València (texto aplicable desde el 1/1/2025)",
+    "url": "https://sede.valencia.es/sede/descarga/doc/DOCUMENT_1_20250007834765"
+   },
+   "fuentes": [
+    {
+     "url": "https://sede.valencia.es/sede/descarga/doc/DOCUMENT_1_20250007834765",
+     "label": "Ajuntament de València · Ordenanza fiscal del IVTM",
+     "cita": "1,727474478 58,87"
+    }
+   ],
+   "verificado": "2026-10-15"
+  },
+  {
+   "slug": "zaragoza",
+   "nombre": "Zaragoza",
+   "provincia": "Zaragoza",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 20.3
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 56.1
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 123.6
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 161.3
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 201.6
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "electrico"
+     ],
+     "pct": 0.75,
+     "solicitud": true,
+     "nota": "75 % sin fecha fin para vehículos eléctricos o de emisiones nulas",
+     "nota_en": "75% with no end date for electric or zero-emission vehicles"
+    },
+    {
+     "para": [
+      "0"
+     ],
+     "pct": 0.75,
+     "anos": 10,
+     "solicitud": true,
+     "nota": "75 % durante 10 años para híbridos enchufables con etiqueta CERO",
+     "nota_en": "75% for 10 years for plug-in hybrids with the CERO label"
+    },
+    {
+     "para": [
+      "hibrido"
+     ],
+     "pct": 0.75,
+     "anos": 6,
+     "solicitud": true,
+     "nota": "75 % durante 6 años para híbridos homologados de fábrica",
+     "nota_en": "75% for 6 years for factory-approved hybrids"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 0.95,
+     "edad_min": 30,
+     "solicitud": true,
+     "nota": "95 % para vehículos históricos",
+     "nota_en": "95% for historic vehicles"
+    }
+   ],
+   "ordenanza": {
+    "nombre": "Ordenanza fiscal n.º 4 del Impuesto sobre Vehículos de Tracción Mecánica de Zaragoza (aprobación definitiva 23/12/2025, BOPZ n.º 296 de 27/12/2025)",
+    "url": "https://www.zaragoza.es/sede/servicio/normativa/3464"
+   },
+   "fuentes": [
+    {
+     "url": "https://www.zaragoza.es/sede/servicio/normativa/3464",
+     "label": "Ayuntamiento de Zaragoza · Ordenanza fiscal del IVTM",
+     "cita": "123,60"
+    }
+   ],
+   "verificado": "2026-10-15"
+  },
+  {
+   "slug": "malaga",
+   "nombre": "Málaga",
+   "provincia": "Málaga",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 24.35
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 65.8
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 138.9
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 173.05
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 216.25
+    }
+   ],
+   "motos": [
+    {
+     "clave": "ciclomotor",
+     "cuota": 8.55
+    },
+    {
+     "clave": "hasta125",
+     "cuota": 8.55
+    },
+    {
+     "clave": "125a250",
+     "cuota": 14.6
+    },
+    {
+     "clave": "250a500",
+     "cuota": 29.25
+    },
+    {
+     "clave": "500a1000",
+     "cuota": 58.5
+    },
+    {
+     "clave": "mas1000",
+     "cuota": 117
+    }
+   ],
+   "bonificaciones": [],
+   "bonificaciones_pendientes": true,
+   "nota": {
+    "es": "GESTRISAM publica la tarifa 2026 también por trimestres de alta (3/4, 2/4 y 1/4 de la cuota). Las bonificaciones rogadas están en la ordenanza fiscal n.º 3: compruébalas en GESTRISAM antes de contar con ellas.",
+    "en": "GESTRISAM also publishes the 2026 rates by quarter of registration (3/4, 2/4 and 1/4 of the amount). Relief on application is set out in tax byelaw no. 3: check it with GESTRISAM before relying on it."
+   },
+   "ordenanza": {
+    "nombre": "Tarifas 2026 del IVTM de Málaga (GESTRISAM), ordenanza fiscal n.º 3",
+    "url": "https://gestrisam.malaga.eu/export/sites/gestrisam/.galleries/Documentos-General/Tarifas-IVTM-2026.pdf"
+   },
+   "fuentes": [
+    {
+     "url": "https://gestrisam.malaga.eu/export/sites/gestrisam/.galleries/Documentos-General/Tarifas-IVTM-2026.pdf",
+     "label": "GESTRISAM (Ayuntamiento de Málaga) · Tarifas 2026 del IVTM",
+     "cita": "Periodo de vigencia: 2026"
+    }
+   ],
+   "verificado": "2026-10-15"
+  },
+  {
+   "slug": "murcia",
+   "nombre": "Murcia",
+   "provincia": "Murcia",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 24.71
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 68.16
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 143.88
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 179.22
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 224
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "0"
+     ],
+     "pct": 0.75,
+     "anos": 3,
+     "solicitud": true,
+     "nota": "75 % durante 3 años desde el ejercicio de la primera matriculación, distintivo «Cero Emisiones»",
+     "nota_en": "75% for 3 years from the year of first registration, «Zero Emissions» label"
+    },
+    {
+     "para": [
+      "ECO"
+     ],
+     "pct": 0.3,
+     "anos": 3,
+     "solicitud": true,
+     "nota": "30 % durante 3 años con distintivo ECO",
+     "nota_en": "30% for 3 years with the ECO label"
+    }
+   ],
+   "ordenanza": {
+    "nombre": "Ordenanza 3.3 del Impuesto sobre Vehículos de Tracción Mecánica de Murcia, 2026 (Agencia Municipal Tributaria)",
+    "url": "https://amt.murcia.es/sites/amt/files/2026-01/3.3%20Impuesto%20sobre%20Veh%C3%ADculos%20de%20Tracci%C3%B3n%20Mec%C3%A1nica-2026.pdf"
+   },
+   "fuentes": [
+    {
+     "url": "https://amt.murcia.es/sites/amt/files/2026-01/3.3%20Impuesto%20sobre%20Veh%C3%ADculos%20de%20Tracci%C3%B3n%20Mec%C3%A1nica-2026.pdf",
+     "label": "Agencia Municipal Tributaria de Murcia · Ordenanza del IVTM 2026"
+    }
+   ],
+   "verificado": "2026-10-15"
+  },
+  {
+   "slug": "cordoba",
+   "nombre": "Córdoba",
+   "provincia": "Córdoba",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 21.08
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 56.91
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 125.9
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 156.82
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 196.0
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "0"
+     ],
+     "pct": 0.75,
+     "anos": 5,
+     "solicitud": true,
+     "nota": "75 % durante cinco años desde el ejercicio siguiente a la matriculación, distintivo «0»",
+     "nota_en": "75% for five years from the year after registration, «0» label"
+    },
+    {
+     "para": [
+      "ECO"
+     ],
+     "pct": 0.75,
+     "anos": 3,
+     "solicitud": true,
+     "nota": "75 % durante tres años con distintivo ECO",
+     "nota_en": "75% for three years with the ECO label"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 1,
+     "edad_min": 35,
+     "solicitud": true,
+     "nota": "100 % para históricos (RD 892/2024) o vehículos de al menos 35 años",
+     "nota_en": "100% for historic vehicles (Royal Decree 892/2024) or vehicles at least 35 years old"
+    }
+   ],
+   "nota": {
+    "es": "Las bonificaciones surten efecto desde el ejercicio siguiente a la solicitud, sin efecto retroactivo.",
+    "en": "Relief applies from the year after the application, never backdated."
+   },
+   "ordenanza": {
+    "nombre": "Ordenanza fiscal n.º 302, Impuesto sobre vehículos de tracción mecánica, ejercicio 2026",
+    "url": "https://www.cordoba.es/sites/default/files/PDF/Ayuntamiento/ordenanzas_bandos_y_otros/ordenanzas-y-beneficios-fiscales/ordenanzas/2026/O302-26.pdf"
+   },
+   "fuentes": [
+    {
+     "url": "https://www.cordoba.es/sites/default/files/PDF/Ayuntamiento/ordenanzas_bandos_y_otros/ordenanzas-y-beneficios-fiscales/ordenanzas/2026/O302-26.pdf",
+     "label": "Ayuntamiento de Córdoba · Ordenanza fiscal n.º 302 (2026)"
+    }
+   ],
+   "verificado": "2026-10-15"
+  },
+  {
+   "slug": "valladolid",
+   "nombre": "Valladolid",
+   "provincia": "Valladolid",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 22.72
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 61.34
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 129.49
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 161.3
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 201.6
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "electrico"
+     ],
+     "pct": 0.75,
+     "solicitud": true,
+     "nota": "75 % para vehículos con motor eléctrico, rogada antes de que acabe el periodo voluntario",
+     "nota_en": "75% for electric vehicles, on application before the end of the payment period"
+    },
+    {
+     "para": [
+      "hibrido"
+     ],
+     "pct": 0.5,
+     "solicitud": true,
+     "nota": "50 % para híbridos, salvo los que usan gasóleo",
+     "nota_en": "50% for hybrids, except diesel hybrids"
+    },
+    {
+     "para": [
+      "gas"
+     ],
+     "pct": 0.4,
+     "solicitud": true,
+     "nota": "40 % para GLP o combustibles no diésel con hasta 120 g/km de CO2",
+     "nota_en": "40% for LPG or non-diesel fuels up to 120 g/km of CO2"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 1,
+     "edad_min": 30,
+     "solicitud": true,
+     "nota": "100 % para históricos o de época de más de 30 años",
+     "nota_en": "100% for historic or vintage vehicles over 30 years old"
+    }
+   ],
+   "ordenanza": {
+    "nombre": "Ordenanzas fiscales 2026 de Valladolid, ordenanza del IVTM (BOP n.º 238, 15/12/2025)",
+    "url": "https://www.valladolid.es/en/ayuntamiento/organizacion-administrativa/areas/area-hacienda-personal-modernizacion-administrativa/utilidad/ordenanzas-fiscales/ordenanzas-fiscales-2026.files/1179593-V2%20TEXTO%20INTEGRO%20ORDENANZA%20GENERAL%20%20Y%20OOFF%202026.pdf"
+   },
+   "fuentes": [
+    {
+     "url": "https://www.valladolid.es/en/ayuntamiento/organizacion-administrativa/areas/area-hacienda-personal-modernizacion-administrativa/utilidad/ordenanzas-fiscales/ordenanzas-fiscales-2026.files/1179593-V2%20TEXTO%20INTEGRO%20ORDENANZA%20GENERAL%20%20Y%20OOFF%202026.pdf",
+     "label": "Ayuntamiento de Valladolid · Texto íntegro de las ordenanzas fiscales 2026"
+    }
+   ],
+   "verificado": "2026-10-15"
+  },
+  {
+   "slug": "a-coruna",
+   "nombre": "A Coruña",
+   "provincia": "A Coruña",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 19.5
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 62.62
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 132.19
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 179.2
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 224
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "electrico",
+      "hibrido",
+      "gas"
+     ],
+     "pct": 0.6,
+     "anos": 2,
+     "solicitud": true,
+     "nota": "60 % el año de la matriculación y el siguiente para híbridos, eléctricos o de emisiones nulas y vehículos de gas (no acumulables)",
+     "nota_en": "60% in the year of registration and the following year for hybrids, electric or zero-emission cars and gas vehicles (not cumulative)"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 1,
+     "edad_min": 36,
+     "solicitud": true,
+     "nota": "100 % para históricos y vehículos que tenían 25 años el 31/12/2015",
+     "nota_en": "100% for historic vehicles and those that were 25 years old on 31/12/2015"
+    }
+   ],
+   "ordenanza": {
+    "nombre": "Ordenanza fiscal n.º 52 del Imposto sobre vehículos de tracción mecánica, libro de ordenanzas fiscales 2026",
+    "url": "https://www.coruna.gal/descarga/1453911757238/libro-ordenanzas-2026-v2.pdf"
+   },
+   "fuentes": [
+    {
+     "url": "https://www.coruna.gal/descarga/1453911757238/libro-ordenanzas-2026-v2.pdf",
+     "label": "Concello da Coruña · Ordenanzas fiscais 2026 (OF n.º 52)"
+    }
+   ],
+   "verificado": "2026-10-15"
+  },
+  {
+   "slug": "santander",
+   "nombre": "Santander",
+   "provincia": "Cantabria",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 25.16
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 67.96
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 143.45
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 178.68
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 223.33
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "electrico"
+     ],
+     "pct": 0.75,
+     "solicitud": true,
+     "nota": "75 % sin fecha fin para vehículos eléctricos o de emisiones nulas",
+     "nota_en": "75% with no end date for electric or zero-emission vehicles"
+    },
+    {
+     "para": [
+      "hibrido"
+     ],
+     "pct": 0.75,
+     "anos": 4,
+     "solicitud": true,
+     "nota": "75 % durante cuatro años naturales para híbridos homologados de fábrica",
+     "nota_en": "75% for four calendar years for factory-approved hybrids"
+    },
+    {
+     "para": [
+      "gas"
+     ],
+     "pct": 0.5,
+     "anos": 1,
+     "solicitud": true,
+     "nota": "50 % el año de la primera matriculación para GLP, GNC o GNL",
+     "nota_en": "50% in the year of first registration for LPG, CNG or LNG"
+    }
+   ],
+   "ordenanza": {
+    "nombre": "Ordenanza n.º 3-I del Impuesto sobre Vehículos de Tracción Mecánica de Santander, ejercicio 2026",
+    "url": "https://www.santander.es/system/files/3-i_ivtm_2026.pdf"
+   },
+   "fuentes": [
+    {
+     "url": "https://www.santander.es/system/files/3-i_ivtm_2026.pdf",
+     "label": "Ayuntamiento de Santander · Ordenanza 3-I del IVTM (2026)",
+     "cita": "De 8 hasta 11,99 caballos fiscales 67,96"
+    }
+   ],
+   "verificado": "2026-10-15"
+  },
+  {
+   "slug": "vitoria-gasteiz",
+   "nombre": "Vitoria-Gasteiz",
+   "provincia": "Álava",
+   "regimen": "foral",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 28.43
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 76.17
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 169.27
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 225.85
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 364.92
+    }
+   ],
+   "bonificaciones": [],
+   "bonificaciones_pendientes": true,
+   "nota": {
+    "es": "Régimen foral de Álava: la cuota se exige al titular a 1 de enero y se calcula de forma proporcional en las altas y bajas definitivas. Las bonificaciones están en la página municipal de bonificaciones y exenciones.",
+    "en": "Álava's own tax regime: the tax falls on the owner on 1 January and is pro-rated for new registrations and permanent deregistration. Relief is listed on the council's exemptions page."
+   },
+   "ordenanza": {
+    "nombre": "Ordenanza fiscal n.º 2 del Impuesto sobre Vehículos de Tracción Mecánica de Vitoria-Gasteiz (importes actualizados el 02/01/2026)",
+    "url": "https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=es&uid=1882a5a_1200df68919__7ffb"
+   },
+   "fuentes": [
+    {
+     "url": "https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=es&uid=1882a5a_1200df68919__7ffb",
+     "label": "Ayuntamiento de Vitoria-Gasteiz · Impuesto de vehículos, importe a pagar",
+     "cita": "A.2. De 8 hasta 11,99 caballos fiscales: 76,17 euros"
+    }
+   ],
+   "verificado": "2026-10-15"
+  },
+  {
+   "slug": "san-sebastian",
+   "nombre": "Donostia / San Sebastián",
+   "provincia": "Gipuzkoa",
+   "regimen": "foral",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 8.99,
+     "cuota": 43.53
+    },
+    {
+     "desde": 9,
+     "hasta": 11.99,
+     "cuota": 89.25
+    },
+    {
+     "desde": 12,
+     "hasta": 13.99,
+     "cuota": 156.56
+    },
+    {
+     "desde": 14,
+     "hasta": 15.99,
+     "cuota": 226.31
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 303.45
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 384.71
+    }
+   ],
+   "motos": [
+    {
+     "clave": "ciclomotor",
+     "cuota": 9.51
+    },
+    {
+     "clave": "hasta125",
+     "cuota": 9.51
+    },
+    {
+     "clave": "125a250",
+     "cuota": 18.95
+    },
+    {
+     "clave": "250a500",
+     "cuota": 38.99
+    },
+    {
+     "clave": "500a1000",
+     "cuota": 83.33
+    },
+    {
+     "clave": "mas1000",
+     "cuota": 175.74
+    }
+   ],
+   "bonificaciones": [],
+   "bonificaciones_pendientes": true,
+   "nota": {
+    "es": "Gipuzkoa tiene tramos propios (menos de 9, 9 a 11,99, 12 a 13,99, 14 a 15,99 caballos...) y el Ayuntamiento publica la cuota mes a mes para las altas.",
+    "en": "Gipuzkoa uses its own bands (under 9, 9 to 11.99, 12 to 13.99, 14 to 15.99 fiscal hp...) and the council publishes the amount month by month for new registrations."
+   },
+   "ordenanza": {
+    "nombre": "Impuesto sobre Vehículos, cuotas año 2026 (Ayuntamiento de Donostia / San Sebastián)",
+    "url": "https://www.donostia.eus/info/udalinfo/Tramites.nsf/vTramites/04505FCBE21EF032C1258AB700437CE2/$file/Tarifak_2026.pdf"
+   },
+   "fuentes": [
+    {
+     "url": "https://www.donostia.eus/info/udalinfo/Tramites.nsf/vTramites/04505FCBE21EF032C1258AB700437CE2/$file/Tarifak_2026.pdf",
+     "label": "Ayuntamiento de Donostia · Cuotas del impuesto sobre vehículos 2026",
+     "cita": "Impuesto sobre Vehículos - Cuotas Año 2026"
+    }
+   ],
+   "verificado": "2026-10-15"
+  },
+  {
+   "slug": "mostoles",
+   "nombre": "Móstoles",
+   "provincia": "Madrid",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 22.27
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 62.6
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 132.87
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 167.21
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 208.99
+    }
+   ],
+   "bonificaciones": [],
+   "bonificaciones_pendientes": true,
+   "nota": {
+    "es": "Para 2026 el Ayuntamiento modificó el artículo 6 (coeficientes de 1,765 a 1,866 sobre la cuota estatal); las bonificaciones siguen en el texto de la ordenanza fiscal.",
+    "en": "For 2026 the council amended section 6 (multipliers of 1.765 to 1.866 on the national rate); relief remains as set out in the tax byelaw."
+   },
+   "ordenanza": {
+    "nombre": "Modificación de la ordenanza fiscal del IVTM de Móstoles para 2026 (BOCM n.º 304, 22/12/2025)",
+    "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2025/12/22/BOCM-20251222-66.PDF"
+   },
+   "fuentes": [
+    {
+     "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2025/12/22/BOCM-20251222-66.PDF",
+     "label": "BOCM n.º 304 (22/12/2025) · Ordenanzas fiscales 2026 de Móstoles",
+     "cita": "De 8 hasta 11,99 caballos fiscales    62,60"
+    }
+   ],
+   "verificado": "2026-10-15"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { CONTACT_EMAIL, LAST_UPDATED } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title="Cookies: none, not in the label tool nor in the ZBE checker" description="No cookies and no banner: the DGT label, low-emission-zone and road-tax calculators remember nothing. We only check anonymously whether the pages load without errors." lang={lang} noindex={true} breadcrumbs={[{ label: 'Cookies' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Cookies</h1>
+    <p>This site <strong>sets no cookies</strong>, so it shows no consent banner. More in the <a href={route('privacy', lang)}>privacy policy</a>.</p>
+    <h2>Your car stays on your device</h2>
+    <p>What you enter about your vehicle is not kept in cookies or browser storage. Close the tab and it is gone; only a link you copy yourself contains those values.</p>
+    <h2>Anonymous measurement</h2>
+    <p>When enabled, Microsoft Clarity runs <strong>without cookies</strong> (no _clck, _clsk, MUID or CLID) and masks the fields. You can block clarity.ms in your browser and everything keeps working.</p>
+    <p>Questions: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Updated: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

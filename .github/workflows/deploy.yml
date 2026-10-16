@@ -1,0 +1,60 @@
+name: Deploy to GitHub Pages
+
+# Reconstruit chaque lundi : les fechas futuras des ordenanzas (Málaga 30/11/2026, Palma 01/01/2027,
+# València 01/01/2027…) changent les réponses statiques des pages, et le script vérifie les sources.
+on:
+  push:
+    branches: ['main']
+  schedule:
+    - cron: '17 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: npm ci
+      - name: Tests du moteur
+        run: npx vitest run
+      - name: Vérification des sources officielles (citations, empreintes)
+        run: |
+          pip install pypdf
+          python3 scripts/verificar_fuentes.py --salida /tmp/verificacion-fuentes.json || echo "::warning::Une citation officielle a disparu : relire la source avant publication"
+      - name: Build (avec contrôle des snippets)
+        run: npm run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

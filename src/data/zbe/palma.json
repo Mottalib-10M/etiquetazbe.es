@@ -1,0 +1,96 @@
+{
+ "slug": "palma",
+ "nombre": "Palma",
+ "provincia": "Illes Balears",
+ "ccaa": "Illes Balears",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "centre",
+   "nombre": "ZBE del Centre de Palma (Fase I)",
+   "ambito": "centro de Palma, delimitado en el anexo de la ordenanza municipal de zonas de bajas emisiones",
+   "horario": "24h",
+   "horario_nota": "la ordenanza no fija franja horaria: la restricción rige de forma permanente",
+   "desde": "2024-12-22",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "prohibido",
+     "desde": "2025-07-01",
+     "nota": "sanciones desde el 1/7/2025, tras la moratoria del 22/12/2024 al 30/6/2025",
+     "nota_en": "fines since 1/7/2025, after a grace period from 22/12/2024 to 30/6/2025"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "hasta": "2026-12-31"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "prohibido",
+     "desde": "2027-01-01"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "hasta": "2029-12-31"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "prohibido",
+     "desde": "2030-01-01"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ],
+   "ambito_en": "central Palma, as defined in the annex of the low-emission-zone byelaw"
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracciones de los artículos 16 y 17 de la ordenanza; cuantía de infracción grave de la Ley de Tráfico",
+  "nota_en": "offences under articles 16 and 17 of the byelaw; serious-offence amount under the Traffic Act"
+ },
+ "excepciones": [
+  "vehículos sin distintivo inscritos en el registro municipal de matrículas autorizadas (anexo 2)",
+  "recogida o acompañamiento de menores y personas dependientes a escuelas dentro de la ZBE",
+  "vehículos con matrícula extranjera que cumplan la norma Euro del periodo: inscripción con 5 días de antelación, permiso de 30 días; residentes en la ZBE con matrícula extranjera, hasta 6 meses"
+ ],
+ "control": "cámaras de lectura de matrículas en los accesos, sin barreras",
+ "ordenanza": {
+  "nombre": "Ordenanza municipal reguladora de las zonas de bajas emisiones de Palma (BOIB n.º 167, de 21 de diciembre de 2024; anexo 2 revisado por decreto de 13/03/2026, BOIB n.º 37, de 24 de marzo de 2026)",
+  "url": "https://www.caib.es/eboibfront/pdf/ca/2026/37/1215590"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.caib.es/eboibfront/pdf/ca/2026/37/1215590",
+   "label": "BOIB n.º 37 (24/03/2026) · Revisión de las autorizaciones del anexo 2 de la ordenanza de ZBE de Palma"
+  },
+  {
+   "url": "https://mobipalma.mobi/wp-content/uploads/2026/03/BOIB-37-24-03-2026-Edicte-2870.pdf",
+   "label": "Ajuntament de Palma (Mobipalma) · Edicto 2870",
+   "cita": "a partir del 01/01/2027"
+  }
+ ],
+ "verificado": "2026-10-15",
+ "excepciones_en": [
+  "vehicles without a label entered in the council register of authorised plates (annex 2)",
+  "dropping off or collecting children and dependants at schools inside the zone",
+  "foreign-plated vehicles meeting the Euro standard of the period: register 5 days ahead for a 30-day permit; residents of the zone with foreign plates, up to 6 months"
+ ],
+ "control_en": "number-plate cameras at the entries, no barriers"
+}

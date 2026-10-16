@@ -1,0 +1,68 @@
+import { definePage } from '../../lib/page-types';
+import { prorrateo } from '../../lib/engine/ivtm';
+export default definePage({
+  id: 'prorrateo-impuesto-circulacion', group: 'guia', order: 7, mini: 'prorrateoIvtm', miniHref: 'impuesto-circulacion',
+  related: ['impuesto-circulacion', 'caballos-fiscales', 'impuesto-circulacion-malaga', 'impuesto-circulacion-san-sebastian'], sources: ['trlhl', 'lsv'],
+  es: {
+    slug: 'impuesto-circulacion-venta-baja-prorrateo', nav: 'IVTM al comprar, vender o dar de baja', card: 'Quién paga y cuánto en el año del cambio',
+    title: 'Impuesto de circulación al vender o dar de baja: prorrateo',
+    description: 'Impuesto de circulación al comprar, vender o dar de baja un coche: paga el titular a 1 de enero; prorrateo por trimestres solo en alta, baja o robo. Al día.',
+    h1: 'IVTM al comprar, vender o dar de baja un coche',
+    intro: 'El impuesto de circulación es anual y se devenga el 1 de enero. Solo en tres situaciones se paga por trimestres, y una venta no es una de ellas.',
+    resume: (h) => `El artículo 96 del texto refundido de la Ley Reguladora de las Haciendas Locales establece que el periodo impositivo del IVTM coincide con el año natural y que el impuesto se devenga el primer día de ese periodo, el 1 de enero. Por eso paga el impuesto de todo el año quien figura como titular en el permiso de circulación ese día, aunque venda el coche en febrero. La cuota solo se prorratea por trimestres naturales en tres casos: la primera adquisición del vehículo, cuando el periodo empieza el día de la adquisición; la baja definitiva; y la baja temporal por sustracción o robo, desde que consta en el Registro de Vehículos. En la primera matriculación se pagan los trimestres que quedan, incluido el del alta: un coche matriculado en mayo paga tres cuartas partes de la cuota. En la baja definitiva se pagan los trimestres transcurridos, incluido el de la baja. Además, la DGT no tramita un cambio de titularidad si el titular no ha pagado el impuesto del año anterior.`,
+    faqs: (h) => [
+      { q: 'Compro un coche de segunda mano en junio: ¿pago el IVTM de este año?', a: 'No al ayuntamiento: el recibo de este año es del vendedor, que era el titular el 1 de enero. Tú pagarás desde el año siguiente, en el municipio de tu domicilio. Lo habitual es pactar en el contrato si el comprador compensa al vendedor la parte del año, pero eso es un acuerdo privado que el ayuntamiento no tiene en cuenta.' },
+      { q: '¿Me devuelven parte del impuesto si llevo el coche al desguace en abril?', a: `Sí, si ya lo habías pagado entero: con la baja definitiva solo debes los trimestres transcurridos, incluido el de la baja. En abril, el segundo trimestre, corresponden dos cuartas partes; de una cuota de 100 euros, ${h.eur(prorrateo(100, 4, 'baja'))}, y el ayuntamiento devuelve el resto si lo solicitas o lo hace de oficio según su ordenanza.` },
+      { q: '¿Hay que pagar el IVTM de un coche dado de baja temporal?', a: 'La baja temporal voluntaria no está en la lista de prorrateo del artículo 96: el vehículo sigue en el padrón y el impuesto se devenga el 1 de enero si no se ha dado de baja definitiva. Solo la baja temporal por sustracción o robo prorratea la cuota desde que consta en el Registro de Vehículos.' },
+    ],
+    body: (h) => `
+<h2>Los trimestres que se pagan</h2>
+${h.table(['Mes del alta o de la baja', 'Primera matriculación', 'Baja definitiva o robo'], [['Enero a marzo', '4/4', '1/4'], ['Abril a junio', '3/4', '2/4'], ['Julio a septiembre', '2/4', '3/4'], ['Octubre a diciembre', '1/4', '4/4']])}
+<p>Algunos ayuntamientos publican directamente estas cantidades: GESTRISAM en Málaga da la cuota de tres, dos y un trimestre de cada tramo, y Madrid hace lo mismo en su tabla. En Gipuzkoa, el Ayuntamiento de Donostia publica una cuota distinta para cada mes del año, porque el régimen foral reparte el impuesto de otra forma.</p>
+<h2>La venta y el cambio de titular</h2>
+<p>Cuando vendes un coche, el trámite en la DGT exige que el impuesto del año anterior esté pagado: si hay un recibo pendiente, la Jefatura no registra la transferencia. Los ayuntamientos comunican a la DGT los impagos al terminar el periodo voluntario, y la ausencia de anotaciones vale como prueba de pago. Por eso un comprador prudente pide al vendedor el último recibo pagado.</p>
+<p>El impuesto del año de la venta lo paga, ante el ayuntamiento, quien era titular el 1 de enero. Las partes pueden repartirlo en el contrato, por ejemplo en proporción a los meses, pero es un pacto entre particulares. Para conocer la cuota anual de tu coche, usa ${h.a('impuesto-circulacion', 'el calculador del impuesto de circulación')}.</p>
+<h2>Cambio de domicilio</h2>
+<p>El IVTM lo gestiona el ayuntamiento del domicilio del permiso de circulación. Si te mudas, comunica el cambio a la DGT: el nuevo ayuntamiento te cobrará desde el año siguiente y el anterior dejará de hacerlo. Además del impuesto, ese domicilio decide en muchas ciudades si tu coche cuenta como vecino en la zona de bajas emisiones.</p>
+<h2>Coches importados y rematriculados</h2>
+<p>Un coche que se importa y se matricula por primera vez en España cuenta como primera adquisición a efectos del impuesto: paga los trimestres que quedan del año, incluido el de la matriculación, y antes de matricularlo hay que acreditar ante la Jefatura Provincial de Tráfico que se ha pagado. Los ayuntamientos suelen exigirlo en régimen de autoliquidación, que se presenta antes de ir a Tráfico.</p>
+<p>La rematriculación de un vehículo histórico o la rehabilitación de uno dado de baja también genera un alta en el impuesto. En esos casos conviene preguntar al ayuntamiento si su ordenanza prevé la bonificación por antigüedad, que en algunas ciudades llega al 100 %, porque hay que pedirla en el plazo que fija cada una.</p>
+<h2>Si el recibo no te llega</h2>
+<p>El IVTM se cobra por padrón: el ayuntamiento lo pone al cobro cada año en un periodo voluntario y no siempre envía la carta. No recibirla no evita el recargo si no pagas a tiempo. Consulta el calendario fiscal de tu municipio o domicilia el pago.</p>
+<p>Si vendes a un concesionario, suele ser él quien tramita la transferencia y puede pedirte el último recibo pagado del impuesto. El del año en curso sigue siendo tuyo si eras el titular el 1 de enero; algunos concesionarios lo descuentan del valor de tasación y otros no, así que conviene preguntarlo antes de firmar.</p>
+<p>En los coches de empresa rigen las mismas reglas: paga el año entero la sociedad que es titular el 1 de enero, y las flotas que renuevan coches a mitad de año se benefician del prorrateo en cada nueva matriculación. Las empresas de renting suelen incluir el impuesto en la cuota mensual y lo pagan como titulares.</p>
+<p>Recuerda también que el prorrateo se aplica sobre la cuota ya bonificada: un eléctrico con un 75 % de bonificación matriculado en octubre paga una cuarta parte de una cuarta parte de la cuota del tramo.</p>`,
+  },
+  en: {
+    slug: 'road-tax-sale-scrapping-pro-rating', nav: 'Road tax when buying, selling or scrapping', card: 'Who pays and how much that year',
+    title: 'Road Tax Spain When Selling or Scrapping a Car: Pro-Rating',
+    description: 'Spanish road tax when you buy, sell or scrap a car: the owner on 1 January pays, quarterly pro-rating only on first registration, scrapping or theft. Dated.',
+    h1: 'Road tax when you buy, sell or scrap a car in Spain',
+    intro: 'Spanish road tax is annual and falls due on 1 January. Only three situations are pro-rated by quarter, and a sale is not one of them.',
+    resume: (h) => `Section 96 of the Local Finance Act states that the IVTM tax period is the calendar year and that the tax falls due on its first day, 1 January. So whoever is the registered owner that day pays for the whole year, even if the car is sold in February. The amount is only pro-rated by calendar quarter in three cases: first acquisition of the vehicle, when the period starts on the purchase date; permanent deregistration; and temporary deregistration after theft, from when it is recorded on the vehicle register. On first registration you pay the remaining quarters, including the one of registration: a car registered in May pays three quarters of the amount. On permanent deregistration you pay the quarters elapsed, including the one of deregistration. The DGT also refuses to transfer ownership if the previous year’s tax is unpaid.`,
+    faqs: (h) => [
+      { q: 'I am buying a used car in June: do I pay this year’s road tax?', a: 'Not to the council: this year’s bill belongs to the seller, who was the owner on 1 January. You pay from next year, to the town of your address. Buyers and sellers often agree in the contract that the buyer compensates the seller for part of the year, but that is a private deal the council ignores.' },
+      { q: 'Do I get some tax back if I scrap the car in April?', a: `Yes, if you had already paid in full: on permanent deregistration you only owe the quarters elapsed, including the one of deregistration. April is in the second quarter, so two quarters are due; on a 100-euro bill, ${h.eur(prorrateo(100, 4, 'baja'))}, and the council refunds the rest on request or automatically, depending on its byelaw.` },
+      { q: 'Do I pay road tax on a car with a temporary deregistration?', a: 'Voluntary temporary deregistration is not on section 96’s pro-rating list: the vehicle stays on the roll and the tax falls due on 1 January unless it has been permanently deregistered. Only temporary deregistration after theft pro-rates the amount, from when it is recorded on the vehicle register.' },
+    ],
+    body: (h) => `
+<h2>Which quarters are paid</h2>
+${h.table(['Month of registration or deregistration', 'First registration', 'Scrapped or stolen'], [['January to March', '4/4', '1/4'], ['April to June', '3/4', '2/4'], ['July to September', '2/4', '3/4'], ['October to December', '1/4', '4/4']])}
+<p>Some councils publish these amounts directly: GESTRISAM in Málaga gives the three-, two- and one-quarter amounts for every band, and Madrid does the same in its table. In Gipuzkoa, Donostia publishes a different amount for each month of the year, because the foral regime splits the tax differently.</p>
+<h2>Sales and change of owner</h2>
+<p>When you sell a car, the DGT transfer requires the previous year’s tax to be paid: if a bill is outstanding, the traffic office will not record the transfer. Councils report unpaid bills to the DGT at the end of the payment period, and the absence of any record counts as proof of payment. That is why a careful buyer asks the seller for the last paid bill.</p>
+<p>The tax for the year of the sale is paid, as far as the council is concerned, by whoever owned the car on 1 January. The parties may split it in the contract, for example by months, but that is a private arrangement. To find your car’s annual amount, use ${h.a('impuesto-circulacion', 'the road-tax calculator')}.</p>
+<h2>Change of address</h2>
+<p>The IVTM is run by the council of the address on the registration document. If you move, report it to the DGT: the new council charges you from the following year and the old one stops. Beyond the tax, that address decides in many cities whether your car counts as local in the low-emission zone.</p>
+<h2>Imported and re-registered cars</h2>
+<p>A car imported and registered in Spain for the first time counts as a first acquisition for the tax: it pays the remaining quarters of the year, including the one of registration, and proof of payment must be shown to the provincial traffic office before registration. Councils usually require it as a self-assessment filed before the traffic office appointment.</p>
+<p>Re-registering a historic vehicle or reinstating one that had been deregistered also creates a new tax entry. In those cases, ask the council whether its byelaw grants age-based relief, which reaches 100% in some cities, because it has to be requested within each council’s deadline.</p>
+<h2>If the bill never arrives</h2>
+<p>The IVTM is collected from a register: each year the council opens a voluntary payment period and does not always send a letter. Not receiving one does not prevent a surcharge if you pay late. Check your town’s tax calendar or set up a direct debit.</p>
+<h2>Selling to a dealer</h2>
+<p>When you trade a car in at a dealership, the dealer usually handles the transfer and may ask you to show the last paid road-tax bill. The current year’s bill is still yours if you owned the car on 1 January; some dealers deduct it from the trade-in value, others do not, so ask before signing.</p>
+<p>For company cars, the same rules apply to the business: the company that owns the vehicle on 1 January pays for the year, and fleets that renew cars mid-year benefit from pro-rating on each new registration. Leasing firms usually include the tax in the monthly fee and pay it themselves as registered owners.</p>
+<p>In the foral territories the logic is the same but the detail differs: Donostia, for instance, publishes a separate amount for every month of registration rather than every quarter, and Vitoria-Gasteiz says the amount is calculated proportionally on registration and permanent deregistration. If your car is registered in the Basque Country or Navarre, check the council’s own table: the quarterly fractions above are those of the standard regime and may differ by a few euros.</p>
+<p>Note too that pro-rating applies to the amount after relief: an electric car with 75% relief registered in October pays a quarter of a quarter of the band amount. In Madrid, for an 11.5 hp CERO car, that is under four euros for its first year.</p>`,
+  },
+});

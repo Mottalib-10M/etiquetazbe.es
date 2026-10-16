@@ -1,0 +1,25 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title="Legal notice: publisher of the ZBE tool and hosting provider" description="Legal notice under section 10 of Spain’s LSSI: who publishes the DGT label, low-emission-zone and road-tax calculators, liability, and who hosts the website." lang={lang} noindex={true} breadcrumbs={[{ label: 'Legal notice' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Legal notice</h1>
+    <p>Provider details under section 10 of Spain’s Information Society Services Act (Law 34/2002, LSSI) for {SITE_URL}.</p>
+    <h2>Publisher</h2>
+    <LegalIdentity lang={lang} />
+    <p>Responsible for content: {AUTHOR_NAME}, email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Hosting</h2>
+    <LegalIdentity mode="hosting" lang={lang} />
+    <h2>Purpose</h2>
+    <p>The site estimates a vehicle’s environmental label under the criteria published by the DGT, shows whether it may enter the low-emission zones of several cities under their byelaws and works out the vehicle road tax (IVTM) under the 2026 tax byelaws. It is not a service of the DGT or any council and gives no legal advice. Methods are explained in <a href={route('method', lang)}>How we calculate</a>.</p>
+    <h2>Liability</h2>
+    <p>Data are checked against official sources and tested before every release, but we cannot guarantee they are error-free or that a byelaw has not changed since the date shown. The byelaw in force, the DGT vehicle register classification and the council’s decision always prevail. Linked sites are the responsibility of their owners.</p>
+    <h2>Embedding</h2>
+    <p>The tool may be embedded free of charge in an iframe as long as the credit link stays visible: <a href={route('widget', lang)}>embed the tool</a>.</p>
+    <p>Privacy: <a href={route('privacy', lang)}>privacy policy</a> and <a href={route('cookies', lang)}>cookies</a>. Updated: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

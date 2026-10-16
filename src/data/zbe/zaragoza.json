@@ -1,0 +1,94 @@
+{
+ "slug": "zaragoza",
+ "nombre": "Zaragoza",
+ "provincia": "Zaragoza",
+ "ccaa": "Aragón",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "centro",
+   "nombre": "Zona de Bajas Emisiones de Zaragoza",
+   "ambito": "centro histórico delimitado por las calles San Vicente de Paúl, Coso, Mayoral y Echegaray y Caballero",
+   "horario": "L-V 08:00-20:00",
+   "desde": "2025-12-12",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_registrados",
+     "acceso": "prohibido",
+     "desde": "2025-12-12"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "con inscripción en el registro municipal: residentes con tarjeta ESRE, plaza de garaje o local comercial dentro de la ZBE",
+     "nota_en": "once entered in the council register: residents with an ESRE card, a garage space or business premises inside the zone"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ],
+   "ambito_en": "historic centre bounded by San Vicente de Paúl, Coso, Mayoral and Echegaray y Caballero"
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave de la Ley de Tráfico; no exhibir el distintivo es falta leve",
+  "nota_en": "serious offence under the Traffic Act; not displaying the label is a minor offence"
+ },
+ "pegatina_obligatoria": true,
+ "excepciones": [
+  "hasta 8 accesos al mes para vehículos sin distintivo que no encajen en otro supuesto",
+  "PMR, emergencias y servicios esenciales, transporte de enfermos",
+  "acceso a aparcamientos públicos y hoteles con control de acceso conectado",
+  "sin sanción si se sale de la ZBE en 15 minutos tras entrar por error"
+ ],
+ "control": "inicialmente Policía Local; cámaras de lectura de matrículas previstas con el nuevo contrato de estacionamiento regulado",
+ "ordenanza": {
+  "nombre": "Ordenanza Municipal de Zona de Bajas Emisiones (aprobación definitiva el 19 de julio de 2024)",
+  "url": "https://www.zaragoza.es/sede/servicio/normativa/13277"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.zaragoza.es/sede/servicio/noticia/346150",
+   "label": "Ayuntamiento de Zaragoza · La ZBE inicia su última fase de implantación",
+   "cita": "La ZBE estará activa de lunes a viernes de 8,00 a 20,00 horas"
+  },
+  {
+   "url": "https://www.zaragoza.es/sede/portal/movilidad/bajas-emisiones/faq",
+   "label": "Ayuntamiento de Zaragoza · Preguntas frecuentes ZBE",
+   "cita": "no les sancionará si salen de ésta en un plazo de 15 minutos"
+  },
+  {
+   "url": "https://www.zaragoza.es/sede/servicio/normativa/13277",
+   "label": "Ayuntamiento de Zaragoza · Ordenanza Municipal de Zona de Bajas Emisiones"
+  }
+ ],
+ "verificado": "2026-10-15",
+ "excepciones_en": [
+  "up to 8 accesses a month for unlabelled vehicles that fit no other case",
+  "reduced mobility, emergency and essential services, transport of patients",
+  "access to public car parks and hotels with connected entry control",
+  "no fine if you leave the zone within 15 minutes after entering by mistake"
+ ],
+ "control_en": "local police at first; number-plate cameras planned under the new parking contract"
+}

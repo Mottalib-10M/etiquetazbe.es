@@ -1,0 +1,113 @@
+{
+ "slug": "valencia",
+ "nombre": "València",
+ "provincia": "Valencia",
+ "ccaa": "Comunitat Valenciana",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "valencia-zbe",
+   "nombre": "València ZBE",
+   "ambito": "área delimitada por el perímetro de vías del anexo I de la ordenanza; las vías perimetrales no forman parte del ámbito",
+   "horario": "24h",
+   "desde": "2025-12-01",
+   "afecta": "turismos, ciclomotores y motocicletas sin distintivo (clasificación A); también vehículos extranjeros asimilables",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "fuera_provincia",
+     "acceso": "prohibido",
+     "desde": "2025-12-01"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "provincia",
+     "acceso": "permitido",
+     "hasta": "2026-12-31",
+     "nota": "registrados en otro municipio de la provincia de Valencia: sin restricciones hasta el 31/12/2026",
+     "nota_en": "registered elsewhere in Valencia province: no restriction until 31/12/2026"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "provincia",
+     "acceso": "prohibido",
+     "desde": "2027-01-01"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "municipio",
+     "acceso": "permitido",
+     "hasta": "2027-12-31",
+     "nota": "registrados en València: sin restricciones hasta el 31/12/2027",
+     "nota_en": "registered in the city of València: no restriction until 31/12/2027"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "municipio",
+     "acceso": "prohibido",
+     "desde": "2028-01-01"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ],
+   "ambito_en": "area inside the perimeter of streets listed in annex I of the byelaw; the perimeter streets themselves are outside"
+  }
+ ],
+ "criterio_usuario": "municipio de registro del vehículo en la DGT (no el empadronamiento del titular)",
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "multa de infracción grave del artículo 80 de la Ley de Tráfico",
+  "nota_en": "serious-offence fine under section 80 of the Traffic Act"
+ },
+ "excepciones": [
+  "48 accesos puntuales al año para vehículos más contaminantes, previa comunicación (anexo III)",
+  "moratoria hasta el 31/12/2027 para vehículos registrados en los municipios afectados por la DANA (Decreto 164/2024) y hasta el 31/12/2028 en las pedanías de València afectadas",
+  "vehículos excepcionados del anexo II (PMR, servicios esenciales, etc.), algunos con inscripción en el registro municipal"
+ ],
+ "control": "278 cámaras de lectura de matrículas",
+ "ordenanza": {
+  "nombre": "Ordenanza Reguladora de la Zona de Bajas Emisiones de la ciudad de València",
+  "url": "https://sede.valencia.es/sede/descarga/doc/DOCUMENT_1_20250008084307"
+ },
+ "fuentes": [
+  {
+   "url": "https://sede.valencia.es/sede/descarga/doc/DOCUMENT_1_20250008084307",
+   "label": "Ajuntament de València · Ordenanza Reguladora de la ZBE",
+   "cita": "hasta el 31 de diciembre de 2026"
+  },
+  {
+   "url": "https://movilidad.valencia.es/es/calendario-implementacion/",
+   "label": "Ajuntament de València · Calendario de implantación"
+  },
+  {
+   "url": "https://www.valencia.es/cas/actualidad/-/content/c%C3%A1maras-zbe",
+   "label": "Ajuntament de València · Instalación de cámaras ZBE"
+  }
+ ],
+ "verificado": "2026-10-15",
+ "excepciones_en": [
+  "48 one-off accesses a year for the most polluting vehicles, after notification (annex III)",
+  "grace period until 31/12/2027 for vehicles registered in towns hit by the DANA floods (Decree 164/2024), and until 31/12/2028 in the affected districts of València",
+  "vehicles exempted in annex II (reduced mobility, essential services, etc.), some after registering with the council"
+ ],
+ "control_en": "278 number-plate cameras"
+}

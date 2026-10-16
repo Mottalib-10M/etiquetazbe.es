@@ -1,0 +1,82 @@
+---
+/**
+ * Accueil (pilier, RECETTE §5) : titre, simulateur ZBE + étiquette + IVTM sans défiler, bloc citable replié, état
+ * des 15 ZBE au jour du build, les cinq étiquettes, puis le texte, la FAQ et les sources.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import ToolSwitch from './ToolSwitch.astro';
+import MiniSim from './calc/MiniSim';
+import Clamp from './Clamp.astro';
+import AdSlot from './AdSlot.astro';
+import { HOME } from '../content/home';
+import { route, ROUTES, type Locale } from '../i18n/routes';
+import { label } from '../i18n/nav';
+import { helpers } from '../lib/helpers';
+import { P, type SourceKey } from '../lib/engine/params';
+import { CIUDADES, etiquetasRestringidas, calendario } from '../lib/engine/zbe';
+import { ETIQUETA_NOMBRE, estadoTexto } from '../lib/textos';
+import { displayDate } from '../lib/format';
+import { enlaces } from '../lib/enlaces';
+import { faqSchema, organizationSchema, websiteSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const es = lang === 'es';
+const x = HOME[lang];
+const h = helpers(lang);
+const path = route('home', lang);
+const parts = x.body(h).split(/<!--mini:([A-Za-z0-9_]+)-->/);
+const faqs = x.faqs(h);
+const keys: SourceKey[] = ['dgt_distintivo', 'dgt_consulta', 'ley7_2021', 'rd1052_2022', 'lsv', 'trlhl', 'rgv_anexo5', 'ley9_2025'];
+const sources = keys.map((k) => ({ name: P.sources[k].label[lang], url: P.sources[k].url }));
+const jsonLd = [websiteSchema(lang), organizationSchema(lang), webPageSchema({ name: x.h1, description: x.description, path, lang }), webApplicationSchema({ name: x.h1, description: x.description, path, lang }), faqSchema(faqs, lang)];
+const hoy = new Date().toISOString().slice(0, 10);
+const dt = (iso: string) => displayDate(iso, es ? 'es-ES' : 'en-GB');
+const { ciudadHrefs, etiquetaHrefs } = enlaces(lang);
+const has = (id: string) => ROUTES.some((r) => r.id === id);
+---
+<PageLayout title={x.title} description={x.description} lang={lang} jsonLd={jsonLd} faqs={faqs} sources={sources}>
+  <header class="mb-4">
+    <p class="text-sm font-semibold uppercase tracking-wide text-accent-700">{es ? 'Criterios de la DGT · 15 ordenanzas de ZBE · 13 ordenanzas fiscales 2026' : 'DGT criteria · 15 ZBE byelaws · 13 road-tax byelaws for 2026'}</p>
+    <h1 class="mt-1 text-3xl font-bold text-navy-900 md:text-[2.5rem] md:leading-tight">{x.h1}</h1>
+    <p class="mt-2 text-lg text-navy-700">{x.intro}</p>
+  </header>
+  <section id="simulador" data-outil aria-label={es ? 'Simulador ZBE y etiqueta' : 'ZBE and label calculator'}>
+    <ToolSwitch tool="zbe" lang={lang} methodHref={route('method', lang)} />
+  </section>
+  <section class="mt-8" aria-labelledby="corto">
+    <h2 id="corto" class="sr-only">{es ? 'En pocas palabras' : 'In short'}</h2>
+    <Clamp text={x.resume(h)} lang={lang} id="clamp-home" sentences={2} />
+  </section>
+  <AdSlot slot="home-1" />
+  <section class="mt-10 border-t border-navy-200 pt-6" aria-labelledby="mapa" data-chrome>
+    <h2 id="mapa" class="text-2xl font-bold text-navy-900">{es ? `Las 15 ZBE de esta web a ${dt(hoy)}` : `The 15 ZBEs on this site as of ${dt(hoy)}`}</h2>
+    <p class="mt-2 text-navy-700">{es ? 'Etiquetas que no circulan libremente para un vehículo de fuera, y el próximo endurecimiento fijado en la ordenanza.' : 'Labels that cannot drive freely for an out-of-town vehicle, and the next tightening set in the byelaw.'}</p>
+    <ul class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {CIUDADES.map((c) => { const r = etiquetasRestringidas(c, hoy); const prox = calendario(c, hoy)[0]; return (
+        <li class="rounded-lg border border-navy-200 bg-white p-3">
+          <div class="flex items-baseline justify-between gap-2">
+            {ciudadHrefs[c.slug] ? <a class="font-semibold text-navy-900 underline" href={ciudadHrefs[c.slug]}>{c.nombre}</a> : <span class="font-semibold">{c.nombre}</span>}
+            <span class="text-xs text-navy-600">{estadoTexto(c.estado, lang)}</span>
+          </div>
+          <p class="mt-2 flex flex-wrap items-center gap-1.5 text-sm text-navy-700">{r.length ? r.map((e) => <span class={`et et-${e} h-6 w-6 text-[0.6rem]`} title={ETIQUETA_NOMBRE[lang][e]}>{e === 'A' ? '—' : e}</span>) : null}<span>{r.length ? (es ? 'restringidas' : 'restricted') : (es ? 'ninguna restringida' : 'none restricted')}</span></p>
+          {prox && <p class="mt-1 text-xs text-navy-600">{es ? `${dt(prox.fecha)}: ${ETIQUETA_NOMBRE.es[prox.regla.etiqueta].toLowerCase()}` : `${dt(prox.fecha)}: ${ETIQUETA_NOMBRE.en[prox.regla.etiqueta]}`}</p>}
+        </li>); })}
+    </ul>
+    {has('zonas-bajas-emisiones') && <p class="mt-4"><a class="font-medium text-accent-700 underline" href={route('zonas-bajas-emisiones', lang)}>{label('zonas-bajas-emisiones', lang)}</a></p>}
+  </section>
+  <section class="mt-10 border-t border-navy-200 pt-6" aria-labelledby="etiquetas" data-chrome>
+    <h2 id="etiquetas" class="text-2xl font-bold text-navy-900">{es ? 'Las cinco situaciones de la DGT' : 'The five DGT categories'}</h2>
+    <ul class="mt-4 grid gap-3 sm:grid-cols-5">
+      {(['0', 'ECO', 'C', 'B', 'A'] as const).map((e) => (
+        <li class="rounded-lg border border-navy-200 bg-white p-3 text-center">
+          <span class={`et et-${e} h-12 w-12 text-base`} aria-hidden="true">{e === 'A' ? '—' : e}</span>
+          <p class="mt-2 text-sm font-semibold">{etiquetaHrefs[e] ? <a class="underline" href={etiquetaHrefs[e]}>{ETIQUETA_NOMBRE[lang][e]}</a> : ETIQUETA_NOMBRE[lang][e]}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+  <div class="prose prose-slate mt-10 max-w-none border-t border-navy-200 pt-4">
+    {parts.map((p, i) => i % 2 === 0 ? <Fragment set:html={p} /> : <MiniSim client:load kind={p} lang={lang} href={has('etiqueta-dgt') ? route('etiqueta-dgt', lang) : undefined} />)}
+  </div>
+  <AdSlot slot="home-2" />
+</PageLayout>

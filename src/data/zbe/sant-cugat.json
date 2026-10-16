@@ -1,0 +1,88 @@
+{
+ "slug": "sant-cugat",
+ "nombre": "Sant Cugat del Vallès",
+ "provincia": "Barcelona",
+ "ccaa": "Cataluña",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "zbe",
+   "nombre": "ZBE Sant Cugat",
+   "ambito": "unos 4 km² del municipio, entre la carretera de Vallvidrera, la Ronda Nord, la avinguda de Roquetes, el carrer de Sant Crist Llaceres y el passeig de Valldoreix",
+   "superficie_km2": 4,
+   "horario": "L-V laborables 07:00-20:00",
+   "desde": "2021-05-01",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "prohibido",
+     "desde": "2021-11-01",
+     "nota": "turismos y motos desde el 1/11/2021; furgonetas, camiones y autobuses desde el 1/5/2022",
+     "nota_en": "cars and motorbikes since 1/11/2021; vans, lorries and buses since 1/5/2022"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ],
+   "ambito_en": "about 4 km² of the town, between the Vallvidrera road, Ronda Nord, Avinguda de Roquetes, Carrer de Sant Crist Llaceres and Passeig de Valldoreix"
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "multas desde 100 euros (leve), 200 (grave) y 500 (muy grave), +30 % por reiteración",
+  "nota_en": "fines from 100 euros (minor), 200 (serious) and 500 (very serious), plus 30% for repeat offences"
+ },
+ "excepciones": [
+  "hasta 10 autorizaciones diarias al año para accesos esporádicos",
+  "servicios médicos y funerarios, protección civil, bomberos y policía",
+  "personas con enfermedades que condicionan el uso del transporte público",
+  "autónomos con ingresos inferiores a 2 veces el IPREM (moratoria a solicitar)",
+  "vehículos extranjeros que cumplan los requisitos (registro metropolitano)",
+  "aparcamiento disuasorio (Park&Ride) en la avinguda de Roquetes"
+ ],
+ "control": "cámaras de lectura de matrículas en semáforos y un vehículo policial con cámara",
+ "ordenanza": {
+  "nombre": "Ordenança municipal reguladora de la Zona de Baixes Emissions de Sant Cugat",
+  "url": "https://www.santcugat.cat/web/zona-baixes-emissions"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.santcugat.cat/web/zona-baixes-emissions",
+   "label": "Ajuntament de Sant Cugat · Zona de baixes emissions",
+   "cita": "Màxim 10 a l’any"
+  },
+  {
+   "url": "https://www.santcugat.cat/avis/entra-en-vigor-zbe-santcugat",
+   "label": "Ajuntament de Sant Cugat · Entra en vigor la ZBE Sant Cugat"
+  }
+ ],
+ "verificado": "2026-10-15",
+ "excepciones_en": [
+  "up to 10 day permits a year for occasional access",
+  "medical and funeral services, civil protection, fire brigade and police",
+  "people whose illness limits their use of public transport",
+  "self-employed people earning under twice the IPREM index (grace period on application)",
+  "foreign vehicles meeting the requirements (metropolitan register)",
+  "Park&Ride car park on Avinguda de Roquetes"
+ ],
+ "control_en": "number-plate cameras at traffic lights and a police car with a camera"
+}

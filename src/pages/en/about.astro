@@ -1,0 +1,30 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { YEAR, LAST_UPDATED, AUTHOR_NAME, CONTACT_EMAIL, AUTHOR_ROLE, SITE_NAMES, LANG_TAGS } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { personSchema, organizationSchema, breadcrumbSchema, profilePageSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+import { CIUDADES } from '../../lib/engine/zbe';
+import { MUNICIPIOS } from '../../lib/engine/ivtm';
+const lang = 'en';
+---
+<PageLayout title="ZBE & DGT Label: who runs the tool and how it is checked" description="Who is behind the Spanish DGT label, low-emission-zone and road-tax calculator, why it exists, how each city byelaw is checked and how the site is funded." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path: route('about', lang) }])]} breadcrumbs={[{ label: 'About' }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">Who makes {SITE_NAMES.en}</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
+    <p>{SITE_NAMES.en} is published by Radif Partners. It started with a question every driver heading into a Spanish city ends up asking: with this sticker, or without one, am I going to be fined? The answer was split between the DGT website, which explains the labels but not the cities, and dozens of council websites, each with its own byelaw, timetable and exceptions. Articles that tried to sum it all up disagreed on something as basic as the year a diesel gets the C label.</p>
+    <h2>What we try to do better</h2>
+    <p>Give an answer for your case and your date rather than a general table. The tool combines the DGT criteria with the byelaw of the chosen city, separates out-of-town vehicles from locally registered ones and from residents of the zone, shows the hours, the fine and the next date anything changes, and adds the local road tax. It currently covers {CIUDADES.length} low-emission zones and {MUNICIPIOS.length} tax byelaws; a city is only included once we have read its rules in an official source.</p>
+    <h2>How it is checked</h2>
+    <p>Every rule sits in a data file with the address of the byelaw or council page and the date it was read. A script downloads every source again, compares its fingerprint with the previous one and checks that the quoted sentences are still there; when a page changes, it is re-read before publishing. The label, fiscal-horsepower and tax formulas have automated tests with cases worked out by hand. The details are in <a href={route('method', lang)}>How we calculate</a>.</p>
+    <h2>What we are not</h2>
+    <p>We are not the DGT or a city council, we do not sell stickers, we do not handle permits or fine appeals and nobody pays to be listed. For your exact label, the number-plate lookup on the DGT online office is the reference; for a permit, your council’s register.</p>
+    <h2>Funding and your data</h2>
+    <p>The site is free with no sign-up. What you type into the tool never leaves your browser. If it ever carries advertising, it will never sit above a calculator or inside a result.</p>
+    <h2>In Spanish too</h2>
+    <p>Every page exists in Spanish, the language of the byelaws; the English version is written for foreign residents, drivers with non-Spanish plates and people hiring a car, with local terms explained and amounts kept in euros.</p>
+    <h2>Contact</h2>
+    <p>Has a byelaw changed, does a fine not match the tool, is your city missing? Write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. See also the <a href={route('editorial', lang)}>editorial policy</a> and the <a href={route('terms', lang)}>legal notice</a>.</p>
+    <p class="text-sm text-navy-600">{YEAR} rules, checked on <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, LANG_TAGS[lang])}</time>.</p>
+  </div>
+</PageLayout>

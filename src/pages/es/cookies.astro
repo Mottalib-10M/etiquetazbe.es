@@ -1,0 +1,17 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { CONTACT_EMAIL, LAST_UPDATED } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'es';
+---
+<PageLayout title="Cookies: ninguna, ni en el simulador de etiqueta ni en el de ZBE" description="Sin cookies y sin banner: el simulador de etiqueta DGT, de zonas de bajas emisiones y de impuesto de circulación no recuerda nada. Solo medimos de forma anónima si la web carga bien." lang={lang} noindex={true} breadcrumbs={[{ label: 'Cookies' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Cookies</h1>
+    <p>Esta web <strong>no instala cookies</strong>, por eso no muestra banner de consentimiento. Más detalles en la <a href={route('privacy', lang)}>política de privacidad</a>.</p>
+    <h2>Tu coche se queda en tu dispositivo</h2>
+    <p>Lo que indicas sobre tu vehículo no se guarda en cookies ni en el almacenamiento del navegador. Al cerrar la pestaña desaparece; solo un enlace que copies tú contiene esos valores.</p>
+    <h2>Medición anónima</h2>
+    <p>Si está activa, Microsoft Clarity funciona <strong>sin cookies</strong> (no crea _clck, _clsk, MUID ni CLID) y enmascara los campos. Puedes bloquear clarity.ms en tu navegador: todo sigue funcionando.</p>
+    <p>Preguntas: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Actualizado: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

@@ -1,0 +1,101 @@
+{
+ "slug": "san-sebastian",
+ "nombre": "Donostia / San Sebastián",
+ "provincia": "Gipuzkoa",
+ "ccaa": "País Vasco",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "centro",
+   "nombre": "Zona de Bajas Emisiones de Donostia / San Sebastián",
+   "ambito": "1,2 km² en el centro de la ciudad",
+   "superficie_km2": 1.2,
+   "horario": "24h",
+   "horario_nota": "el Ayuntamiento no publica franja horaria",
+   "desde": "2024-12-17",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "prohibido",
+     "desde": "2025-03-01",
+     "nota": "primera fase (2025-2027): salvo autorización puntual, temporal o permanente; las cámaras avisaron sin multa en enero y febrero",
+     "nota_en": "first phase (2025-2027): unless you hold a one-off, temporary or permanent permit; cameras only sent warnings in January and February"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "hasta": "2027-12-31"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "prohibido",
+     "desde": "2028-01-01",
+     "nota": "segunda fase (2028 en adelante)",
+     "nota_en": "second phase (2028 onwards)"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ],
+   "ambito_en": "1.2 km² in the city centre"
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "200 euros, que pueden aumentar un 30 % por reincidencia en el plazo de un año",
+  "nota_en": "200 euros, up to 30% more for a repeat offence within a year"
+ },
+ "excepciones": [
+  "residentes y titulares de plaza de garaje en la ZBE (autorización)",
+  "PMR y personas dependientes empadronadas en la ZBE",
+  "reparto, mantenimiento y talleres dentro de la ZBE (autorizaciones por acceso o por periodo)",
+  "en la segunda fase, los vehículos sin etiqueta solo se autorizan a residentes de más de 70 años",
+  "vehículos con matrícula extranjera: autorización previa siempre, aunque cumplan la norma Euro"
+ ],
+ "control": "cámaras de lectura de matrículas; consulta de matrícula en la web municipal",
+ "ordenanza": {
+  "nombre": "Ordenanza municipal para la mejora de la calidad del aire y la regulación de la ZBE (aprobada el 21/11/2024, en vigor el 17/12/2024)",
+  "url": "https://www.donostia.eus/secretaria/normunicipal.nsf/vListadoId/B03CD9FE7EB5A9B2C1258C4A003BCCE1?OpenDocument=&sf=2&id=C671670436837&idioma=cas"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.donostia.eus/es/movilidad/zona-bajas-emisiones",
+   "label": "Ayuntamiento de Donostia · Zona de Bajas Emisiones",
+   "cita": "Esta zona abarca una superficie de 1,2 km"
+  },
+  {
+   "url": "https://www.donostia.eus/en/movilidad/zona-bajas-emisiones/solicita-autorizacion/foreing-vehicles",
+   "label": "Donostia City Council · LEZ access for foreign-registered vehicles",
+   "cita": "fine of 200 euros"
+  },
+  {
+   "url": "https://www.donostia.eus/ataria/es/web/ige/vehiculos-afectados",
+   "label": "Ayuntamiento de Donostia · Vehículos afectados"
+  }
+ ],
+ "verificado": "2026-10-15",
+ "excepciones_en": [
+  "residents and garage-space holders in the zone (permit)",
+  "reduced-mobility and dependent people registered in the zone",
+  "deliveries, maintenance and garages inside the zone (per-trip or period permits)",
+  "in the second phase, vehicles without a label are only authorised for residents over 70",
+  "foreign-plated vehicles: prior permit always required, even if they meet the Euro standard"
+ ],
+ "control_en": "number-plate cameras; plate lookup on the council website"
+}

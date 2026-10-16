@@ -1,0 +1,155 @@
+{
+ "slug": "madrid",
+ "nombre": "Madrid",
+ "provincia": "Madrid",
+ "ccaa": "Comunidad de Madrid",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "municipal",
+   "nombre": "Madrid Zona de Bajas Emisiones (Madrid ZBE)",
+   "ambito": "todas las vías públicas urbanas del municipio; M-40, M-45 y M-50 no son vía urbana y quedan fuera",
+   "horario": "24h",
+   "desde": "2025-01-01",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_domiciliados",
+     "acceso": "prohibido",
+     "desde": "2025-01-01"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "domiciliados",
+     "acceso": "condicionado",
+     "desde": "2026-04-07",
+     "nota": "turismos domiciliados en Madrid de forma ininterrumpida desde el 1/1/2022 y en el padrón del IVTM: circulación temporal condicionada a que se respeten los valores límite de NO2 (DT 7.ª, Ordenanza 2/2026); aparcamiento limitado a su barrio",
+     "nota_en": "cars registered in Madrid without interruption since 1/1/2022 and on Madrid's road-tax roll: temporary access as long as NO2 limits are met (7th transitional provision, Byelaw 2/2026); parking only in their own neighbourhood"
+    }
+   ],
+   "ambito_en": "every urban public road in the municipality; the M-40, M-45 and M-50 are not urban roads and stay outside"
+  },
+  {
+   "id": "centro",
+   "nombre": "ZBEDEP Distrito Centro",
+   "ambito": "Distrito Centro (antigua Madrid Central); perímetro de libre circulación",
+   "horario": "24h",
+   "desde": "2021-09-22",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "prohibido"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_residentes",
+     "acceso": "solo_aparcamiento"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_residentes",
+     "acceso": "solo_aparcamiento"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "residentes",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "residentes",
+     "acceso": "permitido"
+    }
+   ],
+   "ambito_en": "Centro district (formerly Madrid Central); the perimeter roads are unrestricted"
+  },
+  {
+   "id": "eliptica",
+   "nombre": "ZBEDEP Plaza Elíptica",
+   "ambito": "viales interiores en torno a Plaza Elíptica (Usera/Carabanchel); las vías del perímetro son de libre circulación",
+   "horario": "24h",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "prohibido"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ],
+   "ambito_en": "inner streets around Plaza Elíptica (Usera/Carabanchel); the perimeter roads are unrestricted"
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100
+ },
+ "excepciones": [
+  "titulares de tarjeta TEPMR dados de alta en el sistema de gestión de accesos",
+  "vehículos históricos",
+  "autorizaciones excepcionales temporales (compra de vehículo, tratamiento hospitalario...)",
+  "residentes de Distrito Centro: alta de oficio de sus vehículos B y C; hasta 20 invitaciones al mes para vehículos B o C"
+ ],
+ "control": "cámaras con lector OCR (dentro de la M-30 y en la M-30)",
+ "ordenanza": {
+  "nombre": "Ordenanza de Movilidad Sostenible de 5 de octubre de 2018, modificada por la Ordenanza de 13 de septiembre de 2021 y por la Ordenanza 2/2026, de 24 de marzo",
+  "publicacion": "BOAM 6/4/2026 (Ordenanza 2/2026)",
+  "url": "https://sede.madrid.es/portal/site/tramites/menuitem.5dd4485239c96e10f7a72106a8a409a0/?vgnextoid=10378dd1c267d910VgnVCM200000f921e388RCRD&version=true&vgnextchannel=6b3d814231ede410VgnVCM1000000b205a0aRCRD"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones-ZBE-/?vgnextfmt=default&vgnextoid=93e63877029eb710VgnVCM1000001d4a900aRCRD&vgnextchannel=d2d2edf0f70ab710VgnVCM2000001f4a900aRCRD",
+   "label": "Ayuntamiento de Madrid · Madrid Zona de Bajas Emisiones (ZBE)",
+   "cita": "multa de 200 euros (100 euros en caso de pronto pago)"
+  },
+  {
+   "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones/Preguntas-frecuentes-sobre-Madrid-Zona-de-Bajas-Emisiones-ZBE-/?vgnextfmt=default&vgnextoid=9dec1d96b08ed710VgnVCM1000001d4a900aRCRD&vgnextchannel=d2d2edf0f70ab710VgnVCM2000001f4a900aRCRD",
+   "label": "Ayuntamiento de Madrid · Preguntas frecuentes Madrid ZBE"
+  },
+  {
+   "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Distrito-Centro-Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Zona-de-Bajas-Emisiones-de-Especial-Proteccion-ZBEDEP-Distrito-Centro-Informacion-general/?vgnextfmt=default&vgnextoid=2d88c49556fbb710VgnVCM2000001f4a900aRCRD&vgnextchannel=d352edf0f70ab710VgnVCM2000001f4a900aRCRD",
+   "label": "Ayuntamiento de Madrid · ZBEDEP Distrito Centro, información general"
+  },
+  {
+   "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Plaza-Eliptica-Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Zona-de-Bajas-Emisiones-de-Especial-Proteccion-ZBEDEP-Plaza-Eliptica-Preguntas-frecuentes/?vgnextfmt=default&vgnextoid=0f0f1e0276fbb710VgnVCM1000001d4a900aRCRD&vgnextchannel=f808acec6f5fe710VgnVCM1000001d4a900aRCRD",
+   "label": "Ayuntamiento de Madrid · ZBEDEP Plaza Elíptica, preguntas frecuentes"
+  }
+ ],
+ "verificado": "2026-10-15",
+ "excepciones_en": [
+  "holders of a reduced-mobility (TEPMR) card entered in the access system",
+  "historic vehicles",
+  "exceptional temporary permits (buying a vehicle, hospital treatment...)",
+  "Centro district residents: their B and C vehicles are registered automatically; up to 20 invitations a month for B or C visitors"
+ ],
+ "control_en": "OCR cameras (inside the M-30 and on the M-30)"
+}

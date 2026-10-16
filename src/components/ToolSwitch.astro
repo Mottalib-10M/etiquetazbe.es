@@ -1,0 +1,17 @@
+---
+/** Un seul endroit où chaque outil est relié à son composant (pages, accueil, intégration). */
+import ZbeTool from './calc/ZbeTool';
+import EtiquetaTool from './calc/EtiquetaTool';
+import IvtmTool from './calc/IvtmTool';
+import { type Locale } from '../i18n/routes';
+import { enlaces } from '../lib/enlaces';
+import { P } from '../lib/engine/params';
+import type { Tool } from '../lib/page-types';
+interface Props { tool?: Tool; lang: Locale; methodHref?: string; preset?: Record<string, never> }
+const { tool, lang, methodHref, preset = {} } = Astro.props;
+const { ciudadHrefs, ivtmHrefs, etiquetaHrefs } = enlaces(lang);
+const consultaUrl = P.sources.dgt_consulta.url;
+---
+{tool === 'zbe' && <ZbeTool client:load lang={lang} methodHref={methodHref} preset={preset} ciudadHrefs={ciudadHrefs} ivtmHrefs={ivtmHrefs} etiquetaHrefs={etiquetaHrefs} />}
+{(tool === 'etiqueta' || tool === 'ciudades') && <EtiquetaTool client:load lang={lang} methodHref={methodHref} preset={preset} ciudadHrefs={ciudadHrefs} consultaUrl={consultaUrl} />}
+{(tool === 'ivtm' || tool === 'cvf') && <IvtmTool client:load lang={lang} methodHref={methodHref} preset={tool === 'cvf' ? { modo: 'cc', ...preset } : preset} municipioHrefs={ivtmHrefs} />}

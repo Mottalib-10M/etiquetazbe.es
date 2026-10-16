@@ -1,0 +1,22 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { CONTACT_EMAIL, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { contactPageSchema } from '../../lib/seo';
+const lang = 'en';
+const description = 'Write to us if a low-emission-zone byelaw has changed, if a fine or road-tax bill does not match the tool, if your city is missing or if you want to embed it.';
+---
+<PageLayout title={`Contact ${SITE_NAMES[lang]}: report a byelaw change or an error`} description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: 'Contact', description, path: route('contact', lang), lang })]} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contact</h1>
+    <p>Email: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. We usually reply within a week.</p>
+    <h2>A byelaw has changed or an exception is missing</h2>
+    <p>Send us the link to the official gazette or council page. We re-read the source, correct the data and its check date, and add the case to our tests.</p>
+    <h2>A fine or a bill does not match</h2>
+    <p>Send the “Share link” address from the tool and the relevant line of the fine or bill, without your name or plate. The difference often lies in the vehicle’s registered address, a permit or relief you have to apply for.</p>
+    <h2>Embedding the tool</h2>
+    <p>Driving schools, residents’ associations, garages and local media can embed it free of charge: <a href={route('widget', lang)}>embed the tool</a>.</p>
+    <h2>What we do not do</h2>
+    <p>We do not process access permits, appeals or stickers, and we give no individual legal advice.</p>
+  </div>
+</PageLayout>

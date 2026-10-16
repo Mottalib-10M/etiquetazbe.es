@@ -1,0 +1,26 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { CONTACT_EMAIL, LEGAL, SITE_URL, LAST_UPDATED } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title="Privacy: the ZBE tool never stores your car or your address" description="Privacy policy (GDPR): your engine, registration year, address and fiscal horsepower stay in your browser; no cookies, only hosting logs and anonymous error checks." lang={lang} noindex={true} breadcrumbs={[{ label: 'Privacy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Privacy policy</h1>
+    <p>To find out whether you can enter a ZBE you say which car you drive, how old it is and where it is registered. The site is built so that {SITE_URL} never receives that information.</p>
+    <h2>1. Controller</h2>
+    <LegalIdentity lang={lang} />
+    <p>Email: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>2. What you type</h2>
+    <p>Engine, registration date, Euro standard, the vehicle’s address, fiscal horsepower and trip date are processed in your browser only. <strong>They are not sent to us or anyone else and are not stored.</strong> So that you can share a result, after your first interaction the tool writes the values into the address bar; that address stays on your device unless you share it.</p>
+    <h2>3. Processing</h2>
+    <h3>Hosting logs</h3><p>When you visit, GitHub processes the technical data needed to serve the site and prevent abuse (IP address, time, page, browser, referrer). Legal basis: legitimate interest, Article 6(1)(f) GDPR.</p>
+    <h3>No cookies</h3><p>The site sets no cookies and stores nothing in browser storage.</p>
+    <h3>Anonymous error measurement (Microsoft Clarity, cookieless)</h3><p>When enabled, Clarity records loading errors, timings and dead clicks in cookieless mode, with fields masked and a fresh identifier for every visit. Provider: Microsoft Ireland Operations Limited, One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Ireland. Legal basis: Article 6(1)(f) GDPR. Recordings deleted after 30 days, aggregates after 13 months.</p>
+    <h2>4. Recipients and transfers</h2><p>We do not sell or pass data to insurers, garages, dealers or ad networks. GitHub, Inc. and Microsoft Corporation are based in the United States and certified under the EU-US Data Privacy Framework, with standard contractual clauses.</p>
+    <h2>5. Your rights</h2><p>Access, rectification, erasure, restriction, objection and portability (Articles 15 to 22 GDPR): write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>; we reply within a month. You may complain to the {LEGAL.supervisoryAuthority} (<a href={LEGAL.supervisoryAuthorityUrl} rel="nofollow noopener" target="_blank">{LEGAL.supervisoryAuthorityUrl}</a>) or Spain’s data protection agency (<a href="https://www.aepd.es" rel="nofollow noopener" target="_blank">aepd.es</a>).</p>
+    <h2>6. No automated decisions</h2><p>A result from this site has no legal effect: the DGT assigns the label and the council imposes any fine.</p>
+    <p>See also <a href={route('cookies', lang)}>cookies</a>. Updated: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

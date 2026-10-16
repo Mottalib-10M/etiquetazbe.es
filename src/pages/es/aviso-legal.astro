@@ -1,0 +1,25 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'es';
+---
+<PageLayout title="Aviso legal: editor del simulador de ZBE y proveedor de alojamiento" description="Aviso legal según el artículo 10 de la LSSI: quién edita el simulador de etiqueta DGT, zonas de bajas emisiones e impuesto de circulación, responsabilidad y alojamiento." lang={lang} noindex={true} breadcrumbs={[{ label: 'Aviso legal' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Aviso legal</h1>
+    <p>Datos del prestador según el artículo 10 de la Ley 34/2002, de servicios de la sociedad de la información (LSSI), para {SITE_URL}.</p>
+    <h2>Editor</h2>
+    <LegalIdentity lang={lang} />
+    <p>Responsable del contenido: {AUTHOR_NAME}, correo <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Alojamiento</h2>
+    <LegalIdentity mode="hosting" lang={lang} />
+    <h2>Objeto</h2>
+    <p>La web estima la etiqueta ambiental de un vehículo según los criterios publicados por la DGT, indica si puede acceder a la zona de bajas emisiones de varias ciudades según sus ordenanzas y calcula el impuesto sobre vehículos de tracción mecánica según las ordenanzas fiscales de 2026. No es un servicio de la DGT ni de ningún ayuntamiento y no presta asesoramiento jurídico. Los métodos están en <a href={route('method', lang)}>Cómo calculamos</a>.</p>
+    <h2>Responsabilidad</h2>
+    <p>Los datos se comprueban en las fuentes oficiales y se prueban antes de cada publicación, pero no garantizamos que estén libres de errores ni que una ordenanza no haya cambiado desde la fecha indicada. Prevalecen siempre la ordenanza vigente, la clasificación del Registro de Vehículos de la DGT y la resolución del ayuntamiento. De los sitios enlazados responden sus titulares.</p>
+    <h2>Inserción</h2>
+    <p>El simulador puede insertarse gratis mediante iframe manteniendo el enlace de crédito: <a href={route('widget', lang)}>insertar el simulador</a>.</p>
+    <p>Privacidad: <a href={route('privacy', lang)}>política de privacidad</a> y <a href={route('cookies', lang)}>cookies</a>. Actualizado: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

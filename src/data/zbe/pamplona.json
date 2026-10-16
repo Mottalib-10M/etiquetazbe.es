@@ -1,0 +1,98 @@
+{
+ "slug": "pamplona",
+ "nombre": "Pamplona / Iruña",
+ "provincia": "Navarra",
+ "ccaa": "Navarra",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "casco",
+   "nombre": "Zona de Bajas Emisiones de Pamplona (Casco Antiguo)",
+   "ambito": "todo el Casco Antiguo, delimitado por las calles Taconera, Navas de Tolosa, paseo de Sarasate, Duque de Ahumada, Juan de Labrit, Vergel y Santo Domingo; coincide con la Zona de Acceso Controlado (ZAC)",
+   "horario": "24h",
+   "horario_nota": "el Ayuntamiento no publica franja horaria propia de la ZBE",
+   "desde": "2025-12-29",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "desde": "2025-12-29"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "residentes del Sector 1 (Casco Antiguo) y del paseo de Sarasate",
+     "nota_en": "residents of Sector 1 (Old Town) and Paseo de Sarasate"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ],
+   "ambito_en": "the whole Old Town, bounded by Taconera, Navas de Tolosa, Paseo de Sarasate, Duque de Ahumada, Juan de Labrit, Vergel and Santo Domingo; it overlaps the Controlled Access Zone (ZAC)"
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100
+ },
+ "pegatina_obligatoria": true,
+ "excepciones": [
+  "residentes del Sector 1 y del paseo de Sarasate",
+  "PMR y personas dependientes, titulares de plaza de garaje o usuarios de un aparcamiento público",
+  "comercios y hoteles, emergencias, obras, mudanzas, reparaciones y transporte público",
+  "apeaderos de las calles Mercado y Juan de Labrit"
+ ],
+ "sujetos": "sí necesitan distintivo: reparto de paquetería de hasta 3,5 m³, clientes de hoteles sin parking, reparto de comida y accesos puntuales de 30 minutos de la ZAC",
+ "control": "cámaras de la Zona de Acceso Controlado; accesos puntuales por el 010, la sede electrónica y la app TokTok",
+ "ordenanza": {
+  "nombre": "Ordenanza municipal reguladora de la Zona de Bajas Emisiones de Pamplona (Boletín Oficial de Navarra, diciembre de 2025)",
+  "url": "https://www.pamplona.es/sites/default/files/2025-06/2025proyectodezonadebajasemisionesdepamplona.pdf"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.pamplona.es/actualidad/noticias/el-distintivo-ambiental-sera-obligatorio-desde-este-lunes-para-los-vehiculos",
+   "label": "Ayuntamiento de Pamplona · El distintivo ambiental será obligatorio en la ZBE",
+   "cita": "multa de 200 euros (100 euros en caso de pronto pago)"
+  },
+  {
+   "url": "https://www.pamplona.es/sites/default/files/2025-12/folletozbe.pdf",
+   "label": "Ayuntamiento de Pamplona · Folleto «Comienza la ZBE en el Casco Antiguo»"
+  },
+  {
+   "url": "https://www.pamplona.es/sites/default/files/2025-06/2025proyectodezonadebajasemisionesdepamplona.pdf",
+   "label": "Ayuntamiento de Pamplona · Proyecto de Zona de Bajas Emisiones"
+  },
+  {
+   "url": "https://www.pamplona.es/actualidad/noticias/la-zona-de-bajas-emisiones-reduce-el-trafico-por-el-casco-antiguo-en-un-75-en",
+   "label": "Ayuntamiento de Pamplona · La ZBE reduce el tráfico en el Casco Antiguo un 7,5 %",
+   "cita": "7,55%"
+  }
+ ],
+ "verificado": "2026-10-15",
+ "excepciones_en": [
+  "residents of Sector 1 and Paseo de Sarasate",
+  "reduced-mobility and dependent people, garage-space holders or users of a public car park",
+  "shops and hotels, emergencies, building work, removals, repairs and public transport",
+  "the drop-off bays on Calle Mercado and Juan de Labrit"
+ ],
+ "control_en": "Controlled Access Zone cameras; one-off access through 010, the online office and the TokTok app"
+}

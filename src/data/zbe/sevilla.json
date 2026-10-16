@@ -1,0 +1,83 @@
+{
+ "slug": "sevilla",
+ "nombre": "Sevilla",
+ "provincia": "Sevilla",
+ "ccaa": "Andalucía",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "cartuja",
+   "nombre": "ZBE de la Isla de la Cartuja (PCT Cartuja)",
+   "ambito": "dos áreas de la Isla de la Cartuja, en el Parque Científico y Tecnológico; bolsas de aparcamiento abiertas 24 h en el entorno (unas 2.900 plazas en la banda Oeste y 500 en el Norte)",
+   "horario": "L-V no festivos 07:00-19:00",
+   "desde": "2024-01-08",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "prohibido",
+     "desde": "2024-07-01"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ],
+   "ambito_en": "two areas of the Isla de la Cartuja, in the science and technology park; car parks open 24 hours nearby (about 2,900 spaces on the west side and 500 to the north)"
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave del artículo 76.z3 de la Ley de Tráfico",
+  "nota_en": "serious offence under section 76(z3) of the Traffic Act"
+ },
+ "excepciones": [
+  "motos y ciclomotores",
+  "taxis y VTC",
+  "emergencias, sanitarios, funerarios y servicios municipales",
+  "empresas ubicadas dentro de la zona (modelo M021) y traslado de pacientes (modelo M022)"
+ ],
+ "control": "lectura automática de matrículas; no es necesario llevar la pegatina",
+ "pendiente": "el Ayuntamiento estudia una nueva regulación sancionadora de las ZBE (resolución de inicio de 20 de marzo de 2026); la ampliación al Casco Antiguo no está aprobada",
+ "fuentes": [
+  {
+   "url": "https://www.sevilla.org/actualidad/noticias/2024/el-proximo-lunes-1-de-julio-entra-en-vigor-la-zona-de-bajas-emisiones-de-la-cartuja-para-reducir-el-acceso-a-los-vehiculos-mas-contaminantes",
+   "label": "Ayuntamiento de Sevilla · Entra en vigor la ZBE de la Cartuja (1 de julio de 2024)"
+  },
+  {
+   "url": "https://www.sevilla.org/servicios/movilidad/zona-de-bajas-emisiones",
+   "label": "Ayuntamiento de Sevilla · Zona de Bajas Emisiones"
+  },
+  {
+   "url": "https://www.sevilla.org/servicios/movilidad/formularios-de-solicitudes/instrucciones-zbe.pdf",
+   "label": "Ayuntamiento de Sevilla · Instrucciones de solicitud ZBE"
+  }
+ ],
+ "verificado": "2026-10-15",
+ "nota_verificacion": "sevilla.org no respondía a la descarga automática el 15/10/2026; datos leídos en las notas oficiales indexadas",
+ "excepciones_en": [
+  "motorbikes and mopeds",
+  "taxis and ride-hailing",
+  "emergency, health, funeral and council services",
+  "companies based inside the zone (form M021) and patient transport (form M022)"
+ ],
+ "control_en": "automatic number-plate reading; no sticker needed",
+ "pendiente_en": "the council is studying new ZBE penalty rules (procedure opened on 20 March 2026); extending the zone to the Old Town has not been approved"
+}

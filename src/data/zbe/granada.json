@@ -1,0 +1,93 @@
+{
+ "slug": "granada",
+ "nombre": "Granada",
+ "provincia": "Granada",
+ "ccaa": "Andalucía",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "ciudad",
+   "nombre": "Zona de Bajas Emisiones de Granada",
+   "ambito": "prácticamente toda la ciudad, unos 23,5 km² delimitados por el Camino del Sacromonte, la Avenida de la Innovación y el Parque Federico García Lorca, entre otros",
+   "superficie_km2": 23.5,
+   "horario": "24h",
+   "horario_nota": "el Ayuntamiento no publica franja horaria: la restricción rige de forma permanente",
+   "desde": "2025-04-01",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_empadronados",
+     "acceso": "prohibido",
+     "desde": "2025-10-01"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "empadronados",
+     "acceso": "permitido",
+     "nota": "residentes o empadronados en Granada quedan excluidos de la ZBE",
+     "nota_en": "residents registered in Granada are outside the ZBE rules"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ],
+   "ambito_en": "almost the whole city, about 23.5 km² bounded by Camino del Sacromonte, Avenida de la Innovación and Federico García Lorca Park, among others"
+  }
+ ],
+ "criterio_usuario": "titular empadronado o residente en Granada",
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave del artículo 76.z3 de la Ley de Tráfico",
+  "nota_en": "serious offence under section 76(z3) of the Traffic Act"
+ },
+ "excepciones": [
+  "vehículos de fuera sin etiqueta que acceden a un aparcamiento público durante más de una hora",
+  "conductores de renta baja con compromisos laborales (autorización)",
+  "emergencias, seguridad y servicios públicos esenciales, transporte público, taxi, VTC y PMR"
+ ],
+ "control": "cámaras de lectura de matrículas en los accesos",
+ "ordenanza": {
+  "nombre": "Proyecto de Zona de Bajas Emisiones de Granada (aprobación definitiva, BOP de Granada 2025)",
+  "url": "https://www.granada.org/inet/wordenanz.nsf/02ccd74c639fe3bfc125735500242007/9970e48f4eda6237c1258d0d0031ce66/$FILE/2025-13657Z-aprobacion-definitiva-proyecto-zbe.pdf"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.granada.org/inet/wprensa.nsf/xnotalc/80C3C693BD02419EC1258C4D002891CE?open=&pag=ini",
+   "label": "Ayuntamiento de Granada · Se amplía el periodo informativo: régimen sancionador desde el 1 de octubre"
+  },
+  {
+   "url": "https://www.granada.org/inet/wprensa.nsf/xnotalc/099CC61FFD330743C1258AB60027786B?open=&pag=ini",
+   "label": "Ayuntamiento de Granada · La ZBE abarca toda la ciudad y solo afectará a los no residentes sin etiqueta"
+  },
+  {
+   "url": "https://www.granada.org/inet/wordenanz.nsf/02ccd74c639fe3bfc125735500242007/9970e48f4eda6237c1258d0d0031ce66/$FILE/2025-13657Z-aprobacion-definitiva-proyecto-zbe.pdf",
+   "label": "BOP de Granada · Aprobación definitiva del proyecto de ZBE"
+  }
+ ],
+ "verificado": "2026-10-15",
+ "nota_verificacion": "granada.org rechaza la descarga automática (403); datos leídos en las notas oficiales indexadas",
+ "excepciones_en": [
+  "out-of-town vehicles without a label parking in a public car park for more than an hour",
+  "low-income drivers who need the car for work (permit)",
+  "emergency, security and essential services, public transport, taxis, ride-hailing and reduced-mobility permits"
+ ],
+ "control_en": "number-plate cameras at the entries"
+}

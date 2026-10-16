@@ -1,0 +1,19 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { REVIEW_CYCLE_MONTHS, CONTACT_EMAIL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title="Editorial policy of ZBE & DGT Label: sources, reviews, errors" description="How we choose the sources for each low-emission zone and each road-tax byelaw, how often they are reviewed, how an error is corrected and what we never publish." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Editorial policy</h1>
+    <h2>Official sources only</h2>
+    <p>Every rule comes from the byelaw published in an official gazette, from the council or DGT website, or from the Spanish state gazette (BOE). A press article tells us something may have changed; it is never a source. Before publishing, the rule is read in the official text and stored with its address and date.</p>
+    <h2>Reviews</h2>
+    <p>A script downloads every source each week and flags those that have changed; on top of that, all content gets a full review at least every {REVIEW_CYCLE_MONTHS} months and each January, when tax byelaws take effect. Future dates in each byelaw are stored in the data, so the answer changes by itself on the day.</p>
+    <h2>Errors</h2>
+    <p>If you spot one, write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. We fix it, update the check date and add the case to the automated tests. The methods are in <a href={route('method', lang)}>How we calculate</a>.</p>
+    <h2>Independence</h2>
+    <p>No one pays to be listed or for the order of the cities. We sell no stickers and no appeal services.</p>
+  </div>
+</PageLayout>

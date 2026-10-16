@@ -1,0 +1,30 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { YEAR, LAST_UPDATED, AUTHOR_NAME, CONTACT_EMAIL, AUTHOR_ROLE, SITE_NAMES, LANG_TAGS } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { personSchema, organizationSchema, breadcrumbSchema, profilePageSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+import { CIUDADES } from '../../lib/engine/zbe';
+import { MUNICIPIOS } from '../../lib/engine/ivtm';
+const lang = 'es';
+---
+<PageLayout title="ZBE y Etiqueta: quién publica el simulador y cómo se revisa" description="Quién está detrás del simulador de etiqueta DGT, zonas de bajas emisiones e impuesto de circulación, cómo se comprueban las ordenanzas y su financiación." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Inicio', path: route('home', lang) }, { name: 'Quiénes somos', path: route('about', lang) }])]} breadcrumbs={[{ label: 'Quiénes somos' }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">Quién hace {SITE_NAMES.es}</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
+    <p>{SITE_NAMES.es} lo publica Radif Partners. Nació de una pregunta que se repite en cualquier coche que va a entrar en una ciudad española: con esta pegatina, o sin ella, ¿me van a multar? La respuesta estaba repartida entre la web de la DGT, que explica las etiquetas pero no las ciudades, y las webs municipales, cada una con su ordenanza, su calendario y sus excepciones. Los artículos que intentaban resumirlo todo se contradecían en algo tan básico como el año de la etiqueta C de un diésel.</p>
+    <h2>Qué intentamos hacer mejor</h2>
+    <p>Dar una respuesta para tu caso y tu fecha, no una tabla general. El simulador combina el criterio de la DGT con la ordenanza de la ciudad elegida, distingue al vehículo de fuera del domiciliado y del residente, enseña el horario, la multa y la próxima fecha que cambia algo, y suma el impuesto de circulación del municipio. Hoy cubre {CIUDADES.length} zonas de bajas emisiones y {MUNICIPIOS.length} ordenanzas fiscales; solo entran las ciudades cuya norma hemos podido leer en una fuente oficial.</p>
+    <h2>Cómo se comprueba</h2>
+    <p>Cada regla está en un fichero de datos con la dirección de la ordenanza o de la página municipal y la fecha de lectura. Un script vuelve a descargar todas las fuentes, compara su huella con la anterior y verifica que las frases citadas siguen ahí; cuando una página cambia, se relee antes de publicar. Las fórmulas de la etiqueta, de los caballos fiscales y del impuesto tienen pruebas automáticas con casos calculados a mano. Los detalles están en <a href={route('method', lang)}>Cómo calculamos</a>.</p>
+    <h2>Lo que no somos</h2>
+    <p>No somos la DGT ni un ayuntamiento, no vendemos pegatinas, no gestionamos autorizaciones ni recursos de multas y no cobramos a nadie por aparecer. Para tu etiqueta exacta, la consulta por matrícula de la sede electrónica de la DGT es la referencia; para una autorización, el registro de tu ayuntamiento.</p>
+    <h2>Financiación y datos</h2>
+    <p>La web es gratuita y sin registro. Lo que escribes en el simulador no sale de tu navegador. Si algún día muestra publicidad, nunca irá encima de un simulador ni dentro de un resultado.</p>
+    <h2>En inglés</h2>
+    <p>Todas las páginas tienen versión inglesa, pensada para extranjeros residentes, conductores con matrícula de otro país y quien alquila un coche: los términos locales se explican y los importes siguen en euros.</p>
+    <h2>Contacto</h2>
+    <p>¿Una ordenanza ha cambiado, una multa no cuadra con el simulador, falta tu ciudad? Escribe a <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Consulta también la <a href={route('editorial', lang)}>política editorial</a> y el <a href={route('terms', lang)}>aviso legal</a>.</p>
+    <p class="text-sm text-navy-600">Reglas {YEAR}, comprobadas el <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, LANG_TAGS[lang])}</time>.</p>
+  </div>
+</PageLayout>

@@ -1,0 +1,26 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { CONTACT_EMAIL, LEGAL, SITE_URL, LAST_UPDATED } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'es';
+---
+<PageLayout title="Privacidad: el simulador de ZBE no guarda tu coche ni tu domicilio" description="Política de privacidad (RGPD y LOPDGDD): matrícula, motor, domicilio y caballos fiscales se quedan en tu navegador; sin cookies, solo registros del alojamiento y medición anónima." lang={lang} noindex={true} breadcrumbs={[{ label: 'Privacidad' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Política de privacidad</h1>
+    <p>Para saber si puedes entrar en una ZBE dices qué coche tienes, de qué año es y dónde está domiciliado. La web está hecha para que {SITE_URL} no reciba nunca esos datos.</p>
+    <h2>1. Responsable</h2>
+    <LegalIdentity lang={lang} />
+    <p>Correo: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>2. Lo que escribes</h2>
+    <p>Motor, fecha de matriculación, norma Euro, domicilio del vehículo, caballos fiscales y fecha del viaje se procesan solo en tu navegador. <strong>No se envían a nosotros ni a terceros y no se guardan.</strong> Para que puedas compartir un resultado, tras tu primera interacción el simulador escribe los valores en la barra de direcciones; esa dirección se queda en tu dispositivo salvo que tú la compartas.</p>
+    <h2>3. Tratamientos</h2>
+    <h3>Registros del alojamiento</h3><p>Al visitar la web, GitHub trata los datos técnicos necesarios (dirección IP, hora, página, navegador, procedencia) para servirla y prevenir abusos. Base jurídica: interés legítimo, art. 6.1.f RGPD.</p>
+    <h3>Sin cookies</h3><p>La web no instala cookies ni guarda nada en el almacenamiento del navegador.</p>
+    <h3>Medición anónima de errores (Microsoft Clarity, sin cookies)</h3><p>Si está activa, Clarity registra en modo sin cookies errores de carga, tiempos y clics sin efecto, con los campos enmascarados y un identificador nuevo en cada visita. Proveedor: Microsoft Ireland Operations Limited, One Microsoft Place, South County Business Park, Leopardstown, Dublín 18, Irlanda. Base jurídica: art. 6.1.f RGPD. Grabaciones borradas a los 30 días, agregados a los 13 meses.</p>
+    <h2>4. Destinatarios y transferencias</h2><p>No vendemos ni cedemos datos a aseguradoras, talleres, concesionarios ni redes publicitarias. GitHub, Inc. y Microsoft Corporation están en Estados Unidos y adheridas al Marco de Privacidad de Datos UE-EE. UU., con cláusulas contractuales tipo.</p>
+    <h2>5. Tus derechos</h2><p>Acceso, rectificación, supresión, limitación, oposición y portabilidad (arts. 15 a 22 RGPD): escribe a <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, respondemos en un mes. Puedes reclamar ante la {LEGAL.supervisoryAuthority} (<a href={LEGAL.supervisoryAuthorityUrl} rel="nofollow noopener" target="_blank">{LEGAL.supervisoryAuthorityUrl}</a>) o ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" rel="nofollow noopener" target="_blank">aepd.es</a>).</p>
+    <h2>6. Sin decisiones automatizadas</h2><p>Un resultado de esta web no tiene efectos jurídicos: la etiqueta la asigna la DGT y la sanción, el ayuntamiento.</p>
+    <p>Ver también <a href={route('cookies', lang)}>cookies</a>. Actualizado: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>
