@@ -1,0 +1,37 @@
+import { definePage } from '../../lib/page-types';
+export default definePage({
+  id: "zbe-terrassa", group: 'zbe', order: 61, tool: 'zbe', ciudad: "terrassa",
+  related: ["zbe-sabadell", "zbe-sant-cugat", "zbe-barcelona", "sin-etiqueta"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
+  es: {
+    slug: "zbe-terrassa",
+    nav: "ZBE Terrassa",
+    card: "2 km², laborables de 7 a 20 h",
+    title: "ZBE Terrassa 2026: horario, 24 días y furgonetas desde mayo",
+    description: "ZBE de Terrassa 2026: 2,02 km² cerrados a vehículos sin etiqueta DGT laborables de 7 a 20 h; 24 días libres al año y, desde mayo de 2026, furgonetas y camiones.",
+    h1: "ZBE de Terrassa 2026: el centro ampliado hasta Àngel Sallent",
+    intro: "Terrassa amplió su ZBE en 2025 hasta la avenida d'Àngel Sallent. Restringe a los vehículos sin etiqueta en horario laboral, con 24 días libres al año.",
+    resume: () => "La ZBE de Terrassa entró en vigor el 20 de mayo de 2024 y ocupa 2,02 km² del centro, entre el paseo del Vint-i-dos de Juliol, el parque de Vallparadís, las carreteras de Montcada y Martorell, la avenida d'Àngel Sallent y la calle de Santa Maria de Mazzarel·lo. El Pleno aprobó definitivamente una modificación de la ordenanza el 31 de octubre de 2025, publicada en el BOPB el 14 de noviembre de 2025. La prohibición afecta a los vehículos sin etiqueta ambiental de la DGT de lunes a viernes laborables, de 7.00 a 20.00 horas; las etiquetas B, C, ECO y 0 circulan libremente. Según la ordenanza, las sanciones se aplican a los turismos y motos, y desde el 1 de mayo de 2026 también a furgonetas, camiones y autobuses, siempre condicionadas a la implantación del registro de autorizaciones. La infracción es grave y el cuadro municipal la fija en 200 euros, 100 con pronto pago. Cada vehículo sin etiqueta puede entrar un máximo de 24 días al año. Los empadronados dentro de la ZBE con vehículo censado allí pueden obtener una autorización temporal.",
+    faqs: () => [{ q: "¿Cuántas veces puedo entrar en la ZBE de Terrassa con un coche sin etiqueta?", a: "La ordenanza permite un máximo de 24 días de acceso al año, contados del 1 de enero al 31 de diciembre. La autorización se tramita en el registro de vehículos autorizados como máximo 24 horas después del acceso. El límite vale también para vehículos extranjeros." }, { q: "Vivo dentro de la ZBE y mi coche no tiene etiqueta: ¿qué puedo hacer?", a: "Si estaba empadronado dentro de la ZBE y el vehículo estaba censado allí cuando entró en vigor la ordenanza, puede obtener una autorización temporal. También pueden pedirla los titulares de una plaza de aparcamiento o de un permiso de acceso a las áreas peatonales de la zona. Estas autorizaciones duran hasta la revisión de la ZBE." }, { q: "¿Desde cuándo se multa a furgonetas y camiones sin etiqueta?", a: "La ordenanza aplica el régimen sancionador a las categorías N1, N2, N3, M2 y M3 a partir del 1 de mayo de 2026. Hasta el 30 de abril de 2026 solo se sancionaba al resto de vehículos más contaminantes. Antes de esa fecha la restricción ya se aplicaba a turismos y motos." }],
+    body: (h) => `
+<h2>Una zona ampliada</h2>
+<p>La ZBE de Terrassa está en vigor desde el 20 de mayo de 2024. La modificación aprobada el 31 de octubre de 2025 y publicada en el Boletín Oficial de la Provincia de Barcelona el 14 de noviembre la amplió hasta la avenida d'Àngel Sallent y la calle de Santa Maria de Mazzarel·lo, con 2,02 km². Funciona de lunes a viernes laborables de 7 a 20 h, con lectura automática de matrículas y la Policía Municipal.</p>
+<h2>Furgonetas y camiones, desde mayo de 2026</h2>
+<p>Las sanciones se aplican a turismos y motos y, desde el 1 de mayo de 2026, también a furgonetas, camiones y autobuses, siempre que el registro de vehículos funcione. Cualquier vehículo, también el extranjero, tiene hasta 24 días de acceso al año, y la autorización se pide como máximo 24 horas después de entrar. Muy cerca, ${h.a('zbe-sabadell', "Sabadell")} aplica el mismo horario.</p>`,
+  },
+  en: {
+    slug: "zbe-terrassa",
+    nav: "Terrassa ZBE",
+    card: "2 km², working days 7 am to 8 pm",
+    title: "Terrassa ZBE 2026: Hours, 24 Days and Vans From May 2026",
+    description: "Terrassa low-emission zone 2026: 2.02 km² closed to unlabelled vehicles on working days 7 am to 8 pm; 24 free days a year and, since May 2026, vans and lorries.",
+    h1: "Terrassa low-emission zone 2026: the centre out to Àngel Sallent",
+    intro: "In 2025 Terrassa extended its zone to Avinguda d'Àngel Sallent. It restricts unlabelled vehicles in working hours, with 24 free days a year.",
+    resume: () => "Terrassa's low-emission zone took effect on 20 May 2024 and covers 2.02 km² of the centre, between Passeig del Vint-i-dos de Juliol, Vallparadís park, the Montcada and Martorell roads, Avinguda d'Àngel Sallent and Carrer de Santa Maria de Mazzarel·lo. The council gave final approval to an amended byelaw on 31 October 2025, published in the Barcelona provincial gazette on 14 November 2025. The ban covers vehicles without a DGT environmental label on working days, Monday to Friday, from 7am to 8pm; B, C, ECO and 0 labels drive in freely. Under the byelaw, fines apply to cars and motorbikes, and from 1 May 2026 also to vans, lorries and buses, always subject to the permit register being in place. A breach is a serious offence set at €200 in the council's table of offences, €100 if paid early. Each vehicle with no label may enter on no more than 24 days a year. People registered as living in the zone with a vehicle registered there can get a temporary permit.",
+    faqs: () => [{ q: "How many times can I drive into Terrassa's zone in a car with no label?", a: "The byelaw allows no more than 24 days of access a year, counted from 1 January to 31 December. The permit is requested from the register of authorised vehicles no later than 24 hours after entering. The limit also applies to foreign vehicles." }, { q: "I live inside the zone and my car has no label: what can I do?", a: "If you were registered as living in the zone and the vehicle was registered there when the byelaw took effect, you can get a temporary permit. Holders of a parking space or a pedestrian-area access pass in the zone can also apply. These permits last until the zone is reviewed." }, { q: "When do vans and lorries with no label start being fined?", a: "The byelaw applies fines to N1, N2, N3, M2 and M3 categories from 1 May 2026. Until 30 April 2026 only the other more polluting vehicles could be fined. Before that date the restriction already applied to cars and motorbikes, and fines depend on the vehicle register working." }],
+    body: (h) => `
+<h2>An enlarged zone</h2>
+<p>Terrassa’s zone has been in force since 20 May 2024. The amendment passed on 31 October 2025 and published in the Barcelona provincial gazette on 14 November extended it to Avinguda d'Àngel Sallent and Carrer de Santa Maria de Mazzarel·lo, covering 2.02 km². It runs on working weekdays from 7 am to 8 pm, with automatic plate reading and the municipal police.</p>
+<h2>Vans and lorries from May 2026</h2>
+<p>Fines apply to cars and motorbikes and, from 1 May 2026, also to vans, lorries and buses, provided the vehicle register is working. Any vehicle, foreign ones included, has up to 24 access days a year, and the permit must be requested no later than 24 hours after entering. Next door, ${h.a('zbe-sabadell', "Sabadell")} uses the same hours.</p>`,
+  },
+});

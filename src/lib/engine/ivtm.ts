@@ -17,6 +17,8 @@ export interface Bonificacion {
   anos?: number;
   /** Requiere solicitud expresa. */
   solicitud?: boolean;
+  /** La ordenanza excluye los híbridos diésel. */
+  excluye_diesel?: boolean;
   /** Antigüedad mínima en años (solo « historico »). */
   edad_min?: number;
   nota: string;
@@ -62,7 +64,7 @@ export function tramo(tramos: Tramo[], cvf: number): { tramo: Tramo; indice: num
 export interface CuotaIVTM { cvf: number; tramo: number; base: number; minimaEstatal: number; bonificacion?: Bonificacion; pct: number; cuota: number; maxima: number }
 
 /** Cuota anual de un turismo. Sin municipio : cuota mínima estatal (coeficiente 1) y la máxima legal (×2). */
-export function cuotaTurismo(o: { municipio?: string; cvf: number; etiqueta?: Etiqueta; tecnologia?: 'electrico' | 'hibrido' | 'gas' | 'combustion'; antiguedadAnos?: number }): CuotaIVTM {
+export function cuotaTurismo(o: { municipio?: string; cvf: number; etiqueta?: Etiqueta; tecnologia?: 'electrico' | 'hibrido' | 'gas' | 'combustion'; diesel?: boolean; antiguedadAnos?: number }): CuotaIVTM {
   const est = tramo(TRAMOS_ESTADO, o.cvf);
   const m = o.municipio ? municipio(o.municipio) : undefined;
   const t = m ? tramo(m.turismos, o.cvf) : est;
@@ -72,9 +74,9 @@ export function cuotaTurismo(o: { municipio?: string; cvf: number; etiqueta?: Et
   return { cvf: o.cvf, tramo: t.indice, base, minimaEstatal: est.tramo.cuota, bonificacion: bon, pct, cuota: r2(base * (1 - pct)), maxima: r2(est.tramo.cuota * P.ivtm_art95.coeficiente_maximo) };
 }
 
-export function bonificacionAplicable(m: Municipio, o: { etiqueta?: Etiqueta; tecnologia?: string; antiguedadAnos?: number }): Bonificacion | undefined {
+export function bonificacionAplicable(m: Municipio, o: { etiqueta?: Etiqueta; tecnologia?: string; diesel?: boolean; antiguedadAnos?: number }): Bonificacion | undefined {
   const edad = o.antiguedadAnos ?? 0;
-  const ok = m.bonificaciones.filter((b) => (b.anos === undefined || edad < b.anos) && b.para.some((x) =>
+  const ok = m.bonificaciones.filter((b) => (b.anos === undefined || edad < b.anos) && !(b.excluye_diesel && o.diesel && o.tecnologia === 'hibrido') && b.para.some((x) =>
     (x === '0' && o.etiqueta === '0') || (x === 'ECO' && o.etiqueta === 'ECO') ||
     (x === 'electrico' && o.tecnologia === 'electrico') || (x === 'hibrido' && o.tecnologia === 'hibrido') ||
     (x === 'gas' && o.tecnologia === 'gas') || (x === 'historico' && edad >= (b.edad_min ?? P.ivtm_art95.antiguedad_historicos_anos))));

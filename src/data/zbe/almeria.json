@@ -1,0 +1,102 @@
+{
+ "slug": "almeria",
+ "nombre": "Almería",
+ "provincia": "Almería",
+ "ccaa": "Andalucía",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "centro",
+   "nombre": "Zona de Bajas Emisiones de Almería",
+   "ambito": "Casco Histórico y Pescadería: ámbito delimitado por el Cerro de San Cristóbal y la calle de La Reina (zonas 24 Catedral y 25 Pescadería), unas 45 ha",
+   "ambito_en": "historic centre and Pescadería: the area bounded by the Cerro de San Cristóbal and calle de La Reina (zones 24 Cathedral and 25 Pescadería), about 45 ha",
+   "horario": "L-V laborables 08:00-20:00",
+   "desde": "2025-01-01",
+   "superficie_ha": 45,
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_domiciliados",
+     "acceso": "prohibido",
+     "desde": "2025-01-01",
+     "nota": "fin de la moratoria de sanciones; salvo vehículos exentos o autorizados en el registro municipal",
+     "nota_en": "end of the grace year for fines; unless exempt or authorised in the municipal register"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "domiciliados",
+     "acceso": "permitido",
+     "nota": "vehículos sin distintivo de alta en el municipio de Almería según el Registro de Vehículos de la DGT: libre acceso durante 3 años según el Anexo 2 (la ordenanza no fija la fecha final)",
+     "nota_en": "unlabelled vehicles registered in Almería according to the DGT vehicle register: free access for 3 years under Annex 2 (the byelaw gives no end date)"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "multa de 200 € (infracción grave); puede subir un 30 % si hay más de 3 infracciones en un año",
+  "nota_en": "€200 fine (serious offence); it can rise by 30% for more than 3 offences in a year"
+ },
+ "excepciones": [
+  "vehículos históricos, ciclos, bicicletas y VMP",
+  "servicios médicos, funerarios, protección civil, bomberos, fuerzas de seguridad, seguridad privada, transporte público, taxis y autoescuelas",
+  "servicios generales y públicos (limpieza, residuos, mantenimiento, obras)",
+  "con autorización registral: titulares de comercios, hostelería y hoteles, propietarios de garajes, reparto domiciliario (3 años) y PMR",
+  "distribución urbana de mercancías en el horario de carga y descarga",
+  "autorizaciones diarias o temporales para accesos esporádicos (talleres, hospitales, hoteles)"
+ ],
+ "excepciones_en": [
+  "historic vehicles, cycles, bicycles and e-scooters",
+  "medical, funeral, civil protection, fire, police, private security, public transport, taxi and driving-school vehicles",
+  "general and public services (cleaning, waste, maintenance, roadworks)",
+  "with a registered permit: shop, bar and hotel owners, garage owners, home delivery (3 years) and reduced mobility",
+  "urban goods delivery during loading hours",
+  "daily or temporary permits for occasional access (workshops, hospitals, hotels)"
+ ],
+ "control": "hasta 18 cámaras de lectura de matrícula en los accesos y controles de la Policía Local",
+ "control_en": "up to 18 number-plate cameras at the entrances plus Local Police checks",
+ "ordenanza": {
+  "nombre": "Ordenanza reguladora de las Zonas de Bajas Emisiones de Almería (aprobación inicial 23/10/2023; aprobación definitiva por el Pleno en diciembre de 2023)",
+  "url": "https://almeriaciudad.es/uploads/normativas/2024-05/16.-reguladora-de-las-zonas-de-baja-emisiones-de-almeria.pdf"
+ },
+ "fuentes": [
+  {
+   "url": "https://almeriaciudad.es/uploads/normativas/2024-05/16.-reguladora-de-las-zonas-de-baja-emisiones-de-almeria.pdf",
+   "label": "Ayuntamiento de Almería · Ordenanza reguladora de las Zonas de Bajas Emisiones",
+   "cita": "en horario de 8.00 a 20.00 horas."
+  },
+  {
+   "url": "https://almeriaciudad.es/actualidad/la-zona-de-bajas-emisiones-zbe-de-almeria-entra-en-vigor-partir-de-hoy-1-de-enero",
+   "label": "Ayuntamiento de Almería · La ZBE entra en vigor el 1 de enero (01/01/2025)",
+   "cita": "tras un año completo de moratoria"
+  },
+  {
+   "url": "https://almeriaciudad.es/actualidad/aprobada-la-modificacion-de-la-ordenanza-reguladora-del-impuesto-sobre-bienes-inmuebles",
+   "label": "Ayuntamiento de Almería · Aprobación definitiva de la Ordenanza de la ZBE (23/12/2023)",
+   "cita": "Casco Histórico y Pescadería"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "ordenanza (PDF municipal) leída con curl + pypdf; noticias de almeriaciudad.es con curl. El PDF municipal deja en blanco el número del BOP y no se ha localizado el anuncio en el BOP de Almería. En febrero de 2026 se aprobó inicialmente una nueva Ordenanza General de Movilidad (solo visto en prensa, no verificado en fuente oficial)."
+}

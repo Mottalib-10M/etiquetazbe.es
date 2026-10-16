@@ -1,0 +1,105 @@
+{
+ "slug": "santa-cruz-de-tenerife",
+ "nombre": "Santa Cruz de Tenerife",
+ "provincia": "Santa Cruz de Tenerife",
+ "ccaa": "Canarias",
+ "estado": "aprobada",
+ "zonas": [
+  {
+   "id": "centro",
+   "nombre": "Zona de Bajas Emisiones de Santa Cruz de Tenerife",
+   "ambito": "zona central: casi todo El Toscal y Zona Centro, 92 calles del Anexo I de la ordenanza (entre el barranco de Santos, Méndez Núñez, la Rambla y la avenida de Anaga)",
+   "ambito_en": "central area: most of El Toscal and the Zona Centro, the 92 streets listed in Annex I of the byelaw (between the Barranco de Santos, Méndez Núñez, the Rambla and Avenida de Anaga)",
+   "horario": "L-S 07:00-20:00",
+   "horario_nota": "fuera de ese horario los vehículos sin etiqueta circulan sin limitación",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "nota": "la ordenanza restringe los vehículos sin etiqueta de lunes a sábado de 7 a 20 h, pero el registro y los avisos llegan a los 18 meses de su entrada en vigor y las multas a los 36 meses",
+     "nota_en": "the byelaw restricts unlabelled vehicles Monday to Saturday from 7 am to 8 pm, but the register and warnings only start 18 months after it takes effect and fines after 36 months"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "vehículos de residentes en la ZBE o de alta en el IVTM en la zona, previa inscripción en el Registro Municipal",
+     "nota_en": "vehicles of people living in the zone or taxed (IVTM) there, after entry in the municipal register"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave (art. 76.z3 LSV); hasta +30 % por reincidencia; régimen sancionador aplicable a los 36 meses de la entrada en vigor",
+  "nota_en": "serious offence (art. 76.z3 Traffic Act); up to 30% more for repeat offences; fines apply 36 months after the byelaw took effect"
+ },
+ "excepciones": [
+  "residentes de la ZBE y vehículos de alta en el IVTM en la zona (con inscripción en el Registro Municipal)",
+  "servicios esenciales, PMR, servicios públicos básicos, transporte público, taxi e históricos",
+  "con autorización: plazas de garaje (hasta 3 vehículos por plaza), abonados de parkings, comercios y autónomos de la zona, DUM, colegios, citas médicas, VTC, hoteles, talleres, ITV, matrículas extranjeras equivalentes",
+  "autorización temporal de 2 años (prorrogable 1) si los ingresos no superan 2 veces el IPREM y no se tiene otro vehículo con etiqueta",
+  "familias numerosas (máx. 2 vehículos) y cuidadores de personas mayores o dependientes empadronadas en la ZBE"
+ ],
+ "excepciones_en": [
+  "residents of the zone and vehicles taxed (IVTM) there (entry in the municipal register required)",
+  "emergency services, blue-badge holders, basic public services, public transport, taxis and historic vehicles",
+  "with a permit: garage spaces (up to 3 vehicles per space), car-park season-ticket holders, businesses and self-employed based in the zone, deliveries, school runs, medical appointments, private-hire cars, hotels, garages, MOT stations, equivalent foreign plates",
+  "2-year temporary permit (renewable for 1 year) if income is no more than twice the IPREM and no other labelled vehicle is owned",
+  "large families (max. 2 vehicles) and carers of elderly or dependent people registered in the zone"
+ ],
+ "control": "cámaras de lectura de matrículas (OCR) en los accesos; el Registro Municipal y las autorizaciones se aplican a los 18 meses de la entrada en vigor",
+ "control_en": "number-plate (ANPR) cameras at the entrances; the municipal register and permits start 18 months after the byelaw took effect",
+ "pendiente": "la ordenanza, publicada en el BOP del 24/08/2026, entra en vigor una vez transcurrido el plazo de 15 días hábiles de la Ley de Bases de Régimen Local; registro y autorizaciones a los 18 meses de su entrada en vigor, avisos informativos desde entonces y multas a los 36 meses",
+ "pendiente_en": "the byelaw, published in the provincial gazette on 24/08/2026, takes effect once the 15-working-day period of the Local Government Act has passed; vehicle register and permits 18 months after it takes effect, warning letters from then and fines after 36 months",
+ "ordenanza": {
+  "nombre": "Ordenanza Municipal Reguladora de la Zona de Bajas Emisiones (ZBE) del municipio de Santa Cruz de Tenerife (BOP de Santa Cruz de Tenerife n.º 101, 24 de agosto de 2026)",
+  "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/24-8-26/24-8-26.pdf"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/24-8-26/24-8-26.pdf",
+   "label": "BOP de Santa Cruz de Tenerife · Aprobación definitiva de la ordenanza de la ZBE (n.º 101, 24/08/2026)",
+   "cita": "lunes a sábado, de 7:00 a 20:00 horas"
+  },
+  {
+   "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/24-8-26/24-8-26.pdf",
+   "label": "BOP de Santa Cruz de Tenerife · Ordenanza ZBE, disposición transitoria y multas",
+   "cita": "treinta y seis (36) meses desde la entrada en vigor"
+  },
+  {
+   "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/24-8-26/24-8-26.pdf",
+   "label": "BOP de Santa Cruz de Tenerife · Ordenanza ZBE, artículo 17",
+   "cita": "se sancionará con multa de 200 euros"
+  },
+  {
+   "url": "https://www.santacruzdetenerife.es/web/servicios-municipales/movilidad-y-accesibilidad-universal/zonas-de-bajas-emisiones",
+   "label": "Ayuntamiento de Santa Cruz de Tenerife · Zonas de bajas emisiones",
+   "cita": "En la zona viven 16.369 personas"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "BOP leído en el PDF oficial (bopsantacruzdetenerife.es, sumario del 24/08/2026). La fecha de entrada en vigor (14/09/2026) es un cálculo: 15 días hábiles tras la publicación, sin festivos intermedios; la ordenanza no da una fecha fija para multas (36 meses) ni avisos (18 meses)."
+}

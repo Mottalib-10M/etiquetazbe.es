@@ -1,0 +1,37 @@
+import { definePage } from '../../lib/page-types';
+export default definePage({
+  id: "zbe-a-coruna", group: 'zbe', order: 40, tool: 'zbe', ciudad: "a-coruna",
+  related: ["impuesto-circulacion-a-coruna", "zbe-vigo", "zbe-oviedo", "multa-zbe"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
+  es: {
+    slug: "zbe-a-coruna",
+    nav: "ZBE A Coruña",
+    card: "Ciudad Vieja y Marina, acceso reservado",
+    title: "ZBE A Coruña 2026: Ciudad Vieja, Marina y acceso reservado",
+    description: "ZBE de A Coruña 2026: la Ciudad Vieja, la Marina y el Parrote solo admiten vehículos autorizados, con cualquier etiqueta. Carga, taxis y multa de 200 €. Al día.",
+    h1: "ZBE de A Coruña 2026: una zona de acceso reservado",
+    intro: "En A Coruña la etiqueta no abre la puerta: la ZBE Centro solo deja pasar a residentes, servicios y vehículos autorizados. Comprueba tu caso.",
+    resume: () => "A Coruña regula su Zona de Bajas Emisiones en la Ordenanza de Movilidad Sostenible, aprobada definitivamente por el Pleno el 11 de septiembre de 2025 y publicada en el BOP n.º 185 del 29 de septiembre de 2025. La ZBE Centro comprende la Ciudad Vieja, la Avenida de la Marina, el Paseo del Parrote y varias calles de la Pescadería, y procede de la ZBE piloto declarada el 28 de diciembre de 2022. No distingue por etiqueta ambiental: solo pueden circular el transporte público, los taxis en determinadas vías, los vehículos de servicio público, los autorizados y la carga y descarga de 6:00 a 11:00. Los vehículos 0 y ECO disponen de una hora más de carga y descarga antes y después (5:00-6:00 y 11:00-12:00). Está prohibido estacionar salvo las excepciones de los decretos de zonas peatonales. Incumplir la prohibición de acceso es una infracción grave sancionada con 200 euros. El Concello ha indicado que la ordenanza no cambia lo que ya se aplicaba en la Marina y la Ciudad Vieja.",
+    faqs: () => [{ q: "¿Puedo entrar en la ZBE de A Coruña con un coche eléctrico (etiqueta 0)?", a: "No, salvo que estés autorizado. La ZBE Centro no se rige por la etiqueta: solo pueden circular transporte público, taxis en ciertas vías, vehículos de servicio público, autorizados y carga y descarga en su horario. La etiqueta 0 o ECO solo amplía en una hora antes y después el horario de carga y descarga." }, { q: "¿Qué multa hay por entrar sin autorización en la Ciudad Vieja o la Marina?", a: "La ordenanza califica como grave el incumplimiento de la prohibición de acceso, circulación y estacionamiento en la ZBE, con multa de 200 euros. Como el acceso depende de la autorización y no de la etiqueta, la multa puede llegar también a un coche eléctrico que entra sin permiso. Con pronto pago en 20 días naturales se queda en 100 euros." }, { q: "¿Habrá más zonas de bajas emisiones en A Coruña?", a: "La ordenanza prevé ampliar la ZBE a otros sectores, pero para ello hace falta un nuevo proyecto aprobado por la Xunta de Goberno Local. Mientras tanto, el Concello estudia el tráfico y las emisiones en las zonas de monitorización del Anexo IV." }],
+    body: (h) => `
+<h2>La etiqueta no basta</h2>
+<p>A diferencia de Madrid o Barcelona, la ZBE Centro de A Coruña no ordena el acceso por etiquetas: es una zona de preferencia peatonal con acceso reservado. Un coche eléctrico de fuera tiene el mismo problema que un diésel antiguo si no está autorizado. La única ventaja de la 0 y la ECO es horaria: pueden hacer carga y descarga de 5:00 a 12:00, una hora más por cada extremo que el resto.</p>
+<h2>Ampliaciones por proyecto</h2>
+<p>El Concello declaró la zona en diciembre de 2022 y la integró en la Ordenanza de Movilidad Sostenible de 2025. Extenderla a otros barrios exige un nuevo proyecto aprobado por la Xunta de Goberno Local, así que no hay fechas de crecimiento fijadas. Si vas a la ciudad desde fuera, deja el coche fuera del perímetro y usa ${h.a('impuesto-circulacion-a-coruna', "la página del impuesto de circulación de A Coruña")} si vas a domiciliarlo allí.</p>`,
+  },
+  en: {
+    slug: "zbe-a-coruna",
+    nav: "A Coruña ZBE",
+    card: "Old Town and Marina, permit-only access",
+    title: "A Coruña ZBE 2026: Old Town, Marina and Permit-Only Access",
+    description: "A Coruña low-emission zone 2026: the Old Town, the Marina and the Parrote admit authorised vehicles only, whatever their label. Deliveries, taxis, €200 fine.",
+    h1: "A Coruña low-emission zone 2026: a permit-only area",
+    intro: "In A Coruña the label does not open the gate: the Centro zone only lets in residents, services and authorised vehicles. Check where you stand.",
+    resume: () => "A Coruña regulates its Low Emission Zone in the Sustainable Mobility Byelaw, given final approval by the city council on 11 September 2025 and published in the provincial gazette (BOP no. 185) on 29 September 2025. The ZBE Centro covers the Ciudad Vieja, Avenida de la Marina, Paseo del Parrote and several streets of Pescadería, and grew out of the pilot zone declared on 28 December 2022. It does not work by environmental label: only public transport, taxis on certain streets, public-service vehicles, authorised vehicles and deliveries from 6:00 to 11:00 may drive in. 0 and ECO vehicles get an extra delivery hour before and after (5:00-6:00 and 11:00-12:00). Parking is banned apart from the exceptions in the pedestrian-zone decrees. Breaking the access ban is a serious offence fined 200 euros. The council has said the byelaw does not change what already applied in the Marina and Ciudad Vieja.",
+    faqs: () => [{ q: "Can I drive into A Coruña's LEZ in an electric car (0 label)?", a: "No, unless you are authorised. The ZBE Centro does not work by label: only public transport, taxis on certain streets, public-service vehicles, authorised vehicles and deliveries in their time slot may drive in. A 0 or ECO label only adds an hour before and after the delivery window." }, { q: "What is the fine for entering the Ciudad Vieja or Marina without a permit?", a: "The byelaw treats breaking the ban on entering, driving and parking in the zone as a serious offence, with a 200 euro fine. Because access depends on a permit rather than the label, the fine can also reach an electric car that enters without one. Paid within 20 calendar days, it drops to 100 euros." }, { q: "Will A Coruña add more low emission zones?", a: "The byelaw allows the zone to be extended to other areas, but that needs a new project approved by the local government board. Meanwhile the council is studying traffic and emissions in the monitoring areas shown in Annex IV. No extension date has been set." }],
+    body: (h) => `
+<h2>The label is not enough</h2>
+<p>Unlike Madrid or Barcelona, A Coruña’s Centro zone does not sort access by label: it is a pedestrian-priority area with restricted entry. An out-of-town electric car has the same problem as an old diesel if it is not authorised. The only advantage for zero and ECO vehicles is timing: they may load and unload from 5 am to noon, an hour longer at each end than everyone else.</p>
+<h2>Extensions need a new project</h2>
+<p>The council declared the zone in December 2022 and brought it into the 2025 Sustainable Mobility Byelaw. Extending it to other districts needs a new project approved by the local government board, so no growth dates are set. If you are coming from outside, leave the car beyond the boundary, and see ${h.a('impuesto-circulacion-a-coruna', "the A Coruña road-tax page")} if you plan to register it there.</p>`,
+  },
+});

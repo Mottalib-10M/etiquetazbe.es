@@ -1,0 +1,449 @@
+{
+ "slug": "vigo",
+ "nombre": "Vigo",
+ "provincia": "Pontevedra",
+ "ccaa": "Galicia",
+ "estado": "aprobada",
+ "zonas": [
+  {
+   "id": "centro",
+   "nombre": "ZBE Centro",
+   "ambito": "espacio interior del perímetro Cánovas del Castillo, Carral, Victoria, Colón, Urzaiz, Magallanes, Gil, Ronda de Don Bosco, Cachamuiña, Paseo de Granada, Falperra, Pi y Margall, Llorente, Santa Marta, Conde de Torrecedeira, Gaiteiro Ricardo Portela y Avenida de Beiramar (3,7 km)",
+   "ambito_en": "area inside the perimeter of Cánovas del Castillo, Carral, Victoria, Colón, Urzaiz, Magallanes, Gil, Ronda de Don Bosco, Cachamuiña, Paseo de Granada, Falperra, Pi y Margall, Llorente, Santa Marta, Conde de Torrecedeira, Gaiteiro Ricardo Portela and Avenida de Beiramar (3.7 km)",
+   "horario": "24h",
+   "horario_nota": "la ordenanza no fija franjas horarias; las motos y ciclomotores están autorizados de 7:00 a 22:00",
+   "superficie_ha": 39,
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "nota": "restricción prevista en la primera fase, cada una de dos años desde la entrada en vigor de la ordenanza (fecha aún no publicada), con un primer año solo de avisos",
+     "nota_en": "restriction planned in the first phase, each lasting two years from the date the byelaw takes effect (not yet published), with a first year of warnings only"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "nota": "restricción prevista en la segunda fase, cada una de dos años desde la entrada en vigor de la ordenanza (fecha aún no publicada), con un primer año solo de avisos",
+     "nota_en": "restriction planned in the second phase, each lasting two years from the date the byelaw takes effect (not yet published), with a first year of warnings only"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "nota": "restricción prevista en la tercera fase, cada una de dos años desde la entrada en vigor de la ordenanza (fecha aún no publicada), con un primer año solo de avisos",
+     "nota_en": "restriction planned in the third phase, each lasting two years from the date the byelaw takes effect (not yet published), with a first year of warnings only"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "autorización general: empadronados en la zona y vehículos domiciliados en la ZBE con IVTM en Vigo, y sus invitados",
+     "nota_en": "general authorisation: people registered in the zone and vehicles registered at an address in the zone paying Vigo road tax, and their guests"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "autorización general: empadronados en la zona y vehículos domiciliados en la ZBE con IVTM en Vigo, y sus invitados",
+     "nota_en": "general authorisation: people registered in the zone and vehicles registered at an address in the zone paying Vigo road tax, and their guests"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "autorización general: empadronados en la zona y vehículos domiciliados en la ZBE con IVTM en Vigo, y sus invitados",
+     "nota_en": "general authorisation: people registered in the zone and vehicles registered at an address in the zone paying Vigo road tax, and their guests"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "motocicletas y ciclomotores exentos de 7:00 a 22:00",
+     "nota_en": "motorbikes and mopeds exempt from 7 am to 10 pm"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "motocicletas y ciclomotores exentos de 7:00 a 22:00",
+     "nota_en": "motorbikes and mopeds exempt from 7 am to 10 pm"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "motocicletas y ciclomotores exentos de 7:00 a 22:00",
+     "nota_en": "motorbikes and mopeds exempt from 7 am to 10 pm"
+    }
+   ]
+  },
+  {
+   "id": "praza-portugal",
+   "nombre": "ZBE Praza de Portugal",
+   "ambito": "espacio interior del perímetro Urzaiz, Lepanto, Alfonso XIII, Uruguay, República Argentina y Cervantes (1,1 km)",
+   "ambito_en": "area inside the perimeter of Urzaiz, Lepanto, Alfonso XIII, Uruguay, República Argentina and Cervantes (1.1 km)",
+   "horario": "24h",
+   "horario_nota": "la ordenanza no fija franjas horarias; las motos y ciclomotores están autorizados de 7:00 a 22:00",
+   "superficie_ha": 4,
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "nota": "restricción prevista en la primera fase, cada una de dos años desde la entrada en vigor de la ordenanza (fecha aún no publicada), con un primer año solo de avisos",
+     "nota_en": "restriction planned in the first phase, each lasting two years from the date the byelaw takes effect (not yet published), with a first year of warnings only"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "nota": "restricción prevista en la segunda fase, cada una de dos años desde la entrada en vigor de la ordenanza (fecha aún no publicada), con un primer año solo de avisos",
+     "nota_en": "restriction planned in the second phase, each lasting two years from the date the byelaw takes effect (not yet published), with a first year of warnings only"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "nota": "restricción prevista en la tercera fase, cada una de dos años desde la entrada en vigor de la ordenanza (fecha aún no publicada), con un primer año solo de avisos",
+     "nota_en": "restriction planned in the third phase, each lasting two years from the date the byelaw takes effect (not yet published), with a first year of warnings only"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "autorización general: empadronados en la zona y vehículos domiciliados en la ZBE con IVTM en Vigo, y sus invitados",
+     "nota_en": "general authorisation: people registered in the zone and vehicles registered at an address in the zone paying Vigo road tax, and their guests"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "autorización general: empadronados en la zona y vehículos domiciliados en la ZBE con IVTM en Vigo, y sus invitados",
+     "nota_en": "general authorisation: people registered in the zone and vehicles registered at an address in the zone paying Vigo road tax, and their guests"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "autorización general: empadronados en la zona y vehículos domiciliados en la ZBE con IVTM en Vigo, y sus invitados",
+     "nota_en": "general authorisation: people registered in the zone and vehicles registered at an address in the zone paying Vigo road tax, and their guests"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "motocicletas y ciclomotores exentos de 7:00 a 22:00",
+     "nota_en": "motorbikes and mopeds exempt from 7 am to 10 pm"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "motocicletas y ciclomotores exentos de 7:00 a 22:00",
+     "nota_en": "motorbikes and mopeds exempt from 7 am to 10 pm"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "motocicletas y ciclomotores exentos de 7:00 a 22:00",
+     "nota_en": "motorbikes and mopeds exempt from 7 am to 10 pm"
+    }
+   ]
+  },
+  {
+   "id": "calvario",
+   "nombre": "ZBE Calvario",
+   "ambito": "espacio interior del perímetro Jenaro de la Fuente, Avenida Martínez Garrido, Palencia, Doctor Carracido, José Antela Conde, Andalucía, San Roque y Gregorio Espino (2 km)",
+   "ambito_en": "area inside the perimeter of Jenaro de la Fuente, Avenida Martínez Garrido, Palencia, Doctor Carracido, José Antela Conde, Andalucía, San Roque and Gregorio Espino (2 km)",
+   "horario": "24h",
+   "horario_nota": "la ordenanza no fija franjas horarias; las motos y ciclomotores están autorizados de 7:00 a 22:00",
+   "superficie_ha": 14,
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "nota": "restricción prevista en la primera fase, cada una de dos años desde la entrada en vigor de la ordenanza (fecha aún no publicada), con un primer año solo de avisos",
+     "nota_en": "restriction planned in the first phase, each lasting two years from the date the byelaw takes effect (not yet published), with a first year of warnings only"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "nota": "restricción prevista en la segunda fase, cada una de dos años desde la entrada en vigor de la ordenanza (fecha aún no publicada), con un primer año solo de avisos",
+     "nota_en": "restriction planned in the second phase, each lasting two years from the date the byelaw takes effect (not yet published), with a first year of warnings only"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "nota": "restricción prevista en la tercera fase, cada una de dos años desde la entrada en vigor de la ordenanza (fecha aún no publicada), con un primer año solo de avisos",
+     "nota_en": "restriction planned in the third phase, each lasting two years from the date the byelaw takes effect (not yet published), with a first year of warnings only"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "autorización general: empadronados en la zona y vehículos domiciliados en la ZBE con IVTM en Vigo, y sus invitados",
+     "nota_en": "general authorisation: people registered in the zone and vehicles registered at an address in the zone paying Vigo road tax, and their guests"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "autorización general: empadronados en la zona y vehículos domiciliados en la ZBE con IVTM en Vigo, y sus invitados",
+     "nota_en": "general authorisation: people registered in the zone and vehicles registered at an address in the zone paying Vigo road tax, and their guests"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "autorización general: empadronados en la zona y vehículos domiciliados en la ZBE con IVTM en Vigo, y sus invitados",
+     "nota_en": "general authorisation: people registered in the zone and vehicles registered at an address in the zone paying Vigo road tax, and their guests"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "motocicletas y ciclomotores exentos de 7:00 a 22:00",
+     "nota_en": "motorbikes and mopeds exempt from 7 am to 10 pm"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "motocicletas y ciclomotores exentos de 7:00 a 22:00",
+     "nota_en": "motorbikes and mopeds exempt from 7 am to 10 pm"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "motocicletas y ciclomotores exentos de 7:00 a 22:00",
+     "nota_en": "motorbikes and mopeds exempt from 7 am to 10 pm"
+    }
+   ]
+  },
+  {
+   "id": "bouzas",
+   "nombre": "ZBE Bouzas",
+   "ambito": "espacio interior del perímetro Paz Andrade, Eduardo Cabello, Avenida de Beiramar, Simancas, Camilo Veiga, Avenida da Atlántida y Casiano Martínez (2 km)",
+   "ambito_en": "area inside the perimeter of Paz Andrade, Eduardo Cabello, Avenida de Beiramar, Simancas, Camilo Veiga, Avenida da Atlántida and Casiano Martínez (2 km)",
+   "horario": "24h",
+   "horario_nota": "la ordenanza no fija franjas horarias; las motos y ciclomotores están autorizados de 7:00 a 22:00",
+   "superficie_ha": 17,
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "nota": "restricción prevista en la primera fase, cada una de dos años desde la entrada en vigor de la ordenanza (fecha aún no publicada), con un primer año solo de avisos",
+     "nota_en": "restriction planned in the first phase, each lasting two years from the date the byelaw takes effect (not yet published), with a first year of warnings only"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "nota": "restricción prevista en la segunda fase, cada una de dos años desde la entrada en vigor de la ordenanza (fecha aún no publicada), con un primer año solo de avisos",
+     "nota_en": "restriction planned in the second phase, each lasting two years from the date the byelaw takes effect (not yet published), with a first year of warnings only"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "nota": "restricción prevista en la tercera fase, cada una de dos años desde la entrada en vigor de la ordenanza (fecha aún no publicada), con un primer año solo de avisos",
+     "nota_en": "restriction planned in the third phase, each lasting two years from the date the byelaw takes effect (not yet published), with a first year of warnings only"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "autorización general: empadronados en la zona y vehículos domiciliados en la ZBE con IVTM en Vigo, y sus invitados",
+     "nota_en": "general authorisation: people registered in the zone and vehicles registered at an address in the zone paying Vigo road tax, and their guests"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "autorización general: empadronados en la zona y vehículos domiciliados en la ZBE con IVTM en Vigo, y sus invitados",
+     "nota_en": "general authorisation: people registered in the zone and vehicles registered at an address in the zone paying Vigo road tax, and their guests"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "autorización general: empadronados en la zona y vehículos domiciliados en la ZBE con IVTM en Vigo, y sus invitados",
+     "nota_en": "general authorisation: people registered in the zone and vehicles registered at an address in the zone paying Vigo road tax, and their guests"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "motocicletas y ciclomotores exentos de 7:00 a 22:00",
+     "nota_en": "motorbikes and mopeds exempt from 7 am to 10 pm"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "motocicletas y ciclomotores exentos de 7:00 a 22:00",
+     "nota_en": "motorbikes and mopeds exempt from 7 am to 10 pm"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "motocicletas y ciclomotores exentos de 7:00 a 22:00",
+     "nota_en": "motorbikes and mopeds exempt from 7 am to 10 pm"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "la ordenanza remite a la Ley de Tráfico (infracción grave del art. 76.z3); el primer año de cada fase solo se envían avisos informativos",
+  "nota_en": "the byelaw refers to the Traffic Act (serious offence, art. 76.z3); in the first year of each phase only information notices are sent"
+ },
+ "excepciones": [
+  "empadronados en una ZBE y vehículos domiciliados en ella con IVTM en Vigo, y sus invitados",
+  "vehículos de empresas y autónomos con local u oficina dentro de la zona",
+  "PMR, servicios públicos esenciales y vehículos históricos",
+  "motocicletas y ciclomotores de 7:00 a 22:00; vehículos de movilidad personal",
+  "taxis, VTC, autobuses, servicios públicos y de urgencias, repartos y titulares de plazas de garaje (autorización especial)",
+  "cualquier vehículo que vaya a estacionar en un aparcamiento público o privado, zona de parquímetros o reserva dentro de la ZBE",
+  "carga y descarga en el horario de la ordenanza municipal de carga y descarga"
+ ],
+ "excepciones_en": [
+  "people registered in a zone and vehicles registered there paying Vigo road tax, and their guests",
+  "vehicles of firms and self-employed people with premises inside the zone",
+  "blue-badge holders, essential public services and historic vehicles",
+  "motorbikes and mopeds from 7:00 to 22:00; personal mobility vehicles",
+  "taxis, private-hire cars, coaches, public and emergency services, deliveries and garage-space holders (special authorisation)",
+  "any vehicle going to park in a public or private car park, pay-and-display area or reserved space inside the zone",
+  "loading and unloading within the hours of the council's delivery byelaw"
+ ],
+ "control": "aplicación municipal gratuita de gestión de accesos y cámaras con lector OCR de matrículas",
+ "control_en": "free council access-management app and OCR number-plate cameras",
+ "pendiente": "aprobada definitivamente por el Pleno el 27/7/2026; entra en vigor con la publicación íntegra en el BOP de Pontevedra (art. 70.2 LBRL), fecha que no se ha podido verificar; la aplicación de autorizaciones debe estar disponible en un máximo de dos meses desde la entrada en vigor",
+ "pendiente_en": "given final approval by the city council on 27/7/2026; it comes into force once published in full in the Pontevedra provincial gazette (art. 70.2 of the Local Government Act), a date that could not be verified; the permit app must be available within two months of entry into force",
+ "ordenanza": {
+  "nombre": "Ordenanza municipal reguladora das zonas de baixas emisións do Concello de Vigo (aprobación inicial 25/5/2026, BOPPO n.º 100 de 28/5/2026; aprobación definitiva por el Pleno el 27/7/2026)",
+  "url": "https://sede.vigo.org/expedientes/actas/fichero_actas.jsp?id=3676&t=ACTA&lang=es"
+ },
+ "fuentes": [
+  {
+   "url": "https://sede.vigo.org/expedientes/actas/fichero_actas.jsp?id=3676&t=ACTA&lang=es",
+   "label": "Concello de Vigo · Acta del Pleno n.º 11/2026 (27/7/2026), aprobación definitiva y texto íntegro de la ordenanza ZBE",
+   "cita": "A primeira fase aplica unicamente aos vehículos sen distintivo ambiental"
+  },
+  {
+   "url": "https://sede.vigo.org/expedientes/actas/fichero_actas.jsp?id=3676&t=ACTA&lang=es",
+   "label": "Concello de Vigo · Acta del Pleno n.º 11/2026, fases B y C",
+   "cita": "aos vehículos con distintivo ambiental A, B e C"
+  },
+  {
+   "url": "https://sede.vigo.org/expedientes/actas/fichero_actas.jsp?id=3676&t=ACTA&lang=es",
+   "label": "Concello de Vigo · Acta del Pleno n.º 11/2026, anexo de delimitación",
+   "cita": "cunha superficie de 39 ha. Dispón"
+  },
+  {
+   "url": "https://sede.vigo.org/expedientes/taboleiro/getarchivo_finpub.jsp?id=3838",
+   "label": "BOPPO n.º 100 (28/5/2026) · Aprobación inicial ordenanza baixas emisións",
+   "cita": "en sesión ordinaria de data 25 de maio de 2026"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "hoxe.vigo.org y www.vigo.org no respondían (conexión rechazada, también vía WebFetch y lector); sin copia en web.archive.org del PDF de la ordenanza. Texto definitivo leído en el acta firmada del Pleno del 27/7/2026 (sede.vigo.org, PDF con curl + pypdf). No se ha podido consultar el BOPPO para confirmar la publicación del texto definitivo ni la fecha de entrada en vigor; el buscador del BOPPO no devolvió resultados al robot."
+}

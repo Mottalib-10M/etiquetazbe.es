@@ -5,7 +5,7 @@
    "origen": "params:dgt_distintivo",
    "url": "https://www.dgt.es/nuestros-servicios/tu-vehiculo/tus-vehiculos/distintivo-ambiental/",
    "http": 200,
-   "sha256": "9cc585438799792b5c3cc1186cb281aa5f491ba69beeae730e4d2a67f841f759",
+   "sha256": "75d0e127e4ca90bdea85210ffc78c3dba4c7994129f3b2ca506661079be7c5d5",
    "cita": "diésel a partir de septiembre de 2015",
    "estado": "ok",
    "cambiada": true
@@ -14,7 +14,7 @@
    "origen": "params:dgt_cero",
    "url": "https://www.dgt.es/nuestros-servicios/tu-vehiculo/tus-vehiculos/distintivo-ambiental/etiqueta-cero/",
    "http": 200,
-   "sha256": "6222fcb3aa6f14a04c5bc91fe7a06aa3e0de09bb02d36a52c4ddee48ecf36ffb",
+   "sha256": "61df5a189da61570ece8704be44740828fa4eaf1d95748ba6ab68650a6cbc5f7",
    "cita": "con una autonomía mínima de 40 kilómetros",
    "estado": "ok",
    "cambiada": true
@@ -23,7 +23,7 @@
    "origen": "params:dgt_eco",
    "url": "https://www.dgt.es/nuestros-servicios/tu-vehiculo/tus-vehiculos/distintivo-ambiental/etiqueta-eco/",
    "http": 200,
-   "sha256": "a8e9285a7d48ee85585ce5df99b94ae900f67020c1252ebf531dce2ef482d5d1",
+   "sha256": "fd908f999b78a27696eddb40ec9c6696f3d1fd81950cc401c22467743c841349",
    "cita": "Vehículos híbridos no enchufables (HEV)",
    "estado": "ok",
    "cambiada": true
@@ -32,7 +32,7 @@
    "origen": "params:dgt_c",
    "url": "https://www.dgt.es/nuestros-servicios/tu-vehiculo/tus-vehiculos/distintivo-ambiental/etiqueta-c/",
    "http": 200,
-   "sha256": "a44738cf6e2288085ebcf3f6866a338b9c6951958d6b2e139a47c98b6ee47864",
+   "sha256": "97f7f4b492021587ffafb0fd8edb6b3d61d5a16f95b52e6f19eb448b6093e7d2",
    "cita": "Diésel EURO 6/VI",
    "estado": "ok",
    "cambiada": true
@@ -41,7 +41,7 @@
    "origen": "params:dgt_b",
    "url": "https://www.dgt.es/nuestros-servicios/tu-vehiculo/tus-vehiculos/distintivo-ambiental/etiqueta-b/",
    "http": 200,
-   "sha256": "8b6eb0ebd29cab92cb66e284ce5da37375305821fe79ad38b0283123d1508631",
+   "sha256": "7976f953533ac97a9f512e223e02fe3167500908d5a1f0a0881b665c4ed22f1c",
    "cita": "Gasolina EURO 3/III",
    "estado": "ok",
    "cambiada": true
@@ -50,7 +50,7 @@
    "origen": "params:dgt_consulta",
    "url": "https://sede.dgt.gob.es/es/vehiculos/informacion-de-vehiculos/distintivo-ambiental/",
    "http": 200,
-   "sha256": "8ac4bd01e7a6fd9f6618468a17cbcd9c6e785eb2ee15e42db678bbc505d10713",
+   "sha256": "2e676bbd709f8ea1d718cb7f9e25dbd1c812882cd666f1198f6e590a4bfb086b",
    "cita": "la emisión de la etiqueta con el distintivo correspondiente tiene un coste de 5€",
    "estado": "ok",
    "cambiada": true
@@ -59,16 +59,16 @@
    "origen": "params:trlhl",
    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214",
    "http": 200,
-   "sha256": "5dae6d6b50f6bc7c395959c9a6df20d897b2def0f5d4e469b89b68e0d1d657bc",
+   "sha256": "e89896c09351716e7031bbc0f2fd52ae36842db2bcf5927b8caf1732fce37cae",
    "cita": "De 8 hasta 11,99 caballos fiscales",
    "estado": "ok",
-   "cambiada": true
+   "cambiada": false
   },
   {
    "origen": "params:rgv_anexo5",
    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-1826",
    "http": 200,
-   "sha256": "76c67807e07f87b2d711de28b6600d319a3bfe75ea35d9e2155b832e644d1cc1",
+   "sha256": "27d607a3ca17a3bf01f24c347d6d14862d03271161b96662d088136a4c7b9cda",
    "cita": "CVF = Pe / 5,152",
    "estado": "ok",
    "cambiada": true
@@ -77,37 +77,261 @@
    "origen": "params:ley7_2021",
    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-8447",
    "http": 200,
-   "sha256": "681ee6ef5a60f2001c23c183f4ab6cef1f67706e7507570fe0bfccbd881a804b",
+   "sha256": "9bdf68d9b5ba22f74f9a932251f05a5f84f9221fdcff7e675937cc0921040259",
    "cita": "El establecimiento de zonas de bajas emisiones antes de 2023",
    "estado": "ok",
-   "cambiada": true
+   "cambiada": false
   },
   {
    "origen": "params:rd1052_2022",
    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22689",
    "http": 200,
-   "sha256": "cc4ed146d4b69c27a06d300959ad28cdd45876d6fbf7ecd5dd2e8fffe713d105",
+   "sha256": "231347e6766032f88ef242ca7b96359ee7adfc191f929d0d836d1f64bcddc55f",
    "cita": "zonas de bajas emisiones",
    "estado": "ok",
-   "cambiada": true
+   "cambiada": false
   },
   {
    "origen": "params:lsv",
    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11722",
    "http": 200,
-   "sha256": "42622fcc7e3323450fba3d42b925966021c1adfd34fdcd9984b578b02b064431",
+   "sha256": "b3ceb307f1c6ac7f7dbf5d8a08cf9a5eaaf3ccbb7ec5330006db89f72fa41542",
    "cita": "las graves, con multa de 200 euros",
    "estado": "ok",
-   "cambiada": true
+   "cambiada": false
   },
   {
    "origen": "params:ley9_2025",
    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-24545",
    "http": 200,
-   "sha256": "2a5469132925a8e868b536f1d0efd3504f8ea56bace500a03f7cfbab3870a468",
+   "sha256": "2dd9f098b93f916e83852f3d5e9f10bb33ff0b8f1fef672dfb5d1f7f23019699",
    "cita": "zonas de bajas emisiones",
    "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "params:rgv_anexo2e",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-1826",
+   "http": 200,
+   "sha256": "27d607a3ca17a3bf01f24c347d6d14862d03271161b96662d088136a4c7b9cda",
+   "cita": "deberán cumplir los criterios de la clasificación C",
+   "estado": "ok",
    "cambiada": true
+  },
+  {
+   "origen": "params:d2002_51",
+   "url": "https://www.boe.es/doue/2002/252/L00020-00030.pdf",
+   "http": 200,
+   "sha256": "0c9d473cdcfb157f3b77fdce703c307470fbcf8690701093176dcf77687cbb75",
+   "cita": "A partir del 1 de enero de 2007",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "params:r168_2013",
+   "url": "https://www.boe.es/doue/2013/060/L00052-00128.pdf",
+   "http": 200,
+   "sha256": "5cf3e556c54f85d71bded6705cbe4feb13af84de8330a192a05f862d1b8b1745",
+   "cita": "Euro 5",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:a-coruna",
+   "url": "https://www.coruna.gal/descarga/1453902501202/Ordenanza-de-Mobilidade-Sostible-BOP-num-185.pdf",
+   "http": 200,
+   "sha256": "d0beccc7b2993495fe059003961a8e27716336a9d61778b2d0d659349ab4c063",
+   "cita": "Aprobación definitiva da Ordenanza de mobilidade sostible",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:a-coruna",
+   "url": "https://www.coruna.gal/descarga/1453902501202/Ordenanza-de-Movilidad-Sostenible-del-Concello-da-Coruna_castellano.pdf",
+   "http": 200,
+   "sha256": "48ecea34e2b111dbbf5435b743f067b407ee91055c8da9fccec704a8f4cc7ec5",
+   "cita": "graves se sancionarán con multas de 200 euros.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:a-coruna",
+   "url": "https://www.coruna.gal/descarga/1453902501202/Ordenanza-de-Movilidad-Sostenible-del-Concello-da-Coruna_castellano.pdf",
+   "http": 200,
+   "sha256": "48ecea34e2b111dbbf5435b743f067b407ee91055c8da9fccec704a8f4cc7ec5",
+   "cita": "a. Transporte público colectivo de personas viajeras.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:a-coruna",
+   "url": "https://www.coruna.gal/web/gl/actualidade/novas/nova/luz-verde-a-nova-ordenanza-de-mobilidade-sostible-que-unificara-a-normativa-municipal-e-acoutara-os/suceso/1453894924542",
+   "http": 200,
+   "sha256": "e8c4e4204844de728c412b8bb6eef244f8237dc2b141a5c5a2af56b09ceb04d6",
+   "cita": "Seguirá sendo unha zona de preferencia peonil",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:a-coruna:ordenanza",
+   "url": "https://www.coruna.gal/descarga/1453902501202/Ordenanza-de-Mobilidade-Sostible-BOP-num-185.pdf",
+   "http": 200,
+   "sha256": "d0beccc7b2993495fe059003961a8e27716336a9d61778b2d0d659349ab4c063",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:albacete",
+   "url": "https://bop.dipualba.es/servicesajax/descararchivopaginabop/298039",
+   "http": 200,
+   "sha256": "15284a434b53f794f821bc0693229d7fc615bd6101e9a8639e0598705239a868",
+   "cita": "celebrada en fecha 23 de junio de 2026",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:albacete",
+   "url": "https://bop.dipualba.es/servicesajax/descararchivopaginabop/298039",
+   "http": 200,
+   "sha256": "15284a434b53f794f821bc0693229d7fc615bd6101e9a8639e0598705239a868",
+   "cita": "multa de doscientos euros (200)",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:albacete",
+   "url": "https://bop.dipualba.es/servicesajax/descararchivopaginabop/298039",
+   "http": 200,
+   "sha256": "15284a434b53f794f821bc0693229d7fc615bd6101e9a8639e0598705239a868",
+   "cita": "reducción del 50 % del importe",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:albacete:ordenanza",
+   "url": "https://bop.dipualba.es/servicesajax/descararchivopaginabop/298039",
+   "http": 200,
+   "sha256": "15284a434b53f794f821bc0693229d7fc615bd6101e9a8639e0598705239a868",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:alicante",
+   "url": "https://www.alicante.es/sites/default/files/documentos/202501/ordenanza-reguladora-zbe-diligenciada.pdf",
+   "http": 200,
+   "sha256": "ac6904cde438fdf3570a428ef7aef8869dfe37fe828eb7c32b65a0196e50f77c",
+   "cita": "multa de hasta 200,00 euros",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:alicante",
+   "url": "https://www.alicante.es/sites/default/files/documentos/202501/ordenanza-reguladora-zbe-diligenciada.pdf",
+   "http": 200,
+   "sha256": "ac6904cde438fdf3570a428ef7aef8869dfe37fe828eb7c32b65a0196e50f77c",
+   "cita": "Podrá solicitarse hasta un máximo de 10 permisos al mes.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:alicante",
+   "url": "https://www.alicante.es/sites/default/files/documentos/202501/ordenanza-reguladora-zbe-diligenciada.pdf",
+   "http": 200,
+   "sha256": "ac6904cde438fdf3570a428ef7aef8869dfe37fe828eb7c32b65a0196e50f77c",
+   "cita": "libre y exenta de restricciones y sanciones",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:alicante",
+   "url": "https://www.alicante.es/es/contenidos/nuevo-alicante-zona-bajas-emisiones-alicante",
+   "http": 200,
+   "sha256": "8ec46ec3291052a36d31897508328c8063972bfe82abdd3cebbdc8c0fd9e71a3",
+   "cita": "se publicó en el Boletín Oficial de la provincia el día 9 de enero de 2025",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:alicante",
+   "url": "https://www.alicante.es/es/contenidos/nuevo-alicante-zona-bajas-emisiones-alicante",
+   "http": 200,
+   "sha256": "8ec46ec3291052a36d31897508328c8063972bfe82abdd3cebbdc8c0fd9e71a3",
+   "cita": "Anillo Gran Vía: 7,49 Km2",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:alicante",
+   "url": "https://www.alicante.es/es/contenidos/preguntas-frecuentes-zbe-alicante",
+   "http": 200,
+   "sha256": "b1a59ebe3848db341bebb43e0f9563703280cece2cfa1df8997dd4906336b8af",
+   "cita": "salvo en el caso del anillo correspondiente al Casco Antiguo",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:alicante:ordenanza",
+   "url": "https://www.alicante.es/sites/default/files/documentos/202501/ordenanza-reguladora-zbe-diligenciada.pdf",
+   "http": 200,
+   "sha256": "ac6904cde438fdf3570a428ef7aef8869dfe37fe828eb7c32b65a0196e50f77c",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:almeria",
+   "url": "https://almeriaciudad.es/uploads/normativas/2024-05/16.-reguladora-de-las-zonas-de-baja-emisiones-de-almeria.pdf",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+    "url_leida": "https://almeriaciudad.es/uploads/normativas/2024-05/16.-reguladora-de-las-zonas-de-baja-emisiones-de-almeria.pdf",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:almeria",
+   "url": "https://almeriaciudad.es/actualidad/la-zona-de-bajas-emisiones-zbe-de-almeria-entra-en-vigor-partir-de-hoy-1-de-enero",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+    "url_leida": "https://almeriaciudad.es/actualidad/la-zona-de-bajas-emisiones-zbe-de-almeria-entra-en-vigor-partir-de-hoy-1-de-enero",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:almeria",
+   "url": "https://almeriaciudad.es/actualidad/aprobada-la-modificacion-de-la-ordenanza-reguladora-del-impuesto-sobre-bienes-inmuebles",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+    "url_leida": "https://almeriaciudad.es/actualidad/aprobada-la-modificacion-de-la-ordenanza-reguladora-del-impuesto-sobre-bienes-inmuebles",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:almeria:ordenanza",
+   "url": "https://almeriaciudad.es/uploads/normativas/2024-05/16.-reguladora-de-las-zonas-de-baja-emisiones-de-almeria.pdf",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+    "url_leida": "https://almeriaciudad.es/uploads/normativas/2024-05/16.-reguladora-de-las-zonas-de-baja-emisiones-de-almeria.pdf",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
   },
   {
    "origen": "zbe:barcelona",
@@ -145,26 +369,30 @@
   },
   {
    "origen": "zbe:bilbao",
+   "url": "https://www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279234634941&language=es&pageid=3000005580&pagename=Bilbaonet/BIO_Noticia_FA/BIO_Noticia",
+   "http": 403,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "archive.org (WebFetch 403, curl navegador 403)",
+    "url_leida": "http://web.archive.org/web/20240801203849/https://www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279234634941&language=es&pageid=3000005580&pagename=Bilbaonet%2FBIO_Noticia_FA%2FBIO_Noticia",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:bilbao",
    "url": "https://www.bilbao.eus/cs/Satellite?c=Page&cid=1279235265919&language=es&pageid=1279235265919&pagename=Bilbaonet%2FPage%2FBIO_contenidoFinal",
    "http": 403,
    "sha256": null,
-   "estado": "bloqueada",
-   "cambiada": false
-  },
-  {
-   "origen": "zbe:bilbao",
-   "url": "https://www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279245540956&language=es&pageid=3000005580&pagename=Bilbaonet/BIO_Noticia_FA/BIO_Noticia",
-   "http": 403,
-   "sha256": null,
-   "estado": "bloqueada",
-   "cambiada": false
-  },
-  {
-   "origen": "zbe:bilbao",
-   "url": "https://www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279241724527&language=es&pageid=3000075248&pagename=Bilbaonet%2FBIO_Noticia_FA%2FBIO_Noticia",
-   "http": 403,
-   "sha256": null,
-   "estado": "bloqueada",
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "archive.org (WebFetch 403, curl navegador 403)",
+    "url_leida": "http://web.archive.org/web/20241214032415/https://www.bilbao.eus/cs/Satellite?pageid=1279235265919&pagename=Bilbaonet%2FPage%2FBIO_contenidoFinal&c=Page&cid=1279235265919&language=es",
+    "resultado": "confirmado"
+   },
    "cambiada": false
   },
   {
@@ -172,14 +400,342 @@
    "url": "https://www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279234634941&language=es&pageid=3000005580&pagename=Bilbaonet/BIO_Noticia_FA/BIO_Noticia",
    "http": 403,
    "sha256": null,
-   "estado": "bloqueada",
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "archive.org (WebFetch 403, curl navegador 403)",
+    "url_leida": "http://web.archive.org/web/20240801203849/https://www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279234634941&language=es&pageid=3000005580&pagename=Bilbaonet%2FBIO_Noticia_FA%2FBIO_Noticia",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:burgos",
+   "url": "https://www.aytoburgos.es/documents/38509/0/2024+BOP+5+agosto+2024+-+Ordenanza+Zona+de+Bajas+Emisiones.pdf/1a968f58-d027-3e8a-2bb6-782d5c43dffc?t=1722863990697",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+    "url_leida": "https://www.aytoburgos.es/documents/38509/0/2024+BOP+5+agosto+2024+-+Ordenanza+Zona+de+Bajas+Emisiones.pdf/1a968f58-d027-3e8a-2bb6-782d5c43dffc?t=1722863990697",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:burgos",
+   "url": "https://www.aytoburgos.es/documents/38509/0/2024+BOP+5+agosto+2024+-+Ordenanza+Zona+de+Bajas+Emisiones.pdf/1a968f58-d027-3e8a-2bb6-782d5c43dffc?t=1722863990697",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+    "url_leida": "https://www.aytoburgos.es/documents/38509/0/2024+BOP+5+agosto+2024+-+Ordenanza+Zona+de+Bajas+Emisiones.pdf/1a968f58-d027-3e8a-2bb6-782d5c43dffc?t=1722863990697",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:burgos",
+   "url": "https://www.aytoburgos.es/-/ordenanza-reguladora-de-la-zona-de-bajas-emisiones",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+    "url_leida": "https://www.aytoburgos.es/-/ordenanza-reguladora-de-la-zona-de-bajas-emisiones",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:burgos",
+   "url": "https://movilidad.aytoburgos.es/smyt/-/asset_publisher/oQWr6VPvtGEc/content/id/117520481",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+    "url_leida": "https://movilidad.aytoburgos.es/smyt/-/asset_publisher/oQWr6VPvtGEc/content/id/117520481",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:burgos",
+   "url": "https://movilidad.aytoburgos.es/documents/413443/0/bopbur-2026-024-anuncio-202600344.pdf/fc7787de-c89e-b8c8-91f1-9778720cdb7d?t=1770296884888",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+    "url_leida": "https://movilidad.aytoburgos.es/documents/413443/0/bopbur-2026-024-anuncio-202600344.pdf/fc7787de-c89e-b8c8-91f1-9778720cdb7d?t=1770296884888",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:burgos:ordenanza",
+   "url": "https://www.aytoburgos.es/documents/38509/0/2024+BOP+5+agosto+2024+-+Ordenanza+Zona+de+Bajas+Emisiones.pdf/1a968f58-d027-3e8a-2bb6-782d5c43dffc?t=1722863990697",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+    "url_leida": "https://www.aytoburgos.es/documents/38509/0/2024+BOP+5+agosto+2024+-+Ordenanza+Zona+de+Bajas+Emisiones.pdf/1a968f58-d027-3e8a-2bb6-782d5c43dffc?t=1722863990697",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:cadiz",
+   "url": "https://www.bopcadiz.es/.boletines_pdf/2026/05_mayo/BOP098_26-05-26.pdf",
+   "http": 200,
+   "sha256": "9370b29c3e8743d22dcb6e1ff8a8f8ec6581f36fa76a1cb88741078806249754",
+   "cita": "etiqueta 0, ECO, o C",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:cadiz",
+   "url": "https://www.bopcadiz.es/.boletines_pdf/2026/05_mayo/BOP098_26-05-26.pdf",
+   "http": 200,
+   "sha256": "9370b29c3e8743d22dcb6e1ff8a8f8ec6581f36fa76a1cb88741078806249754",
+   "cita": "multa de 200,00 euros.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:cadiz",
+   "url": "https://www.bopcadiz.es/.boletines_pdf/2026/05_mayo/BOP098_26-05-26.pdf",
+   "http": 200,
+   "sha256": "9370b29c3e8743d22dcb6e1ff8a8f8ec6581f36fa76a1cb88741078806249754",
+   "cita": "máximo de seis meses",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:cadiz",
+   "url": "https://institucional.cadiz.es/delegaci%C3%B3n-de-movilidad-7",
+   "http": 200,
+   "sha256": "b96b6242f6ab7b161fe1c8970327cb21a5ef3f941c9c79be48a7405909c4384c",
+   "cita": "TEXTO DEFINITIVO ORDENANZA REGULADORA DE LA ZONA DE BAJAS EMISIONES",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:cadiz:ordenanza",
+   "url": "https://www.bopcadiz.es/.boletines_pdf/2026/05_mayo/BOP098_26-05-26.pdf",
+   "http": 200,
+   "sha256": "9370b29c3e8743d22dcb6e1ff8a8f8ec6581f36fa76a1cb88741078806249754",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:cartagena",
+   "url": "https://borm.es/services/anuncio/ano/2023/numero/2532/pdf",
+   "http": 200,
+   "sha256": "f893f97e0c4cfcd5aa1a669e5c2566c9b382c58e34bf2c8623aeacc1e91d7303",
+   "cita": "Aprobación definitiva de la ordenanza de zona de bajas emisiones",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:cartagena",
+   "url": "https://borm.es/services/anuncio/ano/2023/numero/2532/pdf",
+   "http": 200,
+   "sha256": "f893f97e0c4cfcd5aa1a669e5c2566c9b382c58e34bf2c8623aeacc1e91d7303",
+   "cita": "de lunes a viernes, en horario de 0 a 24 horas",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:cartagena",
+   "url": "https://borm.es/services/anuncio/ano/2023/numero/2532/pdf",
+   "http": 200,
+   "sha256": "f893f97e0c4cfcd5aa1a669e5c2566c9b382c58e34bf2c8623aeacc1e91d7303",
+   "cita": "Esta ordenanza entra en vigor al día siguiente de su publicación en el Boletín",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:cartagena",
+   "url": "https://www.cartagena.es/detalle_noticias.asp?id=72041",
+   "http": 200,
+   "sha256": "d2b9441b86428947f0518b78e94be44f4dec106c8e1df13aea0a3d92fb6f74f9",
+   "cita": "no hay que pedirlas ni adquirirlas en la DGT",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:cartagena",
+   "url": "https://www.cartagena.es/detalle_noticias.asp?id=74731",
+   "http": 200,
+   "sha256": "4f1290642815009e4744fe7ded7bfa9da03c4c15af097b5d98794b610a0f91f4",
+   "cita": "en ningún caso estarán basadas en restricciones o sanciones",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:cartagena:ordenanza",
+   "url": "https://borm.es/services/anuncio/ano/2023/numero/2532/pdf",
+   "http": 200,
+   "sha256": "f893f97e0c4cfcd5aa1a669e5c2566c9b382c58e34bf2c8623aeacc1e91d7303",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:castellon",
+   "url": "https://www.castello.es/es/zona-de-bajas-emisiones-zbe-",
+   "http": 200,
+   "sha256": "df8a943c7703ef066d43ec728f738fa9be167cefe11c92d5da8a8b04746e792c",
+   "cita": "La ZBE de Castellón entrará en vigor cuando entre en vigor la Ordenanza de movilidad sostenible.",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:castellon",
+   "url": "https://www.castello.es/es/zona-de-bajas-emisiones-zbe-",
+   "http": 200,
+   "sha256": "df8a943c7703ef066d43ec728f738fa9be167cefe11c92d5da8a8b04746e792c",
+   "cita": "Las restricciones solo se aplicarán cuando los sensores registren niveles elevados de contaminación.",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:castellon",
+   "url": "https://www.castello.es/es/zona-de-bajas-emisiones-zbe-",
+   "http": 200,
+   "sha256": "df8a943c7703ef066d43ec728f738fa9be167cefe11c92d5da8a8b04746e792c",
+   "cita": "hasta 20 permisos mensuales",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:castellon",
+   "url": "https://www.castello.es/documents/35637/3613180/ORDENANZA+MOVILIDAD+SOSTENIBLE+V23+%28Castellano%29.pdf/30fbee41-e298-df39-7611-b87ba6247540?t=1754031357875",
+   "http": 200,
+   "sha256": "ffb7e13480a2d09f02c194558623e7c2238ad9c4f5c118f16b6ef17a83c9a593",
+   "cita": "24 horas diarias todos",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:castellon",
+   "url": "https://www.castello.es/es/w/castell%C3%B3n-avanza-en-la-aprobaci%C3%B3n-de-su-primera-ordenanza-de-movilidad-sostenible",
+   "http": 200,
+   "sha256": "4eeb070e1c9ede1131d05f7fc31b6741b404431ad77bdbc7157a28d8a0efe440",
+   "cita": "Sin restricciones para los vecinos tal y como prometimos",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:castellon:ordenanza",
+   "url": "https://www.castello.es/documents/35637/3613180/ORDENANZA+MOVILIDAD+SOSTENIBLE+V23+%28Castellano%29.pdf/30fbee41-e298-df39-7611-b87ba6247540?t=1754031357875",
+   "http": 200,
+   "sha256": "ffb7e13480a2d09f02c194558623e7c2238ad9c4f5c118f16b6ef17a83c9a593",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:cordoba",
+   "url": "https://bop.dipucordoba.es/show/20230217/announcement/379",
+   "http": 200,
+   "sha256": "981a04573db6ed7d98782a6c0704ea1a98c12797a64cbf89dfc00e39dba8c80b",
+   "cita": "Los vehículos con distintivo ambiental 0 y ECO.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:cordoba",
+   "url": "https://www.cordoba.es/sites/default/files/PDF/Servicios/movilidad-accesibilidad-transportes/ORDENANZA_MOVILIDAD_BOP_17-02-23.pdf",
+   "http": 200,
+   "sha256": "981a04573db6ed7d98782a6c0704ea1a98c12797a64cbf89dfc00e39dba8c80b",
+   "cita": "Residentes dentro de la ZBE.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:cordoba",
+   "url": "https://www.cordoba.es/servicios/movilidad-y-transporte/movilidad/oficina-acire",
+   "http": 200,
+   "sha256": "0e80f2755f42e3a685e327253718afe599794d9d9ac057c13479701522cd97eb",
+   "cita": "zonas restringidas a la circulación en el Casco Histórico de Córdoba",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:cordoba",
+   "url": "https://www.cordoba.es/sites/default/files/PDF/Tramites/movilidad/Regulacion_Zonas.pdf",
+   "http": 200,
+   "sha256": "a76713cd2c6389deb9634d79e833484dff074e915eaca66f6afe17100dd6e094",
+   "cita": "tramita de forma automática el boletín sancionador",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:cordoba:ordenanza",
+   "url": "https://bop.dipucordoba.es/show/20230217/announcement/379",
+   "http": 200,
+   "sha256": "981a04573db6ed7d98782a6c0704ea1a98c12797a64cbf89dfc00e39dba8c80b",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:elche",
+   "url": "https://www.elche.es/2025/12/la-zona-de-bajas-emisiones-de-elche-entra-en-vigor-el-31-de-diciembre-sin-restricciones-generales/",
+   "http": 200,
+   "sha256": "1aca6ebabaee707a908adb4481ed946741454d7ff72b77a32c246705f7c13868",
+   "cita": "que entrará en vigor, mañana 31 de diciembre de 2025",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:elche",
+   "url": "https://www.elche.es/2025/12/la-zona-de-bajas-emisiones-de-elche-entra-en-vigor-el-31-de-diciembre-sin-restricciones-generales/",
+   "http": 200,
+   "sha256": "1aca6ebabaee707a908adb4481ed946741454d7ff72b77a32c246705f7c13868",
+   "cita": "algo que nunca ha ocurrido en Elche",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:elche",
+   "url": "https://www.elche.es/2023/12/el-ayuntamiento-aprueba-de-manera-definitiva-la-ordenanza-de-zona-de-bajas-emisiones/",
+   "http": 200,
+   "sha256": "5c622705b331bb2d480f06c6341efd0aae63acc4b671f8ce0a75906bb633f813",
+   "cita": "aprobado definitivamente la Ordenanza de Zona de Bajas Emisiones",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:elche",
+   "url": "https://www.elche.es/2023/09/la-junta-local-de-gobierno-aprueba-el-proyecto-de-ordenanza-de-zona-de-bajas-emisiones/",
+   "http": 200,
+   "sha256": "db6ddd1687951b06eaaf24aecae887219d353bcf95ecc47d0de6a91fc3ca083f",
+   "cita": "esta ZBE se va a implantar en las zonas peatonales del centro",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:elche:ordenanza",
+   "url": "https://www.elche.es/2025/12/la-zona-de-bajas-emisiones-de-elche-entra-en-vigor-el-31-de-diciembre-sin-restricciones-generales/",
+   "http": 200,
+   "sha256": "1aca6ebabaee707a908adb4481ed946741454d7ff72b77a32c246705f7c13868",
+   "estado": "ok",
    "cambiada": false
   },
   {
    "origen": "zbe:getafe",
    "url": "https://zbe.getafe.es/calendario/",
    "http": 200,
-   "sha256": "c0b432df452044135bd1e05315a79ab928945ec55ba683672e5d2856277008fd",
+   "sha256": "0c3f0d65928a4925c15ba2c3ad12f7609f32870c06f1ee4accf9f25509bbf4a0",
    "cita": "Permitido el acceso de vehículos etiqueta B si se dirigen a parking público adherido a la ZBE",
    "estado": "ok",
    "cambiada": true
@@ -209,11 +765,88 @@
    "cambiada": false
   },
   {
+   "origen": "zbe:girona",
+   "url": "https://seu.girona.cat/cdn/dades/ordenances/_descarrega/Ordenanca-ZBE.pdf",
+   "http": 200,
+   "sha256": "cf03c507e669895ba6d5143248e1584e55b41aa936714bb33a6ef96e5ba7b144",
+   "cita": "sancionable amb una multa de 200 euros",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:girona",
+   "url": "https://web.girona.cat/zbe/calendari",
+   "http": 200,
+   "sha256": "e731942f304bdee04a0b52fbe24c0ce94b6ff94a7aec069f518b70855a924be7",
+   "cita": "Dilluns 15 de setembre de 2025.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:girona",
+   "url": "https://web.girona.cat/comunicacio/noticies/-/asset_publisher/4lZrBB13TdmI/content/entra-en-funcionament-la-zona-de-baixes-emissions-de-girona",
+   "http": 200,
+   "sha256": "f40876ad08e116b801fe12dd0f736cedc50f282c5d8ae68bc2ae1706cee4154c",
+   "cita": "s'han instal·lat 20 càmeres en 13 punts",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:girona",
+   "url": "https://web.girona.cat/zbe/control",
+   "http": 200,
+   "sha256": "31a9153afdb1d88d1db785991edfb33505a9adc6de78fdbb6b582c5c30503817",
+   "cita": "l'import és de 100 euros",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:girona",
+   "url": "https://web.girona.cat/zbe/exempcions",
+   "http": 200,
+   "sha256": "d313ff5132a060249094b01dae66a983d307d58b03092270f910862ccc9fe05f",
+   "cita": "Els vehicles sense etiqueta ambiental que s’incorporin l’any 2025 o posteriors no seran exempts.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:girona",
+   "url": "https://web.girona.cat/zbe/faq",
+   "http": 200,
+   "sha256": "bba922dc8796cdc8e8c206c81193333d6e7e1e031a720227a73546e38096720f",
+   "cita": "El perímetre de la ZBE de Girona engloba des del parc de la Devesa",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:girona:ordenanza",
+   "url": "https://seu.girona.cat/cdn/dades/ordenances/_descarrega/Ordenanca-ZBE.pdf",
+   "http": 200,
+   "sha256": "cf03c507e669895ba6d5143248e1584e55b41aa936714bb33a6ef96e5ba7b144",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:granada",
+   "url": "https://bop.dipgra.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1758150051796-final-3b2cf182-2.pdf",
+   "http": 200,
+   "sha256": "5e5238be0abf4718bab5f6152a20854fc613ff5ef46a9b68c275ce9cc289fa25",
+   "cita": "estando permitido el acceso de vehículos con etiquetas",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
    "origen": "zbe:granada",
    "url": "https://www.granada.org/inet/wprensa.nsf/xnotalc/80C3C693BD02419EC1258C4D002891CE?open=&pag=ini",
    "http": 403,
    "sha256": null,
-   "estado": "bloqueada",
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "archive.org (variante /wprensa.nsf/0/ encontrada por CDX con prefijo; WebFetch y curl 403 Akamai)",
+    "url_leida": "http://web.archive.org/web/20251027165743/https://www.granada.org/inet/wprensa.nsf/0/80C3C693BD02419EC1258C4D002891CE?open&pag=ini",
+    "resultado": "corregir"
+   },
    "cambiada": false
   },
   {
@@ -221,31 +854,264 @@
    "url": "https://www.granada.org/inet/wprensa.nsf/xnotalc/099CC61FFD330743C1258AB60027786B?open=&pag=ini",
    "http": 403,
    "sha256": null,
-   "estado": "bloqueada",
-   "cambiada": false
-  },
-  {
-   "origen": "zbe:granada",
-   "url": "https://www.granada.org/inet/wordenanz.nsf/02ccd74c639fe3bfc125735500242007/9970e48f4eda6237c1258d0d0031ce66/$FILE/2025-13657Z-aprobacion-definitiva-proyecto-zbe.pdf",
-   "http": 403,
-   "sha256": null,
-   "estado": "bloqueada",
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "archive.org (variante /wprensa.nsf/0/ por CDX; WebFetch y curl 403)",
+    "url_leida": "http://web.archive.org/web/20241124185547/https://www.granada.org/inet/wprensa.nsf/0/099CC61FFD330743C1258AB60027786B?open&pag=ini",
+    "resultado": "confirmado"
+   },
    "cambiada": false
   },
   {
    "origen": "zbe:granada:ordenanza",
-   "url": "https://www.granada.org/inet/wordenanz.nsf/02ccd74c639fe3bfc125735500242007/9970e48f4eda6237c1258d0d0031ce66/$FILE/2025-13657Z-aprobacion-definitiva-proyecto-zbe.pdf",
-   "http": 403,
-   "sha256": null,
-   "estado": "bloqueada",
+   "url": "https://bop.dipgra.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1758150051796-final-3b2cf182-2.pdf",
+   "http": 200,
+   "sha256": "5e5238be0abf4718bab5f6152a20854fc613ff5ef46a9b68c275ce9cc289fa25",
+   "estado": "ok",
    "cambiada": false
+  },
+  {
+   "origen": "zbe:hospitalet",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3880942",
+   "http": 200,
+   "sha256": "baa5828808f7d419588eab809c6131c1787b8222e43cd53b18c63ee76a83f454",
+   "cita": "en horari de 7.00 a 20.00 hores",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:hospitalet",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3880942",
+   "http": 200,
+   "sha256": "baa5828808f7d419588eab809c6131c1787b8222e43cd53b18c63ee76a83f454",
+   "cita": "a partir de l’1 de gener de 2028",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:hospitalet",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3880942",
+   "http": 200,
+   "sha256": "baa5828808f7d419588eab809c6131c1787b8222e43cd53b18c63ee76a83f454",
+   "cita": "de 200 euros",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:hospitalet",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3878838",
+   "http": 200,
+   "sha256": "5a896321aef424d58ed0bc6c8061512b94aa4524798c9684cdc0b50e5793c216",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:hospitalet",
+   "url": "https://www.zbe.barcelona/es/zones-baixes-emissions/la-zbe.html",
+   "http": 200,
+   "sha256": "7e486fc4b67bb424f07cfacb01ccd23e2dbd543fe1e279e7ee5b3e2e8520bf16",
+   "cita": "los municipios de Sant Adrià de Besòs y L'Hospitalet de Llobregat",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:hospitalet:ordenanza",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3880942",
+   "http": 200,
+   "sha256": "baa5828808f7d419588eab809c6131c1787b8222e43cd53b18c63ee76a83f454",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:jerez",
+   "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2025/09_septiembre/BOP168_03-09-25.pdf",
+   "http": 200,
+   "sha256": "2c3ffee5122a8128b5f4f7f1a9e93685bb3c5f0b7f8b1bd8a0312a69da5d83ff",
+   "cita": "hasta 200,00 euros",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:jerez",
+   "url": "https://zbe.jerez.es/informacion-sobre-zbe-jerez/entrada-en-vigor",
+   "http": 200,
+   "sha256": "3a1ab29a0db4d8e0eb33987a8e2ac6d8b360aae5df73122d2ce7288fdb0efb8a",
+   "cita": "a partir del 4 DE ENERO DE 2026",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:jerez",
+   "url": "https://zbe.jerez.es/vehiculos-y-horarios/horarios",
+   "http": 200,
+   "sha256": "6302b1145df57a4fe0aa74032e833d036b0b55a8ff62ae4632d502e16f567c9b",
+   "cita": "de 07:00 a 10:00 horas y de 16:00 a 18:00 horas",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:jerez",
+   "url": "https://zbe.jerez.es/autorizaciones-y-registro-de-vehiculos",
+   "http": 200,
+   "sha256": "dfe90ac14b2f97a2b56587c1cb64034de12afab9ca8ff6f5f5869f329812fe2e",
+   "cita": "Las autorizaciones tendrán como máximo una vigencia",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:jerez",
+   "url": "https://www.jerez.es/webs-municipales/medio-ambiente/detalle-noticias/la-ordenanza-de-la-zona-de-bajas-emisiones-entra-en-vigor-por-imposicion-legal-y-sin-anadir-nuevas-restricciones-a-la-circulacion-de-vehiculos",
+   "http": 200,
+   "sha256": "8010570381f5e2050ab32a6263932aaa257f41a5d614e84772bfa39436b9d1e7",
+   "cita": "no se realizarán sanciones",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:jerez",
+   "url": "https://www.jerez.es/ciudad/tu-distrito/distrito-centro/ver-completa-noticias-distrito-centro/se-abre-el-periodo-de-registro-para-el-acceso-de-vehiculos-a-la-zona-de-baja-emision-que-no-establece-restricciones-para-los-vehiculos",
+   "http": 200,
+   "sha256": "67f0ffa281b0fa20c002bbc0b513e772d1b37c05022dd56243f2285b85f50e44",
+   "cita": "no se van a llevar a cabo sanciones directas",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:jerez:ordenanza",
+   "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2025/09_septiembre/BOP168_03-09-25.pdf",
+   "http": 200,
+   "sha256": "2c3ffee5122a8128b5f4f7f1a9e93685bb3c5f0b7f8b1bd8a0312a69da5d83ff",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:leon",
+   "url": "https://bop.dipuleon.es/export/sites/bop/.galleries/Documentos-BOPs-en-PDF/bop-16_10_2025-ca9ad347-a9be-11f0-9155-dd38f9a6a5be-1760590237115.pdf",
+   "http": 200,
+   "sha256": "934fa7e81fdbd5d2f3aec9a1176f77eb970d01cdd23f4ee5d5a15bf5c71b8859",
+   "cita": "Aprobación definitiva de la Ordenanza de movilidad",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:leon",
+   "url": "https://bop.dipuleon.es/export/sites/bop/.galleries/Documentos-BOPs-en-PDF/bop-16_10_2025-ca9ad347-a9be-11f0-9155-dd38f9a6a5be-1760590237115.pdf",
+   "http": 200,
+   "sha256": "934fa7e81fdbd5d2f3aec9a1176f77eb970d01cdd23f4ee5d5a15bf5c71b8859",
+   "cita": "en sesión celebrada con fecha 26 de septiembre de 2025",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:leon",
+   "url": "https://bop.dipuleon.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1754283163139-final-49ec6ba5-2.pdf",
+   "http": 200,
+   "sha256": "71640ececa93f6772c48eb46765c43befe2dafa44822081491c0d149aba3be3b",
+   "cita": "técnico de Zona de Bajas Emisiones, que figura como Anexo VII",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:leon:ordenanza",
+   "url": "https://bop.dipuleon.es/export/sites/bop/.galleries/Documentos-BOPs-en-PDF/bop-16_10_2025-ca9ad347-a9be-11f0-9155-dd38f9a6a5be-1760590237115.pdf",
+   "http": 200,
+   "sha256": "934fa7e81fdbd5d2f3aec9a1176f77eb970d01cdd23f4ee5d5a15bf5c71b8859",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:lleida",
+   "url": "https://www.paeria.cat/ca/serveis/zona-de-baixes-emissions-de-lleida/normativa-aplicable/ordenanca/ordenanca-zbe-lleida.pdf",
+   "http": 200,
+   "sha256": "ffc2130887e45ef95f5c56206571d91d47ec14985c13eef29849e0b8d741eb3a",
+   "cita": "de 200,00 euros.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:lleida",
+   "url": "https://www.paeria.cat/ca/serveis/zona-de-baixes-emissions-de-lleida/normativa-aplicable/ordenanca/ordenanca-zbe-lleida.pdf",
+   "http": 200,
+   "sha256": "ffc2130887e45ef95f5c56206571d91d47ec14985c13eef29849e0b8d741eb3a",
+   "cita": "transitori de sis mesos",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:lleida",
+   "url": "https://www.paeria.cat/ca/serveis/zona-de-baixes-emissions-de-lleida/normativa-aplicable/ordenanca/annex1.pdf",
+   "http": 200,
+   "sha256": "699434c961e97a77fae691282f87fda3fc39dce663ab93ac26a8ccb28e0b6fce",
+   "cita": "Implantació: 1 de gener de 2025",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:lleida",
+   "url": "https://www.paeria.cat/ca/serveis/zona-de-baixes-emissions-de-lleida/normativa-aplicable/ordenanca/annex2.pdf",
+   "http": 200,
+   "sha256": "ad75b9e2cf97eb0c1d29453b35b7611506b8a2a2c342635637f8a74ad917e228",
+   "cita": "el IVTM a la ciutat de Lleida.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:lleida",
+   "url": "https://www.paeria.cat/ca/actualitat/noticies/la-paeria-activa-la-plataforma-per-tramitar-les-exempcions-per-accedir-a-la-zona-de-baixes-emissions",
+   "http": 200,
+   "sha256": "b9eb0531aff1bb7a561607d34115a0ff4d4ebd179c1d63e8d6a41dec3f951736",
+   "cita": "La Fase 1 de la ZBE entra en funcionament a partir de l’1 de juliol",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:lleida",
+   "url": "https://www.paeria.cat/ca/serveis/zona-de-baixes-emissions-de-lleida/noticies",
+   "http": 200,
+   "sha256": "99177e9ff71149e2b18e7a420edb1680e27b90cc4a2fe41de4e678f1554f4d16",
+   "cita": "Aquest dimarts, 1 de juliol, entra en vigor la Fase 1 de la Zona de Baixes Emissions",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:lleida",
+   "url": "https://www.paeria.cat/ca/actualitat/noticies/la-paeria-suspen-temporalment-les-restriccions-de-circulacio-de-la-zona-de-baixes-emissions-per-l2019aturada-a-rodalies",
+   "http": 200,
+   "sha256": "a0b2bd6e8122f7520f9fcde3b94bc623bc65a8a53409042ec238b59ed4594e0f",
+   "cita": "que tindrà vigència fins que es restableixi el servei de Rodalies de Lleida",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:lleida:ordenanza",
+   "url": "https://www.paeria.cat/ca/serveis/zona-de-baixes-emissions-de-lleida/normativa-aplicable/ordenanca/ordenanca-zbe-lleida.pdf",
+   "http": 200,
+   "sha256": "ffc2130887e45ef95f5c56206571d91d47ec14985c13eef29849e0b8d741eb3a",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:madrid",
+   "url": "https://transparencia.madrid.es/portales/transparencia/es/Informacion-juridica/Huella-normativa/Modificacion-de-la-Ordenanza-de-Movilidad-Sostenible/?vgnextfmt=default&vgnextoid=54e7a84e11a82910VgnVCM1000001d4a900aRCRD&vgnextchannel=4099508929a56510VgnVCM1000008a4a900aRCRD",
+   "http": 200,
+   "sha256": "92a5d48eec5516d37e289d463cf1ef0599ccb1ffb6b032621efd3f54c76b1d20",
+   "cita": "BOAM núm. 10099, pág. 5, de 6 de abril de 2026",
+   "estado": "ok",
+   "cambiada": true
   },
   {
    "origen": "zbe:madrid",
    "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones-ZBE-/?vgnextfmt=default&vgnextoid=93e63877029eb710VgnVCM1000001d4a900aRCRD&vgnextchannel=d2d2edf0f70ab710VgnVCM2000001f4a900aRCRD",
    "http": 403,
    "sha256": null,
-   "estado": "bloqueada",
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "archive.org (curl navegador 403)",
+    "url_leida": "http://web.archive.org/web/20261009020918/https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones-ZBE-/?vgnextfmt=default&vgnextoid=93e63877029eb710VgnVCM1000001d4a900aRCRD&vgnextchannel=d2d2edf0f70ab710VgnVCM2000001f4a900aRCRD",
+    "resultado": "corregir"
+   },
    "cambiada": false
   },
   {
@@ -253,7 +1119,13 @@
    "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones/Preguntas-frecuentes-sobre-Madrid-Zona-de-Bajas-Emisiones-ZBE-/?vgnextfmt=default&vgnextoid=9dec1d96b08ed710VgnVCM1000001d4a900aRCRD&vgnextchannel=d2d2edf0f70ab710VgnVCM2000001f4a900aRCRD",
    "http": 403,
    "sha256": null,
-   "estado": "bloqueada",
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "WebFetch (curl navegador 403; sin copia en archive.org)",
+    "url_leida": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones/Preguntas-frecuentes-sobre-Madrid-Zona-de-Bajas-Emisiones-ZBE-/?vgnextfmt=default&vgnextoid=9dec1d96b08ed710VgnVCM1000001d4a900aRCRD&vgnextchannel=d2d2edf0f70ab710VgnVCM2000001f4a900aRCRD",
+    "resultado": "corregir"
+   },
    "cambiada": false
   },
   {
@@ -261,7 +1133,13 @@
    "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Distrito-Centro-Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Zona-de-Bajas-Emisiones-de-Especial-Proteccion-ZBEDEP-Distrito-Centro-Informacion-general/?vgnextfmt=default&vgnextoid=2d88c49556fbb710VgnVCM2000001f4a900aRCRD&vgnextchannel=d352edf0f70ab710VgnVCM2000001f4a900aRCRD",
    "http": 403,
    "sha256": null,
-   "estado": "bloqueada",
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "WebFetch (curl navegador 403; sin copia en archive.org)",
+    "url_leida": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Distrito-Centro-Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Zona-de-Bajas-Emisiones-de-Especial-Proteccion-ZBEDEP-Distrito-Centro-Informacion-general/?vgnextfmt=default&vgnextoid=2d88c49556fbb710VgnVCM2000001f4a900aRCRD&vgnextchannel=d352edf0f70ab710VgnVCM2000001f4a900aRCRD",
+    "resultado": "corregir"
+   },
    "cambiada": false
   },
   {
@@ -269,16 +1147,22 @@
    "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Plaza-Eliptica-Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Zona-de-Bajas-Emisiones-de-Especial-Proteccion-ZBEDEP-Plaza-Eliptica-Preguntas-frecuentes/?vgnextfmt=default&vgnextoid=0f0f1e0276fbb710VgnVCM1000001d4a900aRCRD&vgnextchannel=f808acec6f5fe710VgnVCM1000001d4a900aRCRD",
    "http": 403,
    "sha256": null,
-   "estado": "bloqueada",
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "WebFetch (curl navegador 403; sin copia en archive.org)",
+    "url_leida": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Plaza-Eliptica-Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Zona-de-Bajas-Emisiones-de-Especial-Proteccion-ZBEDEP-Plaza-Eliptica-Preguntas-frecuentes/?vgnextfmt=default&vgnextoid=0f0f1e0276fbb710VgnVCM1000001d4a900aRCRD&vgnextchannel=f808acec6f5fe710VgnVCM1000001d4a900aRCRD",
+    "resultado": "confirmado"
+   },
    "cambiada": false
   },
   {
    "origen": "zbe:madrid:ordenanza",
-   "url": "https://sede.madrid.es/portal/site/tramites/menuitem.5dd4485239c96e10f7a72106a8a409a0/?vgnextoid=10378dd1c267d910VgnVCM200000f921e388RCRD&version=true&vgnextchannel=6b3d814231ede410VgnVCM1000000b205a0aRCRD",
-   "http": 403,
-   "sha256": null,
-   "estado": "bloqueada",
-   "cambiada": false
+   "url": "https://transparencia.madrid.es/portales/transparencia/es/Informacion-juridica/Huella-normativa/Modificacion-de-la-Ordenanza-de-Movilidad-Sostenible/?vgnextfmt=default&vgnextoid=54e7a84e11a82910VgnVCM1000001d4a900aRCRD&vgnextchannel=4099508929a56510VgnVCM1000008a4a900aRCRD",
+   "http": 200,
+   "sha256": "92a5d48eec5516d37e289d463cf1ef0599ccb1ffb6b032621efd3f54c76b1d20",
+   "estado": "ok",
+   "cambiada": true
   },
   {
    "origen": "zbe:malaga",
@@ -315,6 +1199,59 @@
    "cambiada": false
   },
   {
+   "origen": "zbe:oviedo",
+   "url": "https://www.oviedo.es/documents/35127/1038783/ORDENANZA+ZONA+DE+BAJAS+EMISIONES.pdf/4145bea6-754c-4fff-989e-e1665c6b225b?t=1775657746145",
+   "http": 200,
+   "sha256": "8bad0a51326fb12517a8eeb90229440136dbb7ac4680a071dc394f42376ec917",
+   "cita": "A partir del 31/12/2027 Los vehículos sin distintivo ambiental",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:oviedo",
+   "url": "https://www.oviedo.es/documents/35127/1038783/ORDENANZA+ZONA+DE+BAJAS+EMISIONES.pdf/4145bea6-754c-4fff-989e-e1665c6b225b?t=1775657746145",
+   "http": 200,
+   "sha256": "8bad0a51326fb12517a8eeb90229440136dbb7ac4680a071dc394f42376ec917",
+   "cita": "se sancionarán con multa de 200,00 euros.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:oviedo",
+   "url": "https://www.oviedo.es/gobierno/normativa/ordenanzas-reguladoras",
+   "http": 200,
+   "sha256": "d5e3334f82124f35a4b646ed1f08c2f534caf4e48801f23086d362c5d4a2ce5e",
+   "cita": "BOPA nº 243 de 18-XII-2025",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:oviedo",
+   "url": "https://www.oviedo.es/zbe",
+   "http": 200,
+   "sha256": "06cf36ba39c06261d9d8a576258a4ec01f87ca7e7d5dad42eb194119913aa163",
+   "cita": "se iniciará un periodo de tiempo de carácter informativo",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:oviedo",
+   "url": "https://www.oviedo.es/w/el-area-de-seguridad-ciudadana-abre-una-oficina-para-informar-sobre-la-implantacion-de-la-zona-de-bajas-emisones-zbe-",
+   "http": 200,
+   "sha256": "2d5278f289d5f90b21f4e8d0fbab42a98f46abf3147492f205c1b19a403eceaf",
+   "cita": "también se anunciará con antelación",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:oviedo:ordenanza",
+   "url": "https://www.oviedo.es/documents/35127/1038783/ORDENANZA+ZONA+DE+BAJAS+EMISIONES.pdf/4145bea6-754c-4fff-989e-e1665c6b225b?t=1775657746145",
+   "http": 200,
+   "sha256": "8bad0a51326fb12517a8eeb90229440136dbb7ac4680a071dc394f42376ec917",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
    "origen": "zbe:palma",
    "url": "https://www.caib.es/eboibfront/pdf/ca/2026/37/1215590",
    "http": 200,
@@ -342,9 +1279,10 @@
   {
    "origen": "zbe:pamplona",
    "url": "https://www.pamplona.es/actualidad/noticias/el-distintivo-ambiental-sera-obligatorio-desde-este-lunes-para-los-vehiculos",
-   "http": 502,
-   "sha256": null,
-   "estado": "bloqueada",
+   "http": 200,
+   "sha256": "226a565e7c3f3ab5dcb228cf501ce37b54d154d297779c56363ea80de2757b00",
+   "cita": "multa de 200 euros (100 euros en caso de pronto pago)",
+   "estado": "ok",
    "cambiada": false
   },
   {
@@ -367,7 +1305,7 @@
    "origen": "zbe:pamplona",
    "url": "https://www.pamplona.es/actualidad/noticias/la-zona-de-bajas-emisiones-reduce-el-trafico-por-el-casco-antiguo-en-un-75-en",
    "http": 200,
-   "sha256": "38db720994c7d251c307c2aa8512192a2d5e46100ef7d10bcbc33df1abb5d7fe",
+   "sha256": "cd98d31a4a99a1a1a3f7d0cb11fc3b67a2b8dcff9d2c7dd44de927bcec6c18ed",
    "cita": "7,55%",
    "estado": "ok",
    "cambiada": false
@@ -381,10 +1319,130 @@
    "cambiada": false
   },
   {
+   "origen": "zbe:sabadell",
+   "url": "https://web.sabadell.cat/noticies-zbe/item/sabadell-activa-la-zona-de-baixes-emissions-sense-sancions-inicials-i-amb-autoritzacions-per-minimitzar-l-impacte-social-i-economic",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "web.archive.org (web.sabadell.cat rechaza la conexión)",
+    "url_leida": "https://web.archive.org/web/2026/https://web.sabadell.cat/noticies-zbe/item/sabadell-activa-la-zona-de-baixes-emissions-sense-sancions-inicials-i-amb-autoritzacions-per-minimitzar-l-impacte-social-i-economic",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:sabadell",
+   "url": "https://web.sabadell.cat/noticies-zbe/item/sabadell-activa-la-zona-de-baixes-emissions-sense-sancions-inicials-i-amb-autoritzacions-per-minimitzar-l-impacte-social-i-economic",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "web.archive.org (web.sabadell.cat rechaza la conexión)",
+    "url_leida": "https://web.archive.org/web/2026/https://web.sabadell.cat/noticies-zbe/item/sabadell-activa-la-zona-de-baixes-emissions-sense-sancions-inicials-i-amb-autoritzacions-per-minimitzar-l-impacte-social-i-economic",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:sabadell",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3693905",
+   "http": 200,
+   "sha256": "6c671be43572e9a2a9a703a05cf60c3bd6740ce614fea211163eaa4c56b54c9d",
+   "cita": "en horari de 7:00 hores a 20:00 hores",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:sabadell",
+   "url": "https://seua.sabadell.cat/seuelectronica/d/ZBE-35-Annex1OrdDefinitiva.pdf",
+   "http": 200,
+   "sha256": "1019f3dbb6e788d8a2674e5c01d39a4438f0e95c1795f0bc40d316e712812f9c",
+   "cita": "Barri del centre de Sabadell",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:sabadell",
+   "url": "https://seua.sabadell.cat/seuelectronica/d/ZBE-36-Annex2OrdDefinitiva.pdf",
+   "http": 200,
+   "sha256": "a6fb60a02f3ae0295e5d4a5c78fd89fb32c6119bce52d35157e6d31d3c474bd8",
+   "cita": "Diària (màxim es pot concedir 24",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:sabadell",
+   "url": "https://web.sabadell.cat/faqs-zbe-sbd",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "web.archive.org (web.sabadell.cat rechaza la conexión)",
+    "url_leida": "https://web.archive.org/web/2026/https://web.sabadell.cat/faqs-zbe-sbd",
+    "resultado": "confirmado"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:sabadell:ordenanza",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3693905",
+   "http": 200,
+   "sha256": "6c671be43572e9a2a9a703a05cf60c3bd6740ce614fea211163eaa4c56b54c9d",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:salamanca",
+   "url": "https://www.aytosalamanca.es/w/zona-de-bajas-emisiones",
+   "http": 200,
+   "sha256": "dcdf49ce231195466a64a00b645f2849a88d9776a30fc4ab4ab9980dab8cdd74",
+   "cita": "acceso no permitido a vehículos con etiqueta A",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:salamanca",
+   "url": "https://www.aytosalamanca.es/w/zona-de-bajas-emisiones",
+   "http": 200,
+   "sha256": "dcdf49ce231195466a64a00b645f2849a88d9776a30fc4ab4ab9980dab8cdd74",
+   "cita": "entró en vigor en el mes de junio de 2024",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "zbe:salamanca",
+   "url": "https://www.aytosalamanca.es/documents/20119/637247/D%C3%8DPTICO+ZBE_10+preguntas+web.pdf/1a8be86d-621d-2e71-ef24-a78960f6fbaf?t=1719995151075",
+   "http": 200,
+   "sha256": "24cca355b5f1fc07ab830174babdd18fce2084834196dedc52daf4a57b86909a",
+   "cita": "no aplica ninguna hasta 2029 en la ZB2",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:salamanca",
+   "url": "https://www.aytosalamanca.es/documents/20119/637247/Ordenanza+ZBE.pdf/fa9e2494-cca5-59f6-1106-fd496d73f2e4?t=1719995164114",
+   "http": 200,
+   "sha256": "a97cdd4660d06ebdd71348d5c50e20abcc967cfb33d3201f3f43dde3e6bb2e0b",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:salamanca:ordenanza",
+   "url": "https://www.aytosalamanca.es/documents/20119/637247/Ordenanza+ZBE.pdf/fa9e2494-cca5-59f6-1106-fd496d73f2e4?t=1719995164114",
+   "http": 200,
+   "sha256": "a97cdd4660d06ebdd71348d5c50e20abcc967cfb33d3201f3f43dde3e6bb2e0b",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
    "origen": "zbe:san-sebastian",
    "url": "https://www.donostia.eus/es/movilidad/zona-bajas-emisiones",
    "http": 200,
-   "sha256": "a2e9bb039e3c4873ec7af9524723686c668ff4131e8382abfb915fe45c5bf29e",
+   "sha256": "a112aac7704da80d04e60ebe3bf2649ed2262613875d231991c265fc7e357b40",
    "cita": "Esta zona abarca una superficie de 1,2 km",
    "estado": "ok",
    "cambiada": true
@@ -393,7 +1451,7 @@
    "origen": "zbe:san-sebastian",
    "url": "https://www.donostia.eus/en/movilidad/zona-bajas-emisiones/solicita-autorizacion/foreing-vehicles",
    "http": 200,
-   "sha256": "12c7f9e0c4432338827250672af709778b99129dac418e00322e83e7dcc68522",
+   "sha256": "f398ee49ec75a89b5107bd1db74cbde81bf4c6266b40748900dd7af7b704d7b3",
    "cita": "fine of 200 euros",
    "estado": "ok",
    "cambiada": true
@@ -402,7 +1460,7 @@
    "origen": "zbe:san-sebastian",
    "url": "https://www.donostia.eus/ataria/es/web/ige/vehiculos-afectados",
    "http": 200,
-   "sha256": "3b6efaa39fd061961bc24d8c96f8b4e808c7b4248ac19ec52d50752c9c140d14",
+   "sha256": "bd9149a919a88b54c67d0c2747040bbe9e3d22f99c0797039347c312af7f09f3",
    "estado": "ok",
    "cambiada": true
   },
@@ -418,7 +1476,7 @@
    "origen": "zbe:sant-cugat",
    "url": "https://www.santcugat.cat/web/zona-baixes-emissions",
    "http": 200,
-   "sha256": "53103b838958bf4b6c5a7c78b1860533ff1eb2b2fc162fc28e7aed78cb57cd97",
+   "sha256": "b5978856afc8aa44f9d31563836eaf4043128d013f6a9fc23ea8ce2e848fd338",
    "cita": "Màxim 10 a l’any",
    "estado": "ok",
    "cambiada": true
@@ -427,7 +1485,7 @@
    "origen": "zbe:sant-cugat",
    "url": "https://www.santcugat.cat/avis/entra-en-vigor-zbe-santcugat",
    "http": 200,
-   "sha256": "97e105956daadda98c2755d1992b15a434860c597a1f53173906b8c1054670b1",
+   "sha256": "41b632c7fe87fdc5ebff2a2076f7f340d05f1b7e5f676012d241b6a47983fb8b",
    "estado": "ok",
    "cambiada": true
   },
@@ -435,16 +1493,101 @@
    "origen": "zbe:sant-cugat:ordenanza",
    "url": "https://www.santcugat.cat/web/zona-baixes-emissions",
    "http": 200,
-   "sha256": "53103b838958bf4b6c5a7c78b1860533ff1eb2b2fc162fc28e7aed78cb57cd97",
+   "sha256": "b5978856afc8aa44f9d31563836eaf4043128d013f6a9fc23ea8ce2e848fd338",
    "estado": "ok",
    "cambiada": true
+  },
+  {
+   "origen": "zbe:santa-cruz-de-tenerife",
+   "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/24-8-26/24-8-26.pdf",
+   "http": 200,
+   "sha256": "33fcf8a6386eb8c4fdda7b398be9390ba96e58d91cd35feedc37e20ddce74977",
+   "cita": "lunes a sábado, de 7:00 a 20:00 horas",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:santa-cruz-de-tenerife",
+   "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/24-8-26/24-8-26.pdf",
+   "http": 200,
+   "sha256": "33fcf8a6386eb8c4fdda7b398be9390ba96e58d91cd35feedc37e20ddce74977",
+   "cita": "treinta y seis (36) meses desde la entrada en vigor",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:santa-cruz-de-tenerife",
+   "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/24-8-26/24-8-26.pdf",
+   "http": 200,
+   "sha256": "33fcf8a6386eb8c4fdda7b398be9390ba96e58d91cd35feedc37e20ddce74977",
+   "cita": "se sancionará con multa de 200 euros",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:santa-cruz-de-tenerife",
+   "url": "https://www.santacruzdetenerife.es/web/servicios-municipales/movilidad-y-accesibilidad-universal/zonas-de-bajas-emisiones",
+   "http": 200,
+   "sha256": "68198dff102437204c30f87f2119b5a634f098597d37819c15539c229f37bb1e",
+   "cita": "En la zona viven 16.369 personas",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:santa-cruz-de-tenerife:ordenanza",
+   "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/24-8-26/24-8-26.pdf",
+   "http": 200,
+   "sha256": "33fcf8a6386eb8c4fdda7b398be9390ba96e58d91cd35feedc37e20ddce74977",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:santander",
+   "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=427898",
+   "http": 200,
+   "sha256": "b69888aec9bd0cb49c7f5b5eff4a8ebd59a5e37a88e8d592c67aa28879b00515",
+   "cita": "lunes a viernes, de 08:00 a 19:00 horas.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:santander",
+   "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=427898",
+   "http": 200,
+   "sha256": "b69888aec9bd0cb49c7f5b5eff4a8ebd59a5e37a88e8d592c67aa28879b00515",
+   "cita": "se sancionará con multa de 200 euros, según",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:santander",
+   "url": "https://www2.santander.es/contenido/noticia/zona-bajas-emisiones-entrara-vigor-partir-manana",
+   "http": 200,
+   "sha256": "e53c62a4a200118a67372a470a5663fbd4ba1f8c357407587452cfbd8faa36a1",
+   "cita": "estará en periodo de adaptación hasta el 28 de febrero",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:santander:ordenanza",
+   "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=427898",
+   "http": 200,
+   "sha256": "b69888aec9bd0cb49c7f5b5eff4a8ebd59a5e37a88e8d592c67aa28879b00515",
+   "estado": "ok",
+   "cambiada": false
   },
   {
    "origen": "zbe:sevilla",
    "url": "https://www.sevilla.org/actualidad/noticias/2024/el-proximo-lunes-1-de-julio-entra-en-vigor-la-zona-de-bajas-emisiones-de-la-cartuja-para-reducir-el-acceso-a-los-vehiculos-mas-contaminantes",
    "http": 0,
    "sha256": null,
-   "estado": "bloqueada",
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "archive.org (curl y WebFetch sin respuesta: tiempo agotado)",
+    "url_leida": "http://web.archive.org/web/20250810124851/https://www.sevilla.org/actualidad/noticias/2024/el-proximo-lunes-1-de-julio-entra-en-vigor-la-zona-de-bajas-emisiones-de-la-cartuja-para-reducir-el-acceso-a-los-vehiculos-mas-contaminantes",
+    "resultado": "confirmado"
+   },
    "cambiada": false
   },
   {
@@ -452,7 +1595,13 @@
    "url": "https://www.sevilla.org/servicios/movilidad/zona-de-bajas-emisiones",
    "http": 0,
    "sha256": null,
-   "estado": "bloqueada",
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "archive.org (curl y WebFetch sin respuesta)",
+    "url_leida": "http://web.archive.org/web/20260512115843/https://www.sevilla.org/servicios/movilidad/zona-de-bajas-emisiones",
+    "resultado": "confirmado"
+   },
    "cambiada": false
   },
   {
@@ -460,7 +1609,146 @@
    "url": "https://www.sevilla.org/servicios/movilidad/formularios-de-solicitudes/instrucciones-zbe.pdf",
    "http": 0,
    "sha256": null,
-   "estado": "bloqueada",
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "archive.org (curl sin respuesta)",
+    "url_leida": "http://web.archive.org/web/20260421001747/https://www.sevilla.org/servicios/movilidad/formularios-de-solicitudes/instrucciones-zbe.pdf",
+    "resultado": "corregir"
+   },
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:tarragona",
+   "url": "https://www.tarragona.cat/mobilitat/zona-de-baixes-emissions-zbe/preguntes-frequents",
+   "http": 200,
+   "sha256": "929d0978905730cc84775261186068966c4211a80dd51e6656edf2702370cc10",
+   "cita": "multes de 200 €",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:tarragona",
+   "url": "https://www.tarragona.cat/mobilitat/zona-de-baixes-emissions-zbe/preguntes-frequents",
+   "http": 200,
+   "sha256": "929d0978905730cc84775261186068966c4211a80dd51e6656edf2702370cc10",
+   "cita": "La ZBE s’aplica entre les 7 i les 19 h",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:tarragona",
+   "url": "https://www.tarragona.cat/mobilitat/zona-de-baixes-emissions-zbe/calendari",
+   "http": 200,
+   "sha256": "b77318ce7319dfe9b92f2df33e003844738a76fad82d1cde80a84cc848fbdd31",
+   "cita": "31 de desembre de 2025",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:tarragona",
+   "url": "https://www.tarragona.cat/mobilitat/zona-de-baixes-emissions-zbe/el-meu-vehicle",
+   "http": 200,
+   "sha256": "24db3f3281a38f990dc34f66ea7ca393c267245b76e5c7fa8ac4c392f744132c",
+   "cita": "Pots entrar a la ZBE fins al 31/12/2027 sense autorització.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:tarragona",
+   "url": "https://www.tarragona.cat/mobilitat/fitxers/altres/resolucio-dalcaldia-de-la-suspensio-de-la-zbe-durant-les-anomalies-de-rodalies",
+   "http": 200,
+   "sha256": "29868afa472dfbcc5183ce18f461a5f239e28db926bd7a208f2de7fb32a03381",
+   "cita": "ordenança publicada al BOPT i al DOGC de 18 d’agost de 2025",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:tarragona",
+   "url": "https://www.tarragona.cat/mobilitat/noticies/noticies-2026/tarragona-reactiva-la-zbe-el-dilluns-16-de-marc",
+   "http": 200,
+   "sha256": "e00211546b376fabfcdfd9895ae63200c33f851ba363133a9d6b2ea3d22a0bb7",
+   "cita": "dilluns 16 de març es tornarà a reactivar la Zona de Baixes Emissions",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:tarragona",
+   "url": "https://www.tarragona.cat/mobilitat/noticies/noticies-2026/el-consell-plenari-aprova-inicialment-la-modificacio-de-lordenanca-de-la-zbe",
+   "http": 200,
+   "sha256": "8d0a60bdc9bfbae2b539b9eea26e7d394797630f3ade249e383b4fe4fee94977",
+   "cita": "es passarà dels 12 autoritzacions anuals a 24 a l’any",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:tarragona:ordenanza",
+   "url": "https://www.tarragona.cat/mobilitat/zona-de-baixes-emissions-zbe/normativa",
+   "http": 200,
+   "sha256": "278084b643f6ac003c26f96baaa5520abe59dace46070d057d4cc37ea4a0ede2",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:terrassa",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3855257",
+   "http": 200,
+   "sha256": "59be450159da7bc6a7d1cea7b14d5832e6eba05084f1d25909a9bc6981974653",
+   "cita": "horari de 07:00 hores a 20:00 hores.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:terrassa",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3855257",
+   "http": 200,
+   "sha256": "59be450159da7bc6a7d1cea7b14d5832e6eba05084f1d25909a9bc6981974653",
+   "cita": "d’entrada en vigor la ZBE va ser el 20 de maig de 2024",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:terrassa",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3855257",
+   "http": 200,
+   "sha256": "59be450159da7bc6a7d1cea7b14d5832e6eba05084f1d25909a9bc6981974653",
+   "cita": "Àngel Sallent i el carrer de Santa Maria de Mazzarel·lo",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:terrassa",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3855257",
+   "http": 200,
+   "sha256": "59be450159da7bc6a7d1cea7b14d5832e6eba05084f1d25909a9bc6981974653",
+   "cita": "fins el 30 d’abril de 2026",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:terrassa",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3855257",
+   "http": 200,
+   "sha256": "59be450159da7bc6a7d1cea7b14d5832e6eba05084f1d25909a9bc6981974653",
+   "cita": "nombre màxim de 24 dies d’accés a la ZBE",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:terrassa",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3844203",
+   "http": 200,
+   "sha256": "e8fe8b28cea68611cb41113c6a36dfc24871ca59a27f93c1d2fa549cc06cbfaa",
+   "cita": "Zona de baixes emissions",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:terrassa:ordenanza",
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3855257",
+   "http": 200,
+   "sha256": "59be450159da7bc6a7d1cea7b14d5832e6eba05084f1d25909a9bc6981974653",
+   "estado": "ok",
    "cambiada": false
   },
   {
@@ -476,15 +1764,15 @@
    "origen": "zbe:valencia",
    "url": "https://movilidad.valencia.es/es/calendario-implementacion/",
    "http": 200,
-   "sha256": "67d51dc90fe6c5b6baaf32193187e2d85739790d6b4056562cdb136313b615ee",
+   "sha256": "56e33d739a8cf2bef44dfcedbb1cde2270df03a8ae1410c7e772402bbb4c7bdb",
    "estado": "ok",
-   "cambiada": false
+   "cambiada": true
   },
   {
    "origen": "zbe:valencia",
    "url": "https://www.valencia.es/cas/actualidad/-/content/c%C3%A1maras-zbe",
    "http": 200,
-   "sha256": "10d7fdfbadc6a41e3060451a5a8eb757262c5e3a22bc5538eac727770634a82b",
+   "sha256": "8b07e75c0bdd2416c8799a21192e75feded24518bd108af33d8a3622066ebdb7",
    "estado": "ok",
    "cambiada": true
   },
@@ -531,10 +1819,54 @@
    "cambiada": false
   },
   {
+   "origen": "zbe:vigo",
+   "url": "https://sede.vigo.org/expedientes/actas/fichero_actas.jsp?id=3676&t=ACTA&lang=es",
+   "http": 200,
+   "sha256": "6b07058bfe4c4ac92d7e3e50d46328e5d30bd2c59a85dc6bb4d7d1d469c0804b",
+   "cita": "A primeira fase aplica unicamente aos vehículos sen distintivo ambiental",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:vigo",
+   "url": "https://sede.vigo.org/expedientes/actas/fichero_actas.jsp?id=3676&t=ACTA&lang=es",
+   "http": 200,
+   "sha256": "6b07058bfe4c4ac92d7e3e50d46328e5d30bd2c59a85dc6bb4d7d1d469c0804b",
+   "cita": "aos vehículos con distintivo ambiental A, B e C",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:vigo",
+   "url": "https://sede.vigo.org/expedientes/actas/fichero_actas.jsp?id=3676&t=ACTA&lang=es",
+   "http": 200,
+   "sha256": "6b07058bfe4c4ac92d7e3e50d46328e5d30bd2c59a85dc6bb4d7d1d469c0804b",
+   "cita": "cunha superficie de 39 ha. Dispón",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:vigo",
+   "url": "https://sede.vigo.org/expedientes/taboleiro/getarchivo_finpub.jsp?id=3838",
+   "http": 200,
+   "sha256": "6d6614ed8497b8e585ff574ab38c65e81c7e276fb30be8988c4a1354ef7b6c29",
+   "cita": "en sesión ordinaria de data 25 de maio de 2026",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "zbe:vigo:ordenanza",
+   "url": "https://sede.vigo.org/expedientes/actas/fichero_actas.jsp?id=3676&t=ACTA&lang=es",
+   "http": 200,
+   "sha256": "6b07058bfe4c4ac92d7e3e50d46328e5d30bd2c59a85dc6bb4d7d1d469c0804b",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
    "origen": "zbe:vitoria-gasteiz",
    "url": "https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=en&uid=u7627e050_18b933a5b58__2031",
    "http": 200,
-   "sha256": "f650b971c5cd9a81ab105fcb9d8e8e81ef2b33c56f55a517c0f304432fd1d4fb",
+   "sha256": "60e08f7f119ccc1ea6ca732de09376579864083c7f312958abcf9e9c0d018599",
    "cita": "A partir del 1 de enero de 2030, la limitación se extenderá también a los vehículos con etiqueta B.",
    "estado": "ok",
    "cambiada": true
@@ -543,7 +1875,7 @@
    "origen": "zbe:vitoria-gasteiz",
    "url": "https://blogs.vitoria-gasteiz.org/medios/2025/12/09/vitoria-gasteiz-consolida-la-zbe-con-normalidad-y-registra-solo-un-15-de-accesos-indebidos/",
    "http": 200,
-   "sha256": "dd733a1aadd2db99050bead6df3b992e22d6c55da328f9c22f22a78fd79bed33",
+   "sha256": "a89f9df9f85b70538f3fb497b6cc39704d6803ca7a78b3dab584ed58f2b4f6a1",
    "estado": "ok",
    "cambiada": false
   },
@@ -551,7 +1883,7 @@
    "origen": "zbe:vitoria-gasteiz",
    "url": "https://sedeelectronica.vitoria-gasteiz.org/portal/es/w/zona-de-bajas-emisiones-zbe-exenciones",
    "http": 200,
-   "sha256": "081c7d24bc7f6c743d877df91b5e5605a124832dea72916d35e61875054d878b",
+   "sha256": "f098fadfa6b7db6e2d6e25b15b40a050198329c3a8c8ee684e3237f13b0846c0",
    "estado": "ok",
    "cambiada": true
   },
@@ -559,7 +1891,7 @@
    "origen": "zbe:vitoria-gasteiz",
    "url": "https://blogs.vitoria-gasteiz.org/medios/2026/03/18/la-zona-de-bajas-emisiones-evita-ya-1065-toneladas-de-co2-en-seis-meses-y-reduce-a-la-mitad-los-coches-mas-contaminantes-en-el-centro-de-vitoria-gasteiz/",
    "http": 200,
-   "sha256": "cba6d72646eaa8dc548c7aaaef949db63523e09545a81ec7a2d62c4b19581a33",
+   "sha256": "9c794566f06ea41902c7ef9ce0fabb7e650ad3300849e47d43aeb8210fc5d60c",
    "cita": "Se han tramitado 637 sanciones desde diciembre",
    "estado": "ok",
    "cambiada": false
@@ -568,7 +1900,7 @@
    "origen": "zbe:vitoria-gasteiz:ordenanza",
    "url": "https://blogs.vitoria-gasteiz.org/medios/2025/03/21/vitoria-gasteiz-aprueba-definitivamente-la-ordenanza-que-regulara-la-zona-de-bajas-emisiones/",
    "http": 200,
-   "sha256": "47755cb13f759739ed37ae2858631696bdb7edecb1f8916157ed85814d2dd114",
+   "sha256": "3f30d5df1f8271d624eda874f3c78acc1dbed356f2dffd2ef97a990811162f66",
    "estado": "ok",
    "cambiada": false
   },
@@ -576,7 +1908,7 @@
    "origen": "zbe:zaragoza",
    "url": "https://www.zaragoza.es/sede/servicio/noticia/346150",
    "http": 200,
-   "sha256": "89c1e57e4578c17a66c7a524fa5af45f26701d21ab69200feb64e4a5fe54b266",
+   "sha256": "54604122f7567551b392967db240cea26ddb65270f2cb85169a7ffd9f8baceff",
    "cita": "La ZBE estará activa de lunes a viernes de 8,00 a 20,00 horas",
    "estado": "ok",
    "cambiada": true
@@ -585,7 +1917,7 @@
    "origen": "zbe:zaragoza",
    "url": "https://www.zaragoza.es/sede/portal/movilidad/bajas-emisiones/faq",
    "http": 200,
-   "sha256": "16686718738c502625b20a6c54a4d3a7abc9fdf8bb3512ca8bbfc03161fe0c4a",
+   "sha256": "9e076d3136fd5a30da6f1e07c0fe0f9cf73786c600781dd95e34ad5caee0001e",
    "cita": "no les sancionará si salen de ésta en un plazo de 15 minutos",
    "estado": "ok",
    "cambiada": true
@@ -594,7 +1926,7 @@
    "origen": "zbe:zaragoza",
    "url": "https://www.zaragoza.es/sede/servicio/normativa/13277",
    "http": 200,
-   "sha256": "34721533e458c259e0d8502e4736b64aa593dee441471c8787a5618c9e73b79e",
+   "sha256": "6085a7a8eeb9207390481765e0caff905ce342348b986a50b3b885778d5e8c01",
    "estado": "ok",
    "cambiada": true
   },
@@ -602,7 +1934,7 @@
    "origen": "zbe:zaragoza:ordenanza",
    "url": "https://www.zaragoza.es/sede/servicio/normativa/13277",
    "http": 200,
-   "sha256": "34721533e458c259e0d8502e4736b64aa593dee441471c8787a5618c9e73b79e",
+   "sha256": "6085a7a8eeb9207390481765e0caff905ce342348b986a50b3b885778d5e8c01",
    "estado": "ok",
    "cambiada": true
   },
@@ -610,7 +1942,7 @@
    "origen": "ivtm:madrid",
    "url": "https://agenciatributaria.madrid.es/portales/contribuyente/es/Impuestos-tasas-y-precios-publicos/Impuesto-sobre-Vehiculos-de-Traccion-Mecanica-IVTM-Calculo-de-la-tarifa/?vgnextfmt=default&vgnextoid=cc561a0367ac8210VgnVCM1000000b205a0aRCRD&vgnextchannel=99d1e5bcc9c78710VgnVCM1000008a4a900aRCRD",
    "http": 200,
-   "sha256": "b7df112da77386de20aac1647e6ec13588e32226809bfb367aae60b90fd24afb",
+   "sha256": "8c388fe20126b506ab865461f59d50237b1a5f1829a9bafecc3b203d58cad297",
    "estado": "ok",
    "cambiada": true
   },
@@ -618,7 +1950,7 @@
    "origen": "ivtm:madrid",
    "url": "https://agenciatributaria.madrid.es/portales/contribuyente/es/Tramites/Impuesto-sobre-Vehiculos-de-Traccion-Mecanica-IVTM-Bonificacion-medioambiental-para-vehiculos-matriculados/?vgnextfmt=pd&vgnextoid=835c9374bcaed010VgnVCM1000000b205a0aRCRD&vgnextchannel=97d608f9be116810VgnVCM1000001d4a900aRCRD",
    "http": 200,
-   "sha256": "4891415933bbdaccaf36b8cc4cbbc6f41b0953b06dab69cf14336bd4f20ca467",
+   "sha256": "0db70e60598f0f94c310faf82728711753c1daf1527e28dbe1acf43f64bc8756",
    "estado": "ok",
    "cambiada": true
   },
@@ -634,17 +1966,16 @@
   {
    "origen": "ivtm:valencia",
    "url": "https://sede.valencia.es/sede/descarga/doc/DOCUMENT_1_20250007834765",
-   "http": 200,
-   "sha256": "632c8f7422d6478243bf3e993ee6aee73a064210ff3fd42a44281ba40a96b080",
-   "cita": "1,727474478 58,87",
-   "estado": "ok",
+   "http": 503,
+   "sha256": null,
+   "estado": "bloqueada",
    "cambiada": false
   },
   {
    "origen": "ivtm:zaragoza",
    "url": "https://www.zaragoza.es/sede/servicio/normativa/3464",
    "http": 200,
-   "sha256": "d7bd06586e79fb0dc3b174ec9f26a6c9d6a51d7cdd67cfd03e1603e35d99f4b7",
+   "sha256": "d3c8a6592ba1dc1d8a1f84b8cb1a8193cafe79892ea8c5ae0dc0ae74cc8da6f3",
    "cita": "123,60",
    "estado": "ok",
    "cambiada": true
@@ -657,6 +1988,24 @@
    "cita": "Periodo de vigencia: 2026",
    "estado": "ok",
    "cambiada": false
+  },
+  {
+   "origen": "ivtm:malaga",
+   "url": "https://www.malaga.eu/visorcontenido/NRMDocumentDisplayer/742/DocumentoNormativa742",
+   "http": 200,
+   "sha256": "36c94041a6064cacb49680c5f8766b3d57d3566613d2330327d5bcadd1b5eb6c",
+   "cita": "del 75 por 100 en la tarifa que, en cada caso, les sea de aplicación",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:malaga",
+   "url": "https://sede.malaga.eu/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO&DETALLE=6269000058789926099500",
+   "http": 200,
+   "sha256": "5e7a8f625351f70176063809a9e7f1e7c87c0b2b1041eaf888ba3142d2bba5d9",
+   "cita": "Bonificación en la cuota del IVTM para vehículos poco contaminantes",
+   "estado": "ok",
+   "cambiada": true
   },
   {
    "origen": "ivtm:murcia",
@@ -703,10 +2052,37 @@
    "origen": "ivtm:vitoria-gasteiz",
    "url": "https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=es&uid=1882a5a_1200df68919__7ffb",
    "http": 200,
-   "sha256": "78df1322671a861e7f850c3df5457754368b5a525bc36d8558a0858a172dfba0",
+   "sha256": "8d75cd101cd4ad7440ec46b710eb56403c466c946d11106156075a10a6d389cb",
    "cita": "A.2. De 8 hasta 11,99 caballos fiscales: 76,17 euros",
    "estado": "ok",
    "cambiada": false
+  },
+  {
+   "origen": "ivtm:vitoria-gasteiz",
+   "url": "https://www.araba.eus/botha/Boletines/2025/146/2025_146_03826_C.pdf",
+   "http": 200,
+   "sha256": "4427ce0924120c8e13bab8239ec931c618c1fc01ee442fff18e1799c0ac76a95",
+   "cita": "El plazo de disfrute de esta bonificación será de 6 años por vehículo.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:vitoria-gasteiz",
+   "url": "https://www.vitoria-gasteiz.org/we001/was/we001Action.do?idioma=es&accionWe001=adjunto&nombre=105986.pdf",
+   "http": 200,
+   "sha256": "ed542ec970ba213415720e7cf523d10cba636cd18ddc86d7761e02413064c408",
+   "cita": "Gozarán de una bonificación del 90 por ciento en la cuota del impuesto los Ciclomotores",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:vitoria-gasteiz",
+   "url": "https://sedeelectronica.vitoria-gasteiz.org/portal/es/w/bonificacion-en-el-impuesto-sobre-vehiculos-de-traccion-mecanica-segun-potencial-contaminante-cero-emisiones-o-eco-3029276",
+   "http": 200,
+   "sha256": "ad31f5214dc5981a1148d9ce7a41d090b219cc079b5fa628266fbd26fc3f7e17",
+   "cita": "El Ayuntamiento aplica de oficio esta bonificación, cuando tiene conocimiento de dichos datos.",
+   "estado": "ok",
+   "cambiada": true
   },
   {
    "origen": "ivtm:san-sebastian",
@@ -718,12 +2094,141 @@
    "cambiada": false
   },
   {
+   "origen": "ivtm:san-sebastian",
+   "url": "https://www.donostia.eus/Ordenanzas.nsf/vListadoId/24B4FE871B83A2F8C1258CAF002BC912?OpenDocument&id=C671670&idioma=cas",
+   "http": 200,
+   "sha256": "d8b53e9efb1797f7cd9eee8c580d2a8416cb1508dc1db1551af1bdc6539f30b1",
+   "cita": "del 95% de la cuota tributaria",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:san-sebastian",
+   "url": "https://www.donostia.eus/es/l/1430582",
+   "http": 200,
+   "sha256": "c3014855f0de9eaf419605900004367064a1ab0943986d554cba200146f9ffdf",
+   "cita": "Vehículo de motor eléctrico o vehículos híbridos",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
    "origen": "ivtm:mostoles",
    "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2025/12/22/BOCM-20251222-66.PDF",
    "http": 200,
    "sha256": "b27e688e5d9764324635f36ba809e440047f682b66638c190f2fdfaea1f619fe",
    "cita": "De 8 hasta 11,99 caballos fiscales    62,60",
    "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:mostoles",
+   "url": "https://www.mostoles.es/mostoles/cm/images?idMmedia=1434707",
+   "http": 200,
+   "sha256": "0df41119cdbf357d0b70f2ee18bdb999ece2a309e101194559cfa39305f91c26",
+   "cita": "exclusivamente a los vehículos eléctricos o bimodales",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:mostoles",
+   "url": "https://www.mostoles.es/SEDE_ELECTRONICA/en/sede/normativa-ordenanzas-reglamentos/ordenanzas-municipales/ordenanzas-fiscales/organizadas-ano/ordenanzas-fiscales-ano-2026",
+   "http": 200,
+   "sha256": "a046944e8ac06fc237c7cd0d45da544b87824555b026f85a13819b60e47a22f7",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:palma",
+   "url": "https://seuelectronica.palma.cat/documents/39058/12928460/Ordenanzas+fiscales+a%C3%B1o+en+curso.pdf/2f559a13-22ab-05ac-2e32-5e77464b66ea?t=1777549988427",
+   "http": 200,
+   "sha256": "37a03f10927b1772cb9e4a346a7b77cd16eb59904cbb7b87282ec7be4e8e8521",
+   "cita": "Bonificación por tipo de motor y tipo de combustible",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:palma",
+   "url": "https://seuelectronica.palma.cat/-/ivtm.03-bonificaci%C3%B3n-para-veh%C3%ADculos-con-distintivo-ambiental-eco-del-impuesto-de-veh%C3%ADculos-de-tracci%C3%B3n-mec%C3%A1nica",
+   "http": 200,
+   "sha256": "adf94020b2f7b69d1da4940b2c5016ff60cce4d16a966c4a5a4f0212f5213bc8",
+   "cita": "Esta bonificación se reconoce de oficio a partir del ejercicio 2025",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "ivtm:alicante",
+   "url": "https://www.alicante.es/sites/default/files/documentos/202401/ordenanza-ivtm-modificada-2023.pdf",
+   "http": 200,
+   "sha256": "5039a6832c601e6607a338d0a8ef8c297355247bcf233d34f3f798807c6a7a32",
+   "cita": "De 8 hasta 11,99 caballos fiscales  60,47 €",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:alicante",
+   "url": "https://www.alicante.es/es/normativa/impuesto-vehiculos-traccion-mecanica",
+   "http": 200,
+   "sha256": "6cda2a361a3c456e505cc1ab08f6f453069bf94dae3e097c60b255a46e93a96e",
+   "cita": "Última actualización: 08/01/2024",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:las-palmas",
+   "url": "https://www.laspalmasgc.es/export/sites/laspalmasgc/.galleries/documentos-normativa/2.3-Ordenanza-Fiscal-Reguladora-del-Impuesto-sobre-Vehiculos-de-Traccion-Mecanica.pdf",
+   "http": 200,
+   "sha256": "42d4c23c10e1b7d0fec5e71b040d023a18b8842973b8646e1cd08cb6d07f80e4",
+   "cita": "De 8 hasta 11,99 caballos fiscales  56,57",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:pamplona",
+   "url": "https://www.pamplona.es/node/77269",
+   "http": 200,
+   "sha256": "c3696b065e06e9f1d22cd8b4524ba223eacda7c4aa7bb027ef72e88814087440",
+   "cita": "De 8 hasta 12 caballos fiscales: 66,28 euros",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:pamplona",
+   "url": "https://www.pamplona.es/sites/default/files/2025-12/Ordenanza%206.pdf",
+   "http": 200,
+   "sha256": "c86b6fb4aa0cb67360a8683eb82604693c7c4b95526f1f48da1a423023eb4990",
+   "cita": "Una bonificación del 25% para los vehículos ECO.",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:hospitalet",
+   "url": "https://www.l-h.cat/utils/obreFitxer.aspx?MH3ui2hqazAYLeVcOqazC4nzUY6sIsTF3fmhAndxWlefhMyO3uz6uYRUyblLnqazCweN3g419",
+   "http": 200,
+   "sha256": "0513713a80564ee0c1c830f4f48d02d7c7c2fc70615d7efe9084b14cf3751543",
+   "cita": "de 8 fins a 11,99 CV 68,16",
+   "estado": "ok",
+   "cambiada": false
+  },
+  {
+   "origen": "ivtm:hospitalet",
+   "url": "https://seuelectronica.l-h.cat/186948_1.aspx?id=1",
+   "http": 200,
+   "sha256": "9079c01a789e6bda4d1fdf4c6765cd72840c9949b1e6b7b0be1449fbec90a777",
+   "estado": "ok",
+   "cambiada": true
+  },
+  {
+   "origen": "ivtm:sevilla",
+   "url": "https://www.sevilla.org/servicios/agencia-tributaria-de-sevilla/ordenanzas-fiscales/2024/ivtm.pdf",
+   "http": 0,
+   "sha256": null,
+   "estado": "verificada_a_mano",
+   "manual": {
+    "fecha": "2026-10-16",
+    "metodo": "web.archive.org (sevilla.org no responde a la descarga automática)",
+    "url_leida": "http://web.archive.org/web/20250212110306/https://www.sevilla.org/servicios/agencia-tributaria-de-sevilla/ordenanzas-fiscales/2024/ivtm.pdf",
+    "resultado": "confirmado"
+   },
    "cambiada": false
   }
  ]

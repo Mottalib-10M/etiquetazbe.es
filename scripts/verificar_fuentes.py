@@ -60,6 +60,10 @@ def main():
     anterior = {}
     if os.path.exists(salida):
         anterior = {r["url"]: r for r in json.load(open(salida)).get("resultados", [])}
+    manual = {}
+    pm = os.path.join(RAIZ, "research", "verificacion-manual.json")
+    if os.path.exists(pm):  # fuentes que rechazan al robot, releídas a mano (fecha, método, URL leída)
+        manual = {x["url"]: x for x in json.load(open(pm))["entradas"] if x.get("resultado") != "retirada"}
     vistos, res, fallos = {}, [], 0
     for e in entradas():
         u = e["url"]
@@ -75,7 +79,10 @@ def main():
             vistos[u] = (code, data, norm(texto(data)) if data else "")
         code, data, txt = vistos[u]
         r = {"origen": e["origen"], "url": u, "http": code, "sha256": hashlib.sha256(data).hexdigest() if data else None}
-        if code != 200 or not data:
+        if (code != 200 or not data) and u in manual:
+            m = manual[u]
+            r["estado"] = "verificada_a_mano"; r["manual"] = {k: m.get(k) for k in ("fecha", "metodo", "url_leida", "resultado")}
+        elif code != 200 or not data:
             r["estado"] = "bloqueada"
         elif e["cita"]:
             ok = norm(e["cita"]) in txt
@@ -89,8 +96,8 @@ def main():
         res.append(r)
     os.makedirs(os.path.dirname(salida), exist_ok=True)
     json.dump({"fecha": datetime.date.today().isoformat(), "resultados": res}, open(salida, "w"), ensure_ascii=False, indent=1)
-    n = {k: sum(1 for x in res if x["estado"] == k) for k in ("ok", "bloqueada", "cita_ausente")}
-    print(f"{len(res)} fuentes · {n['ok']} ok · {n['bloqueada']} bloqueadas para el robot · {n['cita_ausente']} cita ausente · {sum(1 for x in res if x['cambiada'])} cambiadas desde la última vez")
+    n = {k: sum(1 for x in res if x["estado"] == k) for k in ("ok", "bloqueada", "verificada_a_mano", "cita_ausente")}
+    print(f"{len(res)} fuentes · {n['ok']} ok · {n['verificada_a_mano']} verificadas a mano · {n['bloqueada']} bloqueadas para el robot · {n['cita_ausente']} cita ausente · {sum(1 for x in res if x['cambiada'])} cambiadas desde la última vez")
     for x in res:
         if x["estado"] != "ok" or x["cambiada"]:
             print(f"  {x['estado']:<13} {'CAMBIADA ' if x['cambiada'] else ''}{x['origen']}  {x['url'][:110]}")

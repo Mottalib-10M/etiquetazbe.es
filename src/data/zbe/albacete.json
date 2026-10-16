@@ -1,0 +1,109 @@
+{
+ "slug": "albacete",
+ "nombre": "Albacete",
+ "provincia": "Albacete",
+ "ccaa": "Castilla-La Mancha",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "centro",
+   "nombre": "Zona de Bajas Emisiones de Albacete",
+   "ambito": "vías interiores del perímetro paseo de la Libertad, Martínez Villena, San Julián, Feria, Alcalde Conangla, plaza de Alberto Mateos, Hermanos Falcó, Batalla del Salado, plaza de Benjamín Palencia, avenida de España, plaza de Gabriel Lodares y Octavio Cuartero; incluye zonas peatonales (ZPEP y ZPAR) con restricciones propias",
+   "ambito_en": "streets inside the ring formed by Paseo de la Libertad, Martínez Villena, San Julián, Feria, Alcalde Conangla, Plaza de Alberto Mateos, Hermanos Falcó, Batalla del Salado, Plaza de Benjamín Palencia, Avenida de España, Plaza de Gabriel Lodares and Octavio Cuartero; it includes pedestrian zones (ZPEP and ZPAR) with their own rules",
+   "horario": "24h",
+   "horario_nota": "la ordenanza no fija franja horaria: la restricción es general",
+   "desde": "2026-06-27",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_domiciliados",
+     "acceso": "prohibido",
+     "desde": "2026-09-27",
+     "nota": "multas tras 3 meses de fase informativa; pueden entrar sin trámite si van a un parking público (en 10 minutos), sacan tique de zona azul, son taxi/VTC con servicio contratado o son históricos",
+     "nota_en": "fines after a 3-month warning period; they may enter without a permit to reach a public car park (within 10 minutes), with a pay-and-display ticket, as a booked taxi/private hire, or as a historic vehicle"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "domiciliados",
+     "acceso": "permitido",
+     "nota": "vehículos del padrón municipal de vehículos de Albacete (incluidas pedanías y Aguas Nuevas)",
+     "nota_en": "vehicles on Albacete's municipal vehicle register (including outlying districts and Aguas Nuevas)"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "empadronados",
+     "acceso": "condicionado",
+     "nota": "personas empadronadas en Albacete con vehículo sin etiqueta no domiciliado aquí: autorización inscribiéndose en el Registro Municipal de Vehículos Autorizados",
+     "nota_en": "people registered as living in Albacete whose label-less vehicle is not on the local register: permit by enrolling in the Municipal Register of Authorised Vehicles"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "multa de 200 € (art. 14), con reducción del 50 % si se paga en 20 días naturales",
+  "nota_en": "€200 fine (art. 14), halved if paid within 20 calendar days"
+ },
+ "excepciones": [
+  "vehículos del padrón municipal de vehículos de Albacete",
+  "vehículos sin etiqueta que entren a un parking público de la ZBE en un máximo de 10 minutos o que saquen tique de zona azul",
+  "taxis y VTC con servicio contratado con origen o destino en la ZBE; vehículos históricos; bicicletas y VMP",
+  "con autorización registral: empadronados, servicios públicos, transporte de personas con tarjeta de accesibilidad, hoteles, talleres, autoescuelas, emergencias, blindados",
+  "rentas bajas: unidades familiares por debajo de 2 a 4 veces el IPREM según su tamaño, con autorización"
+ ],
+ "excepciones_en": [
+  "vehicles on Albacete's municipal vehicle register",
+  "label-less vehicles heading to a public car park in the zone within 10 minutes, or with a pay-and-display ticket",
+  "booked taxis and private hire to or from the zone; historic vehicles; bicycles and e-scooters",
+  "with a registered permit: residents registered in Albacete, public services, blue-badge transport, hotels, garages, driving schools, emergencies, armoured vans",
+  "low incomes: households below 2 to 4 times the IPREM index depending on size, with a permit"
+ ],
+ "control": "plataforma tecnológica municipal de control de accesos con cámaras de lectura de matrículas, sin captar la imagen de los ocupantes",
+ "control_en": "council access-control platform with number-plate cameras that do not capture the occupants",
+ "pendiente": "las ZPAR 5, 6 y 7 entran en vigor seis meses después de la publicación en el BOP; la ordenanza no fija fases posteriores",
+ "pendiente_en": "pedestrian zones ZPAR 5, 6 and 7 come into force six months after publication in the gazette; the byelaw sets no later phases",
+ "ordenanza": {
+  "nombre": "Ordenanza reguladora de la Zona de Bajas Emisiones, las Zonas Peatonales de Especial Protección y las Zonas Peatonales de Acceso Restringido de Albacete (BOP de Albacete n.º 73, 26 de junio de 2026)",
+  "url": "https://bop.dipualba.es/servicesajax/descararchivopaginabop/298039"
+ },
+ "fuentes": [
+  {
+   "url": "https://bop.dipualba.es/servicesajax/descararchivopaginabop/298039",
+   "label": "BOP de Albacete · Ordenanza de la ZBE de Albacete (aprobación definitiva)",
+   "cita": "celebrada en fecha 23 de junio de 2026"
+  },
+  {
+   "url": "https://bop.dipualba.es/servicesajax/descararchivopaginabop/298039",
+   "label": "BOP de Albacete · Ordenanza de la ZBE, art. 14 (sanciones)",
+   "cita": "multa de doscientos euros (200)"
+  },
+  {
+   "url": "https://bop.dipualba.es/servicesajax/descararchivopaginabop/298039",
+   "label": "BOP de Albacete · Ordenanza de la ZBE, art. 14 (pronto pago)",
+   "cita": "reducción del 50 % del importe"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "BOP n.º 73 de 26/06/2026 localizado con el buscador de bop.dipualba.es y leído en PDF (curl + pypdf). albacete.es no respondía desde aquí. Fechas calculadas a partir de la ordenanza: la disposición final fija la entrada en vigor al día siguiente de la publicación (27/06/2026) y la transitoria aplaza las multas 3 meses (27/09/2026); el edicto de cabecera menciona además el plazo del art. 65.2 LBRL, lo que retrasaría ambas fechas unos 15 días hábiles. No se ha leído ninguna nota municipal que confirme el inicio efectivo de las multas."
+}

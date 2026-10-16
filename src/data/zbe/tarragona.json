@@ -1,0 +1,156 @@
+{
+ "slug": "tarragona",
+ "nombre": "Tarragona",
+ "provincia": "Tarragona",
+ "ccaa": "Cataluña",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "zbet",
+   "nombre": "Zona de Baixes Emissions de Tarragona (ZBET)",
+   "ambito": "calles dentro del perímetro formado por la avenida Vidal i Barraquer, avenida Argentina, avenida Catalunya, calle Reina M. Cristina, paseo Torroja, paseo Sant Antoni, vial William J. Bryant, paseo d'Espanya, calle Comerç y Moll de Costa; las vías perimetrales no tienen restricciones",
+   "ambito_en": "streets inside the perimeter formed by Avinguda Vidal i Barraquer, Avinguda Argentina, Avinguda Catalunya, Carrer Reina M. Cristina, Passeig Torroja, Passeig Sant Antoni, Vial William J. Bryant, Passeig d'Espanya, Carrer Comerç and Moll de Costa; the perimeter roads are unrestricted",
+   "horario": "L-V laborables no festivos 07:00-19:00",
+   "horario_nota": "suspendida temporalmente en febrero-marzo de 2026 por las incidencias de Rodalies y reactivada el lunes 16 de marzo de 2026",
+   "desde": "2025-12-31",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_domiciliados",
+     "acceso": "prohibido",
+     "desde": "2025-12-31",
+     "nota": "salvo autorización; acceso esporádico automático hasta 12 veces al año (una modificación aprobada inicialmente en junio de 2026 lo subiría a 24)",
+     "nota_en": "unless authorised; occasional access granted automatically up to 12 times a year (an amendment given initial approval in June 2026 would raise this to 24)"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "domiciliados",
+     "acceso": "permitido",
+     "hasta": "2026-12-31",
+     "nota": "personas empadronadas en Tarragona cuyo vehículo consta en el padrón del impuesto municipal de vehículos; registro automático",
+     "nota_en": "people registered as living in Tarragona whose vehicle is on the city's road-tax roll; registered automatically"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "domiciliados",
+     "acceso": "prohibido",
+     "desde": "2027-01-01",
+     "nota": "solo con autorización por alguna excepción; los empadronados dentro de la ZBE pueden entrar y aparcar en un único sector hasta el 31/12/2027",
+     "nota_en": "only with a permit under one of the exceptions; people registered as living inside the zone may drive in and park in a single sector until 31/12/2027"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "hasta": "2027-12-31",
+     "nota": "empadronados dentro de la ZBE: entrada y aparcamiento en un único sector",
+     "nota_en": "people registered as living inside the zone: entry and parking in a single sector"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "prohibido",
+     "desde": "2028-01-01",
+     "nota": "solo con autorización por alguna excepción",
+     "nota_en": "only with a permit under one of the exceptions"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "hasta": "2027-12-31"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "prohibido",
+     "desde": "2028-01-01",
+     "nota": "a partir del 1/1/2028 solo con autorización por alguna excepción",
+     "nota_en": "from 1/1/2028 only with a permit under one of the exceptions"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave según la Ley de Tráfico; hasta +30 % por reincidencia",
+  "nota_en": "serious offence under the Traffic Act; up to +30% for a repeat offence"
+ },
+ "excepciones": [
+  "personas con movilidad reducida, rentas bajas (criterios del Decreto 132/2024) y transporte de personas con enfermedades que impiden usar el transporte público",
+  "vehículos que entran en aparcamientos públicos adheridos a la ZBE (autorización automática) y titulares de plaza en aparcamientos privados de la zona",
+  "servicios esenciales y de emergencia, transporte de personas (taxis, VTC, autobuses) y de mercancías, y actividades profesionales con autorización",
+  "profesionales a menos de 5 años de la jubilación y vehículos históricos (solo para la plaza de aparcamiento)",
+  "matrículas extranjeras no identificadas por la DGT: hasta 12 accesos al año"
+ ],
+ "excepciones_en": [
+  "people with reduced mobility, low incomes (criteria of Decree 132/2024) and transport of people whose illness prevents them using public transport",
+  "vehicles entering public car parks signed up to the zone (automatic permit) and holders of a space in a private car park inside it",
+  "essential and emergency services, passenger transport (taxis, ride-hailing, coaches) and goods transport, and authorised trade activities",
+  "workers less than 5 years from retirement and historic vehicles (only to reach their parking space)",
+  "foreign plates not identified by the DGT: up to 12 entries a year"
+ ],
+ "control": "45 cámaras de lectura de matrículas en los accesos y salidas; no hace falta llevar la pegatina",
+ "control_en": "45 number-plate cameras on the entries and exits; the sticker does not have to be displayed",
+ "pendiente": "el Pleno aprobó inicialmente en junio de 2026 una modificación de la ordenanza: 24 accesos puntuales al año en lugar de 12 y acceso libre para todos los residentes de Tarragona hasta el 31/12/2027; no está en vigor",
+ "pendiente_en": "in June 2026 the council gave initial approval to an amendment: 24 occasional entries a year instead of 12 and free access for all Tarragona residents until 31/12/2027; it is not yet in force",
+ "ordenanza": {
+  "nombre": "Ordenança sobre la creació i gestió de la zona de baixes emissions de Tarragona (ZBET), aprobada definitivamente el 26/06/2025, BOPT y DOGC de 18/08/2025",
+  "url": "https://www.tarragona.cat/mobilitat/zona-de-baixes-emissions-zbe/normativa"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.tarragona.cat/mobilitat/zona-de-baixes-emissions-zbe/preguntes-frequents",
+   "label": "Ajuntament de Tarragona · Preguntas frecuentes ZBE",
+   "cita": "multes de 200 €"
+  },
+  {
+   "url": "https://www.tarragona.cat/mobilitat/zona-de-baixes-emissions-zbe/preguntes-frequents",
+   "label": "Ajuntament de Tarragona · Preguntas frecuentes ZBE (horario)",
+   "cita": "La ZBE s’aplica entre les 7 i les 19 h"
+  },
+  {
+   "url": "https://www.tarragona.cat/mobilitat/zona-de-baixes-emissions-zbe/calendari",
+   "label": "Ajuntament de Tarragona · Calendario de la ZBE",
+   "cita": "31 de desembre de 2025"
+  },
+  {
+   "url": "https://www.tarragona.cat/mobilitat/zona-de-baixes-emissions-zbe/el-meu-vehicle",
+   "label": "Ajuntament de Tarragona · El meu vehicle (situación por etiqueta)",
+   "cita": "Pots entrar a la ZBE fins al 31/12/2027 sense autorització."
+  },
+  {
+   "url": "https://www.tarragona.cat/mobilitat/fitxers/altres/resolucio-dalcaldia-de-la-suspensio-de-la-zbe-durant-les-anomalies-de-rodalies",
+   "label": "Ajuntament de Tarragona · Resolución de Alcaldía (Rodalies, 2026)",
+   "cita": "ordenança publicada al BOPT i al DOGC de 18 d’agost de 2025"
+  },
+  {
+   "url": "https://www.tarragona.cat/mobilitat/noticies/noticies-2026/tarragona-reactiva-la-zbe-el-dilluns-16-de-marc",
+   "label": "Ajuntament de Tarragona · Tarragona reactiva la ZBE el 16 de marzo",
+   "cita": "dilluns 16 de març es tornarà a reactivar la Zona de Baixes Emissions"
+  },
+  {
+   "url": "https://www.tarragona.cat/mobilitat/noticies/noticies-2026/el-consell-plenari-aprova-inicialment-la-modificacio-de-lordenanca-de-la-zbe",
+   "label": "Ajuntament de Tarragona · Aprobación inicial de la modificación de la ordenanza (2026)",
+   "cita": "es passarà dels 12 autoritzacions anuals a 24 a l’any"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "páginas de tarragona.cat descargadas con curl; el texto íntegro de la ordenanza (BOPT 18/08/2025) no se pudo descargar (sede electrónica dinámica): los datos proceden de las páginas municipales de la ZBE y de la resolución de Alcaldía; ninguna fuente oficial consultada indica un periodo sin multas"
+}

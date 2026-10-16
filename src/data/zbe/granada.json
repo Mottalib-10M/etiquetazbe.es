@@ -12,7 +12,7 @@
    "superficie_km2": 23.5,
    "horario": "24h",
    "horario_nota": "el Ayuntamiento no publica franja horaria: la restricción rige de forma permanente",
-   "desde": "2025-04-01",
+   "desde": "2025-10-01",
    "reglas": [
     {
      "etiqueta": "A",
@@ -51,7 +51,7 @@
    "ambito_en": "almost the whole city, about 23.5 km² bounded by Camino del Sacromonte, Avenida de la Innovación and Federico García Lorca Park, among others"
   }
  ],
- "criterio_usuario": "titular empadronado o residente en Granada",
+ "criterio_usuario": "vehículo con domicilio fiscal en Granada (titular empadronado)",
  "multa": {
   "importe": 200,
   "pronto_pago": 100,
@@ -59,35 +59,39 @@
   "nota_en": "serious offence under section 76(z3) of the Traffic Act"
  },
  "excepciones": [
-  "vehículos de fuera sin etiqueta que acceden a un aparcamiento público durante más de una hora",
-  "conductores de renta baja con compromisos laborales (autorización)",
+  "vehículos de fuera sin etiqueta que acceden a un aparcamiento público y permanecen más de una hora",
+  "conductores con rentas inferiores a 2 veces el IPREM y compromisos laborales (autorización)",
+  "con autorización: propietarios de garajes (solo para acceder a ellos), citaciones judiciales, mayores de 67 años, PMR y sus cuidadores, centros sanitarios y farmacias, suministro y talleres",
   "emergencias, seguridad y servicios públicos esenciales, transporte público, taxi, VTC y PMR"
  ],
  "control": "cámaras de lectura de matrículas en los accesos",
  "ordenanza": {
-  "nombre": "Proyecto de Zona de Bajas Emisiones de Granada (aprobación definitiva, BOP de Granada 2025)",
-  "url": "https://www.granada.org/inet/wordenanz.nsf/02ccd74c639fe3bfc125735500242007/9970e48f4eda6237c1258d0d0031ce66/$FILE/2025-13657Z-aprobacion-definitiva-proyecto-zbe.pdf"
+  "nombre": "Proyecto de Zona de Bajas Emisiones de Granada, aprobación definitiva (BOP de Granada n.º 178, 18 de septiembre de 2025)",
+  "url": "https://bop.dipgra.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1758150051796-final-3b2cf182-2.pdf"
  },
  "fuentes": [
   {
+   "url": "https://bop.dipgra.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1758150051796-final-3b2cf182-2.pdf",
+   "label": "BOP de Granada n.º 178 (18/09/2025) · Aprobación definitiva del proyecto de ZBE",
+   "cita": "estando permitido el acceso de vehículos con etiquetas"
+  },
+  {
    "url": "https://www.granada.org/inet/wprensa.nsf/xnotalc/80C3C693BD02419EC1258C4D002891CE?open=&pag=ini",
-   "label": "Ayuntamiento de Granada · Se amplía el periodo informativo: régimen sancionador desde el 1 de octubre"
+   "label": "Ayuntamiento de Granada · Se retrasa al 1 de octubre la entrada en vigor y el régimen sancionador"
   },
   {
    "url": "https://www.granada.org/inet/wprensa.nsf/xnotalc/099CC61FFD330743C1258AB60027786B?open=&pag=ini",
    "label": "Ayuntamiento de Granada · La ZBE abarca toda la ciudad y solo afectará a los no residentes sin etiqueta"
-  },
-  {
-   "url": "https://www.granada.org/inet/wordenanz.nsf/02ccd74c639fe3bfc125735500242007/9970e48f4eda6237c1258d0d0031ce66/$FILE/2025-13657Z-aprobacion-definitiva-proyecto-zbe.pdf",
-   "label": "BOP de Granada · Aprobación definitiva del proyecto de ZBE"
   }
  ],
- "verificado": "2026-10-15",
- "nota_verificacion": "granada.org rechaza la descarga automática (403); datos leídos en las notas oficiales indexadas",
+ "verificado": "2026-10-16",
+ "nota_verificacion": "granada.org rechaza la descarga automática (403): el 16/10/2026 se leyó el BOP en bop.dipgra.es y las dos notas municipales en sus copias de web.archive.org (27/10/2025 y 24/11/2024)",
  "excepciones_en": [
-  "out-of-town vehicles without a label parking in a public car park for more than an hour",
-  "low-income drivers who need the car for work (permit)",
-  "emergency, security and essential services, public transport, taxis, ride-hailing and reduced-mobility permits"
+  "out-of-town unlabelled vehicles going to a public car park and staying more than an hour",
+  "drivers with incomes below twice the IPREM index who need the car for work (permit)",
+  "with a permit: garage owners (only to reach them), court summonses, people over 67, people with reduced mobility and their carers, health centres and pharmacies, supplies and repair workshops",
+  "emergency, security and essential public services, public transport, taxis, ride-hailing and reduced-mobility users"
  ],
- "control_en": "number-plate cameras at the entries"
+ "control_en": "number-plate cameras at the entries",
+ "nota_verificacion_en": "granada.org refuses automated downloads (403): on 16/10/2026 the provincial gazette was read on bop.dipgra.es and the two council notes in their web.archive.org copies (27/10/2025 and 24/11/2024)"
 }

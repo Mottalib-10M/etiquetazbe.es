@@ -16,15 +16,30 @@
      "etiqueta": "A",
      "usuario": "no_domiciliados",
      "acceso": "prohibido",
-     "desde": "2025-01-01"
+     "desde": "2025-01-01",
+     "nota": "turismos sin etiqueta de las categorías de uso 00, 02 y 33 no domiciliados en Madrid",
+     "nota_en": "unlabelled cars (use categories 00, 02 and 33) not registered in Madrid"
     },
     {
      "etiqueta": "A",
      "usuario": "domiciliados",
      "acceso": "condicionado",
      "desde": "2026-04-07",
-     "nota": "turismos domiciliados en Madrid de forma ininterrumpida desde el 1/1/2022 y en el padrón del IVTM: circulación temporal condicionada a que se respeten los valores límite de NO2 (DT 7.ª, Ordenanza 2/2026); aparcamiento limitado a su barrio",
-     "nota_en": "cars registered in Madrid without interruption since 1/1/2022 and on Madrid's road-tax roll: temporary access as long as NO2 limits are met (7th transitional provision, Byelaw 2/2026); parking only in their own neighbourhood"
+     "nota": "turismos domiciliados en Madrid de forma ininterrumpida desde el 1/1/2022 y en el padrón del IVTM: circulación temporal condicionada a que se respeten los valores límite de NO2 (DT 7.ª, Ordenanza 2/2026), fuera de Distrito Centro y Plaza Elíptica",
+     "nota_en": "cars registered in Madrid without interruption since 1/1/2022 and on Madrid's road-tax roll: temporary access as long as NO2 limits are met (7th transitional provision, Byelaw 2/2026), outside Centro and Plaza Elíptica"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "condicionado",
+     "desde": "2026-04-07",
+     "vehiculos": [
+      "moto",
+      "ciclomotor",
+      "pesado"
+     ],
+     "nota": "motos, ciclomotores, furgonetas y camiones sin etiqueta circulan de forma temporal, sea cual sea su domicilio, mientras se respeten los valores límite de NO2 (DT 7.ª, Ordenanza 2/2026); no en Distrito Centro ni Plaza Elíptica",
+     "nota_en": "unlabelled motorbikes, mopeds, vans and lorries may drive temporarily, wherever they are registered, as long as NO2 limits are met (7th transitional provision, Byelaw 2/2026); not in Centro or Plaza Elíptica"
     }
    ],
    "ambito_en": "every urban public road in the municipality; the M-40, M-45 and M-50 are not urban roads and stay outside"
@@ -54,7 +69,9 @@
     {
      "etiqueta": "ECO",
      "usuario": "todos",
-     "acceso": "permitido"
+     "acceso": "permitido",
+     "nota": "la página municipal autoriza los turismos ECO; para motos y furgonetas ECO no lo precisa",
+     "nota_en": "the council page allows ECO cars; it says nothing specific about ECO motorbikes or vans"
     },
     {
      "etiqueta": "0",
@@ -106,7 +123,8 @@
      "acceso": "permitido"
     }
    ],
-   "ambito_en": "inner streets around Plaza Elíptica (Usera/Carabanchel); the perimeter roads are unrestricted"
+   "ambito_en": "inner streets around Plaza Elíptica (Usera/Carabanchel); the perimeter roads are unrestricted",
+   "desde": "2022-02-22"
   }
  ],
  "multa": {
@@ -116,16 +134,21 @@
  "excepciones": [
   "titulares de tarjeta TEPMR dados de alta en el sistema de gestión de accesos",
   "vehículos históricos",
-  "autorizaciones excepcionales temporales (compra de vehículo, tratamiento hospitalario...)",
-  "residentes de Distrito Centro: alta de oficio de sus vehículos B y C; hasta 20 invitaciones al mes para vehículos B o C"
+  "autorizaciones excepcionales temporales (compra de vehículo antes del 1/1/2025, tratamiento hospitalario, vehículos industriales de autónomos de 59 años o más)",
+  "Distrito Centro: los B y C de fuera solo entran para estacionar en un aparcamiento adherido o en plaza reservada"
  ],
  "control": "cámaras con lector OCR (dentro de la M-30 y en la M-30)",
  "ordenanza": {
-  "nombre": "Ordenanza de Movilidad Sostenible de 5 de octubre de 2018, modificada por la Ordenanza de 13 de septiembre de 2021 y por la Ordenanza 2/2026, de 24 de marzo",
-  "publicacion": "BOAM 6/4/2026 (Ordenanza 2/2026)",
-  "url": "https://sede.madrid.es/portal/site/tramites/menuitem.5dd4485239c96e10f7a72106a8a409a0/?vgnextoid=10378dd1c267d910VgnVCM200000f921e388RCRD&version=true&vgnextchannel=6b3d814231ede410VgnVCM1000000b205a0aRCRD"
+  "nombre": "Ordenanza de Movilidad Sostenible de 5 de octubre de 2018, modificada por la Ordenanza 2/2026, de 24 de marzo (BOAM n.º 10099 y BOCM n.º 80, de 6 de abril de 2026)",
+  "publicacion": "BOCM n.º 80, 6/4/2026; corrección de errores BOAM 10103 y 10121",
+  "url": "https://transparencia.madrid.es/portales/transparencia/es/Informacion-juridica/Huella-normativa/Modificacion-de-la-Ordenanza-de-Movilidad-Sostenible/?vgnextfmt=default&vgnextoid=54e7a84e11a82910VgnVCM1000001d4a900aRCRD&vgnextchannel=4099508929a56510VgnVCM1000008a4a900aRCRD"
  },
  "fuentes": [
+  {
+   "url": "https://transparencia.madrid.es/portales/transparencia/es/Informacion-juridica/Huella-normativa/Modificacion-de-la-Ordenanza-de-Movilidad-Sostenible/?vgnextfmt=default&vgnextoid=54e7a84e11a82910VgnVCM1000001d4a900aRCRD&vgnextchannel=4099508929a56510VgnVCM1000008a4a900aRCRD",
+   "label": "Ayuntamiento de Madrid, Portal de Transparencia · Huella normativa de la modificación de la Ordenanza de Movilidad Sostenible",
+   "cita": "BOAM núm. 10099, pág. 5, de 6 de abril de 2026"
+  },
   {
    "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones-ZBE-/?vgnextfmt=default&vgnextoid=93e63877029eb710VgnVCM1000001d4a900aRCRD&vgnextchannel=d2d2edf0f70ab710VgnVCM2000001f4a900aRCRD",
    "label": "Ayuntamiento de Madrid · Madrid Zona de Bajas Emisiones (ZBE)",
@@ -137,19 +160,22 @@
   },
   {
    "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Distrito-Centro-Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Zona-de-Bajas-Emisiones-de-Especial-Proteccion-ZBEDEP-Distrito-Centro-Informacion-general/?vgnextfmt=default&vgnextoid=2d88c49556fbb710VgnVCM2000001f4a900aRCRD&vgnextchannel=d352edf0f70ab710VgnVCM2000001f4a900aRCRD",
-   "label": "Ayuntamiento de Madrid · ZBEDEP Distrito Centro, información general"
+   "label": "Ayuntamiento de Madrid · ZBEDEP Distrito Centro, información general",
+   "cita": "turismos con clasificación ambiental"
   },
   {
    "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Plaza-Eliptica-Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Zona-de-Bajas-Emisiones-de-Especial-Proteccion-ZBEDEP-Plaza-Eliptica-Preguntas-frecuentes/?vgnextfmt=default&vgnextoid=0f0f1e0276fbb710VgnVCM1000001d4a900aRCRD&vgnextchannel=f808acec6f5fe710VgnVCM1000001d4a900aRCRD",
    "label": "Ayuntamiento de Madrid · ZBEDEP Plaza Elíptica, preguntas frecuentes"
   }
  ],
- "verificado": "2026-10-15",
+ "verificado": "2026-10-16",
  "excepciones_en": [
-  "holders of a reduced-mobility (TEPMR) card entered in the access system",
+  "holders of a TEPMR disabled card registered in the access system",
   "historic vehicles",
-  "exceptional temporary permits (buying a vehicle, hospital treatment...)",
-  "Centro district residents: their B and C vehicles are registered automatically; up to 20 invitations a month for B or C visitors"
+  "temporary exceptional permits (vehicle bought before 1/1/2025, hospital treatment, commercial vehicles of self-employed people aged 59 or over)",
+  "Centro district: out-of-town B and C vehicles may only enter to park in an approved car park or a reserved space"
  ],
- "control_en": "OCR cameras (inside the M-30 and on the M-30)"
+ "control_en": "OCR cameras (inside the M-30 and on the M-30)",
+ "nota_verificacion": "madrid.es rechaza la descarga automática (403): el 16/10/2026 se leyeron la página Madrid ZBE en su copia de web.archive.org del 09/10/2026, las de Distrito Centro y Plaza Elíptica con un lector web y la huella normativa en el Portal de Transparencia",
+ "nota_verificacion_en": "madrid.es refuses automated downloads (403): on 16/10/2026 the Madrid ZBE page was read in its web.archive.org copy of 09/10/2026, the Centro and Plaza Elíptica pages with a web reader and the legislative record on the council’s Transparency Portal"
 }

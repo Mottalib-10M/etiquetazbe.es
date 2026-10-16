@@ -1,0 +1,168 @@
+{
+ "slug": "oviedo",
+ "nombre": "Oviedo",
+ "provincia": "Asturias",
+ "ccaa": "Principado de Asturias",
+ "estado": "informativa",
+ "zonas": [
+  {
+   "id": "anillo-interior",
+   "nombre": "ZBE de Oviedo · Anillo interior",
+   "ambito": "calles interiores del perímetro Adelantado de la Florida, Postigo Bajo, Postigo Alto, Padre Suárez, Marqués de Gastañaga, Campomanes, Santa Susana, Conde de Toreno, Uría, Doctor Casal, Melquiades Álvarez, Covadonga, Manuel García Conde y Víctor Chavarri; las calles del contorno no están incluidas",
+   "ambito_en": "inner streets within the perimeter of Adelantado de la Florida, Postigo Bajo, Postigo Alto, Padre Suárez, Marqués de Gastañaga, Campomanes, Santa Susana, Conde de Toreno, Uría, Doctor Casal, Melquiades Álvarez, Covadonga, Manuel García Conde and Víctor Chavarri; the boundary streets themselves are not included",
+   "horario": "24h",
+   "horario_nota": "la ordenanza no fija franjas horarias: la restricción es continua",
+   "desde": "2025-12-31",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "condicionado",
+     "desde": "2025-12-31",
+     "nota": "la ordenanza prohíbe el acceso, la circulación y el estacionamiento desde el 31/12/2025; el Ayuntamiento anunció un periodo informativo sin multas y que la fecha de inicio de las sanciones se comunicaría con antelación; no se ha localizado esa fecha en una fuente oficial",
+     "nota_en": "the byelaw bans entry, driving and parking from 31/12/2025; the council announced an information period without fines and said the start date for fines would be announced in advance; that date has not been found in an official source"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "vehículos de empadronados en un domicilio de la ZBE acreditados en la DGT: inclusión sin solicitud",
+     "nota_en": "vehicles of people registered at an address in the zone and recorded with the DGT: included without applying"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  },
+  {
+   "id": "anillo-exterior",
+   "nombre": "ZBE de Oviedo · Anillo exterior",
+   "ambito": "calles interiores del perímetro General Elorza, Adelantado de La Florida, Ronda Sur, Muñoz Degraín, González Besada, avenida Padre Vinjoy, avenida Hermanos Menéndez Pidal, Real Oviedo, Independencia y avenida de Santander; las calles del contorno no están incluidas",
+   "ambito_en": "inner streets within the perimeter of General Elorza, Adelantado de La Florida, Ronda Sur, Muñoz Degraín, González Besada, avenida Padre Vinjoy, avenida Hermanos Menéndez Pidal, Real Oviedo, Independencia and avenida de Santander; the boundary streets themselves are not included",
+   "horario": "24h",
+   "horario_nota": "la ordenanza no fija franjas horarias: la restricción es continua",
+   "desde": "2027-12-31",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "hasta": "2027-12-30"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "desde": "2027-12-31",
+     "nota": "la web municipal habla del 1 de enero de 2028",
+     "nota_en": "the council website gives 1 January 2028"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "vehículos de empadronados en la ZBE acreditados en la DGT",
+     "nota_en": "vehicles of people registered in the zone and recorded with the DGT"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "art. 18 de la ordenanza: 200 euros, +30 % en caso de reincidencia en un año; pronto pago según la Ley de Tráfico",
+  "nota_en": "art. 18 of the byelaw: 200 euros, +30% for a repeat offence within a year; early-payment discount under the Traffic Act"
+ },
+ "excepciones": [
+  "residentes empadronados en la ZBE (alta automática si constan en la DGT)",
+  "vehículos históricos (RD 892/2024)",
+  "clientes de aparcamientos públicos: 15 minutos para entrar en el aparcamiento",
+  "vehículos de servicios de emergencia, esenciales y de transporte público",
+  "PMR: autorización hasta la caducidad de la tarjeta",
+  "transporte de mercancías y actividad profesional: autorización no renovable hasta el 1/1/2031 (titulares desde antes del 31/12/2025)",
+  "garajes, talleres (máx. 7 días laborables), obras, hoteles, comercios y propietarios de inmuebles, con autorización"
+ ],
+ "excepciones_en": [
+  "residents registered in the zone (automatic if recorded with the DGT)",
+  "historic vehicles (Royal Decree 892/2024)",
+  "customers of public car parks: 15 minutes to enter the car park",
+  "emergency, essential-service and public-transport vehicles",
+  "blue-badge holders: authorisation until the card expires",
+  "goods transport and professional use: non-renewable authorisation until 1/1/2031 (owners since before 31/12/2025)",
+  "garage spaces, repair workshops (max. 7 working days), building works, hotels, shops and property owners, with authorisation"
+ ],
+ "control": "sistema automático de control de accesos con lectura de matrículas y plataforma municipal de vehículos autorizados",
+ "control_en": "automatic access control reading number plates, with a municipal platform for authorised vehicles",
+ "pendiente": "el anillo exterior se cierra a los vehículos sin etiqueta a partir del 31/12/2027; la fecha de inicio de las multas en el anillo interior no figura en una fuente oficial consultada",
+ "pendiente_en": "the outer ring closes to vehicles without a label from 31/12/2027; the start date for fines in the inner ring was not found in the official sources consulted",
+ "ordenanza": {
+  "nombre": "Ordenanza reguladora de la Zona de Bajas Emisiones del Ayuntamiento de Oviedo (aprobación definitiva por el Pleno el 2/12/2025; BOPA n.º 243, 18 de diciembre de 2025)",
+  "url": "https://www.oviedo.es/documents/35127/1038783/ORDENANZA+ZONA+DE+BAJAS+EMISIONES.pdf/4145bea6-754c-4fff-989e-e1665c6b225b?t=1775657746145"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.oviedo.es/documents/35127/1038783/ORDENANZA+ZONA+DE+BAJAS+EMISIONES.pdf/4145bea6-754c-4fff-989e-e1665c6b225b?t=1775657746145",
+   "label": "Ayuntamiento de Oviedo · Ordenanza de la Zona de Bajas Emisiones",
+   "cita": "A partir del 31/12/2027 Los vehículos sin distintivo ambiental"
+  },
+  {
+   "url": "https://www.oviedo.es/documents/35127/1038783/ORDENANZA+ZONA+DE+BAJAS+EMISIONES.pdf/4145bea6-754c-4fff-989e-e1665c6b225b?t=1775657746145",
+   "label": "Ayuntamiento de Oviedo · Ordenanza ZBE, art. 18 (sanciones)",
+   "cita": "se sancionarán con multa de 200,00 euros."
+  },
+  {
+   "url": "https://www.oviedo.es/gobierno/normativa/ordenanzas-reguladoras",
+   "label": "Ayuntamiento de Oviedo · Ordenanzas reguladoras",
+   "cita": "BOPA nº 243 de 18-XII-2025"
+  },
+  {
+   "url": "https://www.oviedo.es/zbe",
+   "label": "Ayuntamiento de Oviedo · Zona de Bajas Emisiones",
+   "cita": "se iniciará un periodo de tiempo de carácter informativo"
+  },
+  {
+   "url": "https://www.oviedo.es/w/el-area-de-seguridad-ciudadana-abre-una-oficina-para-informar-sobre-la-implantacion-de-la-zona-de-bajas-emisones-zbe-",
+   "label": "Ayuntamiento de Oviedo · Oficina de información de la ZBE",
+   "cita": "también se anunciará con antelación"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "Ordenanza leída en el PDF municipal (curl + pypdf); páginas oviedo.es leídas con curl. Estado 'informativa' por prudencia: ninguna fuente oficial consultada fija la fecha de inicio de las multas. Recurso contencioso pendiente ante el TSJ de Asturias citado en búsquedas, no verificado en fuente oficial."
+}

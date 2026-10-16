@@ -1,0 +1,251 @@
+{
+ "slug": "lleida",
+ "nombre": "Lleida",
+ "provincia": "Lleida",
+ "ccaa": "Cataluña",
+ "estado": "suspendida",
+ "zonas": [
+  {
+   "id": "zbe1",
+   "nombre": "ZBE 1 Lleida (Centre Històric)",
+   "ambito": "espacio comprendido entre la avenida Blondel, avenida Madrid, avenida Catalunya, Rambla d'Aragó, avenida de Balmes, avenida Prat de la Riba, calle Príncep de Viana, Rambla de Ferran y avenida Francesc Macià",
+   "ambito_en": "the area bounded by Avinguda Blondel, Avinguda Madrid, Avinguda Catalunya, Rambla d'Aragó, Avinguda de Balmes, Avinguda Prat de la Riba, Carrer Príncep de Viana, Rambla de Ferran and Avinguda Francesc Macià",
+   "horario": "L-V laborables 07:00-20:00",
+   "horario_nota": "todos los meses del año; fuera de ese horario pueden entrar todos los vehículos",
+   "desde": "2025-01-01",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_domiciliados",
+     "acceso": "prohibido",
+     "desde": "2025-07-01",
+     "nota": "restricción desde el 1/1/2025 con 6 meses de moratoria informativa sin multas; 24 accesos al año automáticos sin trámite",
+     "nota_en": "restricted since 1/1/2025 with a 6-month warning-only period without fines; 24 automatic entries a year with no paperwork",
+     "hasta": "2026-01-21"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "domiciliados",
+     "acceso": "permitido",
+     "nota": "vehículos que pagan el impuesto de vehículos (IVTM) en Lleida: exentos sin trámite",
+     "nota_en": "vehicles paying road tax (IVTM) in Lleida: exempt with no paperwork"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_domiciliados",
+     "acceso": "permitido",
+     "hasta": "2027-12-31",
+     "nota": "desde el 1/1/2026 restringidos durante episodios de contaminación",
+     "nota_en": "from 1/1/2026 restricted during pollution episodes"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_domiciliados",
+     "acceso": "prohibido",
+     "desde": "2028-01-01",
+     "nota": "la autorización general de la etiqueta B rige entre el 1/1/2025 y el 1/1/2028 (anexo 2 de la ordenanza)",
+     "nota_en": "the general permit for B labels runs from 1/1/2025 to 1/1/2028 (annex 2 of the byelaw)"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "domiciliados",
+     "acceso": "permitido",
+     "nota": "vehículos que pagan el IVTM en Lleida",
+     "nota_en": "vehicles paying road tax in Lleida"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "no_domiciliados",
+     "acceso": "condicionado",
+     "desde": "2026-01-22",
+     "nota": "restricciones suspendidas por la Paeria desde el 22/01/2026 mientras no se restablezca el servicio de Rodalies; a 16/10/2026 no hay aviso oficial de reactivación",
+     "nota_en": "restrictions suspended by the council since 22/01/2026 until the Rodalies rail service is restored; no official notice of reactivation as of 16/10/2026"
+    }
+   ]
+  },
+  {
+   "id": "zbe2",
+   "nombre": "ZBE 2 Lleida (ampliación)",
+   "ambito": "espacio entre la avenida Blondel, avenida Madrid, avenida Joana Raspall, Passeig de Ronda, Príncep de Viana, avenida Segre y avenida Francesc Macià; toda la avenida de Madrid queda fuera en esta fase",
+   "ambito_en": "the area between Avinguda Blondel, Avinguda Madrid, Avinguda Joana Raspall, Passeig de Ronda, Príncep de Viana, Avinguda Segre and Avinguda Francesc Macià; the whole of Avinguda de Madrid stays outside in this phase",
+   "horario": "L-V laborables 07:00-20:00",
+   "desde": "2028-01-01",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_domiciliados",
+     "acceso": "prohibido",
+     "desde": "2028-01-01"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "domiciliados",
+     "acceso": "permitido",
+     "nota": "vehículos que pagan el IVTM en Lleida",
+     "nota_en": "vehicles paying road tax in Lleida"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_domiciliados",
+     "acceso": "prohibido",
+     "desde": "2028-01-01"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "domiciliados",
+     "acceso": "permitido",
+     "nota": "vehículos que pagan el IVTM en Lleida",
+     "nota_en": "vehicles paying road tax in Lleida"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  },
+  {
+   "id": "zbe3",
+   "nombre": "ZBE 3 Lleida (ampliación con Cappont)",
+   "ambito": "espacio entre la avenida Blondel, avenida Madrid, Passeig de Ronda, Príncep de Viana, Rambla de Ferran y avenida Francesc Macià, y parte del barrio de Cappont (Jaume II, avenida Victoriano Muñoz, carretera LL-11 y avenida Barcelona)",
+   "ambito_en": "the area between Avinguda Blondel, Avinguda Madrid, Passeig de Ronda, Príncep de Viana, Rambla de Ferran and Avinguda Francesc Macià, plus part of the Cappont district (Jaume II, Avinguda Victoriano Muñoz, the LL-11 and Avinguda Barcelona)",
+   "horario": "L-V laborables 07:00-20:00",
+   "desde": "2030-01-01",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_domiciliados",
+     "acceso": "prohibido",
+     "desde": "2030-01-01"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "domiciliados",
+     "acceso": "permitido",
+     "nota": "vehículos que pagan el IVTM en Lleida",
+     "nota_en": "vehicles paying road tax in Lleida"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_domiciliados",
+     "acceso": "prohibido",
+     "desde": "2030-01-01"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "domiciliados",
+     "acceso": "permitido",
+     "nota": "vehículos que pagan el IVTM en Lleida",
+     "nota_en": "vehicles paying road tax in Lleida"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "multa de 200 euros fijada por la ordenanza; +30 % por reincidencia",
+  "nota_en": "€200 fine set by the byelaw; +30% for a repeat offence"
+ },
+ "excepciones": [
+  "vehículos que pagan el IVTM en Lleida, tengan o no etiqueta",
+  "24 accesos esporádicos al año, automáticos y sin inscripción",
+  "exenciones generales: rentas bajas, movilidad reducida, servicios de emergencia y esenciales, vehículos extranjeros, enfermedades o discapacidad, tratamientos médicos periódicos, vehículos especiales, profesionales próximos a la jubilación, transporte público y de mercancías",
+  "exenciones municipales: vehículos comerciales de centros sanitarios y farmacias, usuarios de garajes privados, construcción, vehículos históricos, mudanzas y eventos, hoteles",
+  "todos los vehículos deben tener la ITV en vigor"
+ ],
+ "excepciones_en": [
+  "vehicles paying road tax (IVTM) in Lleida, with or without a label",
+  "24 occasional entries a year, automatic and with no registration",
+  "general exemptions: low incomes, reduced mobility, emergency and essential services, foreign vehicles, illness or disability, regular medical treatment, special vehicles, workers close to retirement, public transport and goods transport",
+  "municipal exemptions: commercial vehicles serving health centres and pharmacies, private garage users, construction, historic vehicles, removals and events, hotels",
+  "every vehicle must have a valid MOT (ITV)"
+ ],
+ "control": "cámaras de lectura de matrículas en los accesos; las exenciones se tramitan en paeria.cat/zbe",
+ "control_en": "number-plate cameras at the entry points; exemptions are requested at paeria.cat/zbe",
+ "pendiente": "el 22/01/2026 la Paeria suspendió temporalmente las restricciones por la parada de Rodalies, con vigencia hasta que se restablezca el servicio de Rodalies de Lleida; no se ha encontrado en la web municipal un anuncio oficial de reactivación",
+ "pendiente_en": "on 22/01/2026 the council temporarily suspended the restrictions because of the Rodalies rail shutdown, until the Lleida Rodalies service is restored; no official notice of reactivation was found on the council website",
+ "ordenanza": {
+  "nombre": "Ordenança sobre la creació i gestió de les Zones de Baixes Emissions de Lleida",
+  "url": "https://www.paeria.cat/ca/serveis/zona-de-baixes-emissions-de-lleida/normativa-aplicable/ordenanca/ordenanca-zbe-lleida.pdf"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.paeria.cat/ca/serveis/zona-de-baixes-emissions-de-lleida/normativa-aplicable/ordenanca/ordenanca-zbe-lleida.pdf",
+   "label": "Paeria de Lleida · Ordenança de les ZBE (multa)",
+   "cita": "de 200,00 euros."
+  },
+  {
+   "url": "https://www.paeria.cat/ca/serveis/zona-de-baixes-emissions-de-lleida/normativa-aplicable/ordenanca/ordenanca-zbe-lleida.pdf",
+   "label": "Paeria de Lleida · Ordenança de les ZBE (periodo transitorio)",
+   "cita": "transitori de sis mesos"
+  },
+  {
+   "url": "https://www.paeria.cat/ca/serveis/zona-de-baixes-emissions-de-lleida/normativa-aplicable/ordenanca/annex1.pdf",
+   "label": "Paeria de Lleida · Anexo 1: zonas y calendario",
+   "cita": "Implantació: 1 de gener de 2025"
+  },
+  {
+   "url": "https://www.paeria.cat/ca/serveis/zona-de-baixes-emissions-de-lleida/normativa-aplicable/ordenanca/annex2.pdf",
+   "label": "Paeria de Lleida · Anexo 2: registro, exenciones y accesos",
+   "cita": "el IVTM a la ciutat de Lleida."
+  },
+  {
+   "url": "https://www.paeria.cat/ca/actualitat/noticies/la-paeria-activa-la-plataforma-per-tramitar-les-exempcions-per-accedir-a-la-zona-de-baixes-emissions",
+   "label": "Paeria de Lleida · Activación de la plataforma de exenciones (03/06/2025)",
+   "cita": "La Fase 1 de la ZBE entra en funcionament a partir de l’1 de juliol"
+  },
+  {
+   "url": "https://www.paeria.cat/ca/serveis/zona-de-baixes-emissions-de-lleida/noticies",
+   "label": "Paeria de Lleida · Noticias de la ZBE",
+   "cita": "Aquest dimarts, 1 de juliol, entra en vigor la Fase 1 de la Zona de Baixes Emissions"
+  },
+  {
+   "url": "https://www.paeria.cat/ca/actualitat/noticies/la-paeria-suspen-temporalment-les-restriccions-de-circulacio-de-la-zona-de-baixes-emissions-per-l2019aturada-a-rodalies",
+   "label": "Paeria de Lleida · Suspensión temporal por Rodalies (22/01/2026)",
+   "cita": "que tindrà vigència fins que es restableixi el servei de Rodalies de Lleida"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "páginas y PDF de paeria.cat descargados con curl y extraídos con pypdf; la fecha del BOP de Lleida no figura en los documentos leídos; el año del 1 de julio (2025) se deduce de la fecha de publicación de las noticias (03/06/2025 y 01/07/2025); no se ha encontrado aviso oficial de reactivación tras la suspensión del 22/01/2026"
+}

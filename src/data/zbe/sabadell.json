@@ -1,0 +1,121 @@
+{
+ "slug": "sabadell",
+ "nombre": "Sabadell",
+ "provincia": "Barcelona",
+ "ccaa": "Cataluña",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "centre",
+   "nombre": "ZBE de Sabadell (fase 1, Centre)",
+   "ambito": "barrio del Centre: área delimitada por la plaza de Catalunya, la ronda de Zamenhof, las calles Vilarrúbias, Brujas, de l'Estació, Marquès de Comillas y Latorre, la carretera N-150 (entre Latorre y la ronda de Ponent) y la ronda de Ponent; las vías del perímetro son de libre circulación",
+   "ambito_en": "the Centre district: the area bounded by Plaça de Catalunya, Ronda de Zamenhof, Carrer Vilarrúbias, Brujas, de l'Estació, Marquès de Comillas and Latorre, the N-150 (between Latorre and Ronda de Ponent) and Ronda de Ponent; the perimeter roads are unrestricted",
+   "horario": "L-V laborables 07:00-20:00",
+   "horario_nota": "sin restricción fuera de ese horario, en fines de semana ni en festivos",
+   "desde": "2025-09-15",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "desde": "2025-12-01",
+     "nota": "fase de adaptación sin multas del 15/09/2025 al 30/11/2025; hasta 24 días laborables al año de acceso libre sin trámite",
+     "nota_en": "adaptation period without fines from 15/09/2025 to 30/11/2025; up to 24 working days a year of free access with no paperwork"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "personas empadronadas en la ZBE con un vehículo sin etiqueta censado allí a la entrada en vigor de la ordenanza (19/12/2024), sin trámite",
+     "nota_en": "people registered as living in the zone with a no-label vehicle registered there when the byelaw took effect (19/12/2024), with no paperwork"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "la ordenanza municipal no restringe la etiqueta B; el Decreto 132/2024 de la Generalitat prevé restringirla a partir de 2028",
+     "nota_en": "the municipal byelaw does not restrict B labels; the Catalan government's Decree 132/2024 plans to restrict them from 2028"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave según la Ley de Tráfico; +30 % por reincidencia o si se comete durante un episodio de contaminación",
+  "nota_en": "serious offence under the Traffic Act; +30% for a repeat offence or during a pollution episode"
+ },
+ "excepciones": [
+  "vehículos de personas con movilidad reducida, servicios de emergencia y esenciales, y matrículas extranjeras con requisitos equivalentes (permanente)",
+  "transporte de personas con enfermedades o discapacidad (2 años renovable) o con tratamientos médicos periódicos (1 año renovable)",
+  "autorización diaria de acceso esporádico: máximo 24 veces al año",
+  "rentas bajas (anual renovable), profesionales a los que faltan como máximo 5 años de cotización para jubilarse (anual, máximo 5 años) y compra de vehículo nuevo (máximo 18 meses)",
+  "titulares de plaza de aparcamiento en la ZBE y vehículos de mercados ambulantes de la zona en la fecha de entrada en vigor (anual renovable)",
+  "vehículos singulares y de talleres (con autorización temporal)"
+ ],
+ "excepciones_en": [
+  "vehicles for people with reduced mobility, emergency and essential services, and foreign plates meeting equivalent standards (permanent)",
+  "transport of people with illness or disability (2 years, renewable) or receiving regular medical treatment (1 year, renewable)",
+  "day pass for occasional access: no more than 24 times a year",
+  "low incomes (yearly, renewable), workers at most 5 years of contributions from retirement (yearly, up to 5 years) and buyers of a new vehicle (up to 18 months)",
+  "holders of a parking space in the zone and street-market traders' vehicles there on the date the byelaw took effect (yearly, renewable)",
+  "special-purpose vehicles and garage test drives (temporary permit)"
+ ],
+ "control": "lectura automática de matrículas con cámaras en el perímetro y en puntos interiores",
+ "control_en": "automatic number-plate cameras on the perimeter and at points inside the zone",
+ "pendiente": "el proyecto técnico prevé ampliar la ZBE al barrio de la Creu Alta en 2028 y al resto del suelo urbano en 2032; la ordenanza condiciona el régimen sancionador a la implantación efectiva del registro de vehículos",
+ "pendiente_en": "the technical plan foresees extending the zone to the Creu Alta district in 2028 and to the rest of the built-up area in 2032; the byelaw makes fines conditional on the vehicle register actually being in place",
+ "ordenanza": {
+  "nombre": "Ordenança reguladora de les Zones de Baixes Emissions (ZBE) de Sabadell (aprobación definitiva, BOPB 13-11-2024, CVE 202410172076)",
+  "url": "https://bop.diba.cat/anuncio/ver-pdf/3693905"
+ },
+ "fuentes": [
+  {
+   "url": "https://web.sabadell.cat/noticies-zbe/item/sabadell-activa-la-zona-de-baixes-emissions-sense-sancions-inicials-i-amb-autoritzacions-per-minimitzar-l-impacte-social-i-economic",
+   "label": "Ajuntament de Sabadell · Sabadell activa la ZBE sin sanciones iniciales",
+   "cita": "A partir de l’1 de desembre, la mesura passarà a ser plenament vigent"
+  },
+  {
+   "url": "https://web.sabadell.cat/noticies-zbe/item/sabadell-activa-la-zona-de-baixes-emissions-sense-sancions-inicials-i-amb-autoritzacions-per-minimitzar-l-impacte-social-i-economic",
+   "label": "Ajuntament de Sabadell · Horario y días de acceso libre",
+   "cita": "fins a 24 dies laborables a l’any"
+  },
+  {
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3693905",
+   "label": "BOPB · Ordenança reguladora de les ZBE de Sabadell (13/11/2024)",
+   "cita": "en horari de 7:00 hores a 20:00 hores"
+  },
+  {
+   "url": "https://seua.sabadell.cat/seuelectronica/d/ZBE-35-Annex1OrdDefinitiva.pdf",
+   "label": "Ajuntament de Sabadell · Annex 1 de la ordenanza definitiva (delimitación)",
+   "cita": "Barri del centre de Sabadell"
+  },
+  {
+   "url": "https://seua.sabadell.cat/seuelectronica/d/ZBE-36-Annex2OrdDefinitiva.pdf",
+   "label": "Ajuntament de Sabadell · Annex 2 de la ordenanza definitiva (exenciones y autorizaciones)",
+   "cita": "Diària (màxim es pot concedir 24"
+  },
+  {
+   "url": "https://web.sabadell.cat/faqs-zbe-sbd",
+   "label": "Ajuntament de Sabadell · Preguntas frecuentes ZBE",
+   "cita": "L’Ordenança de Sabadell no ho preveu fins al 2035"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "web.sabadell.cat no responde (conexión rechazada): noticia leída en web.archive.org (copia del 2026-03-12) y FAQ (copia del 2026-03-15); la noticia no indica el año del 15 de septiembre, deducido de la entrada en vigor de la ordenanza (19/12/2024); BOPB y anexos de la sede descargados y extraídos con pypdf. Ninguna fuente oficial consultada confirma que se estén cobrando multas; la ordenanza las condiciona al registro de vehículos"
+}

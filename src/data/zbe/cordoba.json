@@ -1,0 +1,158 @@
+{
+ "slug": "cordoba",
+ "nombre": "Córdoba",
+ "provincia": "Córdoba",
+ "ccaa": "Andalucía",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "acire",
+   "nombre": "Zona de Bajas Emisiones de Córdoba (Áreas de Circulación Restringida, A.CI.RE.)",
+   "ambito": "la ZBE se corresponde con las Áreas de Circulación Restringida (A.CI.RE.) del Casco Histórico (Anexo I del Título XIII de la Ordenanza de Circulación)",
+   "ambito_en": "the low-emission zone is the same as the Restricted Traffic Areas (A.CI.RE.) of the historic centre (Annex I to Title XIII of the Traffic Byelaw)",
+   "horario": "24h",
+   "horario_nota": "la ordenanza no fija franjas horarias para la ZBE; la carga y descarga en las A.CI.RE. tiene horarios propios",
+   "horario_nota_en": "the byelaw sets no time bands for the zone; loading and unloading in the A.CI.RE. areas has its own hours",
+   "desde": "2023-02-18",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "salvo vehículos autorizados en las A.CI.RE. o exentos (garajes, PMR, taxi/VTC, clientes de hoteles, proveedores, reparto...) y vehículos que van a un parking",
+     "nota_en": "unless authorised for the A.CI.RE. areas or exempt (garages, reduced mobility, taxi/VTC, hotel guests, suppliers, deliveries...) or heading to a car park"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "salvo vehículos autorizados en las A.CI.RE. o exentos y vehículos que van a un parking",
+     "nota_en": "unless authorised for the A.CI.RE. areas or exempt, or heading to a car park"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "salvo vehículos autorizados en las A.CI.RE. o exentos y vehículos que van a un parking",
+     "nota_en": "unless authorised for the A.CI.RE. areas or exempt, or heading to a car park"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "residentes",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "residentes",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "libre acceso sin autorización registral",
+     "nota_en": "free access without registering"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "libre acceso sin autorización registral",
+     "nota_en": "free access without registering"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "los vehículos de dos ruedas están permitidos en las A.CI.RE.",
+     "nota_en": "two-wheelers are allowed in the restricted-traffic areas"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "los vehículos de dos ruedas están permitidos en las A.CI.RE.",
+     "nota_en": "two-wheelers are allowed in the restricted-traffic areas"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "moto",
+      "ciclomotor"
+     ],
+     "nota": "los vehículos de dos ruedas están permitidos en las A.CI.RE.",
+     "nota_en": "two-wheelers are allowed in the restricted-traffic areas"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave del art. 76 z3) de la Ley de Tráfico (régimen sancionador del título V)",
+  "nota_en": "serious offence under art. 76 z3) of the Traffic Act (penalties under its Title V)"
+ },
+ "excepciones": [
+  "residentes y usuarios de garajes dentro de la ZBE",
+  "vehículos con tarjeta PMR en el parabrisas y transporte de personas a tratamiento médico (previa autorización)",
+  "auto-taxi, VTC, servicios de emergencia y servicios públicos municipales",
+  "clientes de hoteles, proveedores de negocios y empresas de reparto a domicilio",
+  "vehículos con cualquier distintivo que acuden a un parking de la zona",
+  "vehículos históricos, mudanzas, grúas y autoescuelas ubicadas en la ZBE",
+  "bicicletas, VMP y vehículos de dos ruedas (permitidos en las A.CI.RE.)"
+ ],
+ "excepciones_en": [
+  "residents and garage users inside the zone",
+  "vehicles displaying a reduced-mobility card and transport of people to medical treatment (with prior authorisation)",
+  "taxis, ride-hailing (VTC), emergency services and municipal public services",
+  "hotel guests, business suppliers and home-delivery companies",
+  "vehicles with any label going to a car park in the zone",
+  "historic vehicles, removals, tow trucks and driving schools based in the zone",
+  "bicycles, e-scooters and two-wheelers (allowed in the A.CI.RE. areas)"
+ ],
+ "control": "cámaras de lectura de matrícula (boletín sancionador automático si el vehículo no está autorizado) y pilonas en algunos accesos",
+ "control_en": "number-plate cameras (automatic fine notice if the vehicle is not authorised) and retractable bollards at some entrances",
+ "ordenanza": {
+  "nombre": "Ordenanza de Circulación, Seguridad Vial y Movilidad Sostenible de Córdoba, Título XIII «Zona de Bajas Emisiones» (BOP de Córdoba n.º 33, 17 de febrero de 2023, anuncio 379/2023)",
+  "url": "https://bop.dipucordoba.es/show/20230217/announcement/379"
+ },
+ "fuentes": [
+  {
+   "url": "https://bop.dipucordoba.es/show/20230217/announcement/379",
+   "label": "BOP de Córdoba · Aprobación definitiva de la Ordenanza de Circulación (Título XIII ZBE), 17/02/2023",
+   "cita": "Los vehículos con distintivo ambiental 0 y ECO."
+  },
+  {
+   "url": "https://www.cordoba.es/sites/default/files/PDF/Servicios/movilidad-accesibilidad-transportes/ORDENANZA_MOVILIDAD_BOP_17-02-23.pdf",
+   "label": "Ayuntamiento de Córdoba · Ordenanza de Movilidad (copia del BOP 17/02/2023)",
+   "cita": "Residentes dentro de la ZBE."
+  },
+  {
+   "url": "https://www.cordoba.es/servicios/movilidad-y-transporte/movilidad/oficina-acire",
+   "label": "Ayuntamiento de Córdoba · Oficina A.CI.RE.",
+   "cita": "zonas restringidas a la circulación en el Casco Histórico de Córdoba"
+  },
+  {
+   "url": "https://www.cordoba.es/sites/default/files/PDF/Tramites/movilidad/Regulacion_Zonas.pdf",
+   "label": "Ayuntamiento de Córdoba · Normas de regulación de la movilidad en zonas restringidas del Casco Histórico",
+   "cita": "tramita de forma automática el boletín sancionador"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "BOP y PDF municipales leídos con curl + pypdf (texto con saltos de línea; citas comprobadas con espacios normalizados). No se ha encontrado en fuente oficial ninguna modificación posterior del Título XIII."
+}

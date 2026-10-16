@@ -25,11 +25,11 @@ function parse(input: string): number {
   const n = parseFloat(s); return isNaN(n) ? 0 : n;
 }
 
-function Field({ id, label, value, onChange, unit, max = 1e9, decimals = 0, locale }: { id: string; label: string; value: number; onChange: (v: number) => void; unit?: string; max?: number; decimals?: number; locale: string }) {
+function Field({ id, label, value, onChange, unit, max = 1e9, decimals = 0, locale, anio = false }: { id: string; label: string; value: number; onChange: (v: number) => void; unit?: string; max?: number; decimals?: number; locale: string; anio?: boolean }) {
   const [focused, setFocused] = useState(false); const [raw, setRaw] = useState(''); const [over, setOver] = useState(false);
   const input = useRef<HTMLInputElement>(null); const selectPending = useRef(false); const guard = useRef(false);
   useLayoutEffect(() => { if (selectPending.current) { selectPending.current = false; input.current?.select(); } });
-  const fmt = (n: number) => new Intl.NumberFormat(locale, { maximumFractionDigits: decimals }).format(n);
+  const fmt = (n: number) => anio ? String(n) : new Intl.NumberFormat(locale, { maximumFractionDigits: decimals }).format(n);
   const display = focused ? raw : (value === 0 ? '' : fmt(value));
   return (
     <div>
@@ -68,7 +68,7 @@ export default function MiniSimAutonome({ kind, lang = 'en', href, locale = 'en-
                   {i.options.map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}
                 </select>
                 <svg className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2" style={{ color: C.muted }} viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d="M5 7.5l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" /></svg></div></div>
-            : <Field key={i.id} id={`m-${kind}-${i.id}`} label={i.label} value={v[i.id]} onChange={set(i.id)} unit={i.unit} max={i.max} decimals={i.decimals} locale={locale} />)}
+            : <Field key={i.id} id={`m-${kind}-${i.id}`} label={i.label} value={v[i.id]} onChange={set(i.id)} unit={i.unit} max={i.max} decimals={i.decimals} locale={locale} anio={i.anio} />)}
         </form>
         <div aria-live="polite" className="rounded-lg p-4" style={{ background: C.surface }}>
           <p className="text-sm font-medium" style={{ color: C.muted }}>{out.head[0]}</p>

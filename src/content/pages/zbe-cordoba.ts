@@ -1,0 +1,37 @@
+import { definePage } from '../../lib/page-types';
+export default definePage({
+  id: "zbe-cordoba", group: 'zbe', order: 48, tool: 'zbe', ciudad: "cordoba",
+  related: ["impuesto-circulacion-cordoba", "zbe-sevilla", "zbe-granada", "etiqueta-eco"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
+  es: {
+    slug: "zbe-cordoba",
+    nav: "ZBE Córdoba",
+    card: "Casco Histórico: solo 0 y ECO entran libres",
+    title: "ZBE Córdoba 2026: Casco Histórico, A.CI.RE. y etiqueta ECO",
+    description: "ZBE de Córdoba 2026: las A.CI.RE. del Casco Histórico solo dejan circular libres a las etiquetas 0 y ECO; A, B y C, residentes y autorizados. Excepciones.",
+    h1: "ZBE de Córdoba 2026: el Casco Histórico para 0 y ECO",
+    intro: "Córdoba convirtió sus áreas de circulación restringida del Casco Histórico en ZBE. Sin autorización, solo la 0 y la ECO entran libres.",
+    resume: () => "Córdoba incorporó la Zona de Bajas Emisiones como Título XIII de su Ordenanza de Circulación, Seguridad Vial y Movilidad Sostenible, aprobada definitivamente por el Pleno el 17 de enero de 2023 y publicada en el BOP de Córdoba el 17 de febrero de 2023. La ordenanza entró en vigor al día siguiente de su publicación, el 18 de febrero de 2023. La ZBE no tiene un perímetro nuevo: coincide con las Áreas de Circulación Restringida (A.CI.RE.) del Casco Histórico. Los vehículos con distintivo 0 y ECO entran libremente, sin necesidad de autorización registral, igual que bicicletas y VMP. Los vehículos B, C o sin etiqueta solo pueden entrar si son de residentes, usuarios de garajes, PMR, taxis o VTC, clientes de hoteles, proveedores, reparto u otros casos autorizados, o si van a un parking de la zona. El acceso se controla con cámaras de lectura de matrícula y pilonas, y el sistema tramita automáticamente la denuncia si el vehículo no está autorizado. La infracción es grave según el artículo 76 z3) de la Ley de Tráfico: 200 euros, 100 con pronto pago.",
+    faqs: () => [{ q: "¿Puedo entrar en el centro de Córdoba con un coche ECO o 0 sin pedir permiso?", a: "Sí. El Anexo II de la ordenanza incluye los vehículos con distintivo ambiental 0 y ECO entre los de libre acceso sin necesidad de autorización municipal registral. Aun así, hay que respetar la señalización de calles peatonales o cortadas. Las cámaras no generan denuncia para estos vehículos." }, { q: "Tengo un coche con etiqueta C y voy a un parking del centro, ¿me multan?", a: "No, si vas al parking. La ordenanza deja entrar a los vehículos con cualquier distintivo ambiental que acudan a un parking cuyo acceso o salida obligue a pasar por la ZBE. Fuera de ese caso, un B o C de fuera necesita autorización A.CI.RE." }, { q: "¿Cómo se pide la autorización para entrar en las A.CI.RE.?", a: "Se tramita en la Oficina A.CI.RE. del Ayuntamiento (Departamento de Movilidad, Av. Custodios s/n, tel. 957 469 703, laborables de 10:00 a 13:00) o por la solicitud en línea. Para un acceso puntual por causa sobrevenida existe la comunicación previa, con un máximo de 2 comunicaciones por vehículo y semana." }],
+    body: (h) => `
+<h2>Las A.CI.RE., ahora por etiqueta</h2>
+<p>Córdoba no dibujó un perímetro nuevo: el Título XIII de su Ordenanza de Circulación, publicado en el Boletín Oficial de la Provincia en febrero de 2023, hace coincidir la ZBE con las Áreas de Circulación Restringida del Casco Histórico. Las cámaras leen la matrícula y, si el vehículo no está autorizado, emiten el boletín de denuncia; en algunos accesos hay pilonas.</p>
+<h2>Lo que abre cada etiqueta</h2>
+<p>Con la 0 o la ECO se circula sin trámite. Con la C, la B o sin etiqueta solo entran residentes, usuarios de garajes, taxis, hoteles, proveedores, reparto y quien va a un parking de la zona, que puede entrar con cualquier distintivo. Las motos y bicicletas están permitidas en las A.CI.RE. Para ver si tu coche es ECO, consulta ${h.a('etiqueta-eco', "la guía de la etiqueta ECO")}.</p>`,
+  },
+  en: {
+    slug: "zbe-cordoba",
+    nav: "Córdoba ZBE",
+    card: "Old Town: only zero and ECO enter freely",
+    title: "Córdoba ZBE 2026: Old Town Restricted Areas and ECO Label",
+    description: "Córdoba low-emission zone 2026: the Old Town’s restricted-traffic areas only let zero and ECO labels drive freely; A, B and C need residence or a permit. Fine.",
+    h1: "Córdoba low-emission zone 2026: the Old Town for zero and ECO",
+    intro: "Córdoba turned its Old Town restricted-traffic areas into a low-emission zone. Without a permit, only zero and ECO vehicles enter freely.",
+    resume: () => "Córdoba added its low-emission zone as Title XIII of its Traffic, Road Safety and Sustainable Mobility Byelaw, finally approved by the city council on 17 January 2023 and published in the Córdoba provincial gazette (BOP) on 17 February 2023. The byelaw came into force the following day, 18 February 2023. The zone has no new boundary: it matches the Restricted Traffic Areas (A.CI.RE.) of the historic centre. Vehicles with a 0 or ECO label drive in freely without registering, as do bicycles and e-scooters. B, C and unlabelled vehicles may only enter if they belong to residents, garage users, reduced-mobility card holders, taxis or VTC, hotel guests, suppliers, delivery firms or other authorised cases, or if they are going to a car park in the zone. Access is checked by number-plate cameras and bollards, and the system automatically issues a fine notice when a vehicle is not authorised. The offence is classed as serious under article 76 z3) of the Traffic Act: 200 euros, or 100 if paid early.",
+    faqs: () => [{ q: "Can I drive into central Córdoba in an ECO or 0-label car without a permit?", a: "Yes. Annex II of the byelaw lists vehicles with a 0 or ECO environmental label among those with free access and no need to register with the council. You must still obey signs for pedestrian or closed streets. The cameras do not issue fines to these vehicles." }, { q: "My car has a C label and I am going to a car park in the centre. Will I be fined?", a: "Not if you are going to the car park. The byelaw lets vehicles with any label in when they are heading to a car park that can only be reached through the zone. Otherwise, a B or C car from outside needs an A.CI.RE. permit." }, { q: "How do I apply for an A.CI.RE. permit?", a: "Through the council's A.CI.RE. office (Mobility Department, Av. Custodios s/n, tel. 957 469 703, weekdays 10:00 to 13:00) or the online application. For a one-off trip for an unforeseen reason there is a prior notice, limited to 2 per vehicle per week." }],
+    body: (h) => `
+<h2>Restricted areas, now by label</h2>
+<p>Córdoba did not draw a new boundary: Title XIII of its Traffic Byelaw, published in the provincial gazette in February 2023, makes the zone match the Old Town’s restricted-traffic areas (A.CI.RE.). Cameras read plates and, if the vehicle is not authorised, issue the fine notice; some entrances also have bollards.</p>
+<h2>What each label opens</h2>
+<p>With a zero or ECO label you drive in with no formality. With a C, a B or no label, only residents, garage users, taxis, hotels, suppliers, deliveries and drivers heading for a car park in the zone may enter, and car-park users can do so with any label. Motorbikes and bicycles are allowed in the restricted areas. To see whether your car is ECO, read ${h.a('etiqueta-eco', "the ECO label guide")}.</p>`,
+  },
+});

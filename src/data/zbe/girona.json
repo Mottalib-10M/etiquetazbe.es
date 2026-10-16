@@ -1,0 +1,115 @@
+{
+ "slug": "girona",
+ "nombre": "Girona",
+ "provincia": "Girona",
+ "ccaa": "Cataluña",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "centre",
+   "nombre": "Zona de Baixes Emissions de Girona",
+   "ambito": "desde el parque de la Devesa hasta la calle Emili Grahit y desde la calle Riu Güell hasta la calle del Carme y el Barri Vell (perímetro del anexo 1 de la ordenanza: plaza de l'Assemblea de Catalunya, Poble Sahrauí, Riu Güell, passeig d'Olot, Emili Grahit, río Onyar, passeig Fora Muralla, entre otros)",
+   "ambito_en": "from Devesa park to Carrer Emili Grahit and from Carrer Riu Güell to Carrer del Carme and the Old Quarter (perimeter in annex 1 of the byelaw: Plaça de l'Assemblea de Catalunya, Poble Sahrauí, Riu Güell, Passeig d'Olot, Emili Grahit, the Onyar river, Passeig Fora Muralla, among others)",
+   "horario": "L-V laborables 07:00-20:00",
+   "horario_nota": "fines de semana y festivos entre semana sin restricción",
+   "desde": "2025-09-15",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_domiciliados",
+     "acceso": "prohibido",
+     "desde": "2025-09-15",
+     "nota": "hasta 24 días al año de acceso sin pedir permiso; la multa llega a partir de la entrada siguiente",
+     "nota_en": "up to 24 days a year of access with no permit; the fine applies from the next entry"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "domiciliados",
+     "acceso": "permitido",
+     "nota": "solo vehículos con el domicilio del permiso de circulación en Girona en 2024; los que se domicilien en 2025 o después no están exentos",
+     "nota_en": "only vehicles whose registration address was in Girona in 2024; those registered there in 2025 or later are not exempt"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave (art. 76.z3 de la Ley de Tráfico); 100 euros si se paga en los 20 días siguientes a la notificación",
+  "nota_en": "serious offence (art. 76.z3 of the Traffic Act); €100 if paid within 20 days of notification"
+ },
+ "excepciones": [
+  "vehículos domiciliados en Girona en 2024",
+  "personas con movilidad reducida, autobuses de transporte público, servicios médicos, funerarios, de emergencia, municipales y de seguridad, y matrículas extranjeras con requisitos equivalentes",
+  "furgonetas y vehículos de reparto sin etiqueta: moratoria de 2 años (N1) o 3 años (N2 y N3), a solicitud",
+  "autorización temporal para tratamientos médicos periódicos en hospitales de la ZBE, rentas inferiores a 2 veces el IPREM, vehículos singulares, actividades autorizadas y pruebas de taller"
+ ],
+ "excepciones_en": [
+  "vehicles registered at a Girona address in 2024",
+  "people with reduced mobility, public transport buses, medical, funeral, emergency, municipal and security services, and foreign plates meeting equivalent standards",
+  "vans and delivery vehicles with no label: 2-year (N1) or 3-year (N2 and N3) grace period, on request",
+  "temporary permits for regular medical treatment at hospitals in the zone, incomes below twice the IPREM, special-purpose vehicles, authorised activities and garage test drives"
+ ],
+ "control": "20 cámaras en 13 puntos de la vía pública; tras 24 entradas en un año, la plataforma de la ATM envía las matrículas al Ayuntamiento para tramitar la denuncia",
+ "control_en": "20 cameras at 13 points on the street; after 24 entries in a year, the ATM platform sends the plates to the council to process the fine",
+ "pendiente": "el Ayuntamiento prevé revisar la ZBE antes de 2028",
+ "pendiente_en": "the council plans to review the zone before 2028",
+ "ordenanza": {
+  "nombre": "Ordenança de la Zona de Baixes Emissions de Girona (aprobación definitiva 9/12/2024, BOP de Girona n.º 244, 20-12-2024)",
+  "url": "https://seu.girona.cat/cdn/dades/ordenances/_descarrega/Ordenanca-ZBE.pdf"
+ },
+ "fuentes": [
+  {
+   "url": "https://seu.girona.cat/cdn/dades/ordenances/_descarrega/Ordenanca-ZBE.pdf",
+   "label": "Ajuntament de Girona · Ordenança de la ZBE (BOP de Girona 20/12/2024)",
+   "cita": "sancionable amb una multa de 200 euros"
+  },
+  {
+   "url": "https://web.girona.cat/zbe/calendari",
+   "label": "Ajuntament de Girona · Calendario de implantación de la ZBE",
+   "cita": "Dilluns 15 de setembre de 2025."
+  },
+  {
+   "url": "https://web.girona.cat/comunicacio/noticies/-/asset_publisher/4lZrBB13TdmI/content/entra-en-funcionament-la-zona-de-baixes-emissions-de-girona",
+   "label": "Ajuntament de Girona · Entra en funcionamiento la ZBE",
+   "cita": "s'han instal·lat 20 càmeres en 13 punts"
+  },
+  {
+   "url": "https://web.girona.cat/zbe/control",
+   "label": "Ajuntament de Girona · Sistema de control",
+   "cita": "l'import és de 100 euros"
+  },
+  {
+   "url": "https://web.girona.cat/zbe/exempcions",
+   "label": "Ajuntament de Girona · Exenciones y autorizaciones",
+   "cita": "Els vehicles sense etiqueta ambiental que s’incorporin l’any 2025 o posteriors no seran exempts."
+  },
+  {
+   "url": "https://web.girona.cat/zbe/faq",
+   "label": "Ajuntament de Girona · Preguntas frecuentes ZBE",
+   "cita": "El perímetre de la ZBE de Girona engloba des del parc de la Devesa"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "PDF de la ordenanza (edicto con el texto publicado en el BOP de Girona) y páginas de web.girona.cat descargados con curl; texto extraído con pypdf"
+}

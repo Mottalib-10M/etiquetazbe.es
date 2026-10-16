@@ -1,0 +1,179 @@
+{
+ "slug": "cadiz",
+ "nombre": "Cádiz",
+ "provincia": "Cádiz",
+ "ccaa": "Andalucía",
+ "estado": "informativa",
+ "zonas": [
+  {
+   "id": "centro",
+   "nombre": "ZBE 1 · Centro Histórico",
+   "ambito": "área interior del casco antiguo excluida la ronda de circunvalación (República Argentina, Plaza Filipinas, Honduras, Alameda Clara Campoamor, Alameda Hermanas Carvia Bernal, Paseo Carlos III, Avda. Doctor Gómez Ulla, Avda. Duque de Nájera, Avda. Campo del Sur, Concepción Arenal, Plaza Santa Elena, Cuesta de las Calesas, Avda. del Puerto, Plaza de la Hispanidad)",
+   "ambito_en": "inner area of the old town, excluding the ring road around it (República Argentina, Plaza Filipinas, Honduras, Alameda Clara Campoamor, Alameda Hermanas Carvia Bernal, Paseo Carlos III, Avda. Doctor Gómez Ulla, Avda. Duque de Nájera, Avda. Campo del Sur, Concepción Arenal, Plaza Santa Elena, Cuesta de las Calesas, Avda. del Puerto, Plaza de la Hispanidad)",
+   "horario": "24h",
+   "desde": "2026-05-27",
+   "superficie_km2": 1.13,
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_domiciliados",
+     "acceso": "condicionado",
+     "nota": "prohibido para vehículos sin domicilio fiscal en Cádiz (no pagan el IVTM en la ciudad); periodo de aviso sin multas (máximo seis meses), sin fecha oficial de inicio de sanciones",
+     "nota_en": "banned for vehicles not taxed in Cádiz (road tax not paid in the city); warning period without fines (six months at most), no official start date for fines"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_domiciliados",
+     "acceso": "condicionado",
+     "nota": "prohibido para vehículos sin domicilio fiscal en Cádiz (no pagan el IVTM en la ciudad); periodo de aviso sin multas (máximo seis meses), sin fecha oficial de inicio de sanciones",
+     "nota_en": "banned for vehicles not taxed in Cádiz (road tax not paid in the city); warning period without fines (six months at most), no official start date for fines"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "domiciliados",
+     "acceso": "permitido",
+     "nota": "vehículos con domicilio fiscal en Cádiz (pagan el IVTM en la ciudad)",
+     "nota_en": "vehicles taxed in Cádiz (road tax paid in the city)"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "domiciliados",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "domiciliados",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_domiciliados",
+     "acceso": "permitido",
+     "nota": "la ordenanza restringe la C de fuera a partir del segundo año desde la puesta en funcionamiento de la zona, fecha que el Ayuntamiento no ha publicado",
+     "nota_en": "the byelaw restricts out-of-town C vehicles from the second year after the zone starts operating, a date the council has not published"
+    }
+   ]
+  },
+  {
+   "id": "paseo",
+   "nombre": "ZBE 2 · Paseo Marítimo",
+   "ambito": "Paseo Marítimo entre la Plaza Ana Orantes y la calle Caracolas y las calles entre el Paseo y las avenidas Cayetano del Toro y Periodista Beatriz Cienfuegos",
+   "ambito_en": "the seafront promenade between Plaza Ana Orantes and calle Caracolas, plus the streets between it and the Cayetano del Toro and Periodista Beatriz Cienfuegos avenues",
+   "horario": "24h",
+   "desde": "2026-05-27",
+   "superficie_km2": 0.11,
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_domiciliados",
+     "acceso": "condicionado",
+     "nota": "prohibido para vehículos sin domicilio fiscal en Cádiz (no pagan el IVTM en la ciudad); periodo de aviso sin multas (máximo seis meses), sin fecha oficial de inicio de sanciones",
+     "nota_en": "banned for vehicles not taxed in Cádiz (road tax not paid in the city); warning period without fines (six months at most), no official start date for fines"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_domiciliados",
+     "acceso": "condicionado",
+     "nota": "prohibido para vehículos sin domicilio fiscal en Cádiz (no pagan el IVTM en la ciudad); periodo de aviso sin multas (máximo seis meses), sin fecha oficial de inicio de sanciones",
+     "nota_en": "banned for vehicles not taxed in Cádiz (road tax not paid in the city); warning period without fines (six months at most), no official start date for fines"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "domiciliados",
+     "acceso": "permitido",
+     "nota": "vehículos con domicilio fiscal en Cádiz (pagan el IVTM en la ciudad)",
+     "nota_en": "vehicles taxed in Cádiz (road tax paid in the city)"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "domiciliados",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "domiciliados",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_domiciliados",
+     "acceso": "permitido",
+     "nota": "la ordenanza restringe la C de fuera a partir del segundo año desde la puesta en funcionamiento de la zona, fecha que el Ayuntamiento no ha publicado",
+     "nota_en": "the byelaw restricts out-of-town C vehicles from the second year after the zone starts operating, a date the council has not published"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "multa de 200 € (infracción grave, art. 76 z3 Ley de Tráfico); +30 % por reincidencia en un año",
+  "nota_en": "€200 fine (serious offence, art. 76 z3 Traffic Act); +30% for a repeat offence within a year"
+ },
+ "excepciones": [
+  "vehículos con domicilio fiscal en Cádiz (IVTM pagado en la ciudad), sin importar la etiqueta",
+  "bicicletas y VMP; emergencias, policía, protección civil y ambulancias",
+  "previa inscripción en el registro: suministros básicos, servicios funerarios, mantenimiento de servicios públicos, vehículos oficiales y blindados",
+  "empadronados con causa justificada, clientes de hoteles y parkings de rotación, PMR, históricos, grúas y obras de más de 3.500 kg",
+  "con autorización limitada: garajes, reparto de mercancías, taxi/VTC, mudanzas, transporte escolar, talleres de la zona y otros casos del Anexo II"
+ ],
+ "excepciones_en": [
+  "vehicles taxed in Cádiz (road tax paid in the city), whatever their label",
+  "bicycles and e-scooters; emergency services, police, civil protection and ambulances",
+  "after registering: utilities, funeral services, public-service maintenance, official and armoured vehicles",
+  "people on the Cádiz census with a justified reason, guests of hotels and pay car parks, reduced mobility, historic vehicles, tow trucks and works vehicles over 3,500 kg",
+  "with a limited permit: garage users, goods delivery, taxi/VTC, removals, school transport, workshops in the zone and other Annex II cases"
+ ],
+ "control": "cámaras de control de acceso con lectura de matrícula",
+ "control_en": "access-control cameras reading number plates",
+ "pendiente": "el Ayuntamiento puede aplicar un periodo de aviso sin multas de hasta seis meses; no hay fecha oficial publicada para el inicio de las sanciones. Desde el 1 de enero de 2035 no entrarán vehículos sin etiqueta ECO o 0, salvo las excepciones del Anexo II",
+ "pendiente_en": "the council may apply a warning period without fines of up to six months; no official start date for fines has been published. From 1 January 2035 vehicles without an ECO or 0 label will not be allowed in, except the cases in Annex II",
+ "ordenanza": {
+  "nombre": "Ordenanza Municipal reguladora de la Zona de Bajas Emisiones de la ciudad de Cádiz (aprobación definitiva 30/12/2025; BOP de Cádiz n.º 98, 26 de mayo de 2026)",
+  "url": "https://www.bopcadiz.es/.boletines_pdf/2026/05_mayo/BOP098_26-05-26.pdf"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.bopcadiz.es/.boletines_pdf/2026/05_mayo/BOP098_26-05-26.pdf",
+   "label": "BOP de Cádiz n.º 98 · Ordenanza de la Zona de Bajas Emisiones de Cádiz (26/05/2026)",
+   "cita": "etiqueta 0, ECO, o C"
+  },
+  {
+   "url": "https://www.bopcadiz.es/.boletines_pdf/2026/05_mayo/BOP098_26-05-26.pdf",
+   "label": "BOP de Cádiz n.º 98 · Régimen sancionador de la ZBE",
+   "cita": "multa de 200,00 euros."
+  },
+  {
+   "url": "https://www.bopcadiz.es/.boletines_pdf/2026/05_mayo/BOP098_26-05-26.pdf",
+   "label": "BOP de Cádiz n.º 98 · Anexo I, periodo de aviso",
+   "cita": "máximo de seis meses"
+  },
+  {
+   "url": "https://institucional.cadiz.es/delegaci%C3%B3n-de-movilidad-7",
+   "label": "Ayuntamiento de Cádiz · Delegación de Movilidad, texto definitivo de la ordenanza ZBE (03/06/2026)",
+   "cita": "TEXTO DEFINITIVO ORDENANZA REGULADORA DE LA ZONA DE BAJAS EMISIONES"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "BOP de Cádiz leído con curl + pypdf (el texto extraído lleva tabulaciones entre palabras: citas comprobadas con espacios normalizados). No se ha encontrado ninguna fuente oficial con la fecha de inicio de las multas; solo la prensa habla de diciembre de 2026."
+}

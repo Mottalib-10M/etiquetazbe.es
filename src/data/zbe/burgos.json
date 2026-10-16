@@ -1,0 +1,114 @@
+{
+ "slug": "burgos",
+ "nombre": "Burgos",
+ "provincia": "Burgos",
+ "ccaa": "Castilla y León",
+ "estado": "informativa",
+ "zonas": [
+  {
+   "id": "centro",
+   "nombre": "Zona de Bajas Emisiones de Burgos",
+   "ambito": "centro: interior del perímetro Francisco Salinas, Fernán González, Doña Jimena, San Esteban, Corazas, San Francisco, Trinidad, General Sanz Pastor, avenida del Cid, plaza de España, San Lesmes, Gran Teatro, Doctor Fleming, Miranda, plaza Vega, puente de Santa María, paseo de la Audiencia, Eduardo Martínez del Campo y paseo de los Cubos; las calles del perímetro son de libre circulación salvo tramos de Fernán González, Doña Jimena y Francisco Salinas",
+   "ambito_en": "city centre: inside the ring formed by Francisco Salinas, Fernán González, Doña Jimena, San Esteban, Corazas, San Francisco, Trinidad, General Sanz Pastor, Avenida del Cid, Plaza de España, San Lesmes, Gran Teatro, Doctor Fleming, Miranda, Plaza Vega, Santa María bridge, Paseo de la Audiencia, Eduardo Martínez del Campo and Paseo de los Cubos; the ring roads are unrestricted except stretches of Fernán González, Doña Jimena and Francisco Salinas",
+   "horario": "24h",
+   "desde": "2024-08-06",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "condicionado",
+     "hasta": "2027-08-05",
+     "nota": "moratoria sin multas del 6/02/2026 al 5/08/2027: las cámaras funcionan y se puede enviar un documento informativo",
+     "nota_en": "no-fine grace period from 6/02/2026 to 5/08/2027: cameras are running and drivers may get a warning letter"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "desde": "2027-08-06"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "vehículos domiciliados en calles de la ZBE o de personas empadronadas en ella",
+     "nota_en": "vehicles registered at an address in the zone or belonging to people registered as living there"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave (art. 76.z3 LSV); se aplica a partir del 6/08/2027",
+  "nota_en": "serious offence (art. 76.z3 Traffic Act); applies from 6/08/2027"
+ },
+ "excepciones": [
+  "vehículos domiciliados en la ZBE y de empadronados en ella",
+  "PMR, taxi y VTC, vehículos compartidos, servicios esenciales, históricos y matrículas extranjeras equivalentes",
+  "garajes privados, comercios y autónomos con local en la zona, DUM en su horario, parkings públicos de la zona, grúas y asistencia",
+  "con autorización temporal: hospitales y citas médicas, clientes de talleres, mudanzas, actos en la vía pública y clientes de alojamientos"
+ ],
+ "excepciones_en": [
+  "vehicles registered at an address in the zone and those of people registered as living there",
+  "blue-badge holders, taxis and private-hire cars, shared vehicles, emergency services, historic vehicles and equivalent foreign plates",
+  "private garages, businesses and self-employed based in the zone, deliveries within set hours, public car parks in the zone, breakdown trucks",
+  "with a temporary permit: hospitals and medical appointments, garage customers, removals, street events and hotel guests"
+ ],
+ "control": "cámaras con reconocimiento de matrículas; instalación recibida y moratoria iniciada el 6 de febrero de 2026",
+ "control_en": "number-plate recognition cameras; installation completed and grace period started on 6 February 2026",
+ "pendiente": "multas desde el 6 de agosto de 2027, al terminar la moratoria de 18 meses",
+ "pendiente_en": "fines from 6 August 2027, when the 18-month grace period ends",
+ "ordenanza": {
+  "nombre": "Ordenanza reguladora de la Zona de Bajas Emisiones del municipio de Burgos (BOP de Burgos n.º 149, 5 de agosto de 2024)",
+  "url": "https://www.aytoburgos.es/documents/38509/0/2024+BOP+5+agosto+2024+-+Ordenanza+Zona+de+Bajas+Emisiones.pdf/1a968f58-d027-3e8a-2bb6-782d5c43dffc?t=1722863990697"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.aytoburgos.es/documents/38509/0/2024+BOP+5+agosto+2024+-+Ordenanza+Zona+de+Bajas+Emisiones.pdf/1a968f58-d027-3e8a-2bb6-782d5c43dffc?t=1722863990697",
+   "label": "Ayuntamiento de Burgos · Ordenanza reguladora de la ZBE (BOP 5/08/2024)",
+   "cita": "se sancionarán con una multa de 200"
+  },
+  {
+   "url": "https://www.aytoburgos.es/documents/38509/0/2024+BOP+5+agosto+2024+-+Ordenanza+Zona+de+Bajas+Emisiones.pdf/1a968f58-d027-3e8a-2bb6-782d5c43dffc?t=1722863990697",
+   "label": "Ayuntamiento de Burgos · Ordenanza ZBE, artículo 7",
+   "cita": "0 EMISIONES, ECO, C y B"
+  },
+  {
+   "url": "https://www.aytoburgos.es/-/ordenanza-reguladora-de-la-zona-de-bajas-emisiones",
+   "label": "Ayuntamiento de Burgos · Ficha de la ordenanza de la ZBE",
+   "cita": "BOP núm. 149, de 5 agosto de 2024"
+  },
+  {
+   "url": "https://movilidad.aytoburgos.es/smyt/-/asset_publisher/oQWr6VPvtGEc/content/id/117520481",
+   "label": "Ayuntamiento de Burgos (Movilidad) · Moratoria de 18 meses del régimen sancionador",
+   "cita": "finaliza el 5 de agosto de 2027"
+  },
+  {
+   "url": "https://movilidad.aytoburgos.es/documents/413443/0/bopbur-2026-024-anuncio-202600344.pdf/fc7787de-c89e-b8c8-91f1-9778720cdb7d?t=1770296884888",
+   "label": "BOP de Burgos n.º 24 (5/02/2026) · Inicio de la moratoria de la ZBE",
+   "cita": "se inicia el periodo de moratoria de 18 meses"
+  }
+ ],
+ "verificado": "2026-10-16"
+}

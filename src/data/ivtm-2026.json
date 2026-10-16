@@ -397,11 +397,33 @@
      "cuota": 117
     }
    ],
-   "bonificaciones": [],
-   "bonificaciones_pendientes": true,
+   "bonificaciones": [
+    {
+     "para": [
+      "electrico",
+      "hibrido",
+      "gas"
+     ],
+     "pct": 0.75,
+     "anos": 5,
+     "solicitud": true,
+     "nota": "75 % durante los cinco periodos impositivos siguientes al de matriculación o reforma: híbridos (HEV), enchufables (PHEV), autonomía extendida (EREV), eléctricos de batería (BEV), GLP, gas natural, solar e hidrógeno; a solicitud (como máximo dentro del cuarto periodo tras la matriculación), con ficha técnica",
+     "nota_en": "75% for the five tax years following registration or conversion: hybrids (HEV), plug-in hybrids (PHEV), range extenders (EREV), battery electric (BEV), LPG, natural gas, solar and hydrogen; on application (at the latest within the fourth tax year after registration), with the vehicle's technical card"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 1,
+     "edad_min": 25,
+     "solicitud": true,
+     "nota": "100 % para vehículos catalogados como históricos o con al menos 25 años desde su fabricación; a solicitud, con efecto el año siguiente a la petición",
+     "nota_en": "100% for vehicles classed as historic or at least 25 years old from manufacture; on application, effective from the year after the request"
+    }
+   ],
    "nota": {
-    "es": "GESTRISAM publica la tarifa 2026 también por trimestres de alta (3/4, 2/4 y 1/4 de la cuota). Las bonificaciones rogadas están en la ordenanza fiscal n.º 3: compruébalas en GESTRISAM antes de contar con ellas.",
-    "en": "GESTRISAM also publishes the 2026 rates by quarter of registration (3/4, 2/4 and 1/4 of the amount). Relief on application is set out in tax byelaw no. 3: check it with GESTRISAM before relying on it."
+    "es": "GESTRISAM publica la tarifa 2026 también por trimestres de alta (3/4, 2/4 y 1/4 de la cuota). Para disfrutar de las bonificaciones hay que estar al corriente de pago con el Ayuntamiento y tener domiciliados los tributos periódicos. La ordenanza vigente (en vigor desde el 1/1/2021) mantiene las mismas cuotas que la tarifa 2026 de GESTRISAM.",
+    "en": "GESTRISAM also publishes the 2026 rates by quarter of registration (3/4, 2/4 and 1/4 of the amount). To get the relief you must be up to date with council payments and pay recurring local taxes by direct debit. The byelaw in force (since 1/1/2021) carries the same amounts as GESTRISAM's 2026 rates."
    },
    "ordenanza": {
     "nombre": "Tarifas 2026 del IVTM de Málaga (GESTRISAM), ordenanza fiscal n.º 3",
@@ -412,9 +434,19 @@
      "url": "https://gestrisam.malaga.eu/export/sites/gestrisam/.galleries/Documentos-General/Tarifas-IVTM-2026.pdf",
      "label": "GESTRISAM (Ayuntamiento de Málaga) · Tarifas 2026 del IVTM",
      "cita": "Periodo de vigencia: 2026"
+    },
+    {
+     "url": "https://www.malaga.eu/visorcontenido/NRMDocumentDisplayer/742/DocumentoNormativa742",
+     "label": "Ayuntamiento de Málaga · Ordenanza fiscal n.º 3 del IVTM (BOP n.º 245, 24/12/2020)",
+     "cita": "del 75 por 100 en la tarifa que, en cada caso, les sea de aplicación"
+    },
+    {
+     "url": "https://sede.malaga.eu/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO&DETALLE=6269000058789926099500",
+     "label": "Sede electrónica del Ayuntamiento de Málaga · IVTM, bonificación por causas medioambientales",
+     "cita": "Bonificación en la cuota del IVTM para vehículos poco contaminantes"
     }
    ],
-   "verificado": "2026-10-15"
+   "verificado": "2026-10-16"
   },
   {
    "slug": "murcia",
@@ -611,7 +643,8 @@
      "pct": 0.5,
      "solicitud": true,
      "nota": "50 % para híbridos, salvo los que usan gasóleo",
-     "nota_en": "50% for hybrids, except diesel hybrids"
+     "nota_en": "50% for hybrids, except diesel hybrids",
+     "excluye_diesel": true
     },
     {
      "para": [
@@ -821,11 +854,42 @@
      "cuota": 364.92
     }
    ],
-   "bonificaciones": [],
-   "bonificaciones_pendientes": true,
+   "bonificaciones": [
+    {
+     "para": [
+      "0",
+      "electrico"
+     ],
+     "pct": 0.9,
+     "anos": 6,
+     "nota": "90 % durante 6 años por vehículo para los clasificados por la DGT como eléctricos de batería (BEV), de autonomía extendida (REEV), híbridos enchufables con al menos 40 km de autonomía o de pila de combustible (distintivo CERO); de oficio si el Ayuntamiento conoce los datos, si no a solicitud",
+     "nota_en": "90% for 6 years per vehicle for vehicles the DGT classes as battery electric (BEV), range extender (REEV), plug-in hybrid with at least 40 km of range or fuel cell (CERO label); applied automatically when the council has the data, otherwise on application"
+    },
+    {
+     "para": [
+      "ECO",
+      "hibrido",
+      "gas"
+     ],
+     "pct": 0.5,
+     "anos": 6,
+     "nota": "50 % durante 6 años por vehículo para turismos ECO: híbridos enchufables con menos de 40 km de autonomía, híbridos no enchufables (HEV) y vehículos de gas natural (GNC, GNL) o GLP; de oficio si el Ayuntamiento conoce los datos, si no a solicitud",
+     "nota_en": "50% for 6 years per vehicle for ECO cars: plug-in hybrids with under 40 km of range, non-plug-in hybrids (HEV) and natural gas (CNG, LNG) or LPG vehicles; applied automatically when the council has the data, otherwise on application"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 0.9,
+     "edad_min": 30,
+     "solicitud": true,
+     "nota": "90 % para vehículos históricos o con al menos 30 años desde su fabricación; rogada, el titular debe ser socio de un club o asociación de vehículos clásicos o históricos",
+     "nota_en": "90% for historic vehicles or those at least 30 years old from manufacture; on application, and the owner must belong to a classic or historic vehicle club or association"
+    }
+   ],
    "nota": {
-    "es": "Régimen foral de Álava: la cuota se exige al titular a 1 de enero y se calcula de forma proporcional en las altas y bajas definitivas. Las bonificaciones están en la página municipal de bonificaciones y exenciones.",
-    "en": "Álava's own tax regime: the tax falls on the owner on 1 January and is pro-rated for new registrations and permanent deregistration. Relief is listed on the council's exemptions page."
+    "es": "Régimen foral de Álava: la cuota se exige al titular a 1 de enero y se calcula de forma proporcional en las altas y bajas definitivas. Las bonificaciones están en la página municipal de bonificaciones y exenciones. Las familias numerosas con turismo de cinco o más plazas suman un 10 % más a la bonificación CERO o ECO. Si hay que pedirla: un mes desde el alta del vehículo; fuera de plazo surte efecto el año siguiente.",
+    "en": "Álava's own tax regime: the tax falls on the owner on 1 January and is pro-rated for new registrations and permanent deregistration. Relief is listed on the council's exemptions page. Large families with a car of five or more seats get an extra 10% on top of the CERO or ECO relief. If you need to apply: within one month of registering the vehicle; late requests take effect the following year."
    },
    "ordenanza": {
     "nombre": "Ordenanza fiscal n.º 2 del Impuesto sobre Vehículos de Tracción Mecánica de Vitoria-Gasteiz (importes actualizados el 02/01/2026)",
@@ -836,9 +900,24 @@
      "url": "https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=es&uid=1882a5a_1200df68919__7ffb",
      "label": "Ayuntamiento de Vitoria-Gasteiz · Impuesto de vehículos, importe a pagar",
      "cita": "A.2. De 8 hasta 11,99 caballos fiscales: 76,17 euros"
+    },
+    {
+     "url": "https://www.araba.eus/botha/Boletines/2025/146/2025_146_03826_C.pdf",
+     "label": "BOTHA n.º 146 (26/12/2025) · Ordenanzas fiscales 2026 de Vitoria-Gasteiz",
+     "cita": "El plazo de disfrute de esta bonificación será de 6 años por vehículo."
+    },
+    {
+     "url": "https://www.vitoria-gasteiz.org/we001/was/we001Action.do?idioma=es&accionWe001=adjunto&nombre=105986.pdf",
+     "label": "Ayuntamiento de Vitoria-Gasteiz · Ordenanzas fiscales 2026, ordenanza n.º 2 del IVTM",
+     "cita": "Gozarán de una bonificación del 90 por ciento en la cuota del impuesto los Ciclomotores"
+    },
+    {
+     "url": "https://sedeelectronica.vitoria-gasteiz.org/portal/es/w/bonificacion-en-el-impuesto-sobre-vehiculos-de-traccion-mecanica-segun-potencial-contaminante-cero-emisiones-o-eco-3029276",
+     "label": "Sede electrónica de Vitoria-Gasteiz · Bonificación del IVTM según potencial contaminante (cero emisiones o ECO)",
+     "cita": "El Ayuntamiento aplica de oficio esta bonificación, cuando tiene conocimiento de dichos datos."
     }
    ],
-   "verificado": "2026-10-15"
+   "verificado": "2026-10-16"
   },
   {
    "slug": "san-sebastian",
@@ -903,11 +982,41 @@
      "cuota": 175.74
     }
    ],
-   "bonificaciones": [],
-   "bonificaciones_pendientes": true,
+   "bonificaciones": [
+    {
+     "para": [
+      "electrico"
+     ],
+     "pct": 0.95,
+     "anos": 3,
+     "solicitud": true,
+     "nota": "95 % para vehículos de motor eléctrico; rogada, durante tres ejercicios a partir de la matriculación",
+     "nota_en": "95% for electric vehicles; on application, for three tax years from registration"
+    },
+    {
+     "para": [
+      "hibrido",
+      "gas"
+     ],
+     "pct": 0.75,
+     "solicitud": true,
+     "nota": "75 % para híbridos (eléctrico-gasolina, eléctrico-diésel o eléctrico-gas) y vehículos de gas homologados de fábrica con catalizador; requiere reconocimiento previo del Ayuntamiento",
+     "nota_en": "75% for factory-approved hybrids (electric-petrol, electric-diesel or electric-gas) and gas vehicles fitted with a catalytic converter; requires prior approval by the council"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 1,
+     "edad_min": 30,
+     "solicitud": true,
+     "nota": "100 % para vehículos históricos o con al menos 30 años desde su fabricación (o, en su defecto, desde la primera matriculación); requiere reconocimiento previo",
+     "nota_en": "100% for historic vehicles or those at least 30 years old from manufacture (or first registration if unknown); requires prior approval"
+    }
+   ],
    "nota": {
-    "es": "Gipuzkoa tiene tramos propios (menos de 9, 9 a 11,99, 12 a 13,99, 14 a 15,99 caballos...) y el Ayuntamiento publica la cuota mes a mes para las altas.",
-    "en": "Gipuzkoa uses its own bands (under 9, 9 to 11.99, 12 to 13.99, 14 to 15.99 fiscal hp...) and the council publishes the amount month by month for new registrations."
+    "es": "Gipuzkoa tiene tramos propios (menos de 9, 9 a 11,99, 12 a 13,99, 14 a 15,99 caballos...) y el Ayuntamiento publica la cuota mes a mes para las altas. Las bonificaciones no son acumulables: solo una por periodo impositivo. Surten efecto en el año de la solicitud. Familias numerosas: 40 % (general) o 60 % (especial) para un turismo de cinco o más plazas. La ordenanza no indica un plazo para la bonificación de híbridos y gas: la frase de los tres ejercicios figura tras el apartado de eléctricos.",
+    "en": "Gipuzkoa uses its own bands (under 9, 9 to 11.99, 12 to 13.99, 14 to 15.99 fiscal hp...) and the council publishes the amount month by month for new registrations. Relief cannot be combined: one per tax year only. It takes effect in the year you apply. Large families: 40% (general) or 60% (special) for one car with five or more seats. The byelaw sets no time limit for the hybrid and gas relief: the three-year sentence follows the electric-vehicle clause."
    },
    "ordenanza": {
     "nombre": "Impuesto sobre Vehículos, cuotas año 2026 (Ayuntamiento de Donostia / San Sebastián)",
@@ -918,9 +1027,19 @@
      "url": "https://www.donostia.eus/info/udalinfo/Tramites.nsf/vTramites/04505FCBE21EF032C1258AB700437CE2/$file/Tarifak_2026.pdf",
      "label": "Ayuntamiento de Donostia · Cuotas del impuesto sobre vehículos 2026",
      "cita": "Impuesto sobre Vehículos - Cuotas Año 2026"
+    },
+    {
+     "url": "https://www.donostia.eus/Ordenanzas.nsf/vListadoId/24B4FE871B83A2F8C1258CAF002BC912?OpenDocument&id=C671670&idioma=cas",
+     "label": "Ayuntamiento de Donostia / San Sebastián · Ordenanza fiscal del Impuesto sobre Vehículos (IV) 2026",
+     "cita": "del 95% de la cuota tributaria"
+    },
+    {
+     "url": "https://www.donostia.eus/es/l/1430582",
+     "label": "Ayuntamiento de Donostia / San Sebastián · Bonificaciones y exenciones en el Impuesto para Vehículos",
+     "cita": "Vehículo de motor eléctrico o vehículos híbridos"
     }
    ],
-   "verificado": "2026-10-15"
+   "verificado": "2026-10-16"
   },
   {
    "slug": "mostoles",
@@ -954,11 +1073,38 @@
      "cuota": 208.99
     }
    ],
-   "bonificaciones": [],
-   "bonificaciones_pendientes": true,
+   "bonificaciones": [
+    {
+     "para": [
+      "electrico"
+     ],
+     "pct": 0.75,
+     "solicitud": true,
+     "nota": "75 % para vehículos eléctricos o bimodales, sin límite de años en la ordenanza; a solicitud, se aplica desde el año siguiente a la petición",
+     "nota_en": "75% for electric or bimodal vehicles, with no time limit in the byelaw; on application, applied from the year after the request"
+    },
+    {
+     "para": [
+      "gas"
+     ],
+     "pct": 0.75,
+     "solicitud": true,
+     "nota": "75 % para vehículos de biogás, gas natural comprimido, GLP, metano, metanol, hidrógeno o derivados de aceites vegetales; a solicitud, desde el año siguiente",
+     "nota_en": "75% for vehicles running on biogas, compressed natural gas, LPG, methane, methanol, hydrogen or vegetable-oil derivatives; on application, from the following year"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 1,
+     "solicitud": true,
+     "nota": "100 % para vehículos declarados históricos por la Comunidad Autónoma e inscritos como tales en Tráfico (la ordenanza no prevé bonificación solo por antigüedad); efecto desde el año siguiente a la inscripción",
+     "nota_en": "100% for vehicles declared historic by the regional government and registered as such with Traffic (the byelaw gives no relief for age alone); effective from the year after registration as historic"
+    }
+   ],
    "nota": {
-    "es": "Para 2026 el Ayuntamiento modificó el artículo 6 (coeficientes de 1,765 a 1,866 sobre la cuota estatal); las bonificaciones siguen en el texto de la ordenanza fiscal.",
-    "en": "For 2026 the council amended section 6 (multipliers of 1.765 to 1.866 on the national rate); relief remains as set out in the tax byelaw."
+    "es": "Para 2026 el Ayuntamiento modificó el artículo 6 (coeficientes de 1,765 a 1,866 sobre la cuota estatal); las bonificaciones siguen en el texto de la ordenanza fiscal. Requisitos: estar empadronado en Móstoles, al corriente de pago con el Ayuntamiento y con los tributos periódicos domiciliados (en 2026 no se exige domiciliar la tasa de residuos). Las bonificaciones no se aplican de oficio.",
+    "en": "For 2026 the council amended section 6 (multipliers of 1.765 to 1.866 on the national rate); relief remains as set out in the tax byelaw. Requirements: be registered as a resident of Móstoles, be up to date with council payments and pay recurring local taxes by direct debit (in 2026 the waste charge need not be on direct debit). Relief is not applied automatically."
    },
    "ordenanza": {
     "nombre": "Modificación de la ordenanza fiscal del IVTM de Móstoles para 2026 (BOCM n.º 304, 22/12/2025)",
@@ -969,9 +1115,636 @@
      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2025/12/22/BOCM-20251222-66.PDF",
      "label": "BOCM n.º 304 (22/12/2025) · Ordenanzas fiscales 2026 de Móstoles",
      "cita": "De 8 hasta 11,99 caballos fiscales    62,60"
+    },
+    {
+     "url": "https://www.mostoles.es/mostoles/cm/images?idMmedia=1434707",
+     "label": "Ayuntamiento de Móstoles · Ordenanza fiscal reguladora del IVTM 2026",
+     "cita": "exclusivamente a los vehículos eléctricos o bimodales"
+    },
+    {
+     "url": "https://www.mostoles.es/SEDE_ELECTRONICA/en/sede/normativa-ordenanzas-reglamentos/ordenanzas-municipales/ordenanzas-fiscales/organizadas-ano/ordenanzas-fiscales-ano-2026",
+     "label": "Sede electrónica de Móstoles · Ordenanzas fiscales año 2026"
     }
    ],
-   "verificado": "2026-10-15"
+   "verificado": "2026-10-16"
+  },
+  {
+   "slug": "palma",
+   "nombre": "Palma",
+   "provincia": "Illes Balears",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 23.61
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 68.16
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 143.88
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 179.22
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 224.0
+    }
+   ],
+   "motos": [
+    {
+     "clave": "ciclomotor",
+     "cuota": 8.84
+    },
+    {
+     "clave": "hasta125",
+     "cuota": 8.84
+    },
+    {
+     "clave": "125a250",
+     "cuota": 15.14
+    },
+    {
+     "clave": "250a500",
+     "cuota": 30.3
+    },
+    {
+     "clave": "500a1000",
+     "cuota": 60.58
+    },
+    {
+     "clave": "mas1000",
+     "cuota": 121.16
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "0"
+     ],
+     "pct": 0.75,
+     "nota": "75 % sin límite de años para vehículos con distintivo ambiental 0 de la DGT (eléctricos de batería, autonomía extendida, enchufables con al menos 40 km, pila de combustible e hidrógeno); de oficio si el vehículo está bien inscrito en la DGT",
+     "nota_en": "75% with no time limit for vehicles with the DGT zero-emission label (battery electric, range extender, plug-in hybrids with at least 40 km, fuel cell and hydrogen); applied automatically when the vehicle is correctly recorded with the DGT"
+    },
+    {
+     "para": [
+      "ECO"
+     ],
+     "pct": 0.5,
+     "nota": "50 % sin límite de años para vehículos con distintivo ECO (enchufables con menos de 40 km, microhíbridos, híbridos no enchufables, gas natural y GLP); de oficio desde 2025",
+     "nota_en": "50% with no time limit for vehicles with the ECO label (plug-in hybrids under 40 km, mild hybrids, non-plug-in hybrids, natural gas and LPG); applied automatically since 2025"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 1,
+     "nota": "100 % para vehículos históricos, de oficio según la lista de matrículas históricas que la DGT facilita al Ayuntamiento; se pierde si hay deudas municipales en vía ejecutiva",
+     "nota_en": "100% for historic vehicles, applied automatically from the list of historic number plates the DGT sends to the council; lost if there are council debts in enforcement"
+    }
+   ],
+   "nota": {
+    "es": "Las bonificaciones por tipo de motor no se acumulan entre sí. Las motos eléctricas pagan la tarifa de las motocicletas de hasta 125 cc. En las altas la cuota se prorratea por trimestres.",
+    "en": "The engine-type reliefs cannot be combined. Electric motorcycles pay the up-to-125 cc rate. For new registrations the amount is pro-rated by quarter."
+   },
+   "pago": {
+    "es": "Recibo anual; se puede domiciliar en las oficinas de la Agencia Tributaria de las Illes Balears (ATIB).",
+    "en": "Annual bill; direct debit can be set up at the Balearic Tax Agency (ATIB) offices."
+   },
+   "ordenanza": {
+    "nombre": "Ordenanza fiscal reguladora del Impuesto sobre vehículos de tracción mecánica de Palma, concepto 113,00 (Ordenanzas fiscales año 2026, Departamento Tributario)",
+    "url": "https://seuelectronica.palma.cat/documents/39058/12928460/Ordenanzas+fiscales+a%C3%B1o+en+curso.pdf/2f559a13-22ab-05ac-2e32-5e77464b66ea?t=1777549988427"
+   },
+   "fuentes": [
+    {
+     "url": "https://seuelectronica.palma.cat/documents/39058/12928460/Ordenanzas+fiscales+a%C3%B1o+en+curso.pdf/2f559a13-22ab-05ac-2e32-5e77464b66ea?t=1777549988427",
+     "label": "Ajuntament de Palma · Ordenanzas fiscales y de precios públicos año 2026",
+     "cita": "Bonificación por tipo de motor y tipo de combustible"
+    },
+    {
+     "url": "https://seuelectronica.palma.cat/-/ivtm.03-bonificaci%C3%B3n-para-veh%C3%ADculos-con-distintivo-ambiental-eco-del-impuesto-de-veh%C3%ADculos-de-tracci%C3%B3n-mec%C3%A1nica",
+     "label": "Sede electrónica de Palma · IVTM.03, bonificación para vehículos con distintivo ECO",
+     "cita": "Esta bonificación se reconoce de oficio a partir del ejercicio 2025"
+    }
+   ],
+   "verificado": "2026-10-16"
+  },
+  {
+   "slug": "alicante",
+   "nombre": "Alicante / Alacant",
+   "provincia": "Alicante",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 22.28
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 60.47
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 128.37
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 162.32
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 204.75
+    }
+   ],
+   "motos": [
+    {
+     "clave": "ciclomotor",
+     "cuota": 7.43
+    },
+    {
+     "clave": "hasta125",
+     "cuota": 8.49
+    },
+    {
+     "clave": "125a250",
+     "cuota": 13.79
+    },
+    {
+     "clave": "250a500",
+     "cuota": 27.58
+    },
+    {
+     "clave": "500a1000",
+     "cuota": 55.17
+    },
+    {
+     "clave": "mas1000",
+     "cuota": 111.39
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "electrico"
+     ],
+     "pct": 0.75,
+     "anos": 1,
+     "solicitud": true,
+     "nota": "Turismos eléctricos de nueva matriculación con calificación energética A (RD 837/2002): 75 % el primer año, 50 % el segundo y 30 % el tercero; con calificación B 60/35/25 % y C 45/20/15 %. Rogada, en la autoliquidación de alta. No depende de la etiqueta DGT",
+     "nota_en": "New electric cars with energy rating A (Royal Decree 837/2002): 75% in year one, 50% in year two and 30% in year three; rating B 60/35/25% and C 45/20/15%. On application, in the registration tax return. Not based on the DGT label"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 1,
+     "solicitud": true,
+     "nota": "100 % para vehículos catalogados como históricos (RD 1247/1995) inscritos en una asociación oficial, con seguro de histórico, ITV en vigor y sin uso lucrativo; a solicitud, hasta el fin del periodo voluntario del padrón",
+     "nota_en": "100% for vehicles classed as historic (Royal Decree 1247/1995) that belong to an official association, have historic-vehicle insurance and a valid MOT and are not used for profit; on application, by the end of the voluntary payment period"
+    }
+   ],
+   "nota": {
+    "es": "La bonificación por eficiencia es escalonada en tres años y también alcanza a los turismos nuevos de combustión con hasta 160 g/km de CO2 según su calificación energética (sin calificación se aplica la de clase C). Solo se registra aquí el primer año; hay que estar al corriente del impuesto y de las multas de tráfico. Ordenanza aplicable desde el 1/1/2024 y vigente mientras no se modifique (última versión publicada en alicante.es).",
+    "en": "The efficiency relief tapers over three years and also covers new combustion cars emitting up to 160 g/km of CO2, depending on their energy rating (class C applies if there is none). Only the first year is recorded here; you must be up to date with this tax and traffic fines. Byelaw applicable since 1/1/2024 and in force until amended (latest version published on alicante.es)."
+   },
+   "ordenanza": {
+    "nombre": "Ordenanza fiscal reguladora del Impuesto de Vehículos de Tracción Mecánica de Alicante (BOP n.º 245, 26/12/2023)",
+    "url": "https://www.alicante.es/sites/default/files/documentos/202401/ordenanza-ivtm-modificada-2023.pdf"
+   },
+   "fuentes": [
+    {
+     "url": "https://www.alicante.es/sites/default/files/documentos/202401/ordenanza-ivtm-modificada-2023.pdf",
+     "label": "Ayuntamiento de Alicante · Ordenanza fiscal del IVTM",
+     "cita": "De 8 hasta 11,99 caballos fiscales  60,47 €"
+    },
+    {
+     "url": "https://www.alicante.es/es/normativa/impuesto-vehiculos-traccion-mecanica",
+     "label": "Ayuntamiento de Alicante · Normativa, Impuesto sobre vehículos de tracción mecánica",
+     "cita": "Última actualización: 08/01/2024"
+    }
+   ],
+   "verificado": "2026-10-16"
+  },
+  {
+   "slug": "las-palmas",
+   "nombre": "Las Palmas de Gran Canaria",
+   "provincia": "Las Palmas",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 20.95
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 56.57
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 119.42
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 148.75
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 185.92
+    }
+   ],
+   "motos": [
+    {
+     "clave": "ciclomotor",
+     "cuota": 4.42
+    },
+    {
+     "clave": "hasta125",
+     "cuota": 4.42
+    },
+    {
+     "clave": "125a250",
+     "cuota": 7.57
+    },
+    {
+     "clave": "250a500",
+     "cuota": 25.15
+    },
+    {
+     "clave": "500a1000",
+     "cuota": 50.28
+    },
+    {
+     "clave": "mas1000",
+     "cuota": 100.56
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "electrico",
+      "hibrido",
+      "gas"
+     ],
+     "pct": 0.75,
+     "nota": "75 % sin límite de años para vehículos eléctricos, híbridos o que usen exclusivamente autogás (GLP); de oficio con los datos de la DGT, también a solicitud",
+     "nota_en": "75% with no time limit for electric and hybrid vehicles and those running only on autogas (LPG); applied automatically from DGT data, or on application"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 1,
+     "edad_min": 40,
+     "nota": "100 % para vehículos declarados históricos (RD 1247/1995) o con al menos 40 años; de oficio para los históricos y por fecha de primera matriculación, rogada si la antigüedad se acredita por fecha de fabricación",
+     "nota_en": "100% for vehicles declared historic (Royal Decree 1247/1995) or at least 40 years old; automatic for historic vehicles and by first-registration date, on application when age is proven by manufacture date"
+    }
+   ],
+   "nota": {
+    "es": "5 % adicional, compatible con las demás bonificaciones, si se domicilia y anticipa el pago. La antigua bonificación del 100 % para vehículos de más de 25 años se extingue: quien la tenía a 31/12/2023 paga con un 25 % de bonificación en 2026 y la pierde el 1/1/2027.",
+    "en": "An extra 5%, combinable with other relief, if you pay by direct debit in advance. The former 100% relief for vehicles over 25 years old is being phased out: holders at 31/12/2023 get 25% off in 2026 and lose it on 1/1/2027."
+   },
+   "ordenanza": {
+    "nombre": "Ordenanza fiscal 2.3 reguladora del Impuesto de Vehículos de Tracción Mecánica de Las Palmas de Gran Canaria (texto consolidado, BOP n.º 157, 29/12/2023)",
+    "url": "https://www.laspalmasgc.es/export/sites/laspalmasgc/.galleries/documentos-normativa/2.3-Ordenanza-Fiscal-Reguladora-del-Impuesto-sobre-Vehiculos-de-Traccion-Mecanica.pdf"
+   },
+   "fuentes": [
+    {
+     "url": "https://www.laspalmasgc.es/export/sites/laspalmasgc/.galleries/documentos-normativa/2.3-Ordenanza-Fiscal-Reguladora-del-Impuesto-sobre-Vehiculos-de-Traccion-Mecanica.pdf",
+     "label": "Ayuntamiento de Las Palmas de Gran Canaria · Ordenanza fiscal 2.3 del IVTM",
+     "cita": "De 8 hasta 11,99 caballos fiscales  56,57"
+    }
+   ],
+   "verificado": "2026-10-16"
+  },
+  {
+   "slug": "pamplona",
+   "nombre": "Pamplona / Iruña",
+   "provincia": "Navarra",
+   "regimen": "foral",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 23.57
+    },
+    {
+     "desde": 8,
+     "hasta": 12,
+     "cuota": 66.28
+    },
+    {
+     "desde": 12.01,
+     "hasta": 16,
+     "cuota": 141.38
+    },
+    {
+     "desde": 16.01,
+     "hasta": null,
+     "cuota": 176.8
+    }
+   ],
+   "motos": [
+    {
+     "clave": "ciclomotor",
+     "cuota": 5.94
+    },
+    {
+     "clave": "hasta125",
+     "cuota": 8.91
+    },
+    {
+     "clave": "125a250",
+     "cuota": 14.78
+    },
+    {
+     "clave": "250a500",
+     "cuota": 29.13
+    },
+    {
+     "clave": "500a1000",
+     "cuota": 58.28
+    },
+    {
+     "clave": "mas1000",
+     "cuota": 116.56
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "0"
+     ],
+     "pct": 0.5,
+     "nota": "50 % para vehículos con distintivo 0 emisiones (ordenanza fiscal n.º 6); la ordenanza no fija duración ni procedimiento",
+     "nota_en": "50% for vehicles with the zero-emission label (tax byelaw no. 6); the byelaw sets no time limit or procedure"
+    },
+    {
+     "para": [
+      "ECO"
+     ],
+     "pct": 0.25,
+     "nota": "25 % para vehículos ECO (ordenanza fiscal n.º 6); la ordenanza no fija duración ni procedimiento",
+     "nota_en": "25% for ECO vehicles (tax byelaw no. 6); the byelaw sets no time limit or procedure"
+    }
+   ],
+   "nota": {
+    "es": "Régimen foral de Navarra: las cuotas las fija el Gobierno de Navarra y tienen cuatro tramos propios (menos de 8, de 8 hasta 12, más de 12 hasta 16 y más de 16 caballos). En altas y bajas definitivas se prorratean por trimestres.",
+    "en": "Navarre's own tax regime: the rates are set by the Government of Navarre in four bands of their own (under 8, 8 to 12, over 12 to 16 and over 16 fiscal hp). They are pro-rated by quarter for new registrations and permanent deregistration."
+   },
+   "pago": {
+    "es": "Recibo anual; en 2026 el periodo voluntario terminó el 15 de mayo (los domiciliados se cargan ese día).",
+    "en": "Annual bill; in 2026 the voluntary payment period ended on 15 May (direct debits are charged that day)."
+   },
+   "ordenanza": {
+    "nombre": "Ordenanza fiscal n.º 6 reguladora del Impuesto sobre Vehículos de Tracción Mecánica de Pamplona (ordenanzas fiscales 2026)",
+    "url": "https://www.pamplona.es/sites/default/files/2025-12/Ordenanza%206.pdf"
+   },
+   "fuentes": [
+    {
+     "url": "https://www.pamplona.es/node/77269",
+     "label": "Ayuntamiento de Pamplona · Impuesto de Vehículos de Tracción Mecánica 2026, tarifas",
+     "cita": "De 8 hasta 12 caballos fiscales: 66,28 euros"
+    },
+    {
+     "url": "https://www.pamplona.es/sites/default/files/2025-12/Ordenanza%206.pdf",
+     "label": "Ayuntamiento de Pamplona · Ordenanza fiscal n.º 6 del IVTM",
+     "cita": "Una bonificación del 25% para los vehículos ECO."
+    }
+   ],
+   "verificado": "2026-10-16"
+  },
+  {
+   "slug": "hospitalet",
+   "nombre": "L'Hospitalet de Llobregat",
+   "provincia": "Barcelona",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 25.24
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 68.16
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 143.88
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 179.22
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 224.0
+    }
+   ],
+   "motos": [
+    {
+     "clave": "ciclomotor",
+     "cuota": 8.84
+    },
+    {
+     "clave": "hasta125",
+     "cuota": 8.84
+    },
+    {
+     "clave": "125a250",
+     "cuota": 15.14
+    },
+    {
+     "clave": "250a500",
+     "cuota": 30.3
+    },
+    {
+     "clave": "500a1000",
+     "cuota": 60.58
+    },
+    {
+     "clave": "mas1000",
+     "cuota": 121.16
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "0"
+     ],
+     "pct": 0.75,
+     "anos": 8,
+     "solicitud": true,
+     "nota": "75 % durante los primeros 8 periodos impositivos desde la matriculación, vehículos con distintivo ambiental «zero emissions»; a solicitud",
+     "nota_en": "75% for the first 8 tax years after registration, vehicles with the zero-emission label; on application"
+    },
+    {
+     "para": [
+      "ECO"
+     ],
+     "pct": 0.5,
+     "anos": 8,
+     "solicitud": true,
+     "nota": "50 % durante los primeros 8 periodos impositivos desde la matriculación, vehículos con distintivo ambiental ECO; a solicitud",
+     "nota_en": "50% for the first 8 tax years after registration, vehicles with the ECO label; on application"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 1,
+     "edad_min": 30,
+     "solicitud": true,
+     "nota": "100 % para vehículos de interés histórico: con matrícula histórica, o de más de 30 años con certificado de una entidad sin ánimo de lucro inscrita en la Generalitat; a solicitud y estando al corriente con el Ayuntamiento",
+     "nota_en": "100% for vehicles of historic interest: with a historic number plate, or over 30 years old with a certificate from a non-profit body registered with the Generalitat; on application and if up to date with council payments"
+    }
+   ],
+   "nota": {
+    "es": "Ordenanza aprobada el 22/12/2023, aplicable desde el 1/1/2024 y publicada por el Ayuntamiento dentro de las ordenanzas fiscales 2026. Si se pide después del devengo, la bonificación surte efecto ese mismo año mientras la liquidación no sea firme.",
+    "en": "Byelaw approved on 22/12/2023, applicable since 1/1/2024 and published by the council among its 2026 tax byelaws. If requested after the tax falls due, the relief applies that same year as long as the bill is not yet final."
+   },
+   "ordenanza": {
+    "nombre": "Ordenança fiscal núm. 1.05 reguladora de l'impost sobre vehicles de tracció mecànica de L'Hospitalet (ordenances fiscals 2026)",
+    "url": "https://www.l-h.cat/utils/obreFitxer.aspx?MH3ui2hqazAYLeVcOqazC4nzUY6sIsTF3fmhAndxWlefhMyO3uz6uYRUyblLnqazCweN3g419"
+   },
+   "fuentes": [
+    {
+     "url": "https://www.l-h.cat/utils/obreFitxer.aspx?MH3ui2hqazAYLeVcOqazC4nzUY6sIsTF3fmhAndxWlefhMyO3uz6uYRUyblLnqazCweN3g419",
+     "label": "Ajuntament de L'Hospitalet · Ordenança fiscal núm. 1.05 de l'IVTM (ordenances fiscals 2026)",
+     "cita": "de 8 fins a 11,99 CV 68,16"
+    },
+    {
+     "url": "https://seuelectronica.l-h.cat/186948_1.aspx?id=1",
+     "label": "Seu electrònica de L'Hospitalet · Ordenances fiscals, preus públics i prestacions patrimonials"
+    }
+   ],
+   "verificado": "2026-10-16"
+  },
+  {
+   "slug": "sevilla",
+   "nombre": "Sevilla",
+   "provincia": "Sevilla",
+   "regimen": "comun",
+   "turismos": [
+    {
+     "desde": 0,
+     "hasta": 7.99,
+     "cuota": 21.45
+    },
+    {
+     "desde": 8,
+     "hasta": 11.99,
+     "cuota": 61.0
+    },
+    {
+     "desde": 12,
+     "hasta": 15.99,
+     "cuota": 130.93
+    },
+    {
+     "desde": 16,
+     "hasta": 19.99,
+     "cuota": 176.53
+    },
+    {
+     "desde": 20,
+     "hasta": null,
+     "cuota": 220.64
+    }
+   ],
+   "motos": [
+    {
+     "clave": "ciclomotor",
+     "cuota": 5.92
+    },
+    {
+     "clave": "hasta125",
+     "cuota": 5.92
+    },
+    {
+     "clave": "125a250",
+     "cuota": 13.63
+    },
+    {
+     "clave": "250a500",
+     "cuota": 27.12
+    },
+    {
+     "clave": "500a1000",
+     "cuota": 59.67
+    },
+    {
+     "clave": "mas1000",
+     "cuota": 119.34
+    }
+   ],
+   "bonificaciones": [
+    {
+     "para": [
+      "electrico",
+      "hibrido",
+      "gas"
+     ],
+     "pct": 0.75,
+     "anos": 5,
+     "solicitud": true,
+     "nota": "75 % los cinco primeros años desde la matriculación: eléctricos, bimodales, híbridos (eléctrico-gasolina, eléctrico-diésel o eléctrico-gas), solares y vehículos que usen exclusivamente biogás, gas natural, gas líquido, metano, metanol, hidrógeno o aceites vegetales; rogada (en el alta puede aplicarse en la propia autoliquidación)",
+     "nota_en": "75% for the first five years after registration: electric, bimodal, hybrid (electric-petrol, electric-diesel or electric-gas) and solar vehicles, and those running only on biogas, natural gas, liquefied gas, methane, methanol, hydrogen or vegetable oils; on application (for a new registration it can be claimed in the registration tax return)"
+    },
+    {
+     "para": [
+      "historico"
+     ],
+     "pct": 0.75,
+     "edad_min": 25,
+     "solicitud": true,
+     "nota": "75 % para turismos y motocicletas históricos o con al menos 25 años desde su fabricación; rogada, desde el devengo siguiente a la solicitud",
+     "nota_en": "75% for historic cars and motorcycles or those at least 25 years old from manufacture; on application, from the tax year after the request"
+    }
+   ],
+   "nota": {
+    "es": "La ordenanza del IVTM de Sevilla se aplica desde el 1/1/2024 y el libro de ordenanzas fiscales 2026 de la Agencia Tributaria de Sevilla mantiene sus cuotas y bonificaciones. sevilla.org no respondía a la descarga automática: el PDF se leyó el 16/10/2026 en su copia de web.archive.org (12/02/2025).",
+    "en": "Seville’s road-tax byelaw has applied since 1/1/2024 and the Seville Tax Agency’s 2026 byelaw book keeps its rates and relief. sevilla.org did not answer automated downloads: the PDF was read on 16/10/2026 in its web.archive.org copy (12/02/2025)."
+   },
+   "pago": {
+    "es": "Padrón anual gestionado por la Agencia Tributaria de Sevilla; en la primera matriculación se paga por autoliquidación.",
+    "en": "Annual roll managed by the Seville Tax Agency; on first registration it is paid by self-assessment."
+   },
+   "ordenanza": {
+    "nombre": "Ordenanza fiscal del Impuesto sobre Vehículos de Tracción Mecánica de Sevilla (Agencia Tributaria de Sevilla, aplicable desde el 1/1/2024)",
+    "url": "https://www.sevilla.org/servicios/agencia-tributaria-de-sevilla/ordenanzas-fiscales/2024/ivtm.pdf"
+   },
+   "fuentes": [
+    {
+     "url": "https://www.sevilla.org/servicios/agencia-tributaria-de-sevilla/ordenanzas-fiscales/2024/ivtm.pdf",
+     "label": "Agencia Tributaria de Sevilla · Ordenanza fiscal del IVTM",
+     "cita": "De 8 hasta 11,99 caballos fiscales"
+    }
+   ],
+   "verificado": "2026-10-16"
   }
  ]
 }

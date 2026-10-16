@@ -1,0 +1,166 @@
+{
+ "slug": "jerez",
+ "nombre": "Jerez de la Frontera",
+ "provincia": "Cádiz",
+ "ccaa": "Andalucía",
+ "estado": "informativa",
+ "zonas": [
+  {
+   "id": "zona1",
+   "nombre": "ZBE Jerez · Zona 1 (permanente)",
+   "ambito": "centro histórico intramuros, calles interiores del perímetro Larga, Lancería, Plaza del Arenal, Plaza Monti, Pozuelo, Plaza Vargas, Letrados, Plaza Asunción, José Luis Díez, Padre Luis Bellido, Plaza Plateros, Tornería y Plaza del Clavo; controles en Tornería, Pozuelo, José Luis Díez y Plaza del Progreso",
+   "ambito_en": "walled historic centre, inner streets within Larga, Lancería, Plaza del Arenal, Plaza Monti, Pozuelo, Plaza Vargas, Letrados, Plaza Asunción, José Luis Díez, Padre Luis Bellido, Plaza Plateros, Tornería and Plaza del Clavo; checkpoints at Tornería, Pozuelo, José Luis Díez and Plaza del Progreso",
+   "horario": "24h",
+   "horario_nota": "carga y descarga en Zona 1 de 07:00 a 10:00 y de 16:00 a 18:00, con registro previo",
+   "horario_nota_en": "loading and unloading in Zone 1 from 07:00 to 10:00 and 16:00 to 18:00, after registering",
+   "desde": "2026-01-04",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "condicionado",
+     "nota": "acceso solo con autorización del registro ZBE (residentes, garajes, PMR, carga y descarga, hoteles, servicios...) o para terminar el trayecto en un parking público; no depende de la etiqueta DGT; el Ayuntamiento envía avisos y no sanciones directas",
+     "nota_en": "access only with a permit from the zone register (residents, garage users, reduced mobility, loading, hotels, services...) or to end the trip in a public car park; it does not depend on the DGT label; the council sends warnings rather than direct fines"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "condicionado",
+     "nota": "acceso solo con autorización del registro ZBE (residentes, garajes, PMR, carga y descarga, hoteles, servicios...) o para terminar el trayecto en un parking público; no depende de la etiqueta DGT; el Ayuntamiento envía avisos y no sanciones directas",
+     "nota_en": "access only with a permit from the zone register (residents, garage users, reduced mobility, loading, hotels, services...) or to end the trip in a public car park; it does not depend on the DGT label; the council sends warnings rather than direct fines"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "condicionado",
+     "nota": "acceso solo con autorización del registro ZBE (residentes, garajes, PMR, carga y descarga, hoteles, servicios...) o para terminar el trayecto en un parking público; no depende de la etiqueta DGT; el Ayuntamiento envía avisos y no sanciones directas",
+     "nota_en": "access only with a permit from the zone register (residents, garage users, reduced mobility, loading, hotels, services...) or to end the trip in a public car park; it does not depend on the DGT label; the council sends warnings rather than direct fines"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "condicionado",
+     "nota": "acceso solo con autorización del registro ZBE (residentes, garajes, PMR, carga y descarga, hoteles, servicios...) o para terminar el trayecto en un parking público; no depende de la etiqueta DGT; el Ayuntamiento envía avisos y no sanciones directas",
+     "nota_en": "access only with a permit from the zone register (residents, garage users, reduced mobility, loading, hotels, services...) or to end the trip in a public car park; it does not depend on the DGT label; the council sends warnings rather than direct fines"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "condicionado",
+     "nota": "acceso solo con autorización del registro ZBE (residentes, garajes, PMR, carga y descarga, hoteles, servicios...) o para terminar el trayecto en un parking público; no depende de la etiqueta DGT; el Ayuntamiento envía avisos y no sanciones directas",
+     "nota_en": "access only with a permit from the zone register (residents, garage users, reduced mobility, loading, hotels, services...) or to end the trip in a public car park; it does not depend on the DGT label; the council sends warnings rather than direct fines"
+    }
+   ]
+  },
+  {
+   "id": "zona2",
+   "nombre": "ZBE Jerez · Zona 2 (solo episodios de contaminación)",
+   "ambito": "resto del intramuros: calles interiores del perímetro Porvera, Tornería, Sedería, Chapinería, José Luis Díez, Amargura, Plaza Vargas, Pozuelo, Manuel María González, Arco del Arroyo, Puerta de Rota, Ronda del Caracol, Muro y Ancha",
+   "ambito_en": "rest of the walled centre: inner streets within Porvera, Tornería, Sedería, Chapinería, José Luis Díez, Amargura, Plaza Vargas, Pozuelo, Manuel María González, Arco del Arroyo, Puerta de Rota, Ronda del Caracol, Muro and Ancha",
+   "horario": "solo si se activa el protocolo de alta contaminación",
+   "horario_nota": "sin restricciones mientras no se active el protocolo; el Ayuntamiento indica que nunca se ha dado una alerta así en Jerez",
+   "horario_nota_en": "no restrictions unless the high-pollution protocol is triggered; the council says such an alert has never happened in Jerez",
+   "desde": "2026-01-04",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "salvo activación del protocolo de alta contaminación",
+     "nota_en": "unless the high-pollution protocol is triggered"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "salvo activación del protocolo de alta contaminación",
+     "nota_en": "unless the high-pollution protocol is triggered"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "salvo activación del protocolo de alta contaminación",
+     "nota_en": "unless the high-pollution protocol is triggered"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "salvo activación del protocolo de alta contaminación",
+     "nota_en": "unless the high-pollution protocol is triggered"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "salvo activación del protocolo de alta contaminación",
+     "nota_en": "unless the high-pollution protocol is triggered"
+    }
+   ],
+   "horario_en": "only if the high-pollution protocol is triggered"
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "la ordenanza fija multa de hasta 200 € (infracción grave, art. 76 z3 Ley de Tráfico), graduada por reincidencia; por ahora el Ayuntamiento envía avisos",
+  "nota_en": "the byelaw sets a fine of up to €200 (serious offence, art. 76 z3 Traffic Act), graded for repeat offences; for now the council sends warnings"
+ },
+ "excepciones": [
+  "vehículos de servicios médicos, municipales, protección civil, bomberos, policía, seguridad privada, funerarios, transporte público colectivo y taxis",
+  "bicicletas, ciclos y VMP",
+  "acceso a parkings públicos (no necesita autorización si el trayecto termina en el parking)",
+  "residentes con autorización ORA de residentes: inscritos de oficio en el registro ZBE",
+  "autorizaciones de un año natural para residentes, garajes, PMR, servicios técnicos, hoteles, carga y descarga y eventos"
+ ],
+ "excepciones_en": [
+  "medical, municipal, civil protection, fire, police, private security, funeral, public transport and taxi vehicles",
+  "bicycles, cycles and e-scooters",
+  "access to public car parks (no permit needed if the trip ends in the car park)",
+  "residents holding a resident ORA parking permit: added to the zone register automatically",
+  "permits valid for the calendar year for residents, garage users, reduced mobility, technical services, hotels, loading and events"
+ ],
+ "control": "cámaras de lectura de matrícula en los accesos y controles de la Policía Local",
+ "control_en": "number-plate cameras at the entrances plus Local Police checks",
+ "pendiente": "el Ayuntamiento no ha fijado una fecha oficial para pasar de los avisos a las multas",
+ "pendiente_en": "the council has not set an official date to move from warnings to fines",
+ "ordenanza": {
+  "nombre": "Ordenanza sobre la creación y gestión de la Zona de Bajas Emisiones de Jerez de la Frontera (aprobación definitiva 25/07/2025; BOP de Cádiz n.º 168, 3 de septiembre de 2025)",
+  "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2025/09_septiembre/BOP168_03-09-25.pdf"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2025/09_septiembre/BOP168_03-09-25.pdf",
+   "label": "BOP de Cádiz n.º 168 · Ordenanza de la ZBE de Jerez de la Frontera (03/09/2025)",
+   "cita": "hasta 200,00 euros"
+  },
+  {
+   "url": "https://zbe.jerez.es/informacion-sobre-zbe-jerez/entrada-en-vigor",
+   "label": "Ayuntamiento de Jerez · ZBE Jerez, entrada en vigor",
+   "cita": "a partir del 4 DE ENERO DE 2026"
+  },
+  {
+   "url": "https://zbe.jerez.es/vehiculos-y-horarios/horarios",
+   "label": "Ayuntamiento de Jerez · ZBE Jerez, horarios",
+   "cita": "de 07:00 a 10:00 horas y de 16:00 a 18:00 horas"
+  },
+  {
+   "url": "https://zbe.jerez.es/autorizaciones-y-registro-de-vehiculos",
+   "label": "Ayuntamiento de Jerez · ZBE Jerez, autorización de acceso",
+   "cita": "Las autorizaciones tendrán como máximo una vigencia"
+  },
+  {
+   "url": "https://www.jerez.es/webs-municipales/medio-ambiente/detalle-noticias/la-ordenanza-de-la-zona-de-bajas-emisiones-entra-en-vigor-por-imposicion-legal-y-sin-anadir-nuevas-restricciones-a-la-circulacion-de-vehiculos",
+   "label": "Ayuntamiento de Jerez · La Ordenanza de la ZBE entra en vigor (02/01/2026)",
+   "cita": "no se realizarán sanciones"
+  },
+  {
+   "url": "https://www.jerez.es/ciudad/tu-distrito/distrito-centro/ver-completa-noticias-distrito-centro/se-abre-el-periodo-de-registro-para-el-acceso-de-vehiculos-a-la-zona-de-baja-emision-que-no-establece-restricciones-para-los-vehiculos",
+   "label": "Ayuntamiento de Jerez · Se abre el registro de acceso a la ZBE (08/01/2026)",
+   "cita": "no se van a llevar a cabo sanciones directas"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "zbe.jerez.es y jerez.es leídos con curl; BOP de Cádiz y PDF de la ordenanza con pypdf. No se ha encontrado en fuente oficial ninguna nota posterior a enero de 2026 sobre el inicio de las multas."
+}

@@ -1,9 +1,9 @@
 import { type ChangeEvent, useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { formatNumber, parseLocaleNumber } from '../../lib/format';
 
-interface Props { id: string; label: string; value: number; onChange: (v: number) => void; unit?: string; min?: number; max?: number; help?: string; className?: string; decimals?: number; lang?: string }
+interface Props { id: string; label: string; value: number; onChange: (v: number) => void; unit?: string; min?: number; max?: number; help?: string; className?: string; decimals?: number; lang?: string; /** false pour une année : « 2012 », jamais « 2,012 ». */ grouping?: boolean }
 
-export default function NumberField({ id, label, value, onChange, unit = '', min = 0, max = 10_000_000, help, className = '', decimals = 0, lang }: Props) {
+export default function NumberField({ id, label, value, onChange, unit = '', min = 0, max = 10_000_000, help, className = '', decimals = 0, lang, grouping = true }: Props) {
   const [focused, setFocused] = useState(false);
   const [raw, setRaw] = useState('');
   const [over, setOver] = useState(false);
@@ -13,7 +13,7 @@ export default function NumberField({ id, label, value, onChange, unit = '', min
   const selectPending = useRef(false);
   const guardMouseUp = useRef(false);
   useLayoutEffect(() => { if (selectPending.current) { selectPending.current = false; input.current?.select(); } });
-  const display = focused ? raw : (value === 0 ? '' : formatNumber(value, decimals, lang));
+  const display = focused ? raw : (value === 0 ? '' : grouping ? formatNumber(value, decimals, lang) : String(value));
   const handleChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
     const filtered = e.target.value.replace(/[^0-9.,\s-]/g, '');
     setRaw(filtered);

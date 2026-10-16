@@ -16,7 +16,7 @@ import { Filas, Pasos, Acciones, Cabecera, Aviso, caja, marco, rejilla, tx, fm, 
 declare const __BUILD_DAY__: string;
 interface Props { lang?: L; methodHref?: string; preset?: { municipio?: string; modo?: string }; municipioHrefs?: Record<string, string> }
 type Modo = 'cvf' | 'cc' | 'kw';
-type Tec = 'combustion' | 'hibrido' | 'electrico' | 'gas';
+type Tec = 'combustion' | 'hibrido' | 'hibrido_diesel' | 'electrico' | 'gas';
 
 export default function IvtmTool({ lang = 'es', methodHref, preset = {}, municipioHrefs = {} }: Props) {
   const f = fm(lang);
@@ -44,7 +44,7 @@ export default function IvtmTool({ lang = 'es', methodHref, preset = {}, municip
   const otro = mu === 'otro';
   const m = otro ? undefined : getMunicipio(mu);
   const edad = Math.max(0, Number(hoy.slice(0, 4)) - Math.round(anio));
-  const r = cuotaTurismo({ municipio: m?.slug, cvf, etiqueta: et, tecnologia: tec, antiguedadAnos: edad });
+  const r = cuotaTurismo({ municipio: m?.slug, cvf, etiqueta: et, tecnologia: tec === 'hibrido_diesel' ? 'hibrido' : tec, diesel: tec === 'hibrido_diesel', antiguedadAnos: edad });
   const anual = otro ? r.minimaEstatal : r.cuota;
   const pr = alta === '1' ? prorrateo(anual, Number(mes), 'alta') : anual;
   const t = m ? tramo(m.turismos, cvf) : tramo(TRAMOS_ESTADO, cvf);
@@ -66,7 +66,7 @@ export default function IvtmTool({ lang = 'es', methodHref, preset = {}, municip
       <div className={rejilla}>
         <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
           <div className="grid grid-cols-2 gap-x-4 gap-y-4">
-            {preset.municipio ? <SelectField id="i-t" label={tx(lang, 'Motor', 'Engine')} value={tec} onChange={(x) => setTec(x as Tec)} options={[{ value: 'combustion', label: tx(lang, 'Gasolina o diésel', 'Petrol or diesel') }, { value: 'hibrido', label: tx(lang, 'Híbrido (HEV o PHEV)', 'Hybrid (HEV or PHEV)') }, { value: 'electrico', label: tx(lang, 'Eléctrico', 'Electric') }, { value: 'gas', label: tx(lang, 'GLP o gas natural', 'LPG or natural gas') }]} />
+            {preset.municipio ? <SelectField id="i-t" label={tx(lang, 'Motor', 'Engine')} value={tec} onChange={(x) => setTec(x as Tec)} options={[{ value: 'combustion', label: tx(lang, 'Gasolina o diésel', 'Petrol or diesel') }, { value: 'hibrido', label: tx(lang, 'Híbrido de gasolina (HEV o PHEV)', 'Petrol hybrid (HEV or PHEV)') }, { value: 'hibrido_diesel', label: tx(lang, 'Híbrido diésel', 'Diesel hybrid') }, { value: 'electrico', label: tx(lang, 'Eléctrico', 'Electric') }, { value: 'gas', label: tx(lang, 'GLP o gas natural', 'LPG or natural gas') }]} />
               : <SelectField id="i-mu" label={tx(lang, 'Municipio del permiso de circulación', 'Town on the registration document')} value={mu} onChange={setMu} options={muOpt} />}
             <SelectField id="i-mo" label={tx(lang, 'Potencia fiscal', 'Fiscal horsepower')} value={modo} onChange={(x) => setModo(x as Modo)} options={[{ value: 'cvf', label: tx(lang, 'La sé (casilla P.2.1)', 'I know it (box P.2.1)') }, { value: 'cc', label: tx(lang, 'Calcular por cilindrada', 'Work out from engine size') }, { value: 'kw', label: tx(lang, 'Eléctrico: por kW', 'Electric: from kW') }]} />
           </div>
@@ -79,8 +79,8 @@ export default function IvtmTool({ lang = 'es', methodHref, preset = {}, municip
           </div>
           <div className="grid grid-cols-2 gap-x-4 gap-y-4">
             {modo === 'cc' && <SelectField id="i-et" label={tx(lang, 'Etiqueta DGT', 'DGT label')} value={et} onChange={(x) => setEt(x as Etiqueta)} options={etOpt} />}
-            {!preset.municipio && <SelectField id="i-t" label={tx(lang, 'Motor', 'Engine')} value={tec} onChange={(x) => setTec(x as Tec)} options={[{ value: 'combustion', label: tx(lang, 'Gasolina o diésel', 'Petrol or diesel') }, { value: 'hibrido', label: tx(lang, 'Híbrido (HEV o PHEV)', 'Hybrid (HEV or PHEV)') }, { value: 'electrico', label: tx(lang, 'Eléctrico', 'Electric') }, { value: 'gas', label: tx(lang, 'GLP o gas natural', 'LPG or natural gas') }]} />}
-            <NumberField id="i-a" label={tx(lang, 'Año de matriculación', 'Year registered')} value={anio} onChange={setAnio} min={1950} max={2026} lang={lang} help={tx(lang, 'Para bonificaciones con plazo', 'For time-limited relief')} />
+            {!preset.municipio && <SelectField id="i-t" label={tx(lang, 'Motor', 'Engine')} value={tec} onChange={(x) => setTec(x as Tec)} options={[{ value: 'combustion', label: tx(lang, 'Gasolina o diésel', 'Petrol or diesel') }, { value: 'hibrido', label: tx(lang, 'Híbrido de gasolina (HEV o PHEV)', 'Petrol hybrid (HEV or PHEV)') }, { value: 'hibrido_diesel', label: tx(lang, 'Híbrido diésel', 'Diesel hybrid') }, { value: 'electrico', label: tx(lang, 'Eléctrico', 'Electric') }, { value: 'gas', label: tx(lang, 'GLP o gas natural', 'LPG or natural gas') }]} />}
+            <NumberField id="i-a" label={tx(lang, 'Año de matriculación', 'Year registered')} value={anio} onChange={setAnio} min={1950} max={2026} grouping={false} lang={lang} help={tx(lang, 'Para bonificaciones con plazo', 'For time-limited relief')} />
           </div>
           <div className="grid grid-cols-2 gap-x-4 gap-y-4">
             <Toggle id="i-al" label={tx(lang, '¿Alta este año?', 'Registered this year?')} value={alta} onChange={setAlta} options={[{ value: '0', label: tx(lang, 'No', 'No') }, { value: '1', label: tx(lang, 'Sí', 'Yes') }]} />

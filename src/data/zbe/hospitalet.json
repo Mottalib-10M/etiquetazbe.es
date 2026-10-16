@@ -1,0 +1,119 @@
+{
+ "slug": "hospitalet",
+ "nombre": "L'Hospitalet de Llobregat",
+ "provincia": "Barcelona",
+ "ccaa": "Cataluña",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "rondes",
+   "nombre": "ZBE Rondes de Barcelona (tramo de L'Hospitalet de Llobregat)",
+   "ambito": "todo el término municipal de L'Hospitalet de Llobregat, dentro de la ZBE Rondes de Barcelona (más de 95 km² con Barcelona, Sant Adrià de Besòs y parte de Esplugues y Cornellà)",
+   "ambito_en": "the whole municipality of L'Hospitalet de Llobregat, as part of the Barcelona Ring Roads LEZ (over 95 km² together with Barcelona, Sant Adrià de Besòs and parts of Esplugues and Cornellà)",
+   "horario": "L-V laborables 07:00-20:00",
+   "horario_nota": "fuera de ese horario, fines de semana y festivos no hay restricción; en episodios de contaminación declarados por la Generalitat se aplican medidas adicionales",
+   "desde": "2020-01-01",
+   "superficie_km2": 95,
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "prohibido",
+     "nota": "vehículos L, M y N sin distintivo ambiental de la DGT; ordenanza de 2025 vigente desde el 30/12/2025, sin exención para empadronados",
+     "nota_en": "L, M and N category vehicles without a DGT environmental label; 2025 byelaw in force since 30/12/2025, with no exemption for local residents"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "hasta": "2027-12-31",
+     "nota": "turismos (M1) y motos (L); furgonetas N1 hasta el 31/12/2029, camiones N2-N3 hasta el 31/12/2030, autobuses M2-M3 hasta el 31/12/2031",
+     "nota_en": "cars (M1) and motorbikes (L); N1 vans until 31/12/2029, N2-N3 lorries until 31/12/2030, M2-M3 buses and coaches until 31/12/2031"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "prohibido",
+     "desde": "2028-01-01",
+     "nota": "turismos (M1) y motos (L); furgonetas N1 desde el 1/1/2030, camiones N2-N3 desde el 1/1/2031, autobuses M2-M3 desde el 1/1/2032",
+     "nota_en": "cars (M1) and motorbikes (L); N1 vans from 1/1/2030, N2-N3 lorries from 1/1/2031, M2-M3 buses and coaches from 1/1/2032"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave (art. 76.z3 de la Ley de Tráfico); +30 % en caso de reincidencia en un año",
+  "nota_en": "serious offence (art. 76.z3 of the Traffic Act); +30% for a repeat offence within one year"
+ },
+ "excepciones": [
+  "vehículos de personas con movilidad reducida, servicios de emergencia y esenciales, y transporte de personas con enfermedades o discapacidad que condicionan el uso del transporte público",
+  "matrículas extranjeras con requisitos equivalentes a una etiqueta, inscritas en el Registro metropolitano",
+  "autorizaciones diarias de acceso ocasional: hasta 96 al año, de las cuales 24 en cualquier día y el resto en fines de semana y festivos (incluye clásicos e históricos)",
+  "rentas anuales inferiores a 2 veces el IPREM (ajustado según la unidad familiar): autorización de 1 año renovable",
+  "profesionales con furgoneta, camión o autobús a los que faltan como máximo 5 años de cotización para jubilarse (hasta el 1/1/2031)",
+  "titulares que acrediten la compra de un vehículo nuevo que cumpla",
+  "la autorización se pide en el Registro metropolitano como máximo 24 horas después del acceso (3 días si fue una urgencia médica)"
+ ],
+ "excepciones_en": [
+  "vehicles for people with reduced mobility, emergency and essential services, and transport of people whose illness or disability limits their use of public transport",
+  "foreign plates meeting standards equivalent to a label, registered in the metropolitan register",
+  "daily passes for occasional access: up to 96 a year, 24 of them on any day and the rest at weekends and on public holidays (classic and historic vehicles included)",
+  "annual income below twice the IPREM (adjusted for household size): one-year renewable permit",
+  "self-employed and other workers with a van, lorry or bus who are at most 5 years of contributions from retirement (until 1/1/2031)",
+  "owners who can prove they have bought a new compliant vehicle",
+  "the permit is requested from the metropolitan register no later than 24 hours after entering (3 days after a medical emergency)"
+ ],
+ "control": "lectura automática de matrículas, además del control de la Guardia Urbana",
+ "control_en": "automatic number-plate recognition, plus checks by the local police (Guàrdia Urbana)",
+ "pendiente": "el TSJC anuló en abril de 2024 la ordenanza de 2020; la nueva ordenanza, aprobada el 19/12/2025 y publicada en el BOPB el 29/12/2025, entró en vigor al día siguiente",
+ "pendiente_en": "the Catalan High Court struck down the 2020 byelaw in April 2024; the new byelaw, approved on 19/12/2025 and published in the Barcelona provincial gazette on 29/12/2025, took effect the next day",
+ "ordenanza": {
+  "nombre": "Ordenança reguladora de la restricció de l'accés, la circulació i l'estacionament de determinats vehicles a la ciutat de l'Hospitalet de Llobregat (zona de baixes emissions), BOPB 29-12-2025, CVE 202510202438",
+  "url": "https://bop.diba.cat/anuncio/ver-pdf/3880942"
+ },
+ "fuentes": [
+  {
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3880942",
+   "label": "BOPB · Ordenança ZBE de L'Hospitalet de Llobregat (publicación correcta, 29/12/2025)",
+   "cita": "en horari de 7.00 a 20.00 hores"
+  },
+  {
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3880942",
+   "label": "BOPB · Ordenança ZBE de L'Hospitalet: etiqueta B desde 2028",
+   "cita": "a partir de l’1 de gener de 2028"
+  },
+  {
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3880942",
+   "label": "BOPB · Ordenança ZBE de L'Hospitalet: sanción",
+   "cita": "de 200 euros"
+  },
+  {
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3878838",
+   "label": "BOPB · Anuncio del 23/12/2025 (sustituido por el del 29/12/2025)"
+  },
+  {
+   "url": "https://www.zbe.barcelona/es/zones-baixes-emissions/la-zbe.html",
+   "label": "AMB · La ZBE Rondas de Barcelona",
+   "cita": "los municipios de Sant Adrià de Besòs y L'Hospitalet de Llobregat"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "PDF del BOPB descargado y extraído con pypdf; el anuncio del 23/12/2025 (CVE 202510200990) fue declarado incorrecto y sustituido por el del 29/12/2025 (CVE 202510202438); el mapa del anexo 1 es una imagen, el ámbito se toma de la página de la AMB"
+}

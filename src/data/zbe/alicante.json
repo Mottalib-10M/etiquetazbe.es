@@ -1,0 +1,183 @@
+{
+ "slug": "alicante",
+ "nombre": "Alicante",
+ "provincia": "Alicante",
+ "ccaa": "Comunitat Valenciana",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "anillo-1",
+   "nombre": "ZBE de Alicante · Anillo I Casco Antiguo",
+   "ambito": "Anillo I: Casco Antiguo de Alicante, según el plano del anexo 1 de la ordenanza; es el único anillo con restricción de acceso",
+   "ambito_en": "Ring I: Alicante old town (Casco Antiguo), as mapped in annex 1 of the byelaw; the only ring with access restrictions",
+   "horario": "24h",
+   "horario_nota": "la ordenanza no fija franja horaria para el Anillo I; el régimen de accesos restringidos del Casco Antiguo ya estaba vigente antes de la ZBE",
+   "desde": "2025-01-09",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "vehículos de personas empadronadas, residentes o propietarias de viviendas o garajes en la ZBE, con o sin distintivo",
+     "nota_en": "vehicles of people registered, living or owning a home or garage in the zone, with or without a label"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "residentes",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "residentes",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "residentes",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "residentes",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "solo con autorización municipal registral: invitaciones de vecinos (hasta 10 al mes, un día cada una), clientes de hoteles y aparcamientos públicos, trabajadores, comercios, centros educativos, servicios médicos, entre otros",
+     "nota_en": "only with a registered council permit: residents' invitations (up to 10 a month, one day each), hotel and public car-park customers, workers, shops, schools, medical services, among others"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_residentes",
+     "acceso": "condicionado",
+     "nota": "acceso reservado a los vehículos del anexo 2 (ya autorizados, trabajadores, comercios, taxis, VTC, reparto, PMR registrados, etc.); el resto no puede entrar sea cual sea su etiqueta",
+     "nota_en": "access reserved for the vehicles listed in annex 2 (already authorised, workers, shops, taxis, private hire, deliveries, registered blue-badge holders, etc.); everyone else is barred whatever their label"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_residentes",
+     "acceso": "condicionado",
+     "nota": "mismo régimen que la etiqueta B: solo vehículos autorizados del anexo 2",
+     "nota_en": "same as label B: authorised annex 2 vehicles only"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "no_residentes",
+     "acceso": "condicionado",
+     "nota": "mismo régimen que la etiqueta B: solo vehículos autorizados del anexo 2",
+     "nota_en": "same as label B: authorised annex 2 vehicles only"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "no_residentes",
+     "acceso": "condicionado",
+     "nota": "mismo régimen que la etiqueta B: solo vehículos autorizados del anexo 2",
+     "nota_en": "same as label B: authorised annex 2 vehicles only"
+    }
+   ]
+  },
+  {
+   "id": "anillos-2-3",
+   "nombre": "ZBE de Alicante · Anillos II Centro Tradicional y III Gran Vía",
+   "ambito": "Anillo II Centro Tradicional y Anillo III Gran Vía: el interior del anillo de la Gran Vía (22 barrios); circulación libre",
+   "ambito_en": "Ring II (Centro Tradicional) and Ring III (Gran Vía): everything inside the Gran Vía ring road (22 neighbourhoods); unrestricted",
+   "horario": "24h",
+   "horario_nota": "sin restricciones; estos anillos sirven para estudio, monitorización y toma de datos",
+   "desde": "2025-01-09",
+   "superficie_km2": 7.49,
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave en el Anillo I: multa de hasta 200 €, que puede subir un 30 % en caso de reincidencia (art. 17)",
+  "nota_en": "serious offence in Ring I: fine of up to €200, which can rise by 30% for repeat offenders (art. 17)"
+ },
+ "excepciones": [
+  "vehículos de personas empadronadas, residentes o propietarias de viviendas o garajes en el Anillo I, con o sin etiqueta",
+  "vehículos históricos, PMR con tarjeta TED dada de alta (hasta dos vehículos), servicios públicos esenciales y básicos",
+  "taxis, VTC y autobuses discrecionales con etiqueta B, C, ECO o 0",
+  "invitaciones de vecinos empadronados: hasta 10 permisos al mes, de un día",
+  "matrículas extranjeras y diplomáticas que soliciten permiso y sean equiparables",
+  "restricciones temporales adicionales en toda la ZBE si se declara un episodio de contaminación (art. 10)"
+ ],
+ "excepciones_en": [
+  "vehicles of people registered, living or owning a home or garage in Ring I, with or without a label",
+  "historic vehicles, blue-badge (TED) holders registered on the platform (up to two vehicles), essential and basic public services",
+  "taxis, private hire and coaches with label B, C, ECO or 0",
+  "invitations from registered residents: up to 10 one-day permits a month",
+  "foreign and diplomatic plates that apply for a permit and meet equivalent standards",
+  "extra temporary restrictions across the zone if a pollution episode is declared (art. 10)"
+ ],
+ "control": "sistema automático de control de accesos con cámaras en el Anillo I; en los Anillos II y III solo se toman datos",
+ "control_en": "automatic camera-based access control in Ring I; Rings II and III only collect data",
+ "pendiente": "el Ayuntamiento indica que no hay prevista ninguna restricción nueva por etiqueta; los Anillos II y III solo se restringirían de forma temporal ante episodios de contaminación",
+ "pendiente_en": "the council says no new label-based restrictions are planned; Rings II and III would only be restricted temporarily during a pollution episode",
+ "ordenanza": {
+  "nombre": "Ordenanza reguladora de la Zona de Bajas Emisiones de Alicante (aprobada por el Pleno el 30/12/2024, BOP de Alicante n.º 5, 9 de enero de 2025)",
+  "url": "https://www.alicante.es/sites/default/files/documentos/202501/ordenanza-reguladora-zbe-diligenciada.pdf"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.alicante.es/sites/default/files/documentos/202501/ordenanza-reguladora-zbe-diligenciada.pdf",
+   "label": "Ayuntamiento de Alicante · Ordenanza reguladora de la ZBE (texto diligenciado)",
+   "cita": "multa de hasta 200,00 euros"
+  },
+  {
+   "url": "https://www.alicante.es/sites/default/files/documentos/202501/ordenanza-reguladora-zbe-diligenciada.pdf",
+   "label": "Ayuntamiento de Alicante · Ordenanza ZBE, anexo 2 (invitaciones)",
+   "cita": "Podrá solicitarse hasta un máximo de 10 permisos al mes."
+  },
+  {
+   "url": "https://www.alicante.es/sites/default/files/documentos/202501/ordenanza-reguladora-zbe-diligenciada.pdf",
+   "label": "Ayuntamiento de Alicante · Ordenanza ZBE, anexo 2.3 (Anillos II y III)",
+   "cita": "libre y exenta de restricciones y sanciones"
+  },
+  {
+   "url": "https://www.alicante.es/es/contenidos/nuevo-alicante-zona-bajas-emisiones-alicante",
+   "label": "Ayuntamiento de Alicante · Un nuevo Alicante: la ZBE",
+   "cita": "se publicó en el Boletín Oficial de la provincia el día 9 de enero de 2025"
+  },
+  {
+   "url": "https://www.alicante.es/es/contenidos/nuevo-alicante-zona-bajas-emisiones-alicante",
+   "label": "Ayuntamiento de Alicante · Superficie de la ZBE",
+   "cita": "Anillo Gran Vía: 7,49 Km2"
+  },
+  {
+   "url": "https://www.alicante.es/es/contenidos/preguntas-frecuentes-zbe-alicante",
+   "label": "Ayuntamiento de Alicante · Preguntas frecuentes sobre la ZBE",
+   "cita": "salvo en el caso del anillo correspondiente al Casco Antiguo"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "leído con curl en alicante.es (ordenanza diligenciada en PDF, extraída con pypdf; página ZBE y FAQ actualizada el 27/07/2026). El BOP de Alicante no respondía desde aquí; la fecha del BOP procede de la página municipal. «desde» = fecha de publicación en el BOP; la ordenanza entra en vigor tras el plazo del art. 65.2 LBRL."
+}

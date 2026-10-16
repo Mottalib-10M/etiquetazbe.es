@@ -1,0 +1,37 @@
+import { definePage } from '../../lib/page-types';
+export default definePage({
+  id: "zbe-leon", group: 'zbe', order: 53, tool: 'zbe', ciudad: "leon",
+  related: ["zbe-burgos", "zbe-oviedo", "zbe-valladolid", "etiqueta-c"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
+  es: {
+    slug: "zbe-leon",
+    nav: "ZBE León",
+    card: "Centro peatonal y Ensanche solo en alerta",
+    title: "ZBE León 2026: área peatonal y Ensanche en alerta de NO2",
+    description: "ZBE de León 2026: el área de prioridad peatonal solo admite vehículos autorizados; el Ensanche restringe A, B y C solo en alerta por contaminación. Multa.",
+    h1: "ZBE de León 2026: dos ámbitos y un protocolo de alerta",
+    intro: "León reparte su ZBE en dos ámbitos: un centro peatonal de acceso reservado y un Ensanche que solo se cierra en episodios de contaminación.",
+    resume: () => "León regula su Zona de Bajas Emisiones en el Título IV de la Ordenanza municipal de movilidad, aprobada definitivamente por el Pleno el 26 de septiembre de 2025 y publicada en el BOP de León n.º 196 del 16 de octubre de 2025. La ordenanza entró en vigor a los 15 días hábiles de su publicación. La ZBE tiene dos ámbitos: el Área de prioridad peatonal (APP) de acceso restringido del centro y la Zona de Bajas Emisiones Ensanche. En el APP el acceso no depende de la etiqueta: solo entran autorizados (residentes, usuarios de garajes, servicios, taxis, PMR y carga y descarga de 6:00 a 11:00 los laborables). En el Ensanche no hay restricciones en condiciones normales: el régimen de autorizaciones solo se activa cuando se declara el nivel de alerta por NO2 o PM10. En alerta, los ECO y 0 circulan libremente, los C deben estar inscritos en el Registro municipal y el resto solo si están en un supuesto autorizado. Saltarse las restricciones es infracción grave: 200 euros.",
+    faqs: () => [{ q: "¿Puedo circular por el Ensanche de León con un coche sin etiqueta?", a: "Sí, en condiciones normales. Las restricciones de la ZBE Ensanche solo se activan cuando se declara el nivel de alerta por dióxido de nitrógeno o partículas PM10. En ese caso solo podrán acceder los vehículos ECO y 0 y los inscritos en el Registro municipal." }, { q: "¿Qué vehículos pueden entrar en las calles de prioridad peatonal del centro de León?", a: "Solo los autorizados: residentes empadronados y usuarios de garajes, servicios de emergencia y municipales, taxis y VTC para subir o bajar pasajeros, PMR y la carga y descarga los días laborables de 6:00 a 11:00. Los residentes sin garaje pueden entrar una vez al día durante 30 minutos para carga y descarga." }, { q: "¿Cuánto es la multa por saltarse la ZBE en León?", a: "La ordenanza califica como infracción grave no respetar las restricciones de la ZBE y de los protocolos de contaminación. Las infracciones graves se sancionan con 200 euros, con la reducción legal por pronto pago. Es decir, 100 euros si se paga en 20 días naturales. En el Ensanche la multa solo puede llegar con el nivel de alerta declarado." }],
+    body: (h) => `
+<h2>El centro peatonal</h2>
+<p>El primer ámbito de la ZBE de León es el área de prioridad peatonal de acceso restringido, recogida en el anexo II de la Ordenanza de movilidad publicada en el Boletín Oficial de la Provincia el 16 de octubre de 2025. Allí entran residentes empadronados, usuarios de garajes, taxis y VTC para subir o bajar pasajeros, personas con movilidad reducida y la carga y descarga los laborables de 6 a 11 h, sea cual sea la etiqueta.</p>
+<h2>El Ensanche, solo en alerta</h2>
+<p>El segundo ámbito, el Ensanche, no tiene restricción diaria: el régimen de autorizaciones se activa al declararse el nivel de alerta del protocolo de dióxido de nitrógeno y partículas. Entonces los ECO y 0 circulan sin trámite, la C debe inscribirse en el registro y la B y los vehículos sin etiqueta solo entran en casos autorizados. Para saber si tienes la C, consulta ${h.a('etiqueta-c', "la guía de la etiqueta C")}.</p>`,
+  },
+  en: {
+    slug: "zbe-leon",
+    nav: "León ZBE",
+    card: "Pedestrian centre, Ensanche only in alerts",
+    title: "León ZBE 2026: Pedestrian Area and Ensanche NO2 Alerts",
+    description: "León low-emission zone 2026: the pedestrian-priority area admits authorised vehicles only; the Ensanche restricts A, B and C only in a pollution alert.",
+    h1: "León low-emission zone 2026: two areas and an alert protocol",
+    intro: "León splits its zone in two: a pedestrian centre with restricted entry, and an Ensanche district that only closes during pollution episodes.",
+    resume: () => "León regulates its Low Emission Zone in Title IV of its Mobility Byelaw, given final approval by the city council on 26 September 2025 and published in the León provincial gazette (BOP no. 196) on 16 October 2025. The byelaw came into force 15 working days after publication. The zone has two parts: the restricted-access pedestrian-priority area (APP) in the centre and the Ensanche Low Emission Zone. In the APP access does not depend on the label: only authorised vehicles get in (residents, garage users, services, taxis, blue-badge holders and deliveries from 6:00 to 11:00 on working days). In the Ensanche there are no restrictions in normal conditions: the permit system only applies when an NO2 or PM10 alert level is declared. At alert level, ECO and 0 vehicles drive freely, C vehicles must be entered in the municipal register and the rest only if they fall into an authorised case. Ignoring the restrictions is a serious offence: 200 euros.",
+    faqs: () => [{ q: "Can I drive in León's Ensanche without a label?", a: "Yes, in normal conditions. The Ensanche zone's restrictions only apply when an alert level for nitrogen dioxide or PM10 particles is declared. Then only ECO and 0 vehicles and those entered in the municipal register may enter. C vehicles must be on the register." }, { q: "Which vehicles may enter the pedestrian-priority streets in central León?", a: "Only authorised ones: registered residents and garage users, emergency and council services, taxis and private-hire cars picking up or dropping off, blue-badge holders and deliveries on working days from 6:00 to 11:00. Residents without a garage may enter once a day for 30 minutes to load or unload." }, { q: "How much is the fine for breaking León's LEZ rules?", a: "The byelaw treats ignoring the zone's restrictions and the pollution protocols as a serious offence. Serious offences carry a 200 euro fine, with the statutory early-payment discount. That is 100 euros if paid within 20 calendar days. In the Ensanche a fine is only possible once the alert level has been declared." }],
+    body: (h) => `
+<h2>The pedestrian centre</h2>
+<p>León’s first area is the pedestrian-priority zone with restricted access, set out in annex II of the Mobility Byelaw published in the provincial gazette on 16 October 2025. Registered residents, garage users, taxis and ride-hailing cars dropping off or picking up, people with reduced mobility and deliveries on working days from 6 to 11 am may enter, whatever their label.</p>
+<h2>The Ensanche, only during alerts</h2>
+<p>The second area, the Ensanche, has no day-to-day restriction: its permit regime switches on when the alert level of the nitrogen dioxide and particulate protocol is declared. ECO and zero vehicles then drive in freely, C-label cars must be on the register, and B and unlabelled vehicles only enter in authorised cases. To check whether you have a C, read ${h.a('etiqueta-c', "the C label guide")}.</p>`,
+  },
+});

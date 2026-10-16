@@ -1,6 +1,6 @@
 /** Vocabulaire commun des simulateurs et des pages : étiquettes, motorisations, verdicts, horaires. */
 import type { Etiqueta, Energia, Categoria } from './engine/etiqueta';
-import type { Acceso, Veredicto, Usuario } from './engine/zbe';
+import { franja, type Acceso, type Veredicto, type Usuario, type Zona } from './engine/zbe';
 
 type L = 'es' | 'en';
 const T = <A>(l: L, es: A, en: A) => (l === 'en' ? en : es);
@@ -14,12 +14,12 @@ export const ETIQUETA_CORTA: Record<L, Record<Etiqueta, string>> = {
   en: { '0': '0', ECO: 'ECO', C: 'C', B: 'B', A: 'no label' },
 };
 export const ENERGIA: Record<L, Record<Energia, string>> = {
-  es: { gasolina: 'Gasolina', diesel: 'Diésel', hev: 'Híbrido no enchufable (HEV)', phev: 'Híbrido enchufable (PHEV)', bev: 'Eléctrico (batería, autonomía extendida o hidrógeno)', glp: 'GLP (autogás)', gnc: 'Gas natural (GNC o GNL)' },
-  en: { gasolina: 'Petrol', diesel: 'Diesel', hev: 'Self-charging hybrid (HEV)', phev: 'Plug-in hybrid (PHEV)', bev: 'Electric (battery, range extender or hydrogen)', glp: 'LPG (autogas)', gnc: 'Natural gas (CNG or LNG)' },
+  es: { gasolina: 'Gasolina', diesel: 'Diésel', hev: 'Híbrido no enchufable (HEV) de gasolina', hev_diesel: 'Híbrido no enchufable (HEV) diésel', phev: 'Híbrido enchufable (PHEV) de gasolina', phev_diesel: 'Híbrido enchufable (PHEV) diésel', bev: 'Eléctrico (batería, autonomía extendida o hidrógeno)', glp: 'GLP (autogás)', gnc: 'Gas natural (GNC o GNL)' },
+  en: { gasolina: 'Petrol', diesel: 'Diesel', hev: 'Self-charging petrol hybrid (HEV)', hev_diesel: 'Self-charging diesel hybrid (HEV)', phev: 'Plug-in petrol hybrid (PHEV)', phev_diesel: 'Plug-in diesel hybrid (PHEV)', bev: 'Electric (battery, range extender or hydrogen)', glp: 'LPG (autogas)', gnc: 'Natural gas (CNG or LNG)' },
 };
 export const CATEGORIA: Record<L, Record<Categoria, string>> = {
-  es: { turismo: 'Turismo o furgoneta ligera', moto: 'Moto o ciclomotor', pesado: 'Más de 8 plazas, camión o furgón pesado' },
-  en: { turismo: 'Car or light van', moto: 'Motorbike or moped', pesado: 'Over 8 seats, lorry or heavy van' },
+  es: { turismo: 'Turismo o furgoneta ligera', moto: 'Moto (más de 50 cc)', ciclomotor: 'Ciclomotor (hasta 50 cc)', pesado: 'Más de 8 plazas, camión o furgón pesado' },
+  en: { turismo: 'Car or light van', moto: 'Motorbike (over 50 cc)', ciclomotor: 'Moped (up to 50 cc)', pesado: 'Over 8 seats, lorry or heavy van' },
 };
 export const MESES: Record<L, string[]> = {
   es: ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'],
@@ -45,9 +45,15 @@ export function accesoDetalle(a: Acceso, l: L): string {
 }
 export function franjaTexto(v: Veredicto['franja'], l: L): string {
   if (!v) return T(l, 'todos los días, a cualquier hora', 'every day, at any time');
-  const dias = v.dias === 'LV' ? T(l, 'de lunes a viernes', 'Monday to Friday') : T(l, 'todos los días', 'every day');
+  const dias = v.dias === 'LV' ? T(l, 'de lunes a viernes', 'Monday to Friday') : v.dias === 'LS' ? T(l, 'de lunes a sábado', 'Monday to Saturday') : T(l, 'todos los días', 'every day');
   const fest = v.festivos ? T(l, ' (no festivos)', ' (public holidays excluded)') : '';
   return T(l, `${dias}${fest}, de ${v.desde} a ${v.hasta} h`, `${dias}${fest}, ${v.desde} to ${v.hasta}`);
+}
+/** Horaire d'une zone : franja horaire lisible, ou le texte de l'ordonnance (zones activées seulement par épisode de pollution). */
+export function horarioTexto(z: Zona, l: L): string {
+  const f = franja(z.horario);
+  if (!f && z.horario !== '24h' && !/00:00-24:00/.test(z.horario)) return l === 'en' ? (z.horario_en ?? z.horario) : z.horario;
+  return franjaTexto(f, l);
 }
 /** Le colectivo de la regla, écrit pour le lecteur. */
 export function usuarioTexto(u: Usuario, ciudad: string, l: L): string {
@@ -67,5 +73,5 @@ export function usuarioTexto(u: Usuario, ciudad: string, l: L): string {
   return T(l, m[u][0], m[u][1]);
 }
 export function estadoTexto(e: string, l: L): string {
-  return ({ sanciona: T(l, 'Multa ya', 'Fines in force'), informativa: T(l, 'Fase informativa', 'Warning phase'), aprobada: T(l, 'Aprobada, sin multas aún', 'Approved, no fines yet'), pendiente: T(l, 'Pendiente', 'Pending') } as Record<string, string>)[e] ?? e;
+  return ({ sanciona: T(l, 'Multa ya', 'Fines in force'), suspendida: T(l, 'Suspendida', 'Suspended'), informativa: T(l, 'Fase informativa', 'Warning phase'), aprobada: T(l, 'Aprobada, sin multas aún', 'Approved, no fines yet'), pendiente: T(l, 'Pendiente', 'Pending') } as Record<string, string>)[e] ?? e;
 }

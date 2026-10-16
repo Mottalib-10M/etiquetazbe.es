@@ -1,0 +1,89 @@
+{
+ "slug": "elche",
+ "nombre": "Elche",
+ "provincia": "Alicante",
+ "ccaa": "Comunitat Valenciana",
+ "estado": "aprobada",
+ "zonas": [
+  {
+   "id": "centro",
+   "nombre": "Zona de Bajas Emisiones de Elche",
+   "ambito": "zonas peatonales del centro de Elche (la nota municipal no detalla el perímetro)",
+   "ambito_en": "pedestrianised streets in the centre of Elche (the council notice does not give the exact boundary)",
+   "horario": "24h",
+   "horario_nota": "sin restricciones generales en la primera fase; las limitaciones solo se activarían de forma puntual en episodios de contaminación",
+   "desde": "2025-12-31",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "primera fase hasta 2030 sin restricciones generales de acceso, circulación ni estacionamiento para la mayoría de vehículos; solo se restringe a vehículos municipales, autobuses y de empresas concesionarias sin distintivo",
+     "nota_en": "first phase until 2030 with no general restrictions on access, driving or parking for most vehicles; only council vehicles, buses and contractors' vehicles without a label are restricted"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "importe general de la Ley de Tráfico; hoy no hay restricciones generales que sancionar",
+  "nota_en": "standard amount under the Traffic Act; there are currently no general restrictions to enforce"
+ },
+ "excepciones": [
+  "residentes, trabajadores, servicios esenciales, personas con movilidad reducida, centros educativos y accesos justificados (según la nota municipal)"
+ ],
+ "excepciones_en": [
+  "residents, workers, essential services, people with reduced mobility, schools and justified access (according to the council notice)"
+ ],
+ "pendiente": "la ordenanza fija un calendario progresivo de fases futuras que se evaluarán cada seis meses antes de activarse; la primera fase dura hasta 2030",
+ "pendiente_en": "the byelaw sets a gradual timetable of future phases, to be reviewed every six months before they are switched on; the first phase runs until 2030",
+ "ordenanza": {
+  "nombre": "Ordenanza de Zona de Bajas Emisiones de Elche (aprobación definitiva en el Pleno de diciembre de 2023; anexos 2 y 3 modificados en vigor el 31/12/2025)",
+  "url": "https://www.elche.es/2025/12/la-zona-de-bajas-emisiones-de-elche-entra-en-vigor-el-31-de-diciembre-sin-restricciones-generales/"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.elche.es/2025/12/la-zona-de-bajas-emisiones-de-elche-entra-en-vigor-el-31-de-diciembre-sin-restricciones-generales/",
+   "label": "Ayuntamiento de Elche · La ZBE entra en vigor el 31 de diciembre sin restricciones generales",
+   "cita": "que entrará en vigor, mañana 31 de diciembre de 2025"
+  },
+  {
+   "url": "https://www.elche.es/2025/12/la-zona-de-bajas-emisiones-de-elche-entra-en-vigor-el-31-de-diciembre-sin-restricciones-generales/",
+   "label": "Ayuntamiento de Elche · Episodios de contaminación",
+   "cita": "algo que nunca ha ocurrido en Elche"
+  },
+  {
+   "url": "https://www.elche.es/2023/12/el-ayuntamiento-aprueba-de-manera-definitiva-la-ordenanza-de-zona-de-bajas-emisiones/",
+   "label": "Ayuntamiento de Elche · Aprobación definitiva de la ordenanza ZBE (2023)",
+   "cita": "aprobado definitivamente la Ordenanza de Zona de Bajas Emisiones"
+  },
+  {
+   "url": "https://www.elche.es/2023/09/la-junta-local-de-gobierno-aprueba-el-proyecto-de-ordenanza-de-zona-de-bajas-emisiones/",
+   "label": "Ayuntamiento de Elche · La Junta de Gobierno aprueba el proyecto de ordenanza ZBE",
+   "cita": "esta ZBE se va a implantar en las zonas peatonales del centro"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "notas de prensa leídas con curl en elche.es (30/12/2025, 22/12/2023, 28/09/2023). No se pudo leer el texto de la ordenanza ni el BOP de Alicante (sede de la Diputación sin respuesta desde aquí), por eso no se detallan perímetro, fases posteriores a 2030 ni importes propios."
+}

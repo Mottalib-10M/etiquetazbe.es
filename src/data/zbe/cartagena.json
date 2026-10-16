@@ -1,0 +1,140 @@
+{
+ "slug": "cartagena",
+ "nombre": "Cartagena",
+ "provincia": "Murcia",
+ "ccaa": "Región de Murcia",
+ "estado": "aprobada",
+ "zonas": [
+  {
+   "id": "casco-historico",
+   "nombre": "ZBE Casco Histórico",
+   "ambito": "perímetro formado por la calle Real, calle Carlos III, calle Capitanes Ripoll, avenida Trovero Marín, la Cuesta del Batel y el paseo Alfonso XII; se mantiene el tráfico para acceso a viviendas, garajes y mercancías",
+   "ambito_en": "area bounded by Calle Real, Calle Carlos III, Calle Capitanes Ripoll, Avenida Trovero Marín, Cuesta del Batel and Paseo Alfonso XII; traffic is kept for access to homes, garages and deliveries",
+   "horario": "L-V 00:00-24:00",
+   "horario_nota": "horario de las medidas de regulación del art. 11; hoy no hay prohibiciones por etiqueta",
+   "desde": "2023-04-26",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "sin restricción por etiqueta; la ordenanza solo prevé limitar a los vehículos sin distintivo en episodios de contaminación declarados o con medidas experimentales",
+     "nota_en": "no label-based restriction; the byelaw only allows vehicles without a label to be limited during a declared pollution episode or under trial measures"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  },
+  {
+   "id": "ensanche",
+   "nombre": "ZBE Ensanche",
+   "ambito": "perímetro formado por el paseo de Alfonso XIII, la Alameda de San Antón, la avenida Reina Victoria y la calle Juan de la Cosa; calmado del tráfico con supermanzanas",
+   "ambito_en": "area bounded by Paseo de Alfonso XIII, Alameda de San Antón, Avenida Reina Victoria and Calle Juan de la Cosa; traffic calming with superblocks",
+   "horario": "L-V 00:00-24:00",
+   "horario_nota": "horario de las medidas de regulación del art. 11; hoy no hay prohibiciones por etiqueta",
+   "desde": "2023-04-26",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "sin restricción por etiqueta; la ordenanza solo prevé limitar a los vehículos sin distintivo en episodios de contaminación declarados o con medidas experimentales",
+     "nota_en": "no label-based restriction; the byelaw only allows vehicles without a label to be limited during a declared pollution episode or under trial measures"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "la ordenanza remite a la infracción grave del art. 76.z3 de la Ley de Tráfico y no fija un importe propio; hoy no hay restricciones por etiqueta que sancionar",
+  "nota_en": "the byelaw refers to the serious offence in art. 76.z3 of the Traffic Act and sets no amount of its own; there are currently no label-based restrictions to enforce"
+ },
+ "excepciones": [
+  "vehículos de personas con movilidad reducida y otros autorizados",
+  "servicios de emergencia y esenciales (médicos, funerarios, protección civil, bomberos, policía, seguridad privada)",
+  "transporte de personas con enfermedades que condicionan el uso del transporte público",
+  "matrículas extranjeras que cumplan los requisitos, autorizaciones diarias y temporales si se activa alguna regulación"
+ ],
+ "excepciones_en": [
+  "vehicles of people with reduced mobility and other authorised vehicles",
+  "emergency and essential services (medical, funeral, civil protection, fire brigade, police, private security)",
+  "transport of people whose illness prevents them using public transport",
+  "foreign plates meeting the standards, plus daily and temporary permits if any regulation is switched on"
+ ],
+ "control": "paneles y cámaras de control de accesos y emisiones (35 cámaras en la ciudad, 18 nuevas en el Ensanche) para medir tráfico, ruido y contaminación",
+ "control_en": "access and emissions monitoring cameras (35 cameras across the city, 18 new ones in the Ensanche) measuring traffic, noise and pollution",
+ "pendiente": "el Ayuntamiento afirma que las medidas en ningún caso se basarán en restricciones o sanciones; solo un episodio de contaminación declarado por la Región de Murcia activaría el protocolo",
+ "pendiente_en": "the council says measures will not be based on restrictions or fines; only a pollution episode declared by the Region of Murcia would trigger the protocol",
+ "ordenanza": {
+  "nombre": "Ordenanza para la implantación de zonas de bajas emisiones (ZBE) en la ciudad de Cartagena (BORM n.º 94, 25 de abril de 2023, anuncio 2532)",
+  "url": "https://borm.es/services/anuncio/ano/2023/numero/2532/pdf"
+ },
+ "fuentes": [
+  {
+   "url": "https://borm.es/services/anuncio/ano/2023/numero/2532/pdf",
+   "label": "BORM · Aprobación definitiva de la ordenanza ZBE de Cartagena",
+   "cita": "Aprobación definitiva de la ordenanza de zona de bajas emisiones"
+  },
+  {
+   "url": "https://borm.es/services/anuncio/ano/2023/numero/2532/pdf",
+   "label": "BORM · Ordenanza ZBE de Cartagena, art. 11 (horario)",
+   "cita": "de lunes a viernes, en horario de 0 a 24 horas"
+  },
+  {
+   "url": "https://borm.es/services/anuncio/ano/2023/numero/2532/pdf",
+   "label": "BORM · Ordenanza ZBE de Cartagena, entrada en vigor",
+   "cita": "Esta ordenanza entra en vigor al día siguiente de su publicación en el Boletín"
+  },
+  {
+   "url": "https://www.cartagena.es/detalle_noticias.asp?id=72041",
+   "label": "Ayuntamiento de Cartagena · No serán necesarias las etiquetas ambientales en la ZBE",
+   "cita": "no hay que pedirlas ni adquirirlas en la DGT"
+  },
+  {
+   "url": "https://www.cartagena.es/detalle_noticias.asp?id=74731",
+   "label": "Ayuntamiento de Cartagena · 18 nuevos paneles de control en la ZBE del Ensanche",
+   "cita": "en ningún caso estarán basadas en restricciones o sanciones"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "BORM leído en PDF (curl + pypdf); notas municipales leídas con curl en cartagena.es (7/02/2023 y 4/10/2023). «desde» = día siguiente a la publicación en el BORM (25/04/2023). No se encontró ninguna modificación posterior de la ordenanza."
+}

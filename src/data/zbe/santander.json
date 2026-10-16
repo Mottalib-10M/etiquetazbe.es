@@ -1,0 +1,119 @@
+{
+ "slug": "santander",
+ "nombre": "Santander",
+ "provincia": "Cantabria",
+ "ccaa": "Cantabria",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "ensanche",
+   "nombre": "Zona de Bajas Emisiones de Santander (Ensanche)",
+   "ambito": "Ensanche: unos 200.000 m² dentro de un perímetro de 2,5 km formado por Paseo de Pereda, Calvo Sotelo, Lealtad, Rualasal, San José, Sevilla, Guevara, Santa Lucía, Paseo Menéndez Pelayo, Calle del Sol, San Emeterio y Casimiro Sainz",
+   "ambito_en": "Ensanche district: about 200,000 m² inside a 2.5 km perimeter formed by Paseo de Pereda, Calvo Sotelo, Lealtad, Rualasal, San José, Sevilla, Guevara, Santa Lucía, Paseo Menéndez Pelayo, Calle del Sol, San Emeterio and Casimiro Sainz",
+   "horario": "L-V laborables 08:00-19:00",
+   "horario_nota": "fuera de ese horario y en fines de semana y festivos no hay restricción",
+   "desde": "2025-12-31",
+   "superficie_ha": 20,
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "desde": "2025-12-31",
+     "nota": "periodo de adaptación sin multas hasta el 28/02/2026; quedan exentos ciclomotores, históricos, PMR, servicios esenciales y otros supuestos del art. 14",
+     "nota_en": "adaptation period without fines until 28/02/2026; mopeds, historic vehicles, blue-badge holders, essential services and the other cases in art. 14 are exempt"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "personas empadronadas en la ZBE con el vehículo en el padrón del IVTM de Santander: exención directa",
+     "nota_en": "people registered as living in the zone whose vehicle pays Santander road tax: automatic exemption"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "la ordenanza extiende la restricción a los vehículos B dos años después de su entrada en vigor; la fecha exacta no se ha publicado",
+     "nota_en": "the byelaw extends the ban to B-label vehicles two years after it came into force; the exact date has not been published"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "vehiculos": [
+      "ciclomotor"
+     ],
+     "nota": "los ciclomotores están exentos",
+     "nota_en": "mopeds are exempt"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave, art. 76.z3 de la Ley de Tráfico (art. 22 de la ordenanza)",
+  "nota_en": "serious offence, art. 76.z3 of the Traffic Act (art. 22 of the byelaw)"
+ },
+ "excepciones": [
+  "vehículos de emergencias y servicios esenciales (incluidos taxis y VTC), con autorización previa",
+  "vehículos históricos, con autorización previa",
+  "ciclomotores (exención directa)",
+  "titulares de tarjeta de estacionamiento PMR o vehículos que los transporten",
+  "empadronados en la ZBE con el vehículo en el IVTM de Santander",
+  "vehículos que transportan gas natural licuado u otros productos análogos",
+  "moratoria hasta el 31/12/2030 para B (y en algunos casos A) de garajes, carga y descarga, mudanzas, comercios, talleres, hoteles e invitados de residentes"
+ ],
+ "excepciones_en": [
+  "emergency and essential-service vehicles (taxis and private-hire cars included), with prior authorisation",
+  "historic vehicles, with prior authorisation",
+  "mopeds (automatic exemption)",
+  "holders of a disabled parking card or vehicles carrying them",
+  "residents registered in the zone whose vehicle pays Santander road tax",
+  "vehicles carrying liquefied natural gas or similar products",
+  "grace period until 31/12/2030 for B (and in some cases A) vehicles of garage holders, deliveries, removals, shops, garages, hotels and residents' guests"
+ ],
+ "control": "cámaras de lectura de matrículas: once de entrada y once de salida",
+ "control_en": "number-plate cameras: eleven at the entrances and eleven at the exits",
+ "pendiente": "restricción para los vehículos B a los dos años de la entrada en vigor; desde el 1 de enero de 2031 solo podrán circular los vehículos poco contaminantes (0, ECO, C) y los exentos",
+ "pendiente_en": "B-label vehicles will be banned two years after the byelaw came into force; from 1 January 2031 only low-polluting vehicles (0, ECO, C) and exempt vehicles may enter",
+ "ordenanza": {
+  "nombre": "Ordenanza reguladora de la Zona de Bajas Emisiones de Santander (aprobación definitiva por el Pleno el 27/11/2025; BOC n.º 234, 4 de diciembre de 2025, CVE-2025-10071)",
+  "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=427898"
+ },
+ "fuentes": [
+  {
+   "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=427898",
+   "label": "Boletín Oficial de Cantabria · Ordenanza reguladora de la ZBE de Santander (BOC 4/12/2025)",
+   "cita": "lunes a viernes, de 08:00 a 19:00 horas."
+  },
+  {
+   "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=427898",
+   "label": "Boletín Oficial de Cantabria · Ordenanza ZBE, art. 22 (sanción)",
+   "cita": "se sancionará con multa de 200 euros, según"
+  },
+  {
+   "url": "https://www2.santander.es/contenido/noticia/zona-bajas-emisiones-entrara-vigor-partir-manana",
+   "label": "Ayuntamiento de Santander · La zona de Bajas Emisiones entrará en vigor a partir de mañana",
+   "cita": "estará en periodo de adaptación hasta el 28 de febrero"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "BOC leído en PDF (curl, texto extraído con pypdf); nota de prensa municipal leída con curl. No se encontró nota oficial posterior al 28/02/2026 que confirme el inicio efectivo de las multas: 'sanciona' se basa en el fin del periodo de adaptación anunciado por el Ayuntamiento."
+}

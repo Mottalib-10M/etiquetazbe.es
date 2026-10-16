@@ -8,8 +8,11 @@
 import { P, ym } from './params';
 
 export type Etiqueta = '0' | 'ECO' | 'C' | 'B' | 'A';
-export type Categoria = 'turismo' | 'moto' | 'pesado';
-export type Energia = 'gasolina' | 'diesel' | 'hev' | 'phev' | 'bev' | 'glp' | 'gnc';
+export type Categoria = 'turismo' | 'moto' | 'ciclomotor' | 'pesado';
+export type Energia = 'gasolina' | 'diesel' | 'hev' | 'hev_diesel' | 'phev' | 'phev_diesel' | 'bev' | 'glp' | 'gnc';
+/** Híbridos con motor térmico diésel : la ECO exige la C del diésel (Euro 6), no la de la gasolina (RGV, anexo II.E). */
+export const esHibrido = (e: Energia) => e === 'hev' || e === 'hev_diesel' || e === 'phev' || e === 'phev_diesel';
+export const esPhev = (e: Energia) => e === 'phev' || e === 'phev_diesel';
 export interface Vehiculo {
   categoria: Categoria;
   energia: Energia;
@@ -45,13 +48,29 @@ function combustion(v: Vehiculo, combustible: 'gasolina' | 'diesel'): ResultadoE
     if (f >= ym(D.pesado.b_desde)) return { etiqueta: 'B', base: 'fecha', dudoso: false, regla: 'pesado_fecha' };
     return { etiqueta: 'A', base: 'fecha', dudoso: false, regla: 'pesado_fecha' };
   }
-  if (v.categoria === 'moto') {
-    if (euro) return { etiqueta: euro >= 3 ? 'C' : D.moto.b_euro.includes(euro) ? 'B' : 'A', base: 'euro', dudoso: false, regla: 'moto_euro' };
+  if (v.categoria === 'moto' || v.categoria === 'ciclomotor') {
+    const M = D.moto;
+    // Anexo II.E del RGV : B = Euro 2 ; C = Euro 3 y Euro 4. La Euro 5 no figura en el texto : C, marcada dudosa.
+    if (euro) {
+      if (M.c_euro.includes(euro)) return { etiqueta: 'C', base: 'euro', dudoso: false, regla: 'moto_euro' };
+      if (euro >= 5) return { etiqueta: 'C', base: 'euro', dudoso: true, alternativa: 'B', regla: 'moto_euro5' };
+      return { etiqueta: M.b_euro.includes(euro) ? 'B' : 'A', base: 'euro', dudoso: false, regla: 'moto_euro' };
+    }
     const f = ym(v.matriculacion);
-    // La DGT no publica fechas para la categoría L : el resultado por fecha siempre es orientativo.
-    if (f >= ym(D.moto.c_desde)) return { etiqueta: 'C', base: 'fecha', dudoso: true, alternativa: 'B', regla: 'moto_fecha' };
-    if (f >= ym(D.moto.b_desde)) return { etiqueta: 'B', base: 'fecha', dudoso: true, alternativa: 'C', regla: 'moto_fecha' };
-    return { etiqueta: 'A', base: 'fecha', dudoso: true, alternativa: 'B', regla: 'moto_fecha' };
+    // Fechas de obligatoriedad para todas las matriculaciones nuevas (Directiva 2002/51/CE, Reglamento (UE) 168/2013) ;
+    // entre la fecha de los nuevos tipos y la de todos, un modelo pudo estar ya homologado en la etapa siguiente.
+    if (v.categoria === 'ciclomotor') {
+      const C = D.ciclomotor;
+      if (f >= ym(C.c_desde)) return { etiqueta: 'C', base: 'fecha', dudoso: false, regla: 'ciclomotor_fecha' };
+      if (f >= ym(C.c_nuevos_tipos)) return { etiqueta: 'B', base: 'fecha', dudoso: true, alternativa: 'C', regla: 'ciclomotor_transicion' };
+      if (f >= ym(C.b_desde)) return { etiqueta: 'B', base: 'fecha', dudoso: false, regla: 'ciclomotor_fecha' };
+      return { etiqueta: 'A', base: 'fecha', dudoso: true, alternativa: 'B', regla: 'ciclomotor_fecha' };
+    }
+    if (f >= ym(M.c_desde)) return { etiqueta: 'C', base: 'fecha', dudoso: false, regla: 'moto_fecha' };
+    if (f >= ym(M.c_nuevos_tipos)) return { etiqueta: 'B', base: 'fecha', dudoso: true, alternativa: 'C', regla: 'moto_transicion' };
+    if (f >= ym(M.b_desde)) return { etiqueta: 'B', base: 'fecha', dudoso: false, regla: 'moto_fecha' };
+    if (f >= ym(M.b_nuevos_tipos)) return { etiqueta: 'A', base: 'fecha', dudoso: true, alternativa: 'B', regla: 'moto_transicion' };
+    return { etiqueta: 'A', base: 'fecha', dudoso: false, regla: 'moto_fecha' };
   }
   const T = D.turismo;
   if (euro) {
@@ -75,12 +94,14 @@ function combustion(v: Vehiculo, combustible: 'gasolina' | 'diesel'): ResultadoE
 export function etiquetaDe(v: Vehiculo): ResultadoEtiqueta {
   const autonomia = v.autonomiaKm ?? 0;
   if (v.energia === 'bev') return { etiqueta: '0', base: 'tecnologia', dudoso: false, regla: 'bev' };
-  if (v.energia === 'phev' && autonomia >= 40) return { etiqueta: '0', base: 'tecnologia', dudoso: false, regla: 'phev40' };
-  if (v.energia === 'phev' || v.energia === 'hev' || v.energia === 'glp' || v.energia === 'gnc') {
-    // Motos : la DGT da la ECO a PHEV < 40 km y HEV sin exigir norma C.
-    if (v.categoria === 'moto' && (v.energia === 'phev' || v.energia === 'hev')) return { etiqueta: 'ECO', base: 'tecnologia', dudoso: false, regla: 'moto_eco' };
-    // Turismos y pesados : ECO solo si además cumple los criterios de la C ; los de gas se comparan como gasolina.
-    const base = combustion(v, 'gasolina');
+  if (esPhev(v.energia) && autonomia >= 40) return { etiqueta: '0', base: 'tecnologia', dudoso: false, regla: 'phev40' };
+  if (esHibrido(v.energia) || v.energia === 'glp' || v.energia === 'gnc') {
+    // Categoría L : la ECO va a PHEV < 40 km y HEV sin exigir los criterios de la C (RGV, anexo II.E).
+    if ((v.categoria === 'moto' || v.categoria === 'ciclomotor') && esHibrido(v.energia)) return { etiqueta: 'ECO', base: 'tecnologia', dudoso: false, regla: 'moto_eco' };
+    // Turismos y pesados : « en todo caso, deberán cumplir los criterios de la clasificación C » del carburante
+    // de su motor térmico (diésel Euro 6 ; gasolina Euro 4, 5 o 6). Los de gas se comparan como gasolina.
+    const diesel = v.energia === 'hev_diesel' || v.energia === 'phev_diesel';
+    const base = combustion(v, diesel ? 'diesel' : 'gasolina');
     if (base.etiqueta === 'C') return { ...base, etiqueta: 'ECO', base: base.base === 'euro' ? 'euro' : 'tecnologia', regla: 'eco' };
     return { ...base, regla: `eco_sin_c_${base.regla}`, alternativa: base.dudoso ? 'ECO' : undefined };
   }
@@ -95,6 +116,7 @@ export function fechasMinimas() {
     diesel: { C: T.c_diesel_desde, B: T.b_diesel_desde },
     pesado: { C: D.pesado.c_desde, B: D.pesado.b_desde },
     moto: { C: D.moto.c_desde, B: D.moto.b_desde },
+    ciclomotor: { C: D.ciclomotor.c_desde, B: D.ciclomotor.b_desde },
   };
 }
 

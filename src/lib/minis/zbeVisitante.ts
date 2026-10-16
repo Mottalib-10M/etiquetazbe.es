@@ -1,4 +1,4 @@
-/** Para un visitante con una etiqueta : en cuántas de las 15 ZBE entra libremente hoy y en qué fecha. */
+/** Para un visitante con una etiqueta : en cuántas de las ZBE entra libremente hoy y en qué fecha. */
 import { CIUDADES, etiquetasRestringidas } from '../engine/zbe';
 import { ETIQUETA_NOMBRE } from '../textos';
 import { T, HOY, fecha, type L } from './_kit';

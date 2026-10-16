@@ -1,0 +1,184 @@
+{
+ "slug": "leon",
+ "nombre": "León",
+ "provincia": "León",
+ "ccaa": "Castilla y León",
+ "estado": "aprobada",
+ "zonas": [
+  {
+   "id": "app",
+   "nombre": "ZBE León · Ámbito 1: Área de prioridad peatonal (APP) de acceso restringido",
+   "ambito": "vías y áreas de prioridad peatonal con acceso parcialmente restringido del Anexo II de la Ordenanza de movilidad (centro)",
+   "ambito_en": "pedestrian-priority streets and areas with partly restricted access listed in Annex II of the Mobility Byelaw (city centre)",
+   "horario": "24h",
+   "horario_nota": "carga y descarga los días laborables de 6:00 a 11:00",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "acceso solo para autorizados (residentes con garaje, usuarios de garajes, servicios, taxis/VTC, PMR, carga y descarga laborables de 6 a 11 h, etc.), sea cual sea la etiqueta",
+     "nota_en": "access for authorised vehicles only (residents with a garage, garage users, services, taxis/private hire, blue-badge holders, deliveries on working days 6-11 am, etc.), whatever the label"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "acceso solo para autorizados (residentes con garaje, usuarios de garajes, servicios, taxis/VTC, PMR, carga y descarga laborables de 6 a 11 h, etc.), sea cual sea la etiqueta",
+     "nota_en": "access for authorised vehicles only (residents with a garage, garage users, services, taxis/private hire, blue-badge holders, deliveries on working days 6-11 am, etc.), whatever the label"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "acceso solo para autorizados (residentes con garaje, usuarios de garajes, servicios, taxis/VTC, PMR, carga y descarga laborables de 6 a 11 h, etc.), sea cual sea la etiqueta",
+     "nota_en": "access for authorised vehicles only (residents with a garage, garage users, services, taxis/private hire, blue-badge holders, deliveries on working days 6-11 am, etc.), whatever the label"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "acceso solo para autorizados (residentes con garaje, usuarios de garajes, servicios, taxis/VTC, PMR, carga y descarga laborables de 6 a 11 h, etc.), sea cual sea la etiqueta",
+     "nota_en": "access for authorised vehicles only (residents with a garage, garage users, services, taxis/private hire, blue-badge holders, deliveries on working days 6-11 am, etc.), whatever the label"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "acceso solo para autorizados (residentes con garaje, usuarios de garajes, servicios, taxis/VTC, PMR, carga y descarga laborables de 6 a 11 h, etc.), sea cual sea la etiqueta",
+     "nota_en": "access for authorised vehicles only (residents with a garage, garage users, services, taxis/private hire, blue-badge holders, deliveries on working days 6-11 am, etc.), whatever the label"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "condicionado",
+     "nota": "residentes empadronados con garaje: acceso sin restricciones; sin garaje: una vez al día, 30 minutos para carga y descarga",
+     "nota_en": "registered residents with a garage: unrestricted access; without a garage: once a day, 30 minutes for loading"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "residentes",
+     "acceso": "condicionado",
+     "nota": "residentes empadronados con garaje: acceso sin restricciones; sin garaje: una vez al día, 30 minutos para carga y descarga",
+     "nota_en": "registered residents with a garage: unrestricted access; without a garage: once a day, 30 minutes for loading"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "residentes",
+     "acceso": "condicionado",
+     "nota": "residentes empadronados con garaje: acceso sin restricciones; sin garaje: una vez al día, 30 minutos para carga y descarga",
+     "nota_en": "registered residents with a garage: unrestricted access; without a garage: once a day, 30 minutes for loading"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "residentes",
+     "acceso": "condicionado",
+     "nota": "residentes empadronados con garaje: acceso sin restricciones; sin garaje: una vez al día, 30 minutos para carga y descarga",
+     "nota_en": "registered residents with a garage: unrestricted access; without a garage: once a day, 30 minutes for loading"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "residentes",
+     "acceso": "condicionado",
+     "nota": "residentes empadronados con garaje: acceso sin restricciones; sin garaje: una vez al día, 30 minutos para carga y descarga",
+     "nota_en": "registered residents with a garage: unrestricted access; without a garage: once a day, 30 minutes for loading"
+    }
+   ]
+  },
+  {
+   "id": "ensanche",
+   "nombre": "ZBE León · Ámbito 2: Zona de Bajas Emisiones Ensanche",
+   "ambito": "Ensanche, según la delimitación del Anexo V de la Ordenanza de movilidad",
+   "ambito_en": "Ensanche district, as mapped in Annex V of the Mobility Byelaw",
+   "horario": "solo en nivel de alerta por contaminación",
+   "horario_nota": "el régimen de autorizaciones únicamente se activa al declararse el nivel de alerta del protocolo de NO2 y PM10 (Anexo VIII)",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "condicionado",
+     "nota": "libre en condiciones normales; solo si se declara el NIVEL DE ALERTA por NO2 y/o PM10 quedan restringidos a los vehículos inscritos en el Registro municipal (servicios, residentes, trabajadores, PMR, mayores de 65...)",
+     "nota_en": "free in normal conditions; only when an NO2 and/or PM10 ALERT LEVEL is declared are they limited to vehicles entered in the municipal register (services, residents, workers, blue-badge holders, over-65s...)"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "condicionado",
+     "nota": "libre en condiciones normales; solo si se declara el NIVEL DE ALERTA por NO2 y/o PM10 quedan restringidos a los vehículos inscritos en el Registro municipal (servicios, residentes, trabajadores, PMR, mayores de 65...)",
+     "nota_en": "free in normal conditions; only when an NO2 and/or PM10 ALERT LEVEL is declared are they limited to vehicles entered in the municipal register (services, residents, workers, blue-badge holders, over-65s...)"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "condicionado",
+     "nota": "libre en condiciones normales; en NIVEL DE ALERTA pueden acceder y estacionar si están inscritos en el Registro municipal",
+     "nota_en": "free in normal conditions; at ALERT LEVEL they may enter and park if entered in the municipal register"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "libre acceso también en nivel de alerta",
+     "nota_en": "free access even at alert level"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "libre acceso también en nivel de alerta",
+     "nota_en": "free access even at alert level"
+    }
+   ],
+   "horario_en": "only when a pollution alert is declared"
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "art. 104 y 103 de la Ordenanza de movilidad: infracción grave, 200 euros, con la reducción legal por pronto pago",
+  "nota_en": "arts. 104 and 103 of the Mobility Byelaw: serious offence, 200 euros, with the statutory early-payment discount"
+ },
+ "excepciones": [
+  "APP: peatones, bicicletas y VMP; emergencias, funerarios, grúa, limpieza y servicios municipales",
+  "APP: residentes empadronados y usuarios de garajes con cochera",
+  "APP: taxis y VTC para subir y bajar pasajeros; PMR",
+  "APP: carga y descarga los días laborables de 6:00 a 11:00",
+  "Ensanche (en alerta): Fuerzas de Seguridad, emergencias, bicicletas y VMP, y vehículos ECO y 0 sin autorización",
+  "Ensanche (en alerta): servicios, residentes y usuarios de garajes, trabajadores, PMR y mayores de 65 inscritos en el Registro municipal"
+ ],
+ "excepciones_en": [
+  "APP: pedestrians, bicycles and personal mobility vehicles; emergency, funeral, tow-truck, cleaning and council services",
+  "APP: registered residents and garage users with a garage",
+  "APP: taxis and private-hire cars to pick up and drop off; blue-badge holders",
+  "APP: deliveries on working days from 6:00 to 11:00",
+  "Ensanche (alert level): security forces, emergency services, bicycles and personal mobility vehicles, and ECO and 0 vehicles without authorisation",
+  "Ensanche (alert level): services, residents and garage users, workers, blue-badge holders and over-65s entered in the municipal register"
+ ],
+ "control": "sistema automático y plataforma tecnológica municipal; cámaras con reconocimiento de matrícula, vigilancia de la Policía Local o balizamiento",
+ "control_en": "automatic system and council technology platform; number-plate recognition cameras, Local Police patrols or bollards",
+ "pendiente": "no se ha localizado en una fuente oficial la fecha a partir de la cual el Ayuntamiento sanciona efectivamente en el área de prioridad peatonal",
+ "pendiente_en": "no official source was found giving the date from which the council actually fines in the pedestrian-priority area",
+ "ordenanza": {
+  "nombre": "Ordenanza municipal de movilidad de la ciudad de León (Título IV y Anexos V-VIII; aprobación definitiva por el Pleno el 26/9/2025; BOP de León n.º 196, 16 de octubre de 2025)",
+  "url": "https://bop.dipuleon.es/export/sites/bop/.galleries/Documentos-BOPs-en-PDF/bop-16_10_2025-ca9ad347-a9be-11f0-9155-dd38f9a6a5be-1760590237115.pdf"
+ },
+ "fuentes": [
+  {
+   "url": "https://bop.dipuleon.es/export/sites/bop/.galleries/Documentos-BOPs-en-PDF/bop-16_10_2025-ca9ad347-a9be-11f0-9155-dd38f9a6a5be-1760590237115.pdf",
+   "label": "BOP de León n.º 196 · Aprobación definitiva de la Ordenanza de movilidad",
+   "cita": "Aprobación definitiva de la Ordenanza de movilidad"
+  },
+  {
+   "url": "https://bop.dipuleon.es/export/sites/bop/.galleries/Documentos-BOPs-en-PDF/bop-16_10_2025-ca9ad347-a9be-11f0-9155-dd38f9a6a5be-1760590237115.pdf",
+   "label": "BOP de León n.º 196 · Acuerdo plenario de 26 de septiembre de 2025",
+   "cita": "en sesión celebrada con fecha 26 de septiembre de 2025"
+  },
+  {
+   "url": "https://bop.dipuleon.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1754283163139-final-49ec6ba5-2.pdf",
+   "label": "BOP de León n.º 146 · Ampliación de la información pública de la Ordenanza de movilidad y del proyecto técnico de ZBE",
+   "cita": "técnico de Zona de Bajas Emisiones, que figura como Anexo VII"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "El texto de la ordenanza en el BOP n.º 196 es una imagen escaneada (311 páginas): los artículos 26-33, 40-51, 103-104, las disposiciones finales y los Anexos V, VI y VIII se leyeron por OCR (tesseract) del PDF oficial descargado con curl; por eso las citas solo usan la capa de texto (portada del anuncio). Fecha de entrada en vigor calculada: 15 días hábiles tras la publicación del 16/10/2025 (disposición final segunda)."
+}

@@ -1,0 +1,119 @@
+{
+ "slug": "terrassa",
+ "nombre": "Terrassa",
+ "provincia": "Barcelona",
+ "ccaa": "Cataluña",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "centre",
+   "nombre": "Zona de Baixes Emissions de Terrassa",
+   "ambito": "calles dentro del área delimitada por el paseo del Vint-i-dos de Juliol, el parque de Vallparadís, la carretera de Montcada, la carretera de Martorell, la avenida d'Àngel Sallent y la calle de Santa Maria de Mazzarel·lo; estas vías quedan excluidas",
+   "ambito_en": "streets inside the area bounded by Passeig del Vint-i-dos de Juliol, Vallparadís park, Carretera de Montcada, Carretera de Martorell, Avinguda d'Àngel Sallent and Carrer de Santa Maria de Mazzarel·lo; those roads themselves are excluded",
+   "horario": "L-V laborables 07:00-20:00",
+   "desde": "2024-05-20",
+   "superficie_km2": 2.02,
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "desde": "2025-05-01",
+     "nota": "turismos y motos; furgonetas y camiones (N1, N2, N3) y autobuses (M2, M3) sancionables desde el 1/5/2026; máximo 24 días de acceso al año; la ordenanza condiciona las multas a la implantación efectiva del registro de autorizaciones",
+     "nota_en": "cars and motorbikes; vans and lorries (N1, N2, N3) and buses (M2, M3) can be fined from 1/5/2026; no more than 24 days of access a year; the byelaw makes fines conditional on the permit register actually being in place"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "condicionado",
+     "nota": "autorización temporal para empadronados dentro de la ZBE con vehículo censado allí a la entrada en vigor de la ordenanza, y para titulares de plaza de aparcamiento o permiso de áreas peatonales en la zona; vigente hasta la revisión de la ZBE",
+     "nota_en": "temporary permit for people registered as living in the zone with a vehicle registered there when the byelaw took effect, and for holders of a parking space or pedestrian-area pass in the zone; valid until the zone is reviewed"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "infracción grave (art. 76.z3 de la Ley de Tráfico) según el cuadro de infracciones municipal; +30 % por reincidencia o durante un episodio de contaminación",
+  "nota_en": "serious offence (art. 76.z3 of the Traffic Act) under the council's table of offences; +30% for a repeat offence or during a pollution episode"
+ },
+ "excepciones": [
+  "vehículos de personas con movilidad reducida, servicios de emergencia y esenciales, transporte de personas con enfermedades o discapacidad, y matrículas extranjeras con requisitos equivalentes",
+  "autorización diaria de acceso esporádico: máximo 24 días al año (1 de enero a 31 de diciembre), también para vehículos extranjeros sin requisitos",
+  "vehículos que se dirigen a aparcamientos públicos de la ZBE con convenio",
+  "rentas inferiores a 2 veces el IPREM (1 año renovable), profesionales con furgoneta, camión o autobús a los que faltan como máximo 5 años de cotización, compra de vehículo nuevo",
+  "vehículos singulares, actividades autorizadas, tratamientos médicos periódicos y pruebas de taller",
+  "la autorización se tramita como máximo 24 horas después del acceso (3 días si fue una urgencia médica)"
+ ],
+ "excepciones_en": [
+  "vehicles for people with reduced mobility, emergency and essential services, transport of people with illness or disability, and foreign plates meeting equivalent standards",
+  "day pass for occasional access: no more than 24 days a year (1 January to 31 December), also for foreign vehicles that do not meet the standards",
+  "vehicles heading to public car parks in the zone that have signed an agreement",
+  "incomes below twice the IPREM (1 year, renewable), workers with a van, lorry or bus at most 5 years of contributions from retirement, buyers of a new vehicle",
+  "special-purpose vehicles, authorised activities, regular medical treatment and garage test drives",
+  "the permit is requested no later than 24 hours after entering (3 days after a medical emergency)"
+ ],
+ "control": "sistema automático de lectura de matrículas, además del control de la Policía Municipal",
+ "control_en": "automatic number-plate recognition, plus checks by the local police",
+ "pendiente": "la ordenanza se revisará al menos a los tres años de su establecimiento; prevé una fase 2 hasta la avenida de Barcelona según el Plan de Movilidad Urbana",
+ "pendiente_en": "the byelaw will be reviewed at least three years after the zone was set up; it foresees a phase 2 extending to Avinguda de Barcelona under the Urban Mobility Plan",
+ "ordenanza": {
+  "nombre": "Ordenança per la qual es fixen els criteris d'accés, circulació i estacionament de vehicles a la Zona de Baixes Emissions de Terrassa (modificación aprobada definitivamente el 31/10/2025, BOPB 14-11-2025, CVE 202510175160)",
+  "url": "https://bop.diba.cat/anuncio/ver-pdf/3855257"
+ },
+ "fuentes": [
+  {
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3855257",
+   "label": "BOPB · Modificación de la Ordenança de la ZBE de Terrassa (14/11/2025)",
+   "cita": "horari de 07:00 hores a 20:00 hores."
+  },
+  {
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3855257",
+   "label": "BOPB · Ordenança ZBE de Terrassa: entrada en vigor de la ZBE",
+   "cita": "d’entrada en vigor la ZBE va ser el 20 de maig de 2024"
+  },
+  {
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3855257",
+   "label": "BOPB · Ordenança ZBE de Terrassa: ámbito (anexo 1)",
+   "cita": "Àngel Sallent i el carrer de Santa Maria de Mazzarel·lo"
+  },
+  {
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3855257",
+   "label": "BOPB · Ordenança ZBE de Terrassa: calendario de sanciones",
+   "cita": "fins el 30 d’abril de 2026"
+  },
+  {
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3855257",
+   "label": "BOPB · Ordenança ZBE de Terrassa: 24 días al año (anexo 3)",
+   "cita": "nombre màxim de 24 dies d’accés a la ZBE"
+  },
+  {
+   "url": "https://bop.diba.cat/anuncio/ver-pdf/3844203",
+   "label": "BOPB · Ajuntament de Terrassa, cuadro de infracciones de tráfico (03/11/2025)",
+   "cita": "Zona de baixes emissions"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "terrassa.cat bloquea el robot (Cloudflare, HTTP 403) y no hay copia en web.archive.org: datos leídos solo en los PDF del BOPB (extraídos con pypdf). La web municipal anunciaría un periodo de adaptación sin multas del 3 al 30 de noviembre (sin año), no verificado en la fuente; la ordenanza condiciona las sanciones a la implantación efectiva del registro de autorizaciones"
+}

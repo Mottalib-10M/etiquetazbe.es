@@ -62,11 +62,36 @@ sont classés.
 
 Pas de marché de leads direct (assurance auto en arrière-plan, mais la requête est informative). Frein faible.
 
+## Passe qualité du 2026-10-16 (BRIEF-QUALITE-2026-10-16)
+
+- **ZBE : 15 → 38 villes.** Ajoutées, chacune lue dans son ordonnance (BOP/BOE/boletín autonómico) ou sur la page municipale :
+  A Coruña, Albacete, Alicante, Almería, Burgos, Cádiz, Cartagena, Castellón, Córdoba, Elche, Girona, L'Hospitalet,
+  Jerez, León, Lleida, Oviedo, Sabadell, Salamanca, Santa Cruz de Tenerife, Santander, Tarragona, Terrassa, Vigo
+  (une page es + en chacune). Lleida : suspendue depuis le 22/01/2026 (Rodalies), nouvel état « suspendida ».
+- **Sans ordonnance publiée ni date officielle (pas de page, cité dans la méthode)** : Murcia, Gijón (projet de la
+  Junta de Gobierno du 09/06/2026), Huelva (approbation initiale du 27/03/2026), Logroño, Las Palmas ; Badalona
+  (délimitation suspendue).
+- **IVTM : 13 → 19 communes, bonificaciones lues pour toutes.** Málaga, Vitoria-Gasteiz, Donostia, Móstoles lues ;
+  ajout de Sevilla, Palma, Alicante, Las Palmas, Pamplona (tranches forales de Navarre), L'Hospitalet. Pas de page
+  IVTM de plus : leur cuadro s'affiche sur la page ZBE de la ville (règle des 150 pages). Non trouvées en source
+  officielle 2026 : Bilbao, Granada, Getafe, Vigo, Gijón, Elche. Valladolid : le 50 % hybride exclut le diésel (codé).
+- **17 sources refusées au robot relues à la main le 16/10/2026** (web.archive, BOP, Portail de transparence,
+  WebFetch) : `research/verificacion-manual.json` (date, méthode, URL lue). 7 corrections appliquées (Madrid : motos
+  et fourgons sans étiquette autorisés temporairement, Plaza Elíptica 22/02/2022 ; Granada : entrée en vigueur au
+  01/10/2025, BOP n.º 178 ; Sevilla : formulaires M021/M022, exceptions ; Bilbao : cyclomoteurs, garages). Affirmations
+  non vérifiables retirées (Madrid « aparcar solo en su barrio », 20 invitations ; Bilbao moratoires 1955/DAR ;
+  Sevilla nouvelle réglementation de mars 2026).
+- **Étiquette** : hybrides diésel (HEV/PHEV) évalués avec le critère diésel (Euro 6), source Anexo II.E RGV ;
+  motos datées par la Directive 2002/51/CE et le Règlement (UE) 168/2013, cyclomoteurs à part (pas d'Euro 3) ;
+  Euro 5 moto = C marquée douteuse. Règles ZBE par catégorie de véhicule (`vehiculos`).
+- Pages indexables : 96 → 142 (71 es + 71 en).
+
 ## Limites connues
 
-- Villes couvertes : 15 sur ≈ 149 communes obligées ; on n'a retenu que celles dont la règle se lit sur une
-  source officielle. Alicante, Murcia, Córdoba, Vigo, A Coruña, Gijón : ZBE non retenues faute de source
-  officielle lisible le 15/10/2026 (recherche web épuisée en cours de chantier) ; à ajouter.
-- IVTM : 13 communes ; bonifications non lues pour Málaga, Vitoria-Gasteiz, Donostia et Móstoles (le
-  simulateur ne les applique pas et le dit).
-- Motos : la DGT ne publie pas de dates pour la catégorie L ; résultat par date toujours « orientatif ».
+- 38 villes sur ≈ 149 communes obligées ; une ville n'entre que si sa règle se lit dans une source officielle.
+- Dates non publiées : début des amendes à Cádiz, Jerez, Oviedo ; entrée en vigueur de Vigo (publication intégrale au
+  BOP non vérifiée) ; date exacte de la B à Santander (« deux ans après l'entrée en vigueur »).
+- Motos : la Euro 5 n'est pas nommée par le RGV (C par logique, marquée douteuse) ; les micro-hybrides ne sont
+  traités que s'ils figurent comme HEV au registre.
+- Sources lisibles seulement à la main : bilbao.eus, granada.org, madrid.es, sevilla.org, web.sabadell.cat (archive)
+  — consignées dans `research/verificacion-manual.json`.

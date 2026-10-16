@@ -1,4 +1,5 @@
 import { definePage } from '../../lib/page-types';
+import { N_CIUDADES, restringen, nombres } from '../../lib/resumen-ciudades';
 export default definePage({
   id: 'coche-extranjero-zbe', group: 'guia', order: 4, mini: 'extranjero',
   related: ['zbe-barcelona', 'zbe-palma', 'zbe-san-sebastian', 'pegatina-dgt'], sources: ['dgt_distintivo', 'ley7_2021', 'lsv'],
@@ -17,7 +18,7 @@ export default definePage({
     ],
     body: (h) => `
 <h2>La equivalencia, ciudad por ciudad</h2>
-<p>La regla de fondo es la misma en todas partes: tu coche vale lo que vale su norma Euro y su tecnología. Un gasolina Euro 4 o superior equivale a la C, un diésel Euro 6 a la C, un diésel Euro 4 o 5 a la B, un gasolina Euro 3 a la B, y por debajo no hay etiqueta. Los híbridos, de gas y eléctricos equivalen a la ECO o la 0 según su autonomía. El mini-simulador de arriba hace la conversión y cuenta en cuántas de las 15 ciudades esa etiqueta tendría restricción hoy.</p>
+<p>La regla de fondo es la misma en todas partes: tu coche vale lo que vale su norma Euro y su tecnología. Un gasolina Euro 4 o superior equivale a la C, un diésel Euro 6 a la C, un diésel Euro 4 o 5 a la B, un gasolina Euro 3 a la B, y por debajo no hay etiqueta. Los híbridos, de gas y eléctricos equivalen a la ECO o la 0 según su autonomía. El mini-simulador de arriba hace la conversión y cuenta en cuántas de las ${N_CIUDADES} ciudades esa etiqueta tendría restricción hoy.</p>
 <p>Lo que cambia es el trámite. En Barcelona y su área metropolitana, el registro del vehículo extranjero es obligatorio; si cumple los requisitos técnicos, queda autorizado sin restricciones. En Donostia hay que pedir autorización siempre y la web municipal lista las fechas de matriculación que equivalen a cada nivel. En Palma la inscripción se hace en la web de movilidad con pasaporte, ficha técnica, permiso de circulación, prueba de titularidad y el billete de llegada a la isla. En Bilbao, un vehículo extranjero equivalente a una A o una B no puede entrar salvo moratorias concretas.</p>
 <h2>Lo que conviene llevar en el coche</h2>
 <p>La ficha técnica o el certificado de conformidad del fabricante (COC), donde figura la norma Euro, y el permiso de circulación. Son los documentos que piden los registros municipales y los que te servirán para alegar si recibes una multa por un error de clasificación. Si el coche es de empresa o de renting extranjero, también la prueba de que estás autorizado a usarlo.</p>
@@ -43,7 +44,7 @@ export default definePage({
     ],
     body: (h) => `
 <h2>Equivalence, city by city</h2>
-<p>The underlying rule is the same everywhere: your car counts for its Euro standard and technology. A petrol car of Euro 4 or above matches a C, a Euro 6 diesel a C, a Euro 4 or 5 diesel a B, a Euro 3 petrol car a B, and anything below gets no label. Hybrids, gas and electric cars match ECO or zero depending on range. The mini calculator above does the conversion and counts how many of the 15 cities would restrict that label today.</p>
+<p>The underlying rule is the same everywhere: your car counts for its Euro standard and technology. A petrol car of Euro 4 or above matches a C, a Euro 6 diesel a C, a Euro 4 or 5 diesel a B, a Euro 3 petrol car a B, and anything below gets no label. Hybrids, gas and electric cars match ECO or zero depending on range. The mini calculator above does the conversion and counts how many of the ${N_CIUDADES} cities would restrict that label today.</p>
 <p>What changes is the paperwork. In Barcelona and its metropolitan area, registering a foreign vehicle is compulsory; if it meets the technical requirements it is authorised without restriction. In Donostia you must always apply for authorisation, and the council website lists the registration dates that match each level. In Palma you register on the mobility website with a passport, technical document, registration certificate, proof of ownership and your ticket to the island. In Bilbao, a foreign vehicle equivalent to an A or B may not enter except under specific grace periods.</p>
 <h2>What to keep in the car</h2>
 <p>The technical document or manufacturer’s certificate of conformity (COC), which shows the Euro standard, and the registration certificate. These are what council registers ask for and what you will need to appeal a fine caused by a classification error. For a company or foreign-leased car, also proof that you are allowed to use it.</p>

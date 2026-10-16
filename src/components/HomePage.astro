@@ -1,7 +1,7 @@
 ---
 /**
  * Accueil (pilier, RECETTE §5) : titre, simulateur ZBE + étiquette + IVTM sans défiler, bloc citable replié, état
- * des 15 ZBE au jour du build, les cinq étiquettes, puis le texte, la FAQ et les sources.
+ * des ZBE au jour du build, les cinq étiquettes, puis le texte, la FAQ et les sources.
  */
 import PageLayout from '../layouts/PageLayout.astro';
 import ToolSwitch from './ToolSwitch.astro';
@@ -14,6 +14,7 @@ import { label } from '../i18n/nav';
 import { helpers } from '../lib/helpers';
 import { P, type SourceKey } from '../lib/engine/params';
 import { CIUDADES, etiquetasRestringidas, calendario } from '../lib/engine/zbe';
+import { MUNICIPIOS } from '../lib/engine/ivtm';
 import { ETIQUETA_NOMBRE, estadoTexto } from '../lib/textos';
 import { displayDate } from '../lib/format';
 import { enlaces } from '../lib/enlaces';
@@ -36,7 +37,7 @@ const has = (id: string) => ROUTES.some((r) => r.id === id);
 ---
 <PageLayout title={x.title} description={x.description} lang={lang} jsonLd={jsonLd} faqs={faqs} sources={sources}>
   <header class="mb-4">
-    <p class="text-sm font-semibold uppercase tracking-wide text-accent-700">{es ? 'Criterios de la DGT · 15 ordenanzas de ZBE · 13 ordenanzas fiscales 2026' : 'DGT criteria · 15 ZBE byelaws · 13 road-tax byelaws for 2026'}</p>
+    <p class="text-sm font-semibold uppercase tracking-wide text-accent-700">{es ? `Criterios de la DGT · ${CIUDADES.length} ordenanzas de ZBE · ${MUNICIPIOS.length} ordenanzas fiscales 2026` : `DGT criteria · ${CIUDADES.length} ZBE byelaws · ${MUNICIPIOS.length} road-tax byelaws for 2026`}</p>
     <h1 class="mt-1 text-3xl font-bold text-navy-900 md:text-[2.5rem] md:leading-tight">{x.h1}</h1>
     <p class="mt-2 text-lg text-navy-700">{x.intro}</p>
   </header>
@@ -49,7 +50,7 @@ const has = (id: string) => ROUTES.some((r) => r.id === id);
   </section>
   <AdSlot slot="home-1" />
   <section class="mt-10 border-t border-navy-200 pt-6" aria-labelledby="mapa" data-chrome>
-    <h2 id="mapa" class="text-2xl font-bold text-navy-900">{es ? `Las 15 ZBE de esta web a ${dt(hoy)}` : `The 15 ZBEs on this site as of ${dt(hoy)}`}</h2>
+    <h2 id="mapa" class="text-2xl font-bold text-navy-900">{es ? `Las ${CIUDADES.length} ZBE de esta web a ${dt(hoy)}` : `The ${CIUDADES.length} ZBEs on this site as of ${dt(hoy)}`}</h2>
     <p class="mt-2 text-navy-700">{es ? 'Etiquetas que no circulan libremente para un vehículo de fuera, y el próximo endurecimiento fijado en la ordenanza.' : 'Labels that cannot drive freely for an out-of-town vehicle, and the next tightening set in the byelaw.'}</p>
     <ul class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
       {CIUDADES.map((c) => { const r = etiquetasRestringidas(c, hoy); const prox = calendario(c, hoy)[0]; return (

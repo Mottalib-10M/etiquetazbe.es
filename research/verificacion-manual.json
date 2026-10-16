@@ -1,0 +1,277 @@
+{
+ "_lisezmoi": "Fuentes oficiales que rechazan la descarga automática, verificadas a mano: fecha, método, URL realmente leída y resultado. verificar_fuentes.py las marca « verificada_a_mano » en lugar de « bloqueada ».",
+ "entradas": [
+  {
+   "origen": "zbe:bilbao",
+   "url": "https://www.bilbao.eus/cs/Satellite?c=Page&cid=1279235265919&language=es&pageid=1279235265919&pagename=Bilbaonet%2FPage%2FBIO_contenidoFinal",
+   "fecha": "2026-10-16",
+   "metodo": "archive.org (WebFetch 403, curl navegador 403)",
+   "url_leida": "http://web.archive.org/web/20241214032415/https://www.bilbao.eus/cs/Satellite?pageid=1279235265919&pagename=Bilbaonet%2FPage%2FBIO_contenidoFinal&c=Page&cid=1279235265919&language=es",
+   "resultado": "confirmado",
+   "detalle": "Copia del 14/12/2024. Confirma: control por cámaras cotejadas con la base de la DGT y sin pegatina física; B restringidos a partir del 15/06/2025; acceso libre de residentes empadronados antes del 15/06/2024; PMR, emergencias; moratorias para residentes empadronados después del 15/06/2024, parcela de garaje, parking de rotación autorizado, consulta médica o veterinaria, etc. AÑADIR (falta en el JSON): exención de los ciclomotores «con cilindrada menor a 50 cc y velocidad por construcción menor a 45 km/h». No dice fechas de fin de moratorias (31/12/2025, 2029, 2030) ni el criterio «nacidas en 1955 o antes»: no verificables aquí. Copia de 2024: el estado actual de las moratorias no se puede confirmar."
+  },
+  {
+   "origen": "zbe:bilbao",
+   "url": "www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279245540956&language=es&pageid=3000005580&pagename=Bilbaonet/BIO_Noticia_FA/BIO_Noticia",
+   "fecha": "2026-10-16",
+   "metodo": "ninguno: WebFetch 403, curl navegador 403, sin copia en archive.org (availability y CDX vacíos)",
+   "url_leida": null,
+   "resultado": "retirada",
+   "detalle": "Sin copia archivada ni lectura posible: la fuente y las precisiones que solo ella apoyaba se han retirado del sitio el 16/10/2026.",
+   "nota": "URL sin esquema a propósito: la fuente ya no se cita en el sitio"
+  },
+  {
+   "origen": "zbe:bilbao",
+   "url": "www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279241724527&language=es&pageid=3000075248&pagename=Bilbaonet%2FBIO_Noticia_FA%2FBIO_Noticia",
+   "fecha": "2026-10-16",
+   "metodo": "ninguno: WebFetch 403, curl navegador 403, sin copia en archive.org",
+   "url_leida": null,
+   "resultado": "retirada",
+   "detalle": "Sin copia archivada ni lectura posible: la fuente y las precisiones que solo ella apoyaba se han retirado del sitio el 16/10/2026.",
+   "nota": "URL sin esquema a propósito: la fuente ya no se cita en el sitio"
+  },
+  {
+   "origen": "zbe:bilbao:ordenanza",
+   "url": "https://www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279234634941&language=es&pageid=3000005580&pagename=Bilbaonet/BIO_Noticia_FA/BIO_Noticia",
+   "fecha": "2026-10-16",
+   "metodo": "archive.org (WebFetch 403, curl navegador 403)",
+   "url_leida": "http://web.archive.org/web/20240801203849/https://www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279234634941&language=es&pageid=3000005580&pagename=Bilbaonet%2FBIO_Noticia_FA%2FBIO_Noticia",
+   "resultado": "confirmado",
+   "detalle": "Confirma: aprobación definitiva por el Pleno, entrada en vigor el 15 de junio (2024); A sin acceso desde la entrada en vigor y B con un año de moratoria; 0, ECO y C no afectados; horario laborables L-V 07:00-20:00; sanciones «hasta los 200 euros»; lectores de matrículas conectados a bases municipales y DGT; exentos residentes empadronados antes del 15/06/2024 (y dados de alta en el IVTM de Bilbao), PMR, históricos, emergencias y ciclomotores < 50 cc y 45 km/h. AÑADIR al JSON: excepción de ciclomotores (< 50 cc, 45 km/h) y de A o B que atraviesan la zona para llegar a un garaje fuera de ella. La nota del artículo 76.z3 no figura en esta página (es de la Ley de Tráfico, no de esta fuente). No se encontró el texto en el Boletín Oficial de Bizkaia (BOB) por robot."
+  },
+  {
+   "origen": "zbe:granada",
+   "url": "https://www.granada.org/inet/wprensa.nsf/xnotalc/80C3C693BD02419EC1258C4D002891CE?open=&pag=ini",
+   "fecha": "2026-10-16",
+   "metodo": "archive.org (variante /wprensa.nsf/0/ encontrada por CDX con prefijo; WebFetch y curl 403 Akamai)",
+   "url_leida": "http://web.archive.org/web/20251027165743/https://www.granada.org/inet/wprensa.nsf/0/80C3C693BD02419EC1258C4D002891CE?open&pag=ini",
+   "resultado": "corregir",
+   "detalle": "Confirma: régimen sancionador desde el 1 de octubre (2025); 23,5 km delimitados por Camino del Sacromonte, Avenida de la Innovación y Parque Federico García (Lorca); B, C, Cero y Eco admitidos; residentes o empadronados excluidos; acceso de vehículos de fuera sin etiqueta a parkings públicos si permanecen más de una hora; autorización para renta baja ≤ 2 IPREM con compromisos laborales; emergencias, transporte público, taxis, VTC, PMR. CORREGIR: zonas[0].desde = \"2025-04-01\" no corresponde: la alcaldesa anuncia «retrasar le entrada en vigor de la medida al 1 de octubre y por tanto también el régimen sancionador» → poner \"2025-10-01\" (o dejar 2025-04-01 solo como fase informativa, con nota). AÑADIR excepciones (con autorización): propietarios de garajes (solo para acceder a ellos), citaciones judiciales, mayores de 67 años, PMR y cuidadores, centros sanitarios y farmacias, suministro y abastecimiento, talleres. Nota: el texto dice «23,5 kilómetros» (sin «cuadrados»)."
+  },
+  {
+   "origen": "zbe:granada",
+   "url": "https://www.granada.org/inet/wprensa.nsf/xnotalc/099CC61FFD330743C1258AB60027786B?open=&pag=ini",
+   "fecha": "2026-10-16",
+   "metodo": "archive.org (variante /wprensa.nsf/0/ por CDX; WebFetch y curl 403)",
+   "url_leida": "http://web.archive.org/web/20241124185547/https://www.granada.org/inet/wprensa.nsf/0/099CC61FFD330743C1258AB60027786B?open&pag=ini",
+   "resultado": "confirmado",
+   "detalle": "Nota de presentación del proyecto (copia 24/11/2024). Confirma que la ZBE abarca el perímetro de la capital limitado por la circunvalación y solo afecta a no residentes sin etiqueta (gasolina anterior a 2001, diésel anterior a 2006). Sus fechas (pruebas desde el 1/10/2024, sanciones desde el 1/4/2025) quedaron superadas por la nota 80C3C693… (sanciones el 1/10/2025): conviene citarla solo para el ámbito y el criterio de residencia."
+  },
+  {
+   "origen": "zbe:granada",
+   "url": "https://www.granada.org/inet/wordenanz.nsf/02ccd74c639fe3bfc125735500242007/9970e48f4eda6237c1258d0d0031ce66/$FILE/2025-13657Z-aprobacion-definitiva-proyecto-zbe.pdf",
+   "fecha": "2026-10-16",
+   "metodo": "alternativa oficial: anuncio y PDF del BOP de Granada en bop.dipgra.es (curl, 200); granada.org 403 y sin copia en archive.org",
+   "url_leida": "https://bop.dipgra.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1758150051796-final-3b2cf182-2.pdf",
+   "resultado": "corregir",
+   "detalle": "BOP de Granada nº 178, jueves 18 de septiembre de 2025, CVE BOP-GRA-2025-178011: aprobación definitiva del Proyecto ZBE (resolución de 5/9/2025, firmada el 15/9/2025). Confirma: acceso permitido a B, C, ECO y 0; régimen sancionador pospuesto al 1 de octubre de 2025; régimen de autorizaciones (Anexo V de la Ordenanza Integral de Movilidad Sostenible) incl. personas con rentas bajas < 2 IPREM. CORREGIR criterio_usuario: el BOP y la sede electrónica usan el domicilio fiscal del vehículo («siendo el domicilio fiscal un criterio auxiliar contemplado en el régimen de autorizaciones y exenciones»; sede: «vehículos con distintivo ambiental o que tengan el domicilio fiscal en Granada») → escribir «vehículo con domicilio fiscal en Granada (titulares empadronados)». Sustituir la URL de granada.org (bloqueada) por la del BOP."
+  },
+  {
+   "origen": "zbe:granada:ordenanza",
+   "url": "https://www.granada.org/inet/wordenanz.nsf/02ccd74c639fe3bfc125735500242007/9970e48f4eda6237c1258d0d0031ce66/$FILE/2025-13657Z-aprobacion-definitiva-proyecto-zbe.pdf",
+   "fecha": "2026-10-16",
+   "metodo": "alternativa oficial: BOP de Granada (bop.dipgra.es); granada.org 403",
+   "url_leida": "https://bop.dipgra.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1758150051796-final-3b2cf182-2.pdf",
+   "resultado": "corregir",
+   "detalle": "ordenanza.nombre «Proyecto de Zona de Bajas Emisiones de Granada (aprobación definitiva, BOP de Granada 2025)» es correcto; precisar «BOP de Granada nº 178, de 18 de septiembre de 2025» y poner como url la del anuncio del BOP. Las excepciones están en el Título II y el Anexo V de la Ordenanza Integral de Movilidad Sostenible de Granada (citado en el BOP). Otra fuente oficial legible por robot para las excepciones: sede.granada.org (fichas de trámite ZBE, curl 200)."
+  },
+  {
+   "origen": "zbe:madrid",
+   "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones-ZBE-/?vgnextfmt=default&vgnextoid=93e63877029eb710VgnVCM1000001d4a900aRCRD&vgnextchannel=d2d2edf0f70ab710VgnVCM2000001f4a900aRCRD",
+   "fecha": "2026-10-16",
+   "metodo": "archive.org (curl navegador 403)",
+   "url_leida": "http://web.archive.org/web/20261009020918/https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones-ZBE-/?vgnextfmt=default&vgnextoid=93e63877029eb710VgnVCM1000001d4a900aRCRD&vgnextchannel=d2d2edf0f70ab710VgnVCM2000001f4a900aRCRD",
+   "resultado": "corregir",
+   "detalle": "Copia del 09/10/2026. Confirma: todas las vías públicas urbanas; A prohibidos desde el 1/1/2025; multa 200 € (100 € pronto pago, art. 76.z3 LTSV); exentos TEPMR dados de alta y exhibiendo la tarjeta, e históricos; autorizaciones excepcionales (compra antes del 1/1/2025, hospital, industriales de autónomos ≥ 59 años); Ordenanza 2/2026 de 24 de marzo, BOAM 10099 de 06/04/2026; DT 7.ª desde las 00:00 del 7/4/2026. CORREGIR la regla {A, no_domiciliados, prohibido}: según la DT 7.ª circulan también de forma temporal y condicionada al NO2 «Los vehículos 'A' que no sean turismos (camiones, furgonetas, motocicletas, ciclomotores, etc), con independencia del municipio en que esté domiciliado»; la prohibición vigente afecta a «Los turismos 'A' de las categorías por criterio de utilización 00 Sin especificar, 02 (familiar) y 33 (todoterreno)» no domiciliados desde el 1/1/2022. Precisar además que el régimen transitorio no vale dentro de las ZBEDEP Distrito Centro y Plaza Elíptica y que estos vehículos no circulan en episodios de contaminación. La nota «aparcamiento limitado a su barrio» NO figura en esta página: no verificable (el BOAM 10035 de 30/12/2025 habla de «excepciones en materia de estacionamiento», sin más detalle aquí). Para la página moto: las motos A pueden circular por Madrid ZBE (fuera de las ZBEDEP) mientras dure la DT 7.ª."
+  },
+  {
+   "origen": "zbe:madrid",
+   "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones/Preguntas-frecuentes-sobre-Madrid-Zona-de-Bajas-Emisiones-ZBE-/?vgnextfmt=default&vgnextoid=9dec1d96b08ed710VgnVCM1000001d4a900aRCRD&vgnextchannel=d2d2edf0f70ab710VgnVCM2000001f4a900aRCRD",
+   "fecha": "2026-10-16",
+   "metodo": "WebFetch (curl navegador 403; sin copia en archive.org)",
+   "url_leida": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones/Preguntas-frecuentes-sobre-Madrid-Zona-de-Bajas-Emisiones-ZBE-/?vgnextfmt=default&vgnextoid=9dec1d96b08ed710VgnVCM1000001d4a900aRCRD&vgnextchannel=d2d2edf0f70ab710VgnVCM2000001f4a900aRCRD",
+   "resultado": "corregir",
+   "detalle": "Confirma: M-40, M-45 y M-50 fuera del ámbito; multa 200/100 €; régimen DT 7.ª condicionado al NO2 en todas las estaciones; extinción a los seis meses de publicarse en el BOCM el acuerdo de incumplimiento; excepciones TEPMR e históricos. Misma corrección que la página principal: los A que no son turismos (motocicletas, ciclomotores, furgonetas, camiones) circulan temporalmente con independencia del domicilio. Leído con WebFetch (resumen con citas cortas), no en bruto."
+  },
+  {
+   "origen": "zbe:madrid",
+   "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Distrito-Centro-Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Zona-de-Bajas-Emisiones-de-Especial-Proteccion-ZBEDEP-Distrito-Centro-Informacion-general/?vgnextfmt=default&vgnextoid=2d88c49556fbb710VgnVCM2000001f4a900aRCRD&vgnextchannel=d352edf0f70ab710VgnVCM2000001f4a900aRCRD",
+   "fecha": "2026-10-16",
+   "metodo": "WebFetch (curl navegador 403; sin copia en archive.org)",
+   "url_leida": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Distrito-Centro-Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Zona-de-Bajas-Emisiones-de-Especial-Proteccion-ZBEDEP-Distrito-Centro-Informacion-general/?vgnextfmt=default&vgnextoid=2d88c49556fbb710VgnVCM2000001f4a900aRCRD&vgnextchannel=d352edf0f70ab710VgnVCM2000001f4a900aRCRD",
+   "resultado": "corregir",
+   "detalle": "Confirma: en vigor el 22/09/2021; A prohibidos (desde 2025 solo históricos y vehículos adaptados PMR dados de alta); B y C no pueden atravesarla, solo entrar a estacionar en un aparcamiento de uso público o privado adherido al sistema de gestión de permisos o en plaza reservada. CORREGIR: la página autoriza «los turismos con clasificación ambiental “ECO”» y «los vehículos con clasificación ambiental “Cero emisiones”»: la regla {ECO, todos, permitido} es correcta para turismos, pero para motos, furgonetas o pesados ECO esta página no lo dice → nota «ECO: turismos» o verificar en la ordenanza. No figuran aquí el alta de oficio de residentes ni las 20 invitaciones al mes (solo un enlace «Alta de invitaciones puntuales de empadronado»): no verificables con esta fuente."
+  },
+  {
+   "origen": "zbe:madrid",
+   "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Plaza-Eliptica-Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Zona-de-Bajas-Emisiones-de-Especial-Proteccion-ZBEDEP-Plaza-Eliptica-Preguntas-frecuentes/?vgnextfmt=default&vgnextoid=0f0f1e0276fbb710VgnVCM1000001d4a900aRCRD&vgnextchannel=f808acec6f5fe710VgnVCM1000001d4a900aRCRD",
+   "fecha": "2026-10-16",
+   "metodo": "WebFetch (curl navegador 403; sin copia en archive.org)",
+   "url_leida": "https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Plaza-Eliptica-Zona-de-Bajas-Emisiones-de-Especial-Proteccion/Zona-de-Bajas-Emisiones-de-Especial-Proteccion-ZBEDEP-Plaza-Eliptica-Preguntas-frecuentes/?vgnextfmt=default&vgnextoid=0f0f1e0276fbb710VgnVCM1000001d4a900aRCRD&vgnextchannel=f808acec6f5fe710VgnVCM1000001d4a900aRCRD",
+   "resultado": "confirmado",
+   "detalle": "Confirma: solo acceden B, C, ECO y 0; A no salvo excepciones (PMR con cualquier vehículo, extinción de incendios, Fuerzas Armadas…); vías del perímetro de libre circulación; todos los viales interiores restringidos; sin distinción por empadronamiento; sin horario (24 h). AÑADIR zonas[eliptica].desde = \"2022-02-22\": «entró en vigor el pasado 22 de diciembre de 2021 y ha funcionado durante dos meses en fase de aviso» y las restricciones «entraron en vigor el 22 de febrero de 2022»."
+  },
+  {
+   "origen": "zbe:madrid:ordenanza",
+   "url": "https://sede.madrid.es/portal/site/tramites/menuitem.5dd4485239c96e10f7a72106a8a409a0/?vgnextoid=10378dd1c267d910VgnVCM200000f921e388RCRD&version=true&vgnextchannel=6b3d814231ede410VgnVCM1000000b205a0aRCRD",
+   "fecha": "2026-10-16",
+   "metodo": "alternativa oficial: Portal de Transparencia del Ayuntamiento de Madrid (curl, 200); sede.madrid.es 403 con curl y WebFetch, sin copia en archive.org",
+   "url_leida": "https://transparencia.madrid.es/portales/transparencia/es/Informacion-juridica/Huella-normativa/Modificacion-de-la-Ordenanza-de-Movilidad-Sostenible/?vgnextfmt=default&vgnextoid=54e7a84e11a82910VgnVCM1000001d4a900aRCRD&vgnextchannel=4099508929a56510VgnVCM1000008a4a900aRCRD",
+   "resultado": "confirmado",
+   "detalle": "La huella normativa confirma el nombre y la publicación: Acuerdo del Pleno de 24/03/2026 (BOAM núm. 10099, pág. 5, de 6/4/2026) y BOCM núm. 80, págs. 129-219, de 6/4/2026; correcciones de errores BOAM 10103 (10/4/2026) y 10121 (7/5/2026), BOCM 107 (7/5/2026). AÑADIR a ordenanza.publicacion: «BOCM núm. 80, de 6/4/2026; corrección de errores BOAM 10103 y 10121». El texto de la DT 7.ª no se leyó en el boletín (la página principal Madrid ZBE la transcribe)."
+  },
+  {
+   "origen": "zbe:pamplona",
+   "url": "https://www.pamplona.es/actualidad/noticias/el-distintivo-ambiental-sera-obligatorio-desde-este-lunes-para-los-vehiculos",
+   "fecha": "2026-10-16",
+   "metodo": "curl con cabeceras de navegador completas (200)",
+   "url_leida": "https://www.pamplona.es/actualidad/noticias/el-distintivo-ambiental-sera-obligatorio-desde-este-lunes-para-los-vehiculos",
+   "resultado": "confirmado",
+   "detalle": "Noticia del 26/12/2025 («este lunes» = 29/12/2025). Confirma: Casco Antiguo delimitado por Taconera, Navas de Tolosa, paseo de Sarasate, Duque de Ahumada, Juan de Labrit, Vergel y Santo Domingo; acceso 0, ECO, B y C; exentos residentes del Sector 1 y del paseo de Sarasate, PMR y dependientes, garajes y aparcamiento público, comercios y hoteles, emergencias, obras, mudanzas, reparaciones, transporte público, apeaderos de Mercado y Juan de Labrit; sí sujetos: paquetería ≤ 3,5 m³, clientes de hoteles sin parking, reparto de comida, eventos y accesos puntuales de 30 minutos (TokTok, 010, sede); ordenanza publicada en el BON ese lunes; infracción grave, multa 200 € (100 € pronto pago); se exige portar el distintivo. Añadir a «sujetos»: vehículos de eventos."
+  },
+  {
+   "origen": "zbe:sevilla",
+   "url": "https://www.sevilla.org/actualidad/noticias/2024/el-proximo-lunes-1-de-julio-entra-en-vigor-la-zona-de-bajas-emisiones-de-la-cartuja-para-reducir-el-acceso-a-los-vehiculos-mas-contaminantes",
+   "fecha": "2026-10-16",
+   "metodo": "archive.org (curl y WebFetch sin respuesta: tiempo agotado)",
+   "url_leida": "http://web.archive.org/web/20250810124851/https://www.sevilla.org/actualidad/noticias/2024/el-proximo-lunes-1-de-julio-entra-en-vigor-la-zona-de-bajas-emisiones-de-la-cartuja-para-reducir-el-acceso-a-los-vehiculos-mas-contaminantes",
+   "resultado": "confirmado",
+   "detalle": "Confirma: fase informativa desde el 8 de enero, sanciones desde el 1 de julio de 2024; dos zonas Cartuja Norte y Cartuja Sur (perímetro exterior fuera de la zona); bolsas de aparcamiento gratuito de 2.900 plazas (banda Oeste) y 500 (Norte), abiertas 24 h; aparcamientos públicos de rotación accesibles. Precisar «aparcamiento gratuito»."
+  },
+  {
+   "origen": "zbe:sevilla",
+   "url": "https://www.sevilla.org/servicios/movilidad/zona-de-bajas-emisiones",
+   "fecha": "2026-10-16",
+   "metodo": "archive.org (curl y WebFetch sin respuesta)",
+   "url_leida": "http://web.archive.org/web/20260512115843/https://www.sevilla.org/servicios/movilidad/zona-de-bajas-emisiones",
+   "resultado": "confirmado",
+   "detalle": "Copia del 12/05/2026. Confirma: entrada en vigor el 8 de enero con fase de información; sanciones desde julio de 2024; horario de lunes a viernes, no festivos, de 7:00 a 19:00; cámaras con captura de imágenes. El campo «pendiente» (resolución de inicio de 20/03/2026, ampliación al Casco Antiguo no aprobada) NO figura en esta página: no verificable."
+  },
+  {
+   "origen": "zbe:sevilla",
+   "url": "https://www.sevilla.org/servicios/movilidad/formularios-de-solicitudes/instrucciones-zbe.pdf",
+   "fecha": "2026-10-16",
+   "metodo": "archive.org (curl sin respuesta)",
+   "url_leida": "http://web.archive.org/web/20260421001747/https://www.sevilla.org/servicios/movilidad/formularios-de-solicitudes/instrucciones-zbe.pdf",
+   "resultado": "corregir",
+   "detalle": "Copia del 21/04/2026. CORREGIR excepciones[3]: el modelo M021 es la declaración responsable de vehículos que transportan o recogen a PMR, y el M022 el de empresas ubicadas en la zona (Autorización Tipo C); el traslado de pacientes por urgencia o alta hospitalaria (art. 16 O.C.) no lleva modelo propio; M023 = emergencias/sanitarios cuyo uso no consta en la ficha; M024 = otros del art. 9 y 16. Texto propuesto: «PMR (modelo M021), empresas ubicadas dentro de la zona (modelo M022), traslado de pacientes por urgencia o alta hospitalaria». CORREGIR excepciones[1] «taxis y VTC»: el PDF dice «Vehículos destinados a transporte público de viajeros en vehículos de turismo» (las VTC no se nombran). AÑADIR: residentes y usuarios de plaza de garaje (autorizaciones tipo A y B, Distrito Triana), mercancías > 3.500 kg, viajeros > 8 plazas, bicicletas y VMP, vehículos que se dirigen a aparcamientos públicos de rotación. Confirma «Motocicletas y ciclomotores» como excepción por categoría de homologación. «no es necesario llevar la pegatina»: el PDF solo dice «sin necesidad de registro previo» → no verificable aquí."
+  },
+  {
+   "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+   "url_leida": "https://almeriaciudad.es/uploads/normativas/2024-05/16.-reguladora-de-las-zonas-de-baja-emisiones-de-almeria.pdf",
+   "resultado": "confirmado",
+   "detalle": "Leída por el agente de investigación y releída el 16/10/2026; citas comprobadas en el texto descargado.",
+   "origen": "zbe:almeria",
+   "url": "https://almeriaciudad.es/uploads/normativas/2024-05/16.-reguladora-de-las-zonas-de-baja-emisiones-de-almeria.pdf",
+   "fecha": "2026-10-16"
+  },
+  {
+   "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+   "url_leida": "https://almeriaciudad.es/actualidad/la-zona-de-bajas-emisiones-zbe-de-almeria-entra-en-vigor-partir-de-hoy-1-de-enero",
+   "resultado": "confirmado",
+   "detalle": "Leída por el agente de investigación y releída el 16/10/2026; citas comprobadas en el texto descargado.",
+   "origen": "zbe:almeria",
+   "url": "https://almeriaciudad.es/actualidad/la-zona-de-bajas-emisiones-zbe-de-almeria-entra-en-vigor-partir-de-hoy-1-de-enero",
+   "fecha": "2026-10-16"
+  },
+  {
+   "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+   "url_leida": "https://almeriaciudad.es/actualidad/aprobada-la-modificacion-de-la-ordenanza-reguladora-del-impuesto-sobre-bienes-inmuebles",
+   "resultado": "confirmado",
+   "detalle": "Leída por el agente de investigación y releída el 16/10/2026; citas comprobadas en el texto descargado.",
+   "origen": "zbe:almeria",
+   "url": "https://almeriaciudad.es/actualidad/aprobada-la-modificacion-de-la-ordenanza-reguladora-del-impuesto-sobre-bienes-inmuebles",
+   "fecha": "2026-10-16"
+  },
+  {
+   "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+   "url_leida": "https://www.aytoburgos.es/documents/38509/0/2024+BOP+5+agosto+2024+-+Ordenanza+Zona+de+Bajas+Emisiones.pdf/1a968f58-d027-3e8a-2bb6-782d5c43dffc?t=1722863990697",
+   "resultado": "confirmado",
+   "detalle": "Leída por el agente de investigación y releída el 16/10/2026; citas comprobadas en el texto descargado.",
+   "origen": "zbe:burgos",
+   "url": "https://www.aytoburgos.es/documents/38509/0/2024+BOP+5+agosto+2024+-+Ordenanza+Zona+de+Bajas+Emisiones.pdf/1a968f58-d027-3e8a-2bb6-782d5c43dffc?t=1722863990697",
+   "fecha": "2026-10-16"
+  },
+  {
+   "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+   "url_leida": "https://www.aytoburgos.es/-/ordenanza-reguladora-de-la-zona-de-bajas-emisiones",
+   "resultado": "confirmado",
+   "detalle": "Leída por el agente de investigación y releída el 16/10/2026; citas comprobadas en el texto descargado.",
+   "origen": "zbe:burgos",
+   "url": "https://www.aytoburgos.es/-/ordenanza-reguladora-de-la-zona-de-bajas-emisiones",
+   "fecha": "2026-10-16"
+  },
+  {
+   "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+   "url_leida": "https://movilidad.aytoburgos.es/smyt/-/asset_publisher/oQWr6VPvtGEc/content/id/117520481",
+   "resultado": "confirmado",
+   "detalle": "Leída por el agente de investigación y releída el 16/10/2026; citas comprobadas en el texto descargado.",
+   "origen": "zbe:burgos",
+   "url": "https://movilidad.aytoburgos.es/smyt/-/asset_publisher/oQWr6VPvtGEc/content/id/117520481",
+   "fecha": "2026-10-16"
+  },
+  {
+   "metodo": "curl con cabeceras de navegador (200); el robot en Python recibe un rechazo de conexión",
+   "url_leida": "https://movilidad.aytoburgos.es/documents/413443/0/bopbur-2026-024-anuncio-202600344.pdf/fc7787de-c89e-b8c8-91f1-9778720cdb7d?t=1770296884888",
+   "resultado": "confirmado",
+   "detalle": "Leída por el agente de investigación y releída el 16/10/2026; citas comprobadas en el texto descargado.",
+   "origen": "zbe:burgos",
+   "url": "https://movilidad.aytoburgos.es/documents/413443/0/bopbur-2026-024-anuncio-202600344.pdf/fc7787de-c89e-b8c8-91f1-9778720cdb7d?t=1770296884888",
+   "fecha": "2026-10-16"
+  },
+  {
+   "metodo": "web.archive.org (web.sabadell.cat rechaza la conexión)",
+   "url_leida": "https://web.archive.org/web/2026/https://web.sabadell.cat/noticies-zbe/item/sabadell-activa-la-zona-de-baixes-emissions-sense-sancions-inicials-i-amb-autoritzacions-per-minimitzar-l-impacte-social-i-economic",
+   "resultado": "confirmado",
+   "detalle": "Copias archivadas de marzo de 2026; citas comprobadas en el texto archivado.",
+   "origen": "zbe:sabadell",
+   "url": "https://web.sabadell.cat/noticies-zbe/item/sabadell-activa-la-zona-de-baixes-emissions-sense-sancions-inicials-i-amb-autoritzacions-per-minimitzar-l-impacte-social-i-economic",
+   "fecha": "2026-10-16"
+  },
+  {
+   "metodo": "web.archive.org (web.sabadell.cat rechaza la conexión)",
+   "url_leida": "https://web.archive.org/web/2026/https://web.sabadell.cat/faqs-zbe-sbd",
+   "resultado": "confirmado",
+   "detalle": "Copias archivadas de marzo de 2026; citas comprobadas en el texto archivado.",
+   "origen": "zbe:sabadell",
+   "url": "https://web.sabadell.cat/faqs-zbe-sbd",
+   "fecha": "2026-10-16"
+  },
+  {
+   "metodo": "web.archive.org (sevilla.org no responde a la descarga automática)",
+   "url_leida": "http://web.archive.org/web/20250212110306/https://www.sevilla.org/servicios/agencia-tributaria-de-sevilla/ordenanzas-fiscales/2024/ivtm.pdf",
+   "resultado": "confirmado",
+   "detalle": "Copia del 12/02/2025: tramos 21,45 / 61,00 / 130,93 / 176,53 / 220,64 € comprobados en el PDF.",
+   "origen": "ivtm:sevilla",
+   "url": "https://www.sevilla.org/servicios/agencia-tributaria-de-sevilla/ordenanzas-fiscales/2024/ivtm.pdf",
+   "fecha": "2026-10-16"
+  },
+  {
+   "origen": "zbe:santa-cruz-de-tenerife",
+   "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/24-8-26/24-8-26.pdf",
+   "fecha": "2026-10-16",
+   "metodo": "curl con cabeceras de navegador desde la página de sumario del propio boletín, PDF extraído con pypdf (el robot recibe 403)",
+   "url_leida": "https://www.bopsantacruzdetenerife.es/boletines/2026/24-8-26/24-8-26.pdf",
+   "resultado": "confirmado",
+   "detalle": "Horario de lunes a sábado de 7 a 20 h, 36 meses para las multas y multa de 200 € comprobados en el texto."
+  },
+  {
+   "origen": "zbe:vigo",
+   "url": "https://sede.vigo.org/expedientes/actas/fichero_actas.jsp?id=3676&t=ACTA&lang=es",
+   "fecha": "2026-10-16",
+   "metodo": "curl con cabeceras de navegador (200); el robot en Python agota el tiempo de espera",
+   "url_leida": "https://sede.vigo.org/expedientes/actas/fichero_actas.jsp?id=3676&t=ACTA&lang=es",
+   "resultado": "confirmado",
+   "detalle": "Acta del Pleno del 27/07/2026 y anuncio de aprobación inicial leídos con pypdf; citas comprobadas."
+  },
+  {
+   "origen": "zbe:vigo",
+   "url": "https://sede.vigo.org/expedientes/taboleiro/getarchivo_finpub.jsp?id=3838",
+   "fecha": "2026-10-16",
+   "metodo": "curl con cabeceras de navegador (200); el robot en Python agota el tiempo de espera",
+   "url_leida": "https://sede.vigo.org/expedientes/taboleiro/getarchivo_finpub.jsp?id=3838",
+   "resultado": "confirmado",
+   "detalle": "Acta del Pleno del 27/07/2026 y anuncio de aprobación inicial leídos con pypdf; citas comprobadas."
+  }
+ ]
+}

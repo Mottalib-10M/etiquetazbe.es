@@ -59,8 +59,31 @@ describe('etiqueta DGT (pesados y motos)', () => {
   it('motos : Euro 2 = B, Euro 3 o más = C ; la fecha es solo orientativa', () => {
     expect(etiquetaDe({ categoria: 'moto', energia: 'gasolina', euro: 2, matriculacion: '2005-01' }).etiqueta).toBe('B');
     expect(etiquetaDe({ categoria: 'moto', energia: 'gasolina', euro: 4, matriculacion: '2017-01' }).etiqueta).toBe('C');
-    expect(etiquetaDe({ categoria: 'moto', energia: 'gasolina', matriculacion: '2008-01' })).toMatchObject({ etiqueta: 'C', dudoso: true });
+    // Directiva 2002/51/CE : Euro 3 obligatoria para todas las motos el 1/1/2007 (1/1/2008 para series cortas).
+    expect(etiquetaDe({ categoria: 'moto', energia: 'gasolina', matriculacion: '2008-01' })).toMatchObject({ etiqueta: 'C', dudoso: false });
+    expect(etiquetaDe({ categoria: 'moto', energia: 'gasolina', matriculacion: '2006-06' })).toMatchObject({ etiqueta: 'B', dudoso: true, alternativa: 'C' });
+    expect(etiquetaDe({ categoria: 'moto', energia: 'gasolina', matriculacion: '2004-07' })).toMatchObject({ etiqueta: 'B', dudoso: false });
+    expect(etiquetaDe({ categoria: 'moto', energia: 'gasolina', matriculacion: '2003-10' })).toMatchObject({ etiqueta: 'A', dudoso: true, alternativa: 'B' });
+    expect(etiquetaDe({ categoria: 'moto', energia: 'gasolina', matriculacion: '2002-12' })).toMatchObject({ etiqueta: 'A', dudoso: false });
+    // La Euro 5 no figura en el anexo II.E del RGV : C, dudosa.
+    expect(etiquetaDe({ categoria: 'moto', energia: 'gasolina', euro: 5, matriculacion: '2022-01' })).toMatchObject({ etiqueta: 'C', dudoso: true });
     expect(etiquetaDe({ categoria: 'moto', energia: 'hev', matriculacion: '2008-01' }).etiqueta).toBe('ECO');
+  });
+  it('ciclomotores : sin Euro 3 ; B de julio de 2004 a 2016, C segura desde 2018 (Reglamento UE 168/2013)', () => {
+    expect(etiquetaDe({ categoria: 'ciclomotor', energia: 'gasolina', matriculacion: '2010-06' })).toMatchObject({ etiqueta: 'B', dudoso: false });
+    expect(etiquetaDe({ categoria: 'ciclomotor', energia: 'gasolina', matriculacion: '2017-06' })).toMatchObject({ etiqueta: 'B', dudoso: true, alternativa: 'C' });
+    expect(etiquetaDe({ categoria: 'ciclomotor', energia: 'gasolina', matriculacion: '2018-01' })).toMatchObject({ etiqueta: 'C', dudoso: false });
+    expect(etiquetaDe({ categoria: 'ciclomotor', energia: 'gasolina', euro: 2, matriculacion: '2010-06' }).etiqueta).toBe('B');
+  });
+  it('híbridos diésel : la ECO exige la C del diésel (Euro 6), no la de la gasolina', () => {
+    expect(etiquetaDe({ categoria: 'turismo', energia: 'hev_diesel', euro: 5, matriculacion: '2013-01' }).etiqueta).toBe('B');
+    expect(etiquetaDe({ categoria: 'turismo', energia: 'hev_diesel', euro: 6, matriculacion: '2013-01' }).etiqueta).toBe('ECO');
+    expect(etiquetaDe({ categoria: 'turismo', energia: 'hev_diesel', matriculacion: '2012-03' }).etiqueta).toBe('B');
+    expect(etiquetaDe({ categoria: 'turismo', energia: 'hev_diesel', matriculacion: '2015-03' })).toMatchObject({ etiqueta: 'B', dudoso: true, alternativa: 'ECO' });
+    expect(etiquetaDe({ categoria: 'turismo', energia: 'hev_diesel', matriculacion: '2016-01' }).etiqueta).toBe('ECO');
+    expect(etiquetaDe({ categoria: 'turismo', energia: 'phev_diesel', autonomiaKm: 50, matriculacion: '2012-01' }).etiqueta).toBe('0');
+    // El de gasolina de 2010 sí es ECO (gasolina Euro 4/5 cumple la C).
+    expect(etiquetaDe({ categoria: 'turismo', energia: 'hev', matriculacion: '2010-05' }).etiqueta).toBe('ECO');
   });
 });
 
@@ -109,8 +132,8 @@ describe('perfil', () => {
 
 describe('ZBE por ciudad (ordenanzas)', () => {
   it('hay datos y fuentes para cada ciudad', () => {
-    expect(CIUDADES.length).toBeGreaterThanOrEqual(15);
-    for (const c of CIUDADES) { expect(c.fuentes.length).toBeGreaterThan(0); expect(c.verificado).toBe('2026-10-15'); expect(c.multa.importe).toBe(200); }
+    expect(CIUDADES.length).toBeGreaterThanOrEqual(38);
+    for (const c of CIUDADES) { expect(c.fuentes.length).toBeGreaterThan(0); expect(['2026-10-15', '2026-10-16']).toContain(c.verificado); expect(c.multa.importe).toBe(200); }
   });
   it('Madrid : turismo A de fuera prohibido en todo el municipio ; B de fuera solo a aparcamiento en Distrito Centro', () => {
     const a = veredicto('madrid', 'A', fuera, '2026-10-15');
@@ -156,6 +179,32 @@ describe('ZBE por ciudad (ordenanzas)', () => {
     expect(veredicto('valladolid', 'B', vecino, '2027-12-31')[0].acceso).toBe('prohibido');
     expect(veredicto('valladolid', 'B', residente, '2028-06-01')[0].acceso).toBe('permitido');
   });
+  it('Madrid : moto sin etiqueta de fuera condicionada desde el 7/4/2026 (DT 7.ª) ; turismo, prohibido', () => {
+    const fuera = { domicilio: 'fuera' as const, residenteZona: false };
+    expect(veredicto('madrid', 'A', fuera, '2026-10-16', 'moto')[0].acceso).toBe('condicionado');
+    expect(veredicto('madrid', 'A', fuera, '2026-10-16', 'turismo')[0].acceso).toBe('prohibido');
+    expect(veredicto('madrid', 'A', fuera, '2026-03-01', 'moto')[0].acceso).toBe('prohibido');
+  });
+  it('Bilbao : ciclomotor sin etiqueta exento ; moto, no', () => {
+    const fuera = { domicilio: 'fuera' as const, residenteZona: false };
+    expect(veredicto('bilbao', 'A', fuera, '2026-10-16', 'ciclomotor')[0].acceso).toBe('permitido');
+    expect(veredicto('bilbao', 'A', fuera, '2026-10-16', 'moto')[0].acceso).toBe('prohibido');
+  });
+  it('Lleida : restricciones suspendidas desde el 22/01/2026', () => {
+    const fuera = { domicilio: 'fuera' as const, residenteZona: false };
+    expect(veredicto('lleida', 'A', fuera, '2025-10-01')[0].acceso).toBe('prohibido');
+    expect(veredicto('lleida', 'A', fuera, '2026-10-16')[0].acceso).toBe('condicionado');
+  });
+  it('Burgos : sin etiqueta de fuera sin multa hasta el 5/8/2027, prohibido desde el 6/8/2027', () => {
+    const fuera = { domicilio: 'fuera' as const, residenteZona: false };
+    expect(veredicto('burgos', 'A', fuera, '2027-08-05')[0].acceso).toBe('condicionado');
+    expect(veredicto('burgos', 'A', fuera, '2027-08-06')[0].acceso).toBe('prohibido');
+  });
+  it("L'Hospitalet : B prohibida desde el 1/1/2028", () => {
+    const fuera = { domicilio: 'fuera' as const, residenteZona: false };
+    expect(veredicto('hospitalet', 'B', fuera, '2027-12-31')[0].acceso).toBe('permitido');
+    expect(veredicto('hospitalet', 'B', fuera, '2028-01-01')[0].acceso).toBe('prohibido');
+  });
   it('etiquetas restringidas hoy para un visitante', () => {
     expect(etiquetasRestringidas(ciudad('barcelona'), '2026-10-15')).toEqual(['A']);
     expect(etiquetasRestringidas(ciudad('madrid'), '2026-10-15')).toEqual(['C', 'B', 'A']);
@@ -182,6 +231,16 @@ describe('IVTM por municipio (ordenanzas fiscales 2026)', () => {
     expect(cuotaTurismo({ municipio: 'valladolid', cvf: 10, tecnologia: 'hibrido' }).cuota).toBe(30.67);
     expect(cuotaTurismo({ municipio: 'valladolid', cvf: 10, tecnologia: 'combustion', antiguedadAnos: 31 }).cuota).toBe(0);
     expect(cuotaTurismo({ municipio: 'valladolid', cvf: 10, tecnologia: 'combustion', antiguedadAnos: 29 }).cuota).toBe(61.34);
+  });
+  it('Valladolid : el 50 % de los híbridos excluye a los diésel', () => {
+    expect(cuotaTurismo({ municipio: 'valladolid', cvf: 11.64, tecnologia: 'hibrido' }).pct).toBe(0.5);
+    expect(cuotaTurismo({ municipio: 'valladolid', cvf: 11.64, tecnologia: 'hibrido', diesel: true }).pct).toBe(0);
+  });
+  it('bonificaciones leídas el 16/10/2026 : Vitoria CERO 90 % 6 años, Palma ECO 50 %, Málaga eléctrico 75 % 5 años', () => {
+    expect(cuotaTurismo({ municipio: 'vitoria-gasteiz', cvf: 11.64, etiqueta: '0', tecnologia: 'electrico', antiguedadAnos: 2 }).pct).toBe(0.9);
+    expect(cuotaTurismo({ municipio: 'vitoria-gasteiz', cvf: 11.64, etiqueta: '0', tecnologia: 'electrico', antiguedadAnos: 6 }).pct).toBe(0);
+    expect(cuotaTurismo({ municipio: 'palma', cvf: 11.64, etiqueta: 'ECO', tecnologia: 'hibrido' }).cuota).toBe(34.08);
+    expect(cuotaTurismo({ municipio: 'malaga', cvf: 11.64, etiqueta: '0', tecnologia: 'electrico', antiguedadAnos: 1 }).cuota).toBe(16.45);
   });
   it('ninguna cuota municipal supera el doble de la mínima estatal en régimen común', async () => {
     const { MUNICIPIOS } = await import('../src/lib/engine/ivtm');

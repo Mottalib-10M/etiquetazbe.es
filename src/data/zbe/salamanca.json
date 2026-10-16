@@ -1,0 +1,235 @@
+{
+ "slug": "salamanca",
+ "nombre": "Salamanca",
+ "provincia": "Salamanca",
+ "ccaa": "Castilla y León",
+ "estado": "aprobada",
+ "zonas": [
+  {
+   "id": "zbe1",
+   "nombre": "ZBE 1 «Zona Monumental»",
+   "ambito": "zona peatonal del casco histórico: interior del perímetro puerta de Zamora, avenida de Mirat, plaza de España, Gran Vía, San Pablo, paseo del Rector Esperabé, paseo de San Gregorio, cuesta de San Blas, Ramón y Cajal y paseo de Carmelitas (las vías del perímetro quedan fuera)",
+   "ambito_en": "pedestrianised historic centre: inside the ring formed by Puerta de Zamora, Avenida de Mirat, Plaza de España, Gran Vía, San Pablo, Paseo del Rector Esperabé, Paseo de San Gregorio, Cuesta de San Blas, Ramón y Cajal and Paseo de Carmelitas (the ring roads themselves are outside)",
+   "horario": "24h",
+   "horario_nota": "el acceso ya está controlado por lectores de matrícula y exige autorización; el calendario por etiqueta empieza el 1/01/2029",
+   "desde": "2024-06-01",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "condicionado",
+     "hasta": "2028-12-31",
+     "nota": "zona peatonal: solo con autorización municipal (registro en zbe.aytosalamanca.es)",
+     "nota_en": "pedestrian zone: only with a council permit (registration at zbe.aytosalamanca.es)"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "desde": "2029-01-01"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_residentes",
+     "acceso": "condicionado",
+     "hasta": "2033-12-31",
+     "nota": "zona peatonal: solo con autorización municipal (registro en zbe.aytosalamanca.es)",
+     "nota_en": "pedestrian zone: only with a council permit (registration at zbe.aytosalamanca.es)"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "desde": "2034-01-01"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_residentes",
+     "acceso": "condicionado",
+     "hasta": "2038-12-31",
+     "nota": "zona peatonal: solo con autorización municipal (registro en zbe.aytosalamanca.es)",
+     "nota_en": "pedestrian zone: only with a council permit (registration at zbe.aytosalamanca.es)"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "desde": "2039-01-01"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "no_residentes",
+     "acceso": "condicionado",
+     "nota": "zona peatonal: solo con autorización municipal (registro en zbe.aytosalamanca.es)",
+     "nota_en": "pedestrian zone: only with a council permit (registration at zbe.aytosalamanca.es)"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "no_residentes",
+     "acceso": "condicionado",
+     "nota": "zona peatonal: solo con autorización municipal (registro en zbe.aytosalamanca.es)",
+     "nota_en": "pedestrian zone: only with a council permit (registration at zbe.aytosalamanca.es)"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "empadronados en la ZBE 1: no se les aplica el calendario",
+     "nota_en": "people registered as living in ZBE 1: the timetable does not apply to them"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "empadronados en la ZBE 1: no se les aplica el calendario",
+     "nota_en": "people registered as living in ZBE 1: the timetable does not apply to them"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "empadronados en la ZBE 1: no se les aplica el calendario",
+     "nota_en": "people registered as living in ZBE 1: the timetable does not apply to them"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "empadronados en la ZBE 1: no se les aplica el calendario",
+     "nota_en": "people registered as living in ZBE 1: the timetable does not apply to them"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "empadronados en la ZBE 1: no se les aplica el calendario",
+     "nota_en": "people registered as living in ZBE 1: the timetable does not apply to them"
+    }
+   ]
+  },
+  {
+   "id": "zbe2",
+   "nombre": "ZBE 2 «Zona Centro»",
+   "ambito": "anillo alrededor de la ZBE 1: puerta de Zamora, avenida de Mirat, plaza de España, paseo de Canalejas, Rector Esperabé, avenida de Reyes de España, puente Enrique Estevan, Vía Helmántica, paseo del Progreso, puente Sánchez Fabrés, paseo del Desengaño, paseo de San Vicente y paseo de Carmelitas",
+   "ambito_en": "ring around ZBE 1: Puerta de Zamora, Avenida de Mirat, Plaza de España, Paseo de Canalejas, Rector Esperabé, Avenida de Reyes de España, Enrique Estevan bridge, Vía Helmántica, Paseo del Progreso, Sánchez Fabrés bridge, Paseo del Desengaño, Paseo de San Vicente and Paseo de Carmelitas",
+   "horario": "24h",
+   "desde": "2029-01-01",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "hasta": "2028-12-31"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "desde": "2029-01-01"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "hasta": "2033-12-31"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "desde": "2034-01-01"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_residentes",
+     "acceso": "permitido",
+     "hasta": "2038-12-31"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "desde": "2039-01-01"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "vehículos empadronados en la ZBE 2",
+     "nota_en": "vehicles registered in ZBE 2"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "vehículos empadronados en la ZBE 2",
+     "nota_en": "vehicles registered in ZBE 2"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "residentes",
+     "acceso": "permitido",
+     "nota": "vehículos empadronados en la ZBE 2",
+     "nota_en": "vehicles registered in ZBE 2"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "la ordenanza remite a las multas de la Ley de Tráfico; no fija un importe propio",
+  "nota_en": "the byelaw refers to the fines in the Traffic Act; it sets no amount of its own"
+ },
+ "excepciones": [
+  "personas empadronadas en la ZBE (nunca afectadas por el calendario)",
+  "bicicletas, VMP, servicios esenciales, PMR, históricos y plazas de garaje en la zona",
+  "con autorización: hoteles, centros sanitarios y educativos, comercios, profesionales, carga y descarga, taxis y VTC, parkings, segundas residencias e invitados de residentes"
+ ],
+ "excepciones_en": [
+  "people registered as living in the zone (the timetable never applies to them)",
+  "bicycles, e-scooters, emergency services, blue-badge holders, historic vehicles and garage spaces in the zone",
+  "with a permit: hotels, health and education centres, shops, tradespeople, loading, taxis and private-hire cars, car parks, second homes and residents' guests"
+ ],
+ "control": "lectores de matrícula en los accesos a la zona peatonal (ZBE 1), en funcionamiento desde junio de 2024",
+ "control_en": "number-plate readers at the entrances to the pedestrian zone (ZBE 1), running since June 2024",
+ "pendiente": "restricciones por etiqueta desde el 1/01/2029 (sin etiqueta), 1/01/2034 (B) y 1/01/2039 (C) en ambas zonas",
+ "pendiente_en": "label restrictions from 1/01/2029 (no label), 1/01/2034 (B) and 1/01/2039 (C) in both zones",
+ "ordenanza": {
+  "nombre": "Ordenanza Municipal de creación y gestión de las Zonas de Bajas Emisiones del Municipio de Salamanca (BOP de Salamanca n.º 109, 6 de junio de 2024)",
+  "url": "https://www.aytosalamanca.es/documents/20119/637247/Ordenanza+ZBE.pdf/fa9e2494-cca5-59f6-1106-fd496d73f2e4?t=1719995164114"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.aytosalamanca.es/w/zona-de-bajas-emisiones",
+   "label": "Ayuntamiento de Salamanca · Zona de Bajas Emisiones",
+   "cita": "acceso no permitido a vehículos con etiqueta A"
+  },
+  {
+   "url": "https://www.aytosalamanca.es/w/zona-de-bajas-emisiones",
+   "label": "Ayuntamiento de Salamanca · Zona de Bajas Emisiones (entrada en vigor)",
+   "cita": "entró en vigor en el mes de junio de 2024"
+  },
+  {
+   "url": "https://www.aytosalamanca.es/documents/20119/637247/D%C3%8DPTICO+ZBE_10+preguntas+web.pdf/1a8be86d-621d-2e71-ef24-a78960f6fbaf?t=1719995151075",
+   "label": "Ayuntamiento de Salamanca · Díptico ZBE, 10 preguntas",
+   "cita": "no aplica ninguna hasta 2029 en la ZB2"
+  },
+  {
+   "url": "https://www.aytosalamanca.es/documents/20119/637247/Ordenanza+ZBE.pdf/fa9e2494-cca5-59f6-1106-fd496d73f2e4?t=1719995164114",
+   "label": "BOP de Salamanca · Ordenanza de las ZBE (n.º 109, 6/06/2024)"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "El PDF del BOP (publicado en aytosalamanca.es) tiene la capa de texto mal codificada: se leyó por OCR (tesseract) sobre las páginas renderizadas, en particular las tablas del calendario (pág. 15 y 17) y la disposición final tercera; por eso esa fuente no lleva cita. Las citas proceden de la página municipal y del díptico."
+}

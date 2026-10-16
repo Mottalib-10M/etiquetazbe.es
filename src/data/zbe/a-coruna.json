@@ -1,0 +1,144 @@
+{
+ "slug": "a-coruna",
+ "nombre": "A Coruña",
+ "provincia": "A Coruña",
+ "ccaa": "Galicia",
+ "estado": "sanciona",
+ "zonas": [
+  {
+   "id": "centro",
+   "nombre": "ZBE Centro (ZBECoR)",
+   "ambito": "Ciudad Vieja, Avenida de la Marina, Paseo del Parrote y determinadas calles de la Pescadería (plano del Anexo II de la Ordenanza de Movilidad Sostenible)",
+   "ambito_en": "Ciudad Vieja (old town), Avenida de la Marina, Paseo del Parrote and certain streets of Pescadería (map in Annex II of the Sustainable Mobility Byelaw)",
+   "horario": "24h",
+   "horario_nota": "la ordenanza no fija franjas horarias para la restricción general; carga y descarga de 6:00 a 11:00",
+   "desde": "2022-12-28",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "acceso reservado a transporte público, taxis (Marina, Montoto hasta Puerta Real y Ciudad Vieja), vehículos de servicio público, autorizados y carga y descarga de 6:00 a 11:00; no depende de la etiqueta",
+     "nota_en": "access reserved for public transport, taxis (Marina, Montoto to Puerta Real and Ciudad Vieja), public-service vehicles, authorised vehicles and deliveries from 6:00 to 11:00; it does not depend on the label"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "acceso reservado a transporte público, taxis (Marina, Montoto hasta Puerta Real y Ciudad Vieja), vehículos de servicio público, autorizados y carga y descarga de 6:00 a 11:00; no depende de la etiqueta",
+     "nota_en": "access reserved for public transport, taxis (Marina, Montoto to Puerta Real and Ciudad Vieja), public-service vehicles, authorised vehicles and deliveries from 6:00 to 11:00; it does not depend on the label"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "acceso reservado a transporte público, taxis (Marina, Montoto hasta Puerta Real y Ciudad Vieja), vehículos de servicio público, autorizados y carga y descarga de 6:00 a 11:00; no depende de la etiqueta",
+     "nota_en": "access reserved for public transport, taxis (Marina, Montoto to Puerta Real and Ciudad Vieja), public-service vehicles, authorised vehicles and deliveries from 6:00 to 11:00; it does not depend on the label"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "acceso reservado a transporte público, taxis (Marina, Montoto hasta Puerta Real y Ciudad Vieja), vehículos de servicio público, autorizados y carga y descarga de 6:00 a 11:00; no depende de la etiqueta",
+     "nota_en": "access reserved for public transport, taxis (Marina, Montoto to Puerta Real and Ciudad Vieja), public-service vehicles, authorised vehicles and deliveries from 6:00 to 11:00; it does not depend on the label"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "no_residentes",
+     "acceso": "prohibido",
+     "nota": "acceso reservado a transporte público, taxis (Marina, Montoto hasta Puerta Real y Ciudad Vieja), vehículos de servicio público, autorizados y carga y descarga de 6:00 a 11:00; no depende de la etiqueta",
+     "nota_en": "access reserved for public transport, taxis (Marina, Montoto to Puerta Real and Ciudad Vieja), public-service vehicles, authorised vehicles and deliveries from 6:00 to 11:00; it does not depend on the label"
+    },
+    {
+     "etiqueta": "A",
+     "usuario": "residentes",
+     "acceso": "condicionado",
+     "nota": "vehículos autorizados con distintivo según los decretos de zonas peatonales reguladas (2017) y de la Ciudad Vieja (2018)",
+     "nota_en": "authorised vehicles holding a permit under the regulated pedestrian zone (2017) and Ciudad Vieja (2018) decrees"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "residentes",
+     "acceso": "condicionado",
+     "nota": "vehículos autorizados con distintivo según los decretos de zonas peatonales reguladas (2017) y de la Ciudad Vieja (2018)",
+     "nota_en": "authorised vehicles holding a permit under the regulated pedestrian zone (2017) and Ciudad Vieja (2018) decrees"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "residentes",
+     "acceso": "condicionado",
+     "nota": "vehículos autorizados con distintivo según los decretos de zonas peatonales reguladas (2017) y de la Ciudad Vieja (2018)",
+     "nota_en": "authorised vehicles holding a permit under the regulated pedestrian zone (2017) and Ciudad Vieja (2018) decrees"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "residentes",
+     "acceso": "condicionado",
+     "nota": "vehículos autorizados con distintivo según los decretos de zonas peatonales reguladas (2017) y de la Ciudad Vieja (2018)",
+     "nota_en": "authorised vehicles holding a permit under the regulated pedestrian zone (2017) and Ciudad Vieja (2018) decrees"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "residentes",
+     "acceso": "condicionado",
+     "nota": "vehículos autorizados con distintivo según los decretos de zonas peatonales reguladas (2017) y de la Ciudad Vieja (2018)",
+     "nota_en": "authorised vehicles holding a permit under the regulated pedestrian zone (2017) and Ciudad Vieja (2018) decrees"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "art. 190 de la Ordenanza de Movilidad Sostenible: infracción grave, 200 euros; pronto pago según la Ley de Tráfico",
+  "nota_en": "art. 190 of the Sustainable Mobility Byelaw: serious offence, 200 euros; early-payment discount under the Traffic Act"
+ },
+ "excepciones": [
+  "transporte público colectivo",
+  "taxis, solo en la Avenida de la Marina, Avenida Montoto hasta Puerta Real y Ciudad Vieja",
+  "vehículos de servicio público (máximo 8 m de largo en el interior de la Ciudad Vieja)",
+  "vehículos autorizados con distintivo (residentes y otros supuestos de los decretos de 2017 y 2018)",
+  "carga y descarga de 6:00 a 11:00 (de 5:00 a 12:00 para 0 y ECO)",
+  "vehículos habilitados para estacionar en reservas de espacio autorizadas"
+ ],
+ "excepciones_en": [
+  "public transport",
+  "taxis, only on Avenida de la Marina, Avenida Montoto to Puerta Real and the Ciudad Vieja",
+  "public-service vehicles (max. 8 m long inside the Ciudad Vieja)",
+  "authorised vehicles holding a permit (residents and other cases in the 2017 and 2018 decrees)",
+  "deliveries from 6:00 to 11:00 (5:00 to 12:00 for 0 and ECO vehicles)",
+  "vehicles entitled to park in authorised reserved spaces"
+ ],
+ "control": "sistema automático de control de accesos con plataforma tecnológica municipal",
+ "control_en": "automatic access control through the council's technology platform",
+ "pendiente": "la ampliación de la ZBE a otros sectores de la ciudad requiere un nuevo proyecto aprobado por la Xunta de Goberno Local",
+ "pendiente_en": "extending the zone to other parts of the city needs a new project approved by the local government board",
+ "ordenanza": {
+  "nombre": "Ordenanza de Movilidad Sostenible del Concello da Coruña (aprobación definitiva por el Pleno el 11/9/2025; BOP de A Coruña n.º 185, 29 de septiembre de 2025)",
+  "url": "https://www.coruna.gal/descarga/1453902501202/Ordenanza-de-Mobilidade-Sostible-BOP-num-185.pdf"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.coruna.gal/descarga/1453902501202/Ordenanza-de-Mobilidade-Sostible-BOP-num-185.pdf",
+   "label": "BOP de A Coruña n.º 185 · Aprobación definitiva da Ordenanza de mobilidade sostible",
+   "cita": "Aprobación definitiva da Ordenanza de mobilidade sostible"
+  },
+  {
+   "url": "https://www.coruna.gal/descarga/1453902501202/Ordenanza-de-Movilidad-Sostenible-del-Concello-da-Coruna_castellano.pdf",
+   "label": "Concello da Coruña · Ordenanza de Movilidad Sostenible (texto en castellano)",
+   "cita": "graves se sancionarán con multas de 200 euros."
+  },
+  {
+   "url": "https://www.coruna.gal/descarga/1453902501202/Ordenanza-de-Movilidad-Sostenible-del-Concello-da-Coruna_castellano.pdf",
+   "label": "Concello da Coruña · Ordenanza de Movilidad Sostenible, art. 20 (ZBE Centro)",
+   "cita": "a. Transporte público colectivo de personas viajeras."
+  },
+  {
+   "url": "https://www.coruna.gal/web/gl/actualidade/novas/nova/luz-verde-a-nova-ordenanza-de-mobilidade-sostible-que-unificara-a-normativa-municipal-e-acoutara-os/suceso/1453894924542",
+   "label": "Concello da Coruña · Luz verde á nova ordenanza de mobilidade sostible",
+   "cita": "Seguirá sendo unha zona de preferencia peonil"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "PDF del BOP (versión gallega) y texto castellano descargados de coruna.gal con curl y extraídos con pypdf; nota de prensa leída con curl. La ZBE no restringe por etiqueta: es un área de tráfico restringido a autorizados. 'desde' = resolución de 28/12/2022 que declaró la ZBE piloto; el régimen actual rige desde la entrada en vigor de la ordenanza (BOP 29/9/2025 + plazo del art. 65.2 LBRL)."
+}

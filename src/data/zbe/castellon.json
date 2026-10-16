@@ -1,0 +1,100 @@
+{
+ "slug": "castellon",
+ "nombre": "Castellón de la Plana",
+ "provincia": "Castellón",
+ "ccaa": "Comunitat Valenciana",
+ "estado": "aprobada",
+ "zonas": [
+  {
+   "id": "centro",
+   "nombre": "ZBE Centro",
+   "ambito": "interior de la Ronda Centro: al norte calle Cerdán de Tallada; al este San Roque, Sanahuja, Gobernador Bermúdez de Castro, Guitarrista Tárrega y avenida Casalduch; al sur Orfebres Santalínea y Lepanto; al oeste rondas Mijares y Magdalena; incluye las calles peatonales del núcleo histórico",
+   "ambito_en": "inside the Ronda Centro ring: Calle Cerdán de Tallada to the north; San Roque, Sanahuja, Gobernador Bermúdez de Castro, Guitarrista Tárrega and Avenida Casalduch to the east; Orfebres Santalínea and Lepanto to the south; Ronda Mijares and Ronda Magdalena to the west; it includes the pedestrian streets of the historic core",
+   "horario": "24h",
+   "horario_nota": "aplicación continua, todos los días del año; en la fase 1 no hay restricciones para particulares",
+   "desde": "2026-01-01",
+   "reglas": [
+    {
+     "etiqueta": "A",
+     "usuario": "todos",
+     "acceso": "permitido",
+     "nota": "fase 1 sin restricciones para vehículos particulares; solo se restringen los vehículos sin etiqueta de administraciones y contratistas, del transporte público colectivo y los taxis y VTC",
+     "nota_en": "phase 1 with no restrictions for private vehicles; only label-less vehicles of public bodies and their contractors, public transport, taxis and private hire are restricted"
+    },
+    {
+     "etiqueta": "B",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "C",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "ECO",
+     "usuario": "todos",
+     "acceso": "permitido"
+    },
+    {
+     "etiqueta": "0",
+     "usuario": "todos",
+     "acceso": "permitido"
+    }
+   ]
+  }
+ ],
+ "multa": {
+  "importe": 200,
+  "pronto_pago": 100,
+  "nota": "importe general de la Ley de Tráfico; en la fase 1 no hay restricciones por etiqueta para particulares",
+  "nota_en": "standard amount under the Traffic Act; in phase 1 there are no label-based restrictions for private drivers"
+ },
+ "excepciones": [
+  "residentes empadronados en la ZBE Centro con el vehículo a su nombre: acceso sin autorización",
+  "residentes no empadronados: autorización municipal registral",
+  "invitaciones de residentes: hasta 20 permisos mensuales"
+ ],
+ "excepciones_en": [
+  "residents registered in the ZBE Centro with the vehicle in their name: access with no permit",
+  "residents not registered locally: registered council permit",
+  "residents' invitations: up to 20 permits a month"
+ ],
+ "control": "sensores de calidad del aire en la calle y cámaras de control de accesos; el núcleo histórico peatonal mantiene su propio control de accesos con cámaras",
+ "control_en": "street air-quality sensors and access-control cameras; the pedestrianised historic core keeps its own camera-controlled access",
+ "pendiente": "fase 2: según los resultados de calidad del aire se activará una de las alternativas del proyecto técnico, que van desde ninguna restricción hasta prohibir A, B y C (con acceso solo a aparcamientos subterráneos en algunas alternativas); sin fecha fijada",
+ "pendiente_en": "phase 2: depending on air-quality results, one of the technical project's options will be switched on, ranging from no restrictions to banning A, B and C (with access to underground car parks only in some options); no date set",
+ "ordenanza": {
+  "nombre": "Ordenanza Municipal de Movilidad Sostenible de Castellón de la Plana (título V, capítulo III y anexos IV a VI: ZBE Centro)",
+  "url": "https://www.castello.es/documents/35637/3613180/ORDENANZA+MOVILIDAD+SOSTENIBLE+V23+%28Castellano%29.pdf/30fbee41-e298-df39-7611-b87ba6247540?t=1754031357875"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.castello.es/es/zona-de-bajas-emisiones-zbe-",
+   "label": "Ayuntamiento de Castelló · Zona de Bajas Emisiones (ZBE)",
+   "cita": "La ZBE de Castellón entrará en vigor cuando entre en vigor la Ordenanza de movilidad sostenible."
+  },
+  {
+   "url": "https://www.castello.es/es/zona-de-bajas-emisiones-zbe-",
+   "label": "Ayuntamiento de Castelló · Cómo funciona la ZBE",
+   "cita": "Las restricciones solo se aplicarán cuando los sensores registren niveles elevados de contaminación."
+  },
+  {
+   "url": "https://www.castello.es/es/zona-de-bajas-emisiones-zbe-",
+   "label": "Ayuntamiento de Castelló · ZBE, residentes",
+   "cita": "hasta 20 permisos mensuales"
+  },
+  {
+   "url": "https://www.castello.es/documents/35637/3613180/ORDENANZA+MOVILIDAD+SOSTENIBLE+V23+%28Castellano%29.pdf/30fbee41-e298-df39-7611-b87ba6247540?t=1754031357875",
+   "label": "Ayuntamiento de Castelló · Ordenanza de Movilidad Sostenible, anexo IV",
+   "cita": "24 horas diarias todos"
+  },
+  {
+   "url": "https://www.castello.es/es/w/castell%C3%B3n-avanza-en-la-aprobaci%C3%B3n-de-su-primera-ordenanza-de-movilidad-sostenible",
+   "label": "Ayuntamiento de Castelló · Castellón avanza en la aprobación de su primera Ordenanza de Movilidad Sostenible (21/07/2025)",
+   "cita": "Sin restricciones para los vecinos tal y como prometimos"
+  }
+ ],
+ "verificado": "2026-10-16",
+ "nota_verificacion": "leído con curl en castello.es (página ZBE, nota de 21/07/2025) y PDF de la ordenanza V23 enlazado en esa página (pypdf). No se pudo consultar el BOP de Castellón (buscador JSF); la fecha de inicio del 1/1/2026 es la anunciada por el Ayuntamiento en julio de 2025 y el texto leído es la versión publicada en la web municipal."
+}

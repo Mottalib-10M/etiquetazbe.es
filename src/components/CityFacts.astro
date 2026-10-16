@@ -5,7 +5,7 @@
  * identique par construction d'une ville à l'autre, hors comparaison d'unicité (RECETTE §6.4).
  */
 import { ciudad, veredictoZona, calendario, franja, type Perfil } from '../lib/engine/zbe';
-import { ETIQUETA_NOMBRE, accesoTitulo, franjaTexto, usuarioTexto } from '../lib/textos';
+import { ETIQUETA_NOMBRE, accesoTitulo, horarioTexto, usuarioTexto } from '../lib/textos';
 import { formatMoney, displayDate } from '../lib/format';
 import type { Locale } from '../i18n/routes';
 import type { Etiqueta } from '../lib/engine/etiqueta';
@@ -30,7 +30,7 @@ const exc = es ? c.excepciones : c.excepciones_en;
   {c.zonas.map((z) => (
     <div class="mt-6">
       <h3 class="text-lg font-semibold text-navy-900">{z.nombre}</h3>
-      <p class="mt-1 text-sm text-navy-700">{es ? z.ambito : z.ambito_en}. {es ? 'Control' : 'Enforced'}: {franjaTexto(franja(z.horario), lang)}. {es ? 'En vigor desde el' : 'In force since'} {dt(z.desde)}.</p>
+      <p class="mt-1 text-sm text-navy-700">{es ? z.ambito : z.ambito_en}. {es ? 'Control' : 'Enforced'}: {horarioTexto(z, lang)}. {z.desde ? <>{es ? (z.desde > hoy ? 'Entra en vigor el' : 'En vigor desde el') : (z.desde > hoy ? 'Takes effect on' : 'In force since')} {dt(z.desde)}</> : (es ? 'Fecha de entrada en vigor aún no publicada' : 'Start date not yet published')}.</p>
       <div class="not-prose my-4 overflow-x-auto">
         <table class="journal w-full text-sm">
           <caption class="mb-2 text-left text-sm text-navy-600">{es ? `Situación a ${dt(hoy)} según la ordenanza` : `Position on ${dt(hoy)} under the byelaw`}</caption>
@@ -66,6 +66,6 @@ const exc = es ? c.excepciones : c.excepciones_en;
   <ul class="mt-2 list-disc pl-5 text-sm text-navy-700">
     {c.ordenanza && <li><a href={c.ordenanza.url} target="_blank" rel="nofollow noopener noreferrer" class="underline">{c.ordenanza.nombre}</a></li>}
     {c.fuentes.filter((s) => s.url !== c.ordenanza?.url).map((s) => <li><a href={s.url} target="_blank" rel="nofollow noopener noreferrer" class="underline">{s.label}</a></li>)}
-    <li>{es ? 'Comprobado el' : 'Checked on'} <time datetime={c.verificado}>{dt(c.verificado)}</time>{c.nota_verificacion ? (es ? `; ${c.nota_verificacion}` : '; this council site blocks automated reading, the official pages were read through their indexed copies') : ''}.</li>
+    <li>{es ? 'Comprobado el' : 'Checked on'} <time datetime={c.verificado}>{dt(c.verificado)}</time>{c.nota_verificacion ? (es ? `; ${c.nota_verificacion}` : `; ${c.nota_verificacion_en ?? 'this council site blocks automated reading, the official pages were read through their indexed copies'}`) : ''}.</li>
   </ul>
 </section>
