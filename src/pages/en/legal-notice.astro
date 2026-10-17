@@ -1,7 +1,7 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
 import LegalIdentity from '../../components/LegalIdentity.astro';
-import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_URL } from '../../data/site-config';
+import { AUTHOR_NAME, CLARITY_ID, CONTACT_EMAIL, GA4_ID, LAST_UPDATED, SITE_URL } from '../../data/site-config';
 import { route } from '../../i18n/routes';
 const lang = 'en';
 ---
@@ -18,6 +18,10 @@ const lang = 'en';
     <p>The site estimates a vehicle’s environmental label under the criteria published by the DGT, shows whether it may enter the low-emission zones of several cities under their byelaws and works out the vehicle road tax (IVTM) under the 2026 tax byelaws. It is not a service of the DGT or any council and gives no legal advice. Methods are explained in <a href={route('method', lang)}>How we calculate</a>.</p>
     <h2>Liability</h2>
     <p>Data are checked against official sources and tested before every release, but we cannot guarantee they are error-free or that a byelaw has not changed since the date shown. The byelaw in force, the DGT vehicle register classification and the council’s decision always prevail. Linked sites are the responsibility of their owners.</p>
+    {/* gen-legal-pages:terms */}
+    <h2>Personal data and cookies</h2>
+    {GA4_ID ? (<p>What you type in the calculators stays in your browser. The site sets Google Analytics audience measurement cookies (<code>_ga</code>, <code>_ga_{GA4_ID.replace('G-', '')}</code>, 13 months at most), with no advertising{CLARITY_ID && '; page stability is monitored with Microsoft Clarity, cookie-free'}. Details, legal basis and how to object: <a href={route('privacy', lang)}>privacy policy</a> and <a href={route('cookies', lang)}>cookies</a> page.</p>) : (<p>What you type in the calculators stays in your browser and the site sets no cookies{CLARITY_ID && '; page stability is monitored anonymously with Microsoft Clarity, cookie-free'}. See the <a href={route('privacy', lang)}>privacy policy</a> and the <a href={route('cookies', lang)}>cookies</a> page.</p>)}
+    {/* /gen-legal-pages:terms */}
     <h2>Embedding</h2>
     <p>The tool may be embedded free of charge in an iframe as long as the credit link stays visible: <a href={route('widget', lang)}>embed the tool</a>.</p>
     <p>Privacy: <a href={route('privacy', lang)}>privacy policy</a> and <a href={route('cookies', lang)}>cookies</a>. Updated: {LAST_UPDATED}.</p>

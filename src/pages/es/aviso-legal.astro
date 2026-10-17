@@ -1,7 +1,7 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
 import LegalIdentity from '../../components/LegalIdentity.astro';
-import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_URL } from '../../data/site-config';
+import { AUTHOR_NAME, CLARITY_ID, CONTACT_EMAIL, GA4_ID, LAST_UPDATED, SITE_URL } from '../../data/site-config';
 import { route } from '../../i18n/routes';
 const lang = 'es';
 ---
@@ -18,6 +18,10 @@ const lang = 'es';
     <p>La web estima la etiqueta ambiental de un vehículo según los criterios publicados por la DGT, indica si puede acceder a la zona de bajas emisiones de varias ciudades según sus ordenanzas y calcula el impuesto sobre vehículos de tracción mecánica según las ordenanzas fiscales de 2026. No es un servicio de la DGT ni de ningún ayuntamiento y no presta asesoramiento jurídico. Los métodos están en <a href={route('method', lang)}>Cómo calculamos</a>.</p>
     <h2>Responsabilidad</h2>
     <p>Los datos se comprueban en las fuentes oficiales y se prueban antes de cada publicación, pero no garantizamos que estén libres de errores ni que una ordenanza no haya cambiado desde la fecha indicada. Prevalecen siempre la ordenanza vigente, la clasificación del Registro de Vehículos de la DGT y la resolución del ayuntamiento. De los sitios enlazados responden sus titulares.</p>
+    {/* gen-legal-pages:terms */}
+    <h2>Datos personales y cookies</h2>
+    {GA4_ID ? (<p>Lo que introduce en las calculadoras no sale de su navegador. El sitio instala cookies de medición de audiencia de Google Analytics (<code>_ga</code>, <code>_ga_{GA4_ID.replace('G-', '')}</code>, 13 meses como máximo), sin publicidad{CLARITY_ID && '; la estabilidad de las páginas se mide con Microsoft Clarity, sin cookies'}. Detalles, base jurídica y cómo oponerse: <a href={route('privacy', lang)}>política de privacidad</a> y página de <a href={route('cookies', lang)}>cookies</a>.</p>) : (<p>Lo que introduce en las calculadoras no sale de su navegador y el sitio no instala cookies{CLARITY_ID && '; la estabilidad de las páginas se mide de forma anónima con Microsoft Clarity, sin cookies'}. Véase la <a href={route('privacy', lang)}>política de privacidad</a> y la página de <a href={route('cookies', lang)}>cookies</a>.</p>)}
+    {/* /gen-legal-pages:terms */}
     <h2>Inserción</h2>
     <p>El simulador puede insertarse gratis mediante iframe manteniendo el enlace de crédito: <a href={route('widget', lang)}>insertar el simulador</a>.</p>
     <p>Privacidad: <a href={route('privacy', lang)}>política de privacidad</a> y <a href={route('cookies', lang)}>cookies</a>. Actualizado: {LAST_UPDATED}.</p>
