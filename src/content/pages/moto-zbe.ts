@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: 'moto-zbe', group: 'guia', order: 5, mini: 'motoEtiqueta',
+  id: 'moto-zbe', group: 'guia', agrupadaEn: 'etiqueta-dgt', order: 5, mini: 'motoEtiqueta',
   related: ['zbe-barcelona', 'zbe-sevilla', 'etiqueta-dgt', 'impuesto-circulacion'], sources: ['rgv_anexo2e', 'd2002_51', 'r168_2013', 'dgt_c'],
   es: {
     slug: 'etiqueta-moto-zbe', nav: 'Motos y ciclomotores en las ZBE', card: 'Euro 2, Euro 3 y excepciones',

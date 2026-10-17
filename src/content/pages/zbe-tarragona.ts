@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: "zbe-tarragona", group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 60, tool: 'zbe', ciudad: "tarragona",
+  id: "zbe-tarragona", group: 'zbe', order: 60, tool: 'zbe', ciudad: "tarragona",
   related: ["zbe-lleida", "zbe-girona", "zbe-barcelona", "etiqueta-b"], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: "zbe-tarragona",

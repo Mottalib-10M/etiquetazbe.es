@@ -2,7 +2,7 @@
 import { definePage, type FAQ, type Helpers, type PageDef } from './page-types';
 import { municipio, cuotaTurismo } from './engine/ivtm';
 interface Txt { intro: string; title: string; description: string; faqs: (h: Helpers) => FAQ[]; body: (h: Helpers) => string }
-export function ivtmPage(o: { slug: string; order: number; esSlug: string; enSlug: string; related: string[]; es: Txt; en: Txt }): PageDef {
+export function ivtmPage(o: { slug: string; agrupadaEn?: string; order: number; esSlug: string; enSlug: string; related: string[]; es: Txt; en: Txt }): PageDef {
   const m = municipio(o.slug)!;
   const c = (cvf: number) => cuotaTurismo({ municipio: o.slug, cvf }).cuota;
   const resume = (l: 'es' | 'en') => (h: Helpers) => {
@@ -12,7 +12,7 @@ export function ivtmPage(o: { slug: string; order: number; esSlug: string; enSlu
       : `${m.nombre}’s 2026 vehicle tax (IVTM) sets these car rates: ${t.map((x, i) => `${h.eur(x.cuota)} ${i === 0 ? `under ${h.num((x.hasta ?? 0) + 0.01)} fiscal hp` : x.hasta === null ? `from ${h.num(x.desde)}` : `from ${h.num(x.desde)} to ${h.num(x.hasta, 2)}`}`).join(', ')}. An average car rated at 11.5 fiscal hp pays ${h.eur(c(11.5))} a year and a large one at 17 hp, ${h.eur(c(17))}. ${m.regimen === 'foral' ? 'As a Basque foral territory, its bands and amounts are set by the foral tax rule rather than section 95 of the national Local Finance Act, so the cap of twice the national minimum that applies elsewhere in Spain does not apply here.' : `The national minimum under section 95 for the 8 to 11.99 hp band is ${h.eur(h.P.ivtm_art95.turismos[1].cuota)}, so ${m.nombre} applies a multiplier of ${h.num(t[1].cuota / h.P.ivtm_art95.turismos[1].cuota, 3)} in that band, within the legal maximum of 2.`} It is paid by whoever is the registered owner on 1 January, to the town on the registration document; in the year of first registration it is pro-rated by quarter. ${m.bonificaciones.length ? `The byelaw provides ${m.bonificaciones.length} kinds of relief, listed in the table below.` : 'The byelaw’s relief is not included in the calculation.'}`;
   };
   return definePage({
-    id: `impuesto-circulacion-${o.slug}`, group: 'ivtm', order: o.order, tool: 'ivtm', municipio: o.slug,
+    id: `impuesto-circulacion-${o.slug}`, group: 'ivtm', order: o.order, tool: 'ivtm', municipio: o.slug, ...(o.agrupadaEn ? { agrupadaEn: o.agrupadaEn } : {}),
     related: o.related, sources: ['trlhl', 'rgv_anexo5'],
     es: { slug: o.esSlug, nav: `Impuesto de circulación ${m.nombre}`, card: 'Cuotas 2026 y bonificaciones', title: o.es.title, description: o.es.description, h1: `Impuesto de circulación de ${m.nombre} 2026`, intro: o.es.intro, resume: resume('es'), faqs: o.es.faqs, body: o.es.body },
     en: { slug: o.enSlug, nav: `${m.nombre} road tax`, card: '2026 rates and relief', title: o.en.title, description: o.en.description, h1: `${m.nombre} road tax (IVTM) 2026`, intro: o.en.intro, resume: resume('en'), faqs: o.en.faqs, body: o.en.body },

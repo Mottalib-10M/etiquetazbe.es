@@ -1,6 +1,6 @@
 import { definePage } from '../../lib/page-types';
 export default definePage({
-  id: 'etiqueta-c-diesel-2014-2015', group: 'guia', order: 2, mini: 'diesel2015',
+  id: 'etiqueta-c-diesel-2014-2015', group: 'guia', agrupadaEn: 'etiqueta-c', order: 2, mini: 'diesel2015',
   related: ['etiqueta-c', 'etiqueta-b', 'etiqueta-dgt', 'pegatina-dgt'], sources: ['dgt_distintivo', 'dgt_c', 'dgt_consulta'],
   es: {
     slug: 'etiqueta-c-diesel-2014-o-2015', nav: 'Diésel 2014 o 2015: ¿B o C?', card: 'La fecha que se contradice en internet',

@@ -4,10 +4,11 @@
 
 ## Páginas principales (es)
 - /es/ : simulador ZBE + etiqueta + IVTM
-- /es/zonas-bajas-emisiones/ : las 38 ZBE, sus etiquetas restringidas y la ficha de cada ciudad sin página propia
-- /es/que-etiqueta-tiene-mi-coche/ : criterios de la DGT
-- /es/impuesto-de-circulacion/ : calculador del IVTM 2026
-- /es/zbe-madrid/, /es/zbe-barcelona/, /es/zbe-valencia/, /es/zbe-sevilla/, /es/zbe-zaragoza/, /es/zbe-malaga/, /es/zbe-bilbao/ : ZBE de las grandes ciudades
+- /es/zonas-bajas-emisiones/ : las 38 ZBE, sus etiquetas restringidas, la ficha de cada ciudad sin página propia y el coche extranjero o de alquiler (#coche-extranjero-zbe)
+- /es/que-etiqueta-tiene-mi-coche/ : criterios de la DGT, con motos y ciclomotores (#moto-zbe)
+- /es/etiqueta-c/ : etiqueta C, con el diésel de 2014 o 2015 (#etiqueta-c-diesel-2014-2015)
+- /es/impuesto-de-circulacion/ : calculador del IVTM 2026, con la ficha de Móstoles, Córdoba, Valladolid, Vitoria-Gasteiz, Donostia y A Coruña
+- /es/zbe-madrid/, /es/zbe-barcelona/, /es/zbe-valencia/, /es/zbe-sevilla/, /es/zbe-zaragoza/, /es/zbe-malaga/, /es/zbe-bilbao/, /es/zbe-valladolid/, /es/zbe-vigo/, /es/zbe-granada/, /es/zbe-girona/, /es/zbe-salamanca/, /es/zbe-santander/, /es/zbe-oviedo/, /es/zbe-tarragona/, /es/zbe-getafe/, /es/zbe-sabadell/ : ZBE con página propia
 - /es/caballos-fiscales/ : fórmula del anexo V del Reglamento General de Vehículos
 - /es/metodologia/ : método, pruebas, límites y fuentes
 

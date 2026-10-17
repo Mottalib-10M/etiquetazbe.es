@@ -2,7 +2,7 @@ import { definePage } from '../../lib/page-types';
 import { ciudad } from '../../lib/engine/zbe';
 const c = ciudad('getafe');
 export default definePage({
-  id: 'zbe-getafe', group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 20, tool: 'zbe', ciudad: 'getafe',
+  id: 'zbe-getafe', group: 'zbe', order: 20, tool: 'zbe', ciudad: 'getafe',
   related: ['zbe-madrid', 'impuesto-circulacion-mostoles', 'etiqueta-b', 'madrid-central'], sources: ['ley7_2021', 'lsv', 'dgt_consulta'],
   es: {
     slug: 'zbe-getafe', nav: 'ZBE Getafe', card: 'B de fuera solo a parkings adheridos',

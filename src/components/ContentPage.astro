@@ -13,7 +13,7 @@ import CiudadesAgrupadas from './CiudadesAgrupadas.astro';
 import { hrefDe } from '../lib/href';
 import MuniFacts from './MuniFacts.astro';
 import { municipio } from '../lib/engine/ivtm';
-import { pageDeMunicipio } from '../lib/pages';
+import { ivtmCubierto } from '../lib/pages';
 import AdSlot from './AdSlot.astro';
 import { route, ROUTES, type Locale } from '../i18n/routes';
 import { label } from '../i18n/nav';
@@ -67,6 +67,6 @@ const preset = { ...(page.toolPreset ?? {}), ...(page.ciudad ? { ciudad: page.ci
     {page.ciudad && page.tool === 'zbe' && <CityFacts slug={page.ciudad} lang={lang} />}
     <CiudadesAgrupadas hub={page.id} lang={lang} />
     {page.municipio && <MuniFacts slug={page.municipio} lang={lang} />}
-    {page.ciudad && page.tool === 'zbe' && !page.municipio && municipio(page.ciudad) && !pageDeMunicipio(page.ciudad) && <MuniFacts slug={page.ciudad} lang={lang} />}
+    {page.ciudad && page.tool === 'zbe' && !page.municipio && municipio(page.ciudad) && !ivtmCubierto(page.ciudad) && <MuniFacts slug={page.ciudad} lang={lang} />}
   </article>
 </PageLayout>

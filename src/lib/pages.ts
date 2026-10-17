@@ -21,3 +21,5 @@ export const GROUPS: Group[] = ['zbe', 'etiqueta', 'ivtm', 'guia'];
 export const pageById = (id: string) => TODAS.find((p) => p.id === id);
 export const pageDeCiudad = (slug: string) => PAGES.find((p) => p.ciudad === slug && p.tool === 'zbe');
 export const pageDeMunicipio = (slug: string) => PAGES.find((p) => p.municipio === slug);
+/** Commune IVTM décrite par une page, propre ou regroupée (son cuadro y est déjà : pas de doublon ailleurs). */
+export const ivtmCubierto = (slug: string) => TODAS.find((p) => p.municipio === slug);

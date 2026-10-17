@@ -1,7 +1,7 @@
 import { definePage } from '../../lib/page-types';
 import { N_CIUDADES, restringen, nombres } from '../../lib/resumen-ciudades';
 export default definePage({
-  id: 'coche-extranjero-zbe', group: 'guia', order: 4, mini: 'extranjero',
+  id: 'coche-extranjero-zbe', group: 'guia', agrupadaEn: 'zonas-bajas-emisiones', order: 4, mini: 'extranjero',
   related: ['zbe-barcelona', 'zbe-palma', 'zbe-san-sebastian', 'pegatina-dgt'], sources: ['dgt_distintivo', 'ley7_2021', 'lsv'],
   es: {
     slug: 'coche-extranjero-zbe', nav: 'Coche extranjero o de alquiler en una ZBE', card: 'Equivalencia por norma Euro y registros',

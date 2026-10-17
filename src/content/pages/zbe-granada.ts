@@ -2,7 +2,7 @@ import { definePage } from '../../lib/page-types';
 import { ciudad } from '../../lib/engine/zbe';
 const c = ciudad('granada');
 export default definePage({
-  id: 'zbe-granada', group: 'zbe', agrupadaEn: 'zonas-bajas-emisiones', order: 19, tool: 'zbe', ciudad: 'granada',
+  id: 'zbe-granada', group: 'zbe', order: 19, tool: 'zbe', ciudad: 'granada',
   related: ['zbe-malaga', 'zbe-sevilla', 'sin-etiqueta', 'coche-extranjero-zbe'], sources: ['ley7_2021', 'lsv', 'rd1052_2022'],
   es: {
     slug: 'zbe-granada', nav: 'ZBE Granada', card: 'Toda la ciudad para coches sin etiqueta de fuera',
