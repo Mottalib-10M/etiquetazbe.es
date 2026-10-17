@@ -1,5 +1,5 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://zbe-etiqueta.example";
+export const SITE_URL = "https://etiquetazbe.es";
 export const SITE_NAMES: Record<string, string> = {"es": "ZBE y Etiqueta", "en": "ZBE & DGT Label"};
 export const LANG_TAGS: Record<string, string> = {"es": "es-ES", "en": "en-ES"};
 export const OG_LOCALES: Record<string, string> = {"es": "es_ES", "en": "en_GB"};
@@ -18,7 +18,7 @@ export const AUTHOR_DESC: Record<string, string> = {"es": "Radif Partners public
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"es": ["Zonas de bajas emisiones (ZBE)", "Distintivo ambiental de la DGT", "Impuesto sobre vehículos de tracción mecánica (IVTM)", "Caballos fiscales", "Normas de emisiones Euro"], "en": ["Spanish low-emission zones (ZBE)", "DGT environmental label", "Spanish vehicle road tax (IVTM)", "Fiscal horsepower (CVF)", "Euro emission standards"]};
-export const CONTACT_EMAIL = "contacto@zbe-etiqueta.example";
+export const CONTACT_EMAIL = "contacto@etiquetazbe.es";
 export const THEME_COLOR = '#AA151B';
 export const LOGO_SYMBOL = 'ZBE';
 export const BING_VERIFY_CODE = '';

@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /*?*
 
-Sitemap: https://zbe-etiqueta.example/sitemap-index.xml
+Sitemap: https://etiquetazbe.es/sitemap-index.xml
