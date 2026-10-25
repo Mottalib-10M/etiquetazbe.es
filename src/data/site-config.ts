@@ -1,6 +1,8 @@
 /** Configuration centrale du site (générée par new-site.py). */
 export const SITE_URL = "https://etiquetazbe.es";
-export const SITE_NAMES: Record<string, string> = {"es": "ZBE y Etiqueta", "en": "ZBE & DGT Label"};
+// Partie du nom en couleur dans l'en-tete ('' = aucune).
+export const BRAND_ACCENT = 'ZBE';
+export const SITE_NAMES: Record<string, string> = {"es": "Etiqueta ZBE", "en": "Etiqueta ZBE"};
 export const LANG_TAGS: Record<string, string> = {"es": "es-ES", "en": "en-ES"};
 export const OG_LOCALES: Record<string, string> = {"es": "es_ES", "en": "en_GB"};
 export const LOCALE_TAG = 'es-ES';

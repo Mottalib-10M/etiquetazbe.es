@@ -1,6 +1,6 @@
 {
- "name": "ZBE y Etiqueta",
- "short_name": "ZBE y Etiqueta",
+ "name": "Etiqueta ZBE",
+ "short_name": "Etiqueta ZBE",
  "description": "¿Qué etiqueta DGT tiene mi coche y puedo entrar en la ZBE de mi ciudad? Reglas oficiales por ciudad e impuesto de circulación de tu ayuntamiento.",
  "start_url": "/es/",
  "display": "standalone",

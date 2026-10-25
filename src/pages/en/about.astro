@@ -8,7 +8,7 @@ import { CIUDADES } from '../../lib/engine/zbe';
 import { MUNICIPIOS } from '../../lib/engine/ivtm';
 const lang = 'en';
 ---
-<PageLayout title="ZBE & DGT Label: who runs the tool and how it is checked" description="Who is behind the Spanish DGT label, low-emission-zone and road-tax calculator, why it exists, how each city byelaw is checked and how the site is funded." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path: route('about', lang) }])]} breadcrumbs={[{ label: 'About' }]}>
+<PageLayout title="Etiqueta ZBE: who runs the tool and how it is checked" description="Who is behind the Spanish DGT label, low-emission-zone and road-tax calculator, why it exists, how each city byelaw is checked and how the site is funded." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path: route('about', lang) }])]} breadcrumbs={[{ label: 'About' }]}>
   <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">Who makes {SITE_NAMES.en}</h1></header>
   <div class="prose prose-slate max-w-none">
     <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
