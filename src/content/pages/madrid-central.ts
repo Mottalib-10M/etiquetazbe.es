@@ -18,7 +18,7 @@ export default definePage({
     body: (h) => `
 <h2>El nombre ha cambiado, el mapa no</h2>
 <p>Quien busca «Madrid Central» encuentra hoy la ZBEDEP Distrito Centro, que se superpone a la ZBE de toda la ciudad. El perímetro sigue siendo el del distrito Centro, con sus calles de borde abiertas a todos, y la lógica es la misma de 2018: se puede llegar a un aparcamiento, no se puede usar el centro como paso. Las cámaras OCR leen la matrícula al entrar y comprueban si el vehículo está autorizado o va a un aparcamiento del sistema.</p>
-<h2>Visitas, compras y hoteles</h2>
+<h2>Visitas, compras y hoteles en el antiguo Madrid Central</h2>
 <p>Para una visita, la vía más simple es un aparcamiento adherido: el acceso queda justificado por la entrada en el parking. Los vehículos ECO y 0, en cambio, no necesitan ningún trámite para entrar ni para atravesar el distrito.</p>
 <p>Fuera del distrito, las reglas son las de la ZBE municipal y las de Plaza Elíptica: ${h.a('zbe-madrid', 'consulta las tres zonas de Madrid')}.</p>`,
   },
@@ -36,7 +36,7 @@ export default definePage({
     body: (h) => `
 <h2>The name changed, the map did not</h2>
 <p>Search for “Madrid Central” today and you land on the Centro district special protection zone, layered on top of the citywide zone. The boundary is still the Centro district, with its edge roads open to everyone, and the logic is the 2018 one: you may reach a car park, you may not use the centre as a through route. OCR cameras read the plate on entry and check whether the vehicle is authorised or heading for a car park in the system.</p>
-<h2>Visits, shopping and hotels</h2>
+<h2>Visits, shopping and hotels in the old Madrid Central</h2>
 <p>For a visit, the simplest route is an approved car park: entering it justifies the trip. A district resident can issue passes to relatives’ or suppliers’ B or C cars. ECO and zero-emission vehicles need no formality at all to enter or cross the district.</p>
 <p>Outside the district, the citywide zone and Plaza Elíptica rules apply: ${h.a('zbe-madrid', 'see all three Madrid zones')}.</p>`,
   },

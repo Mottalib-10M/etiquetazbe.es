@@ -15,7 +15,7 @@ const comun = m.regimen !== 'foral';
 const motos: Record<string, [string, string]> = { ciclomotor: ['Ciclomotores', 'Mopeds'], hasta125: ['Motos hasta 125 cc', 'Motorbikes up to 125 cc'], '125a250': ['Más de 125 hasta 250 cc', '125 to 250 cc'], '250a500': ['Más de 250 hasta 500 cc', '250 to 500 cc'], '500a1000': ['Más de 500 hasta 1.000 cc', '500 to 1,000 cc'], mas1000: ['Más de 1.000 cc', 'Over 1,000 cc'] };
 ---
 <section class="mt-10 border-t border-navy-200 pt-6" data-chrome aria-labelledby={`ivtm-${slug}`}>
-  <h2 id={`ivtm-${slug}`} class="text-2xl font-bold text-navy-900">{es ? `Cuadro de turismos 2026 de ${m.nombre}` : `${m.nombre} 2026 car rates`}</h2>
+  <h2 id={`ivtm-${slug}`} class="text-2xl font-bold text-navy-900">{es ? `Impuesto de circulación 2026 de ${m.nombre}: turismos` : `${m.nombre} road tax 2026: car rates`}</h2>
   <div class="not-prose my-4 overflow-x-auto">
     <table class="journal w-full text-sm">
       <caption class="mb-2 text-left text-sm text-navy-600">{es ? 'Cuota anual en euros por caballos fiscales' : 'Annual amount in euros by fiscal horsepower'}</caption>

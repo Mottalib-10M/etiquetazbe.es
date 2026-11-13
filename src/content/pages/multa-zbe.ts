@@ -44,7 +44,7 @@ export default definePage({
       { q: 'Which appeals work against a ZBE fine?', a: 'Those proving a factual error: the vehicle was entitled to a label but wrongly classified, it was authorised or in the council register, it entered outside enforced hours, it was an exempt vehicle or the zone was still in its warning phase. General objections to the byelaw rarely succeed unless a court has struck it down.' },
     ],
     body: (h) => `
-<h2>When the fine arrives</h2>
+<h2>When the ZBE fine arrives</h2>
 <p>Almost every city starts with a warning phase in which cameras send letters without penalty: València until 30 November 2025, Donostia in January and February 2025, Vitoria-Gasteiz from September to December 2025, Granada from April to September 2025. After that, every camera detection during enforced hours can become a fine. Each city’s start date for fines is on its page and in the tool.</p>
 <p>The council processes the fine using the number-plate camera image, matched against the environmental rating on the DGT vehicle register. It goes to the registered owner, who has 20 calendar days to identify the driver if it was someone else. For company or leased cars, it goes to the registered owner or long-term lessee.</p>
 <h2>Pay or appeal</h2>

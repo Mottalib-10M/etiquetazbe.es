@@ -18,7 +18,7 @@ export default definePage({
     body: (h) => `
 <h2>Dos condiciones, no una</h2>
 <p>La confusión más común con la ECO es pensar que basta con el tipo de motor. La DGT lo escribe así: «Deben cumplir los criterios de la etiqueta C». Un híbrido no enchufable moderno los cumple siempre; un coche antiguo adaptado a gas, no. Por eso hay vehículos de GLP con etiqueta B circulando, y también por eso la transformación a gas no es una vía para ganar la ECO en un coche muy viejo.</p>
-<h2>Dónde marca la diferencia</h2>
+<h2>Dónde marca la diferencia la etiqueta ECO</h2>
 <p>En casi todas las zonas la C basta hoy para entrar. La ECO aporta dos cosas: el paso libre por el Distrito Centro de Madrid, donde una C de fuera solo puede ir a un aparcamiento, y seguridad a largo plazo, porque los calendarios de Palma, Valladolid y Vitoria-Gasteiz la mantienen como libre en 2030. En el impuesto, ${h.a('bonificacion-ivtm-coche-electrico', 'las bonificaciones')} varían mucho de una ciudad a otra.</p>`,
   },
   en: {
@@ -36,7 +36,7 @@ export default definePage({
     body: (h) => `
 <h2>Two conditions, not one</h2>
 <p>The most common mistake with the ECO label is to think the engine type is enough. The DGT puts it plainly: they “must meet the criteria of the C label”. A modern self-charging hybrid always does; an old car adapted to gas does not. That is why some LPG cars carry a B, and why converting a very old car to gas is not a route to the ECO.</p>
-<h2>Where it makes a difference</h2>
+<h2>Where the ECO label makes a difference</h2>
 <p>In almost every zone a C is enough today. The ECO adds two things: free passage through Madrid’s Centro district, where an out-of-town C may only go to a car park, and long-term security, because the Palma, Valladolid and Vitoria-Gasteiz timetables keep it free in 2030. On tax, ${h.a('bonificacion-ivtm-coche-electrico', 'relief')} varies a lot from city to city.</p>`,
   },
 });

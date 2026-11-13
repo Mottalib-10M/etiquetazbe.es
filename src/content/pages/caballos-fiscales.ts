@@ -16,7 +16,7 @@ export default definePage({
       { q: '¿Cuántos caballos fiscales tiene un coche eléctrico de 150 kW?', a: `${h.num(cvfElectrico(150), 2)}, según la fórmula del anexo V: potencia efectiva en kW entre 5,152. Esa potencia efectiva la fija el laboratorio oficial y suele ser menor que la potencia máxima anunciada, así que la cifra de la ficha técnica puede ser inferior. Con más de 20 caballos estaría en el tramo más alto del impuesto.` }, { q: `¿Los caballos fiscales influyen en la etiqueta de la DGT?`, a: `No. La etiqueta depende de la tecnología del motor y de su norma Euro, no de su potencia fiscal: un gasolina Euro 6 de 20 caballos fiscales tiene la C igual que uno de 8. Los caballos fiscales solo deciden el tramo del impuesto de circulación, y en algunos casos el de otros tributos o tasas que los usan como referencia.` }
     ],
     body: (h) => `
-<h2>Ejemplos con la fórmula oficial</h2>
+<h2>Ejemplos de caballos fiscales con la fórmula oficial</h2>
 ${h.table(['Motor', 'Caballos fiscales', 'Tramo del IVTM'], ej.map(([cc, n]) => { const c = cvfCombustion(cc, n); return [`${h.num(cc)} cc, ${n} cilindros`, h.num(c, 2), c < 8 ? 'menos de 8' : c < 12 ? '8 a 11,99' : c < 16 ? '12 a 15,99' : c < 20 ? '16 a 19,99' : '20 o más']; }))}
 <p>Fíjate en el salto entre los tres cilindros de 999 cc, por debajo de 8 caballos, y los de 1.197 cc, ya en el tramo de 8 a 11,99. Un motor pequeño de tres cilindros es el que más ahorra en el impuesto, y el cambio de tramo puede doblar la cuota.</p>`,
   },
@@ -32,7 +32,7 @@ ${h.table(['Motor', 'Caballos fiscales', 'Tramo del IVTM'], ej.map(([cc, n]) => 
       { q: 'How many fiscal hp does a 150 kW electric car have?', a: `${h.num(cvfElectrico(150), 2)}, under the annex V formula: effective power in kW divided by 5.152. That effective power is set by the official laboratory and is usually lower than the advertised peak power, so the figure on the technical card may be lower. Above 20 hp it would be in the top road-tax band.` }, { q: `Do fiscal horsepower figures affect the DGT label?`, a: `No. The label depends on the engine technology and its Euro standard, not on fiscal power: a 20 fiscal hp Euro 6 petrol car gets the C just like an 8 hp one. Fiscal horsepower only decides the road-tax band, and in some cases the band of other charges that use it as a reference.` }
     ],
     body: (h) => `
-<h2>Examples with the official formula</h2>
+<h2>Fiscal horsepower examples with the official formula</h2>
 ${h.table(['Engine', 'Fiscal hp', 'Road-tax band'], ej.map(([cc, n]) => { const c = cvfCombustion(cc, n); return [`${h.num(cc)} cc, ${n} cylinders`, h.num(c, 2), c < 8 ? 'under 8' : c < 12 ? '8 to 11.99' : c < 16 ? '12 to 15.99' : c < 20 ? '16 to 19.99' : '20 or more']; }))}
 <p>Note the jump between the 999 cc three-cylinder, under 8 hp, and the 1,197 cc one, already in the 8 to 11.99 band. A small three-cylinder engine saves the most tax, and moving up a band can double the bill.</p>`,
   },

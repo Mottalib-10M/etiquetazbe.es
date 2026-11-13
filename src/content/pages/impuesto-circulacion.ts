@@ -23,7 +23,7 @@ export default definePage({
       { q: '¿Qué vehículos están exentos del impuesto de circulación?', a: 'El artículo 93 del texto refundido exime, entre otros, a los vehículos para personas con movilidad reducida, a los matriculados a nombre de personas con discapacidad de al menos el 33 % para su uso exclusivo, a las ambulancias, a los autobuses de transporte público urbano y a la maquinaria agrícola con cartilla. La exención de discapacidad se pide al ayuntamiento y vale para un solo vehículo.' },
     ],
     body: (h) => `
-<h2>Lo mismo, en ${MUNICIPIOS.length} ciudades</h2>
+<h2>El impuesto de circulación del mismo coche en ${MUNICIPIOS.length} ciudades</h2>
 <p>La tabla compara la cuota anual de 2026 para cuatro coches tipo, de 7, 11,5, 14 y 21 caballos fiscales, en las ordenanzas que hemos leído. Las diferencias llegan a ser de más del doble para un mismo coche, y en los territorios forales la escala es otra.</p>
 ${h.table(['Municipio', '7 CVF', '11,5 CVF', '14 CVF', '21 CVF', 'Régimen'], tabla('es', h))}
 <h2>Los caballos fiscales no son los CV del motor</h2>
@@ -34,7 +34,7 @@ ${h.table(['Municipio', '7 CVF', '11,5 CVF', '14 CVF', '21 CVF', 'Régimen'], ta
     title: 'Road Tax Spain 2026: IVTM Calculator for Your Car by Town',
     description: `Work out your 2026 Spanish road tax (IVTM): rates from ${MUNICIPIOS.length} town byelaws or the national minimum, fiscal hp from engine size or kW, relief, pro-rating. Dated.`,
     h1: 'Spanish road tax 2026: work out your car’s IVTM',
-    intro: 'Choose the town on the registration document and the fiscal horsepower; if you do not know it, work it out from the engine size or electric power.',
+    intro: 'For your road tax, choose the town on the registration document and the fiscal horsepower; if you do not know it, work it out from the engine size or electric power.',
     resume: (h) => `The vehicle tax known as IVTM, or impuesto de circulación, is charged every year by the council of the address on the registration document to whoever owns the vehicle on 1 January. Section 95 of the Local Finance Act sets a minimum for cars by fiscal horsepower: ${h.P.ivtm_art95.turismos.map((t) => h.eur(t.cuota)).join(', ')} across the five bands, from under 8 to 20 or more. Each council may multiply it by up to ${h.P.ivtm_art95.coeficiente_maximo} and grant up to ${h.pct(h.P.ivtm_art95.bonificacion_max_carburante)} relief by fuel or engine, and up to 100% for historic vehicles or those over 25 years old. Exempt vehicles include those registered to people with a disability of 33% or more for their sole use. On first registration and permanent deregistration the amount is pro-rated by quarter. The Basque Country and Navarre have their own foral rules.`,
     faqs: (h) => [
       { q: 'Who pays the road tax if I sell the car in March?', a: 'Whoever owned it on 1 January, because the tax falls due that day and private sales are not pro-rated. Buyer and seller can agree to split it, but the council charges the owner on 1 January. The DGT also refuses to transfer ownership if the previous year’s tax is unpaid.' },
@@ -42,7 +42,7 @@ ${h.table(['Municipio', '7 CVF', '11,5 CVF', '14 CVF', '21 CVF', 'Régimen'], ta
       { q: 'Which vehicles are exempt from Spanish road tax?', a: 'Section 93 of the Act exempts, among others, vehicles for people with reduced mobility, those registered to people with a disability of at least 33% for their sole use, ambulances, urban public buses and farm machinery with an agricultural log. The disability exemption is requested from the council and covers one vehicle.' },
     ],
     body: (h) => `
-<h2>The same car in ${MUNICIPIOS.length} towns</h2>
+<h2>Road tax on the same car in ${MUNICIPIOS.length} towns</h2>
 <p>The table compares the 2026 annual amount for four typical cars, at 7, 11.5, 14 and 21 fiscal hp, under the byelaws we have read. The same car can pay more than twice as much from one town to another, and the foral territories use a different scale.</p>
 ${h.table(['Town', '7 hp', '11.5 hp', '14 hp', '21 hp', 'Regime'], tabla('en', h))}
 <h2>Fiscal horsepower is not engine horsepower</h2>

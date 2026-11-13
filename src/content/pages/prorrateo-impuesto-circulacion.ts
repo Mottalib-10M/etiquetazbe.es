@@ -8,7 +8,7 @@ export default definePage({
     title: 'Impuesto de circulación al vender o dar de baja: prorrateo',
     description: 'Impuesto de circulación al comprar, vender o dar de baja un coche: paga el titular a 1 de enero; prorrateo por trimestres solo en alta, baja o robo. Al día.',
     h1: 'IVTM al comprar, vender o dar de baja un coche',
-    intro: 'El impuesto de circulación es anual y se devenga el 1 de enero. Solo en tres situaciones se paga por trimestres, y una venta no es una de ellas.',
+    intro: 'El impuesto de circulación es anual y se devenga el 1 de enero. Solo en tres situaciones se paga por trimestres: dar de baja el coche es una, venderlo no.',
     resume: (h) => `El artículo 96 del texto refundido de la Ley Reguladora de las Haciendas Locales establece que el periodo impositivo del IVTM coincide con el año natural y que el impuesto se devenga el primer día de ese periodo, el 1 de enero. Por eso paga el impuesto de todo el año quien figura como titular en el permiso de circulación ese día, aunque venda el coche en febrero. La cuota solo se prorratea por trimestres naturales en tres casos: la primera adquisición del vehículo, cuando el periodo empieza el día de la adquisición; la baja definitiva; y la baja temporal por sustracción o robo, desde que consta en el Registro de Vehículos. En la primera matriculación se pagan los trimestres que quedan, incluido el del alta: un coche matriculado en mayo paga tres cuartas partes de la cuota. En la baja definitiva se pagan los trimestres transcurridos, incluido el de la baja. Además, la DGT no tramita un cambio de titularidad si el titular no ha pagado el impuesto del año anterior.`,
     faqs: (h) => [
       { q: 'Compro un coche de segunda mano en junio: ¿pago el IVTM de este año?', a: 'No al ayuntamiento: el recibo de este año es del vendedor, que era el titular el 1 de enero. Tú pagarás desde el año siguiente, en el municipio de tu domicilio. Lo habitual es pactar en el contrato si el comprador compensa al vendedor la parte del año, pero eso es un acuerdo privado que el ayuntamiento no tiene en cuenta.' },
@@ -19,7 +19,7 @@ export default definePage({
 <h2>Los trimestres que se pagan</h2>
 ${h.table(['Mes del alta o de la baja', 'Primera matriculación', 'Baja definitiva o robo'], [['Enero a marzo', '4/4', '1/4'], ['Abril a junio', '3/4', '2/4'], ['Julio a septiembre', '2/4', '3/4'], ['Octubre a diciembre', '1/4', '4/4']])}
 <p>Algunos ayuntamientos publican directamente estas cantidades: GESTRISAM en Málaga da la cuota de tres, dos y un trimestre de cada tramo, y Madrid hace lo mismo en su tabla. En Gipuzkoa, el Ayuntamiento de Donostia publica una cuota distinta para cada mes del año, porque el régimen foral reparte el impuesto de otra forma.</p>
-<h2>La venta y el cambio de titular</h2>
+<h2>Impuesto de circulación al vender: el cambio de titular</h2>
 <p>Cuando vendes un coche, el trámite en la DGT exige que el impuesto del año anterior esté pagado: si hay un recibo pendiente, la Jefatura no registra la transferencia. Los ayuntamientos comunican a la DGT los impagos al terminar el periodo voluntario, y la ausencia de anotaciones vale como prueba de pago. Por eso un comprador prudente pide al vendedor el último recibo pagado.</p>
 <p>El impuesto del año de la venta lo paga, ante el ayuntamiento, quien era titular el 1 de enero. Las partes pueden repartirlo en el contrato, por ejemplo en proporción a los meses, pero es un pacto entre particulares. Para conocer la cuota anual de tu coche, usa ${h.a('impuesto-circulacion', 'el calculador del impuesto de circulación')}.</p>
 <h2>Cambio de domicilio</h2>
@@ -38,7 +38,7 @@ ${h.table(['Mes del alta o de la baja', 'Primera matriculación', 'Baja definiti
     title: 'Road Tax Spain When Selling or Scrapping a Car: Pro-Rating',
     description: 'Spanish road tax when you buy, sell or scrap a car: the owner on 1 January pays, quarterly pro-rating only on first registration, scrapping or theft. Dated.',
     h1: 'Road tax when you buy, sell or scrap a car in Spain',
-    intro: 'Spanish road tax is annual and falls due on 1 January. Only three situations are pro-rated by quarter, and a sale is not one of them.',
+    intro: 'Spanish road tax is annual and falls due on 1 January. Only three situations are pro-rated by quarter: scrapping a car is one, selling it is not.',
     resume: (h) => `Section 96 of the Local Finance Act states that the IVTM tax period is the calendar year and that the tax falls due on its first day, 1 January. So whoever is the registered owner that day pays for the whole year, even if the car is sold in February. The amount is only pro-rated by calendar quarter in three cases: first acquisition of the vehicle, when the period starts on the purchase date; permanent deregistration; and temporary deregistration after theft, from when it is recorded on the vehicle register. On first registration you pay the remaining quarters, including the one of registration: a car registered in May pays three quarters of the amount. On permanent deregistration you pay the quarters elapsed, including the one of deregistration. The DGT also refuses to transfer ownership if the previous year’s tax is unpaid.`,
     faqs: (h) => [
       { q: 'I am buying a used car in June: do I pay this year’s road tax?', a: 'Not to the council: this year’s bill belongs to the seller, who was the owner on 1 January. You pay from next year, to the town of your address. Buyers and sellers often agree in the contract that the buyer compensates the seller for part of the year, but that is a private deal the council ignores.' },
@@ -49,7 +49,7 @@ ${h.table(['Mes del alta o de la baja', 'Primera matriculación', 'Baja definiti
 <h2>Which quarters are paid</h2>
 ${h.table(['Month of registration or deregistration', 'First registration', 'Scrapped or stolen'], [['January to March', '4/4', '1/4'], ['April to June', '3/4', '2/4'], ['July to September', '2/4', '3/4'], ['October to December', '1/4', '4/4']])}
 <p>Some councils publish these amounts directly: GESTRISAM in Málaga gives the three-, two- and one-quarter amounts for every band, and Madrid does the same in its table. In Gipuzkoa, Donostia publishes a different amount for each month of the year, because the foral regime splits the tax differently.</p>
-<h2>Sales and change of owner</h2>
+<h2>Road tax when selling a car: change of owner</h2>
 <p>When you sell a car, the DGT transfer requires the previous year’s tax to be paid: if a bill is outstanding, the traffic office will not record the transfer. Councils report unpaid bills to the DGT at the end of the payment period, and the absence of any record counts as proof of payment. That is why a careful buyer asks the seller for the last paid bill.</p>
 <p>The tax for the year of the sale is paid, as far as the council is concerned, by whoever owned the car on 1 January. The parties may split it in the contract, for example by months, but that is a private arrangement. To find your car’s annual amount, use ${h.a('impuesto-circulacion', 'the road-tax calculator')}.</p>
 <h2>Change of address</h2>

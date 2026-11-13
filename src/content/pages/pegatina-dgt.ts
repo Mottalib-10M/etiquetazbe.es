@@ -38,7 +38,7 @@ export default definePage({
     title: 'DGT Sticker Spain 2026: Where to Buy It, Price, Placement',
     description: 'Spain’s DGT sticker in 2026: €5 at post offices, garages and agencies, fitted in the lower right corner of the windscreen. Only some zones require it.',
     h1: 'The DGT sticker: buying it, fitting it and when it is required',
-    intro: 'Your label exists on the register whether you stick it on or not. The sticker is only visible proof of it, and some cities require it while others do not.',
+    intro: 'Your DGT label exists on the register whether you stick it on or not. The sticker is only visible proof of it, and some cities require it while others do not.',
     resume: (h) => `A vehicle’s environmental classification exists on the DGT vehicle register from the day it is registered, whether or not you display it. The sticker, which the DGT calls the distintivo ambiental, is how you show it: the DGT says getting and fitting it is voluntary and that, if fitted, it goes in the lower right corner of the windscreen, or anywhere visible on a motorbike. It costs ${h.eur(h.P.distintivos.precio_pegatina)}, though sellers may add postage or handling. It is sold at post offices (Correos), garages in the CETRAA network and other authorised workshops, administrative agencies (gestorías), the Instituto de Estudios de Automoción and authorised tobacconists (estancos); fleets go through Ganvam. First check with the plate, free on the DGT website, that the vehicle is entitled to one. Among the zones on this site, ${obl.join(' and ')} require it on show; in ${no.join(', ')}, cameras read the plate and it is not needed.`,
     faqs: (h) => [
       { q: 'What information is on the DGT sticker?', a: 'The vehicle’s Euro emission level, a QR code with the registration year, make and model, fuel, category and electric range, Euro standard and fiscal power, the label number with its barcode, and the plate with the fuel. The zero-emission one shows the type of electric vehicle: BEV, REEV, PHEV, FCEV or HICEV.' },
@@ -49,7 +49,7 @@ export default definePage({
     body: (h) => `
 <h2>Before buying: the number-plate lookup</h2>
 <p>The sticker grants no rights the car does not already have: it mirrors the register. So the first step is to check on the DGT website, with the plate and no login, which label applies; you can also check in the miDGT app or by phone. If the lookup says the vehicle is not entitled to any label, no outlet can issue one. If you think the classification is wrong, it is the register that needs correcting, with the technical card.</p>
-<h2>Where and how to fit it</h2>
+<h2>Where and how to fit the DGT sticker</h2>
 <p>In the lower right corner of the windscreen, on the inside, where it does not block the view. On motorbikes and mopeds, anywhere visible on the vehicle. It is the same position throughout Spain and the place local police officers look in cities that require it.</p>
 <h2>The cities that check it</h2>
 <p>In Zaragoza, until the planned cameras are installed, the local police enforce the zone in person, and the sticker lets an officer see at a glance whether a car may be there; not displaying it is a minor offence. In Pamplona the council stressed that the label is compulsory to drive in the Old Town zone. In Madrid, Málaga, Bilbao, Seville or Vitoria-Gasteiz, by contrast, cameras linked to the DGT register do the checking and the sticker changes nothing.</p>

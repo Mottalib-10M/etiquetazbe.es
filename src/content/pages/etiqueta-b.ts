@@ -21,7 +21,7 @@ export default definePage({
     body: (h) => `
 <h2>Calendario de la B, ciudad por ciudad</h2>
 ${h.table(['Ciudad', 'Desde', 'Para quién'], [...ya.map((c) => [h.a(`zbe-${c.slug}`, c.nombre), 'ya en vigor', 'vehículos de fuera']), ...fut.map((x) => [h.a(`zbe-${x.c.slug}`, x.c.nombre), h.date(x.f!.fecha), 'vehículos de fuera'])])}
-<h2>Por qué la B es la siguiente</h2>
+<h2>Por qué la etiqueta B es la siguiente</h2>
 <p>Las ordenanzas avanzan de la peor clasificación a la mejor. Retirada la circulación de los vehículos sin etiqueta, la B es la siguiente categoría con más emisiones de óxidos de nitrógeno, sobre todo en los diésel Euro 4 y 5. Por eso Málaga, Palma, Donostia, Valladolid y Vitoria-Gasteiz ya han puesto fecha y Bilbao la aplica desde 2025. Barcelona, Zaragoza, València y Sevilla no tienen, de momento, ninguna fecha para ella.</p>
 <p>Si tienes un coche B y vives en una de estas ciudades, comprueba la fecha que te corresponde como vecino: suele ser varios años más tarde que para los de fuera. Si no, ${h.a('etiqueta-c', 'la etiqueta C')} es la siguiente frontera.</p>`,
   },

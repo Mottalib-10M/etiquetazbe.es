@@ -27,7 +27,7 @@ export default definePage({
     title: 'Car Without a DGT Label 2026: Where It Can Go, Options',
     description: 'Car with no DGT label in Spain in 2026: petrol before 2001, diesel before 2006. Zones it cannot enter, exceptions, access days, historic cars, €200 fine.',
     h1: 'Car without a label in 2026: where it cannot go and the options',
-    intro: 'No label does not mean no right to drive: outside low-emission zones the car is used as normal. Inside them, each city has its own ways in.',
+    intro: 'Driving a car without a DGT label is still allowed: outside low-emission zones the car is used as normal. Inside them, each city has its own ways in.',
     resume: (h) => `A vehicle gets no environmental label when it does not even meet the B requirements: for cars, petrol models below Euro 3, generally registered before 2001, and diesels below Euro 4, before 2006; for motorbikes, those below Euro 2. The DGT counts them in the most polluting 50% of the fleet. They can use main roads and any town without a zone, but ${n} of the ${N_CIUDADES} cities with zones on this site already restrict them at least for out-of-town vehicles: Barcelona on weekdays from 7 am to 8 pm, Madrid across the whole city, Málaga, Granada or Vitoria-Gasteiz unless registered there. Almost all offer ways in: occasional access (24 days a year in Barcelona, 48 in València, 8 a month in Zaragoza), car parks, residents, low incomes and historic vehicles. Driving in without permission costs ${h.eur(h.P.multa.zbe_grave)}.`,
     faqs: (h) => [
       { q: 'Can I get a label for a car that has none?', a: 'Not by paying or filling in a form: the DGT only issues the sticker to vehicles entitled to it by their classification. If the classification is wrong, say a 2000 petrol car actually approved to Euro 3, the technical card is your evidence for a correction, and then the B applies.' },
@@ -36,7 +36,7 @@ export default definePage({
     body: (h) => `
 <h2>The most useful ways in</h2>
 <p>For occasional use, access days are simplest: Barcelona gives 24 days a year, València 48 accesses, Zaragoza 8 a month and Sant Cugat 10 a year. To reach the centre, several cities let you drive to a public car park: Granada if you park for more than an hour, Seville with its Cartuja car parks. For daily use, exceptions for low incomes (Barcelona, Granada, Sant Cugat), age or reduced mobility matter most.</p>
-<h2>Residents with an unlabelled car</h2>
+<h2>Residents with a car without a DGT label</h2>
 <p>Locally registered residents almost always get more time than visitors: València until the end of 2027, Vitoria-Gasteiz until September 2027 for residents, Granada with no date, Madrid with its transitional regime tied to air quality. Check your exact case in the tool with the vehicle’s address. If you are fined, ${h.a('multa-zbe', 'the fine guide')} explains deadlines and early payment.</p>`,
   },
 });
