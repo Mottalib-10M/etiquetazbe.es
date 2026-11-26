@@ -97,11 +97,11 @@ export default function ZbeTool({ lang = 'es', methodHref, preset = {}, ciudadHr
             <NumberField id="z-a" label={tx(lang, 'Año de 1.ª matriculación', 'Year first registered')} value={anio} onChange={setAnio} min={1950} max={2026} grouping={false} lang={lang} />
             <SelectField id="z-mm" label={tx(lang, 'Mes', 'Month')} value={mes} onChange={setMes} options={MESES[lang].map((x, i) => ({ value: String(i + 1), label: x }))} />
           </div>
-          <div className="grid grid-cols-2 gap-x-4 gap-y-4">
-            <SelectField id="z-d" label={tx(lang, 'Vehículo domiciliado en…', 'Vehicle registered in…')} value={dom} onChange={(x) => setDom(x as Perfil['domicilio'])} options={[{ value: 'ciudad', label: city.nombre }, { value: 'provincia', label: tx(lang, 'Otro municipio de la provincia', 'Another town in the province') }, { value: 'fuera', label: tx(lang, 'Fuera de la provincia o extranjero', 'Outside the province or abroad') }]} help={tx(lang, 'Domicilio del permiso de circulación y del IVTM', 'Address on the registration and road-tax record')} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4">
+            <SelectField id="z-d" label={tx(lang, 'Vehículo domiciliado en…', 'Vehicle registered in…')} value={dom} onChange={(x) => setDom(x as Perfil['domicilio'])} options={[{ value: 'ciudad', label: city.nombre }, { value: 'provincia', label: tx(lang, 'Otro municipio de la provincia', 'Another town in the province') }, { value: 'fuera', label: tx(lang, 'Otra provincia o extranjero', 'Other province or abroad') }]} help={tx(lang, 'Domicilio del permiso de circulación y del IVTM', 'Address on the registration and road-tax record')} />
             <Toggle id="z-r" label={tx(lang, '¿Vives dentro de la zona?', 'Do you live inside the zone?')} value={res} onChange={(x) => { setRes(x); if (x === '1') setDom('ciudad'); }} options={[{ value: '0', label: tx(lang, 'No', 'No') }, { value: '1', label: tx(lang, 'Sí', 'Yes') }]} />
           </div>
-          <div className="grid grid-cols-2 gap-x-4 gap-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4">
             {preset.ciudad ? <NumberField id="z-cv" label={tx(lang, 'Caballos fiscales (P.2.1)', 'Fiscal horsepower (P.2.1)')} value={cvf} onChange={setCvf} max={99} decimals={2} lang={lang} help={tx(lang, 'En la ficha técnica; no son los CV de potencia', 'On the technical card; not engine horsepower')} />
               : <SelectField id="z-v" label={tx(lang, 'Vehículo', 'Vehicle')} value={cat} onChange={(x) => setCat(x as Categoria)} options={CATS.map((k) => ({ value: k, label: CATEGORIA[lang][k] }))} />}
             {esPhev(en)
