@@ -4,7 +4,7 @@
 @font-face { font-family: 'Inter'; font-style: normal; font-weight: 400 700; font-display: swap; src: url('/fonts/inter-var.woff2') format('woff2'); }
 @theme {
   --color-navy-50: #f8fafc; --color-navy-100: #f1f5f9; --color-navy-200: #e2e8f0; --color-navy-300: #cbd5e1; --color-navy-400: #94a3b8; --color-navy-500: #64748b; --color-navy-600: #475569; --color-navy-700: #334155; --color-navy-800: #1e293b; --color-navy-900: #0f172a; --color-navy-950: #020617;
-  --color-accent-50: #fdeded; --color-accent-100: #fad6d8; --color-accent-200: #f5adb0; --color-accent-300: #ee777c; --color-accent-400: #e74047; --color-accent-500: #AA151B; --color-accent-600: #901217; --color-accent-700: #770f13; --color-accent-800: #5f0c0f; --color-accent-900: #4b090c;
+  --color-accent-50: #F9EFEF; --color-accent-100: #F3DEDF; --color-accent-200: #E6B9BB; --color-accent-300: #D48A8D; --color-accent-400: #BF5054; --color-accent-500: #AA151B; --color-accent-600: #991318; --color-accent-700: #881116; --color-accent-800: #6E0E12; --color-accent-900: #550A0E;
   --color-success: #15803d; --color-warning: #b45309; --color-error: #dc2626;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
@@ -87,3 +87,53 @@ h1 { font-weight: 700; } h2 { font-weight: 650; } h3 { font-weight: 600; }
 :where(form, div, fieldset):has(> .grid-rows-subgrid) { align-content: start; }
 /* Dans une grille, le cadre du formulaire s'arrête sous ses champs au lieu de s'étirer à la hauteur du résultat. */
 .grid > form:has(> .grid-rows-subgrid) { align-self: start; }
+
+/* Charte de page aux couleurs du pays (refonte d'identité validée par l'éditeur, appliquée le 2026-11-25, MASTERFACTORY §10.5) :
+   en-tête et bandeau du H1 pleins dans la couleur forte, filet de la 2e couleur, sections alternées teintées,
+   simulateur en carte blanche à bord haut épais, chiffres-résultats grands, boutons pleins, pied sombre.
+   Échelle --color-accent-* dans @theme ci-dessus ; règles hors couche, elles priment sur les utilitaires Tailwind. */
+   Forte #AA151B (en-tête, héros), 2e couleur #F1BF00 (filets, bord de carte), boutons #F1BF00/#1A0A0A, chiffres #AA151B, pied #2A0A0B. Aplats, sans ombre ni dégradé. */
+/* En-tête plein + filet de la 2e couleur */
+header > div[class*="fixed"][class*="h-1"] { background:#AA151B; }
+header nav[aria-label] { background:#AA151B; border-bottom:5px solid #F1BF00; backdrop-filter:none; box-shadow:none; }
+header nav[aria-label] :is(a,span,button,summary,svg):not(#mobile-menu *):not(.nav-dropdown-panel *) { color:#fff; }
+header nav[aria-label] a[class*="border"]:not(#mobile-menu *):not(.nav-dropdown-panel *) { border-color:rgba(255,255,255,.8); background:transparent; }
+header nav[aria-label] img { background:#fff; border-radius:8px; padding:2px; }
+header nav[aria-label] .nav-dropdown-panel, header nav[aria-label] #mobile-menu { background:#fff; }
+header nav[aria-label] :is(.nav-dropdown-panel, #mobile-menu) :is(a,span,button,p,li,summary) { color:#0F172A; }
+/* Bandeau héros pleine largeur : H1 et chapeau en blanc */
+main :is(header,div:not(.mx-auto)):has(> h1) { background:#AA151B; border-image:linear-gradient(#AA151B 0 0) fill 0 / 0 / 4rem 100vmax 0; margin-bottom:0; padding-top:0; padding-bottom:1.5rem; border-style:solid; border-width:0; }
+main :is(header,div:not(.mx-auto)):has(> h1) :is(h1,p,li,span,small,strong,em,time,label,a,dt,dd,b,i) { color:#fff; }
+main :is(header,div:not(.mx-auto)):has(> h1) a { text-decoration:underline; text-decoration-color:#F1BF00; text-decoration-thickness:2px; }
+main :is(header,div:not(.mx-auto)):has(> h1) [class*="bg-"] { background:transparent; border-color:rgba(255,255,255,.6); }
+main :is(header,div:not(.mx-auto)):has(> h1) ~ :not([data-outil]):not([data-outil] ~ *):not(:has([data-outil])):has(~ :is([data-outil], astro-island:has([data-outil]))) { background:#AA151B; border-image:linear-gradient(#AA151B 0 0) fill 0 / 0 / 0 100vmax 8rem; border-style:solid; border-width:0; margin-top:0; margin-bottom:0; padding-top:.75rem; padding-bottom:.75rem; border-color:rgba(255,255,255,.35); }
+main :is(header,div:not(.mx-auto)):has(> h1) ~ :not([data-outil]):not([data-outil] ~ *):not(:has([data-outil])):has(~ :is([data-outil], astro-island:has([data-outil]))) :is(p,h2,h3,span,strong,a,li,small,label,summary,dt,dd,b,em) { color:#fff; }
+main :is(header,div:not(.mx-auto)):has(> h1) ~ :not([data-outil]):not([data-outil] ~ *):not(:has([data-outil])):has(~ :is([data-outil], astro-island:has([data-outil]))) :is(li,a,div,dd,dt)[class*="bg-"] { background:transparent; border-color:rgba(255,255,255,.55); }
+main :is(header,div:not(.mx-auto)):has(> h1) ~ :not([data-outil]):not([data-outil] ~ *):not(:has([data-outil])):has(~ :is([data-outil], astro-island:has([data-outil])))[class*="bg-"] { background:#AA151B; }
+main :is(header,div:not(.mx-auto)):has(> h1):has(~ :is([data-outil], astro-island:has([data-outil]))) { border-image-outset:4rem 100vmax 8rem; }
+/* Le simulateur : carte blanche à bord haut épais de la 2e couleur ; le bandeau descend de 8rem derrière son haut (border-image, sans ombre) */
+main [data-outil] { background:#fff; border:0; border-top:6px solid #F1BF00; border-radius:14px; padding:1.1rem; box-shadow:none; position:relative; margin-top:1.5rem; margin-bottom:3.5rem; }
+main [data-outil] [data-outil] { border-top:0; box-shadow:none; clip-path:none; padding:0; margin:0; }
+body div:is([role="group"],[role="radiogroup"],.grid) > button:is([class~="bg-accent-500"],[class~="bg-accent-600"],[class~="bg-accent-700"]), body button[aria-pressed="true"] { background:#AA151B; color:#fff; }
+main :is(.text-navy-500,.text-navy-400,.text-slate-500,.text-gray-500):not(:is(header,div):has(> h1) *) { color:#475569; }
+/* Chiffres-résultats grands, dans l'accent, sur fond teinté */
+main [aria-live] :is([class*="text-2xl"],[class*="text-3xl"],[class*="text-4xl"]), main [data-resultat] :is([class*="text-2xl"],[class*="text-3xl"]) { font-size:2.1rem; line-height:1.15; color:#AA151B; background:#FBEDED; border-radius:8px; padding:.05em .3em; }
+main [data-outil] :is([class*="text-3xl"],[class*="text-4xl"],[class*="text-5xl"]):not(button):not(label) { color:#AA151B; }
+/* Sections alternées blanc / teinte, titres soulignés de l'accent */
+main [data-outil] ~ section:nth-of-type(odd), main [data-outil] ~ div.prose:nth-of-type(even) { background:#FBEDED; box-shadow:0 0 0 100vmax #FBEDED; clip-path:inset(0 -100vmax); padding-top:1.5rem; padding-bottom:1.5rem; }
+main h2:not([data-outil] h2):not(:is(header,div:not(.mx-auto)):has(> h1) ~ * h2) { color:#AA151B; border-left:8px solid #F1BF00; padding-left:.6rem; }
+main h3:not([data-outil] h3) { color:#AA151B; }
+/* Boutons pleins, liens soulignés de couleur */
+main button[type="submit"], main :is(a,button):is([class~="bg-accent-500"],[class~="bg-accent-600"],[class~="bg-accent-700"]), main :is(a,button)[class*="bg-brand"], main :is(a,button)[class*="bg-primary"] { background:#F1BF00; color:#1A0A0A; border-color:#F1BF00; border-radius:10px; font-weight:700; }
+main button[type="submit"]:hover, main :is(a,button):is([class~="bg-accent-600"],[class~="bg-accent-700"]):hover { background:#CDA200; }
+main :is(.prose a, p > a, li > a):not([class*="bg-"]):not(:is(header,div:not(.mx-auto)):has(> h1) *):not(:is(header,div:not(.mx-auto)):has(> h1) ~ :not([data-outil]):not([data-outil] ~ *):not(:has([data-outil])):has(~ :is([data-outil], astro-island:has([data-outil]))) *) { color:#AA151B; text-decoration:underline; text-decoration-color:#F1BF00; text-decoration-thickness:2px; text-underline-offset:3px; }
+/* Encadrés et tableaux */
+main .bg-accent-50 { background:#FBEDED; border-left:6px solid #F1BF00; }
+main table thead th { color:#AA151B; border-bottom-color:transparent; box-shadow:inset 0 -3px 0 #F1BF00; background:#FBEDED; }
+/* Pied de page plein sombre, filet de la 2e couleur */
+footer { background:#2A0A0B; border-top:6px solid #F1BF00; }
+footer, footer *:not(svg):not(path) { color:#E5E7EB; border-color:rgba(255,255,255,.18); }
+footer *:not(svg):not(path) { background-color:transparent; }
+footer a { color:#fff; text-decoration:underline; text-decoration-color:#F1BF00; }
+main .dg-btn.dg-primaire { background:#F1BF00; color:#1A0A0A; border-color:#F1BF00; }
+main button.fixed { background:#FBEDED; color:#0F172A; border:0; border-top:4px solid #F1BF00; border-radius:0; }
